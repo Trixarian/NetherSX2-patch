@@ -16,6 +16,7 @@ You only need:
 * Windows Vista or higher
 * The [Java(TM) SE Development Kit](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
 * A copy of the NetherSX2 APK (see below on how to build it yourself)
+
 The rest comes prepackaged for your convience
 
 ## Getting a copy of the NetherSX2 APK
