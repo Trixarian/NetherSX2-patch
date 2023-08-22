@@ -1,0 +1,15 @@
+Functions added after March 13th:
+=================================
+bilinearUpscale
+cpuSpriteRenderLevel
+eeCycleRate
+moveHandler
+nativePaletteDraw
+
+Functions with name changes after March 13th:
+=============================================
+Before              ---> After
+------------------------------------
+MTVUSpeedHack       ---> mtvu
+mvuFlagSpeedHack    ---> mvuFlag
+InstantVU1SpeedHack ---> instantVU1
