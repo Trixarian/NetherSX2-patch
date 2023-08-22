@@ -31,8 +31,8 @@ And there you go, you should now have an updated and bug fixed copy of NetherSX2
 
 ## Downloads
 * You can grab a copy of these scripts [here](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/NetherSX2-patch.zip)
-* You can also use the [Patcher](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/NetherSX2-Patcher.zip) to generate a copy of the NetherSX2 APK with the updates and bug fixes already applied
-* You can also download [this xdelta file](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/nethersx2.xdelta) to use with xdelta patchers on systems other than Windows
+* You can also use the [Patcher](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/NetherSX2-Patcher.zip) to generate a copy of the NetherSX2 APK with the updates and bug fixes already applied on Windows systems
+* [The xdelta file](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/nethersx2.xdelta) can be grabbed for use with xdelta patchers on systems other than Windows
 NOTE: No APKs are provided due to licensing issues. You have to build them yourselves using the above methods
 
 ## Credits
