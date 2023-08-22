@@ -29,7 +29,7 @@ Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop 
 And there you go, you should now have an updated and bug fixed copy of NetherSX2 on your phone!
 
 ## Credits
-PCSX2: <https://github.com/PCSX2/pcsx2> 
-AetherSX2: <https://www.aethersx2.com/archive/> 
-EZOnTheEyes: <https://www.youtube.com/@EZOnTheEyes> 
-Android build-tools: <https://androidsdkmanager.azurewebsites.net/Buildtools> 
+* PCSX2: <https://github.com/PCSX2/pcsx2> 
+* AetherSX2: <https://www.aethersx2.com/archive/> 
+* EZOnTheEyes: <https://www.youtube.com/@EZOnTheEyes> 
+* Android build-tools: <https://androidsdkmanager.azurewebsites.net/Buildtools> 
