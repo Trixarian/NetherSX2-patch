@@ -24,7 +24,7 @@ The best method is to use EZOnTheEyes' guide to build it yourself:
 
 [![NetherSX2 Installation and Usage Guide](http://img.youtube.com/vi/2y3uRlYq4SY/0.jpg)](http://www.youtube.com/watch?v=2y3uRlYq4SY)
 
-Alternatively, NetherSX2-builder and the xdelta patch in the Downloads section below can be used to create a copy of NetherSX2 with these changes pre-applied 
+Alternatively, NetherSX2-builder and xdelta patch in the Downloads section below can be used to create a copy of NetherSX2 with these changes pre-applied 
 
 ## Using these scripts
 Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop it in the same folder as remove-adservices.bat and update-files.bat
