@@ -1669,6 +1669,12 @@ SCAJ-20163:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
     autoFlush: 2 # Fixes post lighting.
+  patches:
+    default:
+      content: |-
+        author=sergx12
+        comment=Black Grid Fix
+        patch=1,EE,205E570C,extended,00000000
 SCAJ-20164:
   name: "Kingdom Hearts II"
   region: "NTSC-Unk"
@@ -54122,6 +54128,12 @@ SLUS-21386:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
     autoFlush: 2 # Fixes post lighting.
+  patches:
+    default:
+      content: |-
+        author=sergx12
+        comment=Black Grid Fix
+        patch=1,EE,205E570C,extended,00000000
 SLUS-21387:
   name: "Warship Gunner 2"
   region: "NTSC-U"
