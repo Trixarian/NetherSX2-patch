@@ -16,6 +16,7 @@ You only need:
 * Windows Vista or higher
 * The [Java(TM) SE Development Kit](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
 * A copy of the NetherSX2 APK (see below on how to build it yourself)
+
 The rest comes prepackaged for your convience
 
 ## Getting a copy of the NetherSX2 APK
@@ -24,7 +25,7 @@ The best method is to use EZOnTheEyes' guide to build it yourself: <https://yout
 ## Using these scripts
 Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop it in the same folder as remove-adservices.bat and update-files.bat
 1. Run remove-adservices.bat to remove the Google Ad Services left in the APK - this will reduce the APK size by about 400KB 
-2. Run update-files to apply the bug fixes and update the GameDB, Controller Support and Patches
+2. Run update-files.bat to apply the bug fixes and update the GameDB, Controller Support and Patches
 3. Copy the now modified version of 15210-v1.5-4248-noads.apk back to your phone and install it using your File Manager
 
 And there you go, you should now have an updated and bug fixed copy of NetherSX2 on your phone!
