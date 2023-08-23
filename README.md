@@ -14,7 +14,7 @@ Note: This **ONLY** works with NetherSX2. They will break AetherSX2 if used with
 ## Prerequisites
 You only need: 
 * Windows Vista or higher
-* The [Java(TM) SE Development Kit](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
+* [The Java(TM) SE Development Kit](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
 * A copy of the NetherSX2 APK (see below on how to build it yourself)
 
 The rest comes prepackaged for your convience
@@ -31,13 +31,16 @@ Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop 
 And there you go, you should now have an updated and bug fixed copy of NetherSX2 on your phone!
 
 ## Downloads
-* You can grab a copy of these scripts [here](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/NetherSX2-patch.zip)
-* You can also use the [Patcher](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/NetherSX2-Patcher.zip) to generate a copy of the NetherSX2 APK with the updates and bug fixes already applied on Windows systems
-* [The xdelta file](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/nethersx2.xdelta) can be grabbed for use with xdelta patchers on systems other than Windows
+* [NetherSX2-builder.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/NetherSX2-patch.zip) - Alternate way to build the NetherSX2 APK for yourself with these fixes already pre-applied. It can be used with these scripts to update it's contents
+* [NetherSX2-patch.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/NetherSX2-patch.zip) - Copy of these scripts. They're meant to be used with a copy of NetherSX2's APK. See Above on how to generate it
+* [nethersx2.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/nethersx2.xdelta) - The xdelta patch that can be applied to the AetherSX2 4248 apk with any patching program that supports the format and comes with all the changes pre-applied. This allows the creation of NetherSX2 on systems other than Windows, including Android when using the UniPatcher application
+
 NOTE: No APKs are provided due to licensing issues. You have to build them yourselves using the above methods
 
 ## Credits
 * PCSX2: <https://github.com/PCSX2/pcsx2> 
 * AetherSX2: <https://www.aethersx2.com/archive/> 
-* EZOnTheEyes: <https://www.youtube.com/@EZOnTheEyes> 
-* Android build-tools: <https://androidsdkmanager.azurewebsites.net/Buildtools> 
+* EZOnTheEyes: <https://www.youtube.com/@EZOnTheEyes>
+* Android Keystore: <https://github.com/jorfao/pkStore>
+* Alternate Keystore: <https://github.com/tytydraco/public-keystore>
+* Android build-tools: <https://androidsdkmanager.azurewebsites.net/Buildtools>
