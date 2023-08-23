@@ -1669,12 +1669,6 @@ SCAJ-20163:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
     autoFlush: 2 # Fixes post lighting.
-  patches:
-    default:
-      content: |-
-        author=sergx12
-        comment=Black Grid Fix
-        patch=1,EE,205E570C,extended,00000000
 SCAJ-20164:
   name: "Kingdom Hearts II"
   region: "NTSC-Unk"
@@ -23789,7 +23783,8 @@ SLES-54878:
   name: "Naruto - Ultimate Ninja 2"
   region: "PAL-M5"
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
+    vu0ClampMode: 0 # Fixes glow effects.
+    vu1ClampMode: 3 # Fixes rare SPS.
 SLES-54879:
   name: "WWE SmackDown vs. Raw 2008"
   region: "PAL-M5"
@@ -24723,6 +24718,8 @@ SLES-55215:
   name: "Growlanser - Heritage of War"
   region: "PAL-E"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes character layering issue.
 SLES-55216:
   name: "Baroque"
   region: "PAL-E"
@@ -29741,7 +29738,8 @@ SLPM-61147:
 SLPM-61148:
   name: "Growlanser V - Generations [Taikenban Demo]"
   region: "NTSC-J"
-SLPM-61149:
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes character layering issue.
   name: "Dengeki PS2 PlayStation D91"
   region: "NTSC-J"
 SLPM-61150:
@@ -37087,6 +37085,8 @@ SLPM-66249:
   name: "Growlanser V - Generations [Limited Edition]"
   region: "NTSC-J"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes character layering issue.
 SLPM-66250:
   name: "Choro Q HG 4 [Takara Best]"
   region: "NTSC-J"
@@ -37763,6 +37763,8 @@ SLPM-66418:
   name: "Growlanser V - Generations"
   region: "NTSC-J"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes character layering issue.
 SLPM-66419:
   name: "Valkyrie Profile 2 - Silmeria"
   region: "NTSC-J"
@@ -39012,6 +39014,8 @@ SLPM-66716:
   name: "Growlanser VI"
   region: "NTSC-J"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes character layering issue.
 SLPM-66717:
   name: "Standard Daisenryaku - Dengekisen [Sega the Best]"
   region: "NTSC-J"
@@ -43461,6 +43465,15 @@ SLPS-25230:
 SLPS-25231:
   name: "Myst III - Exile"
   region: "NTSC-J"
+  patches:
+    D7CCA373:
+      content: |-
+        // Waits for IPU command to finish.
+        // Replaces wait loop that had a very short wait period.
+        patch=0,EE,001F0490,word,3C021000
+        patch=0,EE,001F0494,word,34422010
+        patch=0,EE,001F0498,word,8c430000
+        patch=0,EE,001F04A8,word,0460FFFA
 SLPS-25233:
   name: "Do DonPachi Daioujou"
   region: "NTSC-J"
@@ -44112,7 +44125,8 @@ SLPS-25398:
   name: "Naruto - Narutimett Hero 2"
   region: "NTSC-J"
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
+    vu0ClampMode: 0 # Fixes glow effects.
+    vu1ClampMode: 3 # Fixes rare SPS.
 SLPS-25399:
   name: "Keroro Gunsou - Mero Mero Battle Royale"
   region: "NTSC-J"
@@ -46538,7 +46552,8 @@ SLPS-73221:
   name: "Naruto Narutimett Hero 2 [PlayStation 2 The Best]"
   region: "NTSC-J"
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
+    vu0ClampMode: 0 # Fixes glow effects.
+    vu1ClampMode: 3 # Fixes rare SPS.
 SLPS-73222:
   name: "Harvest Moon - A Wonderful Life [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -54107,12 +54122,6 @@ SLUS-21386:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
     autoFlush: 2 # Fixes post lighting.
-  patches:
-    default:
-      content: |-
-        author=sergx12
-        comment=Black Grid Fix
-        patch=1,EE,205E570C,extended,00000000
 SLUS-21387:
   name: "Warship Gunner 2"
   region: "NTSC-U"
@@ -54964,6 +54973,8 @@ SLUS-21571:
   name: "Growlanser - Heritage of War"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes character layering issue.
 SLUS-21572:
   name: "Surf's Up"
   region: "NTSC-U"
@@ -54981,7 +54992,8 @@ SLUS-21575:
   region: "NTSC-U"
   compat: 5
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
+    vu0ClampMode: 0 # Fixes glow effects.
+    vu1ClampMode: 3 # Fixes rare SPS.
 SLUS-21576:
   name: "Rayman - Raving Rabbids"
   region: "NTSC-U"

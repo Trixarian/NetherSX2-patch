@@ -22,5 +22,7 @@
 "%~dp0lib\aapt" a 15210-v1.5-4248-noads.apk assets/placeholder.png
 
 :: Resigns the APK before exiting
-"%~dp0lib\apksigner" sign --ks "%~dp0lib\platform.jks" --ks-pass pass:android 15210-v1.5-4248-noads.apk
+"%~dp0lib\apksigner" sign --ks "%~dp0lib\android.jks" --ks-pass pass:android 15210-v1.5-4248-noads.apk
+:: Alternate Key:
+:: "%~dp0lib\apksigner" sign --ks "%~dp0lib\public.jks" --ks-pass pass:public 15210-v1.5-4248-noads.apk
 pause
