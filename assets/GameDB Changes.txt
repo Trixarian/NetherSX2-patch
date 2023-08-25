@@ -13,3 +13,11 @@ Before              ---> After
 MTVUSpeedHack       ---> mtvu
 mvuFlagSpeedHack    ---> mvuFlag
 InstantVU1SpeedHack ---> instantVU1
+
+Functions removed after March 13th that should be kept:
+=======================================================
+partialTargetInvalidation - it fixes texture corruption issues
+
+Notes:
+======
+With Growlanser "textureInsideRT: 1" was replaced with "moveHandler". It's better to leave it in since a fix is better than no fix
