@@ -35,7 +35,7 @@ Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop 
 And there you go, you should now have an updated and bug fixed copy of NetherSX2 on your phone!
 
 ## Downloads
-* [NetherSX2-builder.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/NetherSX2-patch.zip) - Alternate way to build the NetherSX2 APK for yourself with these fixes already pre-applied. It can be used with these scripts to update it's contents
+* [NetherSX2-builder.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/NetherSX2-builder.zip) - Alternate way to build the NetherSX2 APK for yourself with these fixes already pre-applied. It can be used with these scripts to update it's contents
 * [NetherSX2-patch.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/NetherSX2-patch.zip) - Copy of these scripts. They're meant to be used with a copy of NetherSX2's APK. See Above on how to generate it
 * [nethersx2.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.2/nethersx2.xdelta) - The xdelta patch that can be applied to the AetherSX2 4248 apk with any patching program that supports the format and comes with all the changes pre-applied. This allows the creation of NetherSX2 on systems other than Windows, including Android when using the UniPatcher application
 
