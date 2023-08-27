@@ -32,6 +32,15 @@ Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop 
 2. Run update-files.bat to apply the bug fixes and update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches
 3. Copy the now modified version of 15210-v1.5-4248-noads.apk back to your phone and install it using your File Manager
 
+**Linux version:**
+You have to install these packages: ``aapt`` or ``aapt2`` and ``apksigner``
+Then run these command:
+```bash
+chmod +x remove-adservices.sh update-files.sh
+# then run sh file
+./remove-adservices.sh
+./update-files.sh
+```
 And there you go, you should now have an updated and bug fixed copy of NetherSX2 on your phone!
 
 ## Downloads
