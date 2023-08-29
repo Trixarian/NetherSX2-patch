@@ -1548,6 +1548,7 @@ SCAJ-20145:
   gameFixes:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
+    texturePreloading: 1 # Fixes performance issues
     getSkipCount: "GSC_TalesOfLegendia"
 SCAJ-20146:
   name: "Wang Da Yu Ju Xiang"
@@ -6326,6 +6327,7 @@ SCKA-20050:
   gameFixes:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
+    texturePreloading: 1 # Fixes performance issues
     getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20051:
   name: "Minna Daisuki Katamari Damacy"
@@ -6715,6 +6717,7 @@ SCKA-20129:
   gameFixes:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
+    texturePreloading: 1 # Fixes performance issues
     getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20130:
   name: "Minna no Tennis"
@@ -44693,6 +44696,7 @@ SLPS-25533:
   gameFixes:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
+    texturePreloading: 1 # Fixes performance issues
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-25534:
   name: "Twinkle Star Sprites - La Petite Princesse"
@@ -46808,6 +46812,7 @@ SLPS-73242:
   gameFixes:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
+    texturePreloading: 1 # Fixes performance issues
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-73243:
   name: "Namco X Capcom [PlayStation 2 The Best]"
@@ -53032,6 +53037,7 @@ SLUS-21201:
   gameFixes:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
+    texturePreloading: 1 # Fixes performance issues
     getSkipCount: "GSC_TalesOfLegendia"
 SLUS-21202:
   name: "Romance of the Three Kingdoms X"
