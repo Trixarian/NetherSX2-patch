@@ -12,9 +12,15 @@ The Update Script can also be used to reupdate the GameDB, Controller Support, a
 Note: This **ONLY** works with NetherSX2. They will break AetherSX2 if used with it
 
 ## Prerequisites
-You only need: 
+Windows:
 * Windows Vista or higher
 * [The Java(TM) SE Development Kit](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
+
+Linux:
+* The aapt or aapt2 package
+* The apksigner package
+
+All:
 * A copy of the NetherSX2 APK (see below on how to build it yourself)
 
 The rest comes prepackaged for your convience
@@ -33,14 +39,16 @@ Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop 
 3. Copy the now modified version of 15210-v1.5-4248-noads.apk back to your phone and install it using your File Manager
 
 **Linux version:**
-You have to install these packages: ``aapt`` or ``aapt2`` and ``apksigner``
-Then run these command:
+
+Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop it in the same folder and then run these commands:
 ```bash
 chmod +x remove-adservices.sh update-files.sh
 # then run sh file
 ./remove-adservices.sh
 ./update-files.sh
 ```
+Credit: [TheKingFireS](https://github.com/TheKingFireS)
+
 And there you go, you should now have an updated and bug fixed copy of NetherSX2 on your phone!
 
 ## Downloads
