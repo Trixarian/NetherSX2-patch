@@ -1785,6 +1785,10 @@ SCAJ-20182:
   region: "NTSC-Unk"
   gameFixes:
     - FpuMulHack
+  gsHWFixes:
+    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
+    preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCAJ-20183:
   name: "Wild ARMs - The Vth Vanguard"
   region: "NTSC-J"
@@ -1823,6 +1827,10 @@ SCAJ-20193:
   region: "NTSC-C-J"
   gameFixes:
     - FpuMulHack
+  gsHWFixes:
+    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
+    preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCAJ-20194:
   name: "Minna no Golf 4 [PlayStation 2 The Best]"
   region: "NTSC-Unk"
@@ -6315,6 +6323,8 @@ SCKA-20050:
   name: "Tales of Legendia"
   region: "NTSC-K"
   compat: 5
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20051:
@@ -6614,6 +6624,12 @@ SCKA-20099:
 SCKA-20100:
   name: "Tales of Destiny"
   region: "NTSC-K"
+  gameFixes:
+    - FpuMulHack
+  gsHWFixes:
+    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
+    preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCKA-20101:
   name: "Seiken Densetsu 4"
   region: "NTSC-K"
@@ -6666,6 +6682,12 @@ SCKA-20118:
 SCKA-20119:
   name: "Tales of Destiny - Director's Cut"
   region: "NTSC-K"
+  gameFixes:
+    - FpuMulHack
+  gsHWFixes:
+    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
+    preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCKA-20120:
   name: "Ratchet & Clank - Size Matters"
   region: "NTSC-K"
@@ -6689,6 +6711,11 @@ SCKA-20128:
 SCKA-20129:
   name: "Tales of Legendia"
   region: "NTSC-K"
+  compat: 5
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
+  gsHWFixes:
+    getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20130:
   name: "Minna no Tennis"
   region: "NTSC-K"
@@ -44663,6 +44690,8 @@ SLPS-25533:
   name: "Tales of Legendia"
   region: "NTSC-J"
   compat: 5
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-25534:
@@ -45407,6 +45436,10 @@ SLPS-25715:
   region: "NTSC-J"
   gameFixes:
     - FpuMulHack
+  gsHWFixes:
+    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
+    preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SLPS-25716:
   name: "Digimon Savers - Another Mission"
   region: "NTSC-J"
@@ -45874,6 +45907,10 @@ SLPS-25841:
   region: "NTSC-J"
   gameFixes:
     - FpuMulHack
+  gsHWFixes:
+    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
+    preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
   memcardFilters: # Allows import of non-DC Tales of Destiny data.
     - "SLPS-25841"
     - "SLPS-25842"
@@ -45884,6 +45921,10 @@ SLPS-25842:
   compat: 5
   gameFixes:
     - FpuMulHack
+  gsHWFixes:
+    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
+    preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
   memcardFilters:
     - "SLPS-25841"
     - "SLPS-25842"
@@ -46764,6 +46805,8 @@ SLPS-73241:
 SLPS-73242:
   name: "Tales of Legendia [PlayStation 2 The Best]"
   region: "NTSC-J"
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-73243:
@@ -52986,6 +53029,8 @@ SLUS-21201:
   name: "Tales of Legendia"
   region: "NTSC-U"
   compat: 5
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     getSkipCount: "GSC_TalesOfLegendia"
 SLUS-21202:
