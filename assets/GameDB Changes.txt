@@ -21,3 +21,4 @@ partialTargetInvalidation - it fixes texture corruption issues
 Notes:
 ======
 With Growlanser "textureInsideRT: 1" was replaced with "moveHandler". It's better to leave it in since a fix is better than no fix
+Check if getSkipCount parameter existed before March 13th: https://github.com/PCSX2/pcsx2/blame/d08461bd4c10561e12e6278805ef960b65382230/pcsx2/GS/Renderers/HW/GSHwHack.h#L45
