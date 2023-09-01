@@ -1031,6 +1031,9 @@ SCAJ-20048:
 SCAJ-20050:
   name: "Fatal Frame II - Crimson Butterfly"
   region: "NTSC-Unk"
+  gsHWFixes:
+    halfPixelOffset: 1 # Reduces blurriness.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
 SCAJ-20052:
   name: "Ratchet & Clank 2 - Gagaga! Ginga no Commando-ssu"
   region: "NTSC-J"
@@ -1530,6 +1533,7 @@ SCAJ-20139:
   region: "NTSC-Unk"
   gsHWFixes:
     halfPixelOffset: 1 # Reduces blurriness.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
 SCAJ-20140:
   name: "Bleach - Erabareshi Tamashi"
   region: "NTSC-Unk"
@@ -6177,6 +6181,9 @@ SCKA-20023:
   name: "Fatal Frame II"
   region: "NTSC-K"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1 # Reduces blurriness.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
 SCKA-20024:
   name: "EyeToy - Groove"
   region: "NTSC-K"
@@ -8429,6 +8436,7 @@ SCPS-55043:
   gsHWFixes:
     halfPixelOffset: 2 # Reduces blurriness.
     alignSprite: 1 # Fixes vertical lines on hidden ghosts.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
   patches:
     339A0B8C:
       content: |-
@@ -8543,6 +8551,7 @@ SCPS-56008:
   gsHWFixes:
     halfPixelOffset: 2 # Reduces blurriness.
     alignSprite: 1 # Fixes vertical lines on hidden ghosts.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
   patches:
     339A0B8C:
       content: |-
@@ -44852,6 +44861,9 @@ SLPS-25544:
   name: "Fatal Frame - Zero"
   region: "NTSC-J"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1 # Reduces blurriness.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
 SLPS-25545:
   name: "Fighting for One Piece"
   region: "NTSC-J"
@@ -46636,6 +46648,9 @@ SLPS-73111:
 SLPS-73201:
   name: "Fatal Frame II - Crimson Butterfly [PlayStation 2 The Best]"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1 # Reduces blurriness.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
 SLPS-73202:
   name: "Armored Core - Nexus [Disc 1] [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -46945,6 +46960,9 @@ SLPS-73244:
 SLPS-73245:
   name: "Fatal Frame - Zero [PlayStation 2 The Best]"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1 # Reduces blurriness.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
 SLPS-73246:
   name: "Gundam True Odyssey [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -47022,9 +47040,13 @@ SLPS-73255:
   gsHWFixes:
     halfPixelOffset: 2 # Reduces blurriness.
     alignSprite: 1 # Fixes vertical lines on hidden ghosts.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
 SLPS-73256:
   name: "Fatal Frame II - Crimson Butterfly [PlayStation 2 the Best - Reprint]"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1 # Reduces blurriness.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
 SLPS-73257:
   name: "Fatal Frame III - The Tormented [PlayStation 2 the Best - Reprint]"
   region: "NTSC-J"
@@ -48902,6 +48924,7 @@ SLUS-20388:
   gsHWFixes:
     halfPixelOffset: 2 # Reduces blurriness.
     alignSprite: 1 # Fixes vertical lines on hidden ghosts.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
   patches:
     339A0B8C:
       content: |-
@@ -50862,6 +50885,9 @@ SLUS-20766:
   name: "Fatal Frame II - Crimson Butterfly"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1 # Reduces blurriness.
+    partialTargetInvalidation: 1 # Fixes Invisible Ghosts
 SLUS-20767:
   name: "MX Unleashed"
   region: "NTSC-U"
