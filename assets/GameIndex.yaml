@@ -934,7 +934,7 @@ SCAJ-20023:
 SCAJ-20024:
   name: "dot hack - Quarantine Part 4"
   region: "NTSC-Unk"
-    gsHWFixes:
+  gsHWFixes:
     halfPixelOffset: 1
   memcardFilters:
     - "SCPS-55029"
