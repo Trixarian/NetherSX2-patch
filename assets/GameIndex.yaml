@@ -163,6 +163,8 @@ PAPX-90216:
 PAPX-90218:
   name: "SkyGunner"
   region: "NTSC-J"
+  gsHWFixes:
+    getSkipCount: "GSC_SkyGunner"
 PAPX-90220:
   name: "Surveillance - Kanshisha"
   region: "NTSC-J"
@@ -534,6 +536,8 @@ PCPX-96312:
 PCPX-96314:
   name: "The Sky Odyssey"
   region: "NTSC-J"
+  clampModes:
+    vu0ClampMode: 3 # Fixes runway line thickness on minimap.
 PCPX-96315:
   name: "Phase Paradox"
   region: "NTSC-J"
@@ -557,6 +561,8 @@ PCPX-96320:
 PCPX-96321:
   name: "SkyGunner [Trial]"
   region: "NTSC-J"
+  gsHWFixes:
+    getSkipCount: "GSC_SkyGunner"
 PCPX-96322:
   name: "Ico [Trial]"
   region: "NTSC-J"
@@ -853,6 +859,7 @@ SCAJ-20010:
   region: "NTSC-Unk"
   gsHWFixes:
     textureInsideRT: 1 # Fixes inside RT shuffling.
+    getSkipCount: "GSC_BigMuthaTruckers"
     beforeDraw: "OI_BigMuthaTruckers"
 SCAJ-20011:
   name: "Armored Core 3 - Silent Line"
@@ -927,6 +934,8 @@ SCAJ-20023:
 SCAJ-20024:
   name: "dot hack - Quarantine Part 4"
   region: "NTSC-Unk"
+    gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SCPS-55029"
     - "SCPS-55042"
@@ -1113,6 +1122,7 @@ SCAJ-20070:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
 SCAJ-20072:
   name: "Ghost in the Shell - Stand Alone Complex"
   region: "NTSC-Unk"
@@ -1369,6 +1379,7 @@ SCAJ-20118:
   gsHWFixes:
     alignSprite: 1 # Fixes vertical bars.
     halfPixelOffset: 2 # Fixes misalignment bloom effects.
+    getSkipCount: "GSC_TriAceGames"
 SCAJ-20119:
   name: "Gladiator - Road to Freedom"
   region: "NTSC-J"
@@ -1756,6 +1767,7 @@ SCAJ-20177:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SCAJ-20178:
   name: "Ape Escape - Million Monkeys"
   region: "NTSC-Unk"
@@ -1868,6 +1880,7 @@ SCAJ-20197:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SCAJ-20198:
   name: "Everybody's Tennis [PlayStation 2 The Best]"
   region: "NTSC-Unk"
@@ -3535,6 +3548,8 @@ SCED-53947:
 SCED-53962:
   name: "Shadow of the Colossus [Demo]"
   region: "PAL-M5"
+  gameFixes:
+    - OPHFlagHack # Improves performance.
   gsHWFixes:
     mipmap: 2 # Fixes Water with Trilinear.
     trilinearFiltering: 1 # Fixes Water with Mipmap (Full).
@@ -3884,6 +3899,8 @@ SCES-50034:
 SCES-50105:
   name: "Sky Odyssey"
   region: "PAL-M5"
+  clampModes:
+    vu0ClampMode: 3 # Fixes runway line thickness on minimap.
 SCES-50139:
   name: "World Rally Championship"
   region: "PAL-M7"
@@ -4374,6 +4391,9 @@ SCES-51248:
     preloadFrameData: 1 # Fixes bad textures on Jake.
     halfPixelOffset: 2 # Fixes double image.
     cpuCLUTRender: 1 # Fixes Jake going black in Smellovision.
+SCES-51407:
+  name: "Exclusive PlayStation 2 Summer Sample Disc"
+  region: "PAL-A"
 SCES-51426:
   name: "Getaway, The"
   region: "PAL-M5"
@@ -5045,6 +5065,8 @@ SCES-53326:
   name: "Shadow of the Colossus"
   region: "PAL-E"
   compat: 5
+  gameFixes:
+    - OPHFlagHack # Improves performance.
   gsHWFixes:
     mipmap: 2 # Fixes Water with Trilinear.
     trilinearFiltering: 1 # Fixes Water with Mipmap (Full).
@@ -6016,6 +6038,8 @@ SCES-82035:
   region: "PAL-M3"
   gsHWFixes:
     autoFlush: 2
+    halfPixelOffset: 1
+    texturePreloading: 0
   memcardFilters:
     - "SLES-82034"
     - "SCES-82034"
@@ -6397,6 +6421,8 @@ SCKA-20061:
   name: "Wanda to Kyozou"
   region: "NTSC-K"
   compat: 5
+  gameFixes:
+    - OPHFlagHack # Improves performance.
   gsHWFixes:
     mipmap: 1
     halfPixelOffset: 1 # Fixes misalignments and borders on side.
@@ -6516,6 +6542,7 @@ SCKA-20079:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SCKA-20081:
   name: "Tekken 5 [PlayStation 2 Big Hit Series]"
   region: "NTSC-K"
@@ -6636,6 +6663,8 @@ SCKA-20101:
   name: "Seiken Densetsu 4"
   region: "NTSC-K"
   compat: 5
+  speedHacks:
+    MTVUSpeedHack: 0
 SCKA-20104:
   name: "Genji"
   region: "NTSC-K"
@@ -7029,6 +7058,8 @@ SCPS-15002:
 SCPS-15003:
   name: "Sky Odyssey"
   region: "NTSC-J"
+  clampModes:
+    vu0ClampMode: 3 # Fixes runway line thickness on minimap.
 SCPS-15004:
   name: "Dark Cloud"
   region: "NTSC-J"
@@ -7521,6 +7552,8 @@ SCPS-15097:
   name: "Wanda to Kyozou"
   region: "NTSC-J"
   compat: 5
+  gameFixes:
+    - OPHFlagHack # Improves performance.
   gsHWFixes:
     mipmap: 1
     halfPixelOffset: 1 # Fixes misalignments and borders on side.
@@ -8021,6 +8054,8 @@ SCPS-19319:
 SCPS-19320:
   name: "Wanda to Kyozou [PlayStation 2 The Best]"
   region: "NTSC-J"
+  gameFixes:
+    - OPHFlagHack # Improves performance.
   gsHWFixes:
     mipmap: 1
     halfPixelOffset: 1 # Fixes misalignments and borders on side.
@@ -8139,6 +8174,8 @@ SCPS-19333:
 SCPS-19335:
   name: "Wanda to Kyozou [PlayStation 2 The Best Reprint]"
   region: "NTSC-J"
+  gameFixes:
+    - OPHFlagHack # Improves performance.
   gsHWFixes:
     mipmap: 1
     halfPixelOffset: 1 # Fixes misalignments and borders on side.
@@ -8285,6 +8322,7 @@ SCPS-55019:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
 SCPS-55020:
   name: "Kengo 2"
   region: "NTSC-J"
@@ -8370,6 +8408,8 @@ SCPS-55041:
 SCPS-55042:
   name: "dot hack - Mutation Part 2"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SCPS-55029"
     - "SCPS-55042"
@@ -9920,6 +9960,8 @@ SCUS-97472:
   name: "Shadow of the Colossus"
   region: "NTSC-U"
   compat: 5
+  gameFixes:
+    - OPHFlagHack # Improves performance.
   gsHWFixes:
     mipmap: 2 # Fixes Water with Trilinear.
     trilinearFiltering: 1 # Fixes Water with Mipmap (Full).
@@ -10126,6 +10168,8 @@ SCUS-97504:
 SCUS-97505:
   name: "Shadow of the Colossus [Demo]"
   region: "NTSC-U"
+  gameFixes:
+    - OPHFlagHack # Improves performance.
   gsHWFixes:
     mipmap: 2 # Fixes Water with Trilinear.
     trilinearFiltering: 1 # Fixes Water with Mipmap (Full).
@@ -12448,6 +12492,7 @@ SLES-50358:
   compat: 5
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes corrupt textures.
+    halfPixelOffset: 1
 SLES-50362:
   name: "Jonny Moseley Mad Trix"
   region: "PAL-E"
@@ -14852,6 +14897,7 @@ SLES-51355:
   compat: 5
   gsHWFixes:
     textureInsideRT: 1 # Fixes inside RT shuffling.
+    getSkipCount: "GSC_BigMuthaTruckers"
     beforeDraw: "OI_BigMuthaTruckers"
 SLES-51356:
   name: "Road Trip Adventure"
@@ -17160,6 +17206,8 @@ SLES-52467:
   name: "dot hack - Mutation Part 2"
   region: "PAL-M5"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SLES-52237"
     - "SLES-52467"
@@ -17169,6 +17217,8 @@ SLES-52468:
   name: "dot hack - Quarantine Part 4"
   region: "PAL-M5"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SLES-52237"
     - "SLES-52467"
@@ -17178,6 +17228,8 @@ SLES-52469:
   name: "dot hack - Outbreak Part 3"
   region: "PAL-M5"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SLES-52237"
     - "SLES-52467"
@@ -21907,6 +21959,8 @@ SLES-54171:
   compat: 5
   gameFixes:
     - EETimingHack # Fixes flickering.
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLES-54172:
   name: "Garfield 2 - Tale of Two Kitties"
   region: "PAL-M11"
@@ -22872,6 +22926,11 @@ SLES-54521:
 SLES-54522:
   name: "Nickelodeon SpongeBob and Friends - Battle for Volcano Island"
   region: "PAL-A"
+  gsHWFixes:
+    mipmap: 2 # Better characters and environment.
+    trilinearFiltering: 1 # Using mipmaps, so may as well.
+    autoFlush: 2 # Fixes texture corruptions.
+    getSkipCount: "GSC_BlueTongueGames" # Render mipmaps on the CPU.
 SLES-54527:
   name: "Flushed Away"
   region: "PAL-M5"
@@ -23157,6 +23216,7 @@ SLES-54644:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SLES-54645:
   name: "Valkyrie Profile 2 - Silmeria"
   region: "PAL-F"
@@ -23166,6 +23226,7 @@ SLES-54645:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SLES-54646:
   name: "Valkyrie Profile 2 - Silmeria"
   region: "PAL-G"
@@ -23176,6 +23237,7 @@ SLES-54646:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SLES-54647:
   name: "Valkyrie Profile 2 - Silmeria"
   region: "PAL-I"
@@ -23186,6 +23248,7 @@ SLES-54647:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SLES-54648:
   name: "Valkyrie Profile 2 - Silmeria"
   region: "PAL-S"
@@ -23195,6 +23258,7 @@ SLES-54648:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SLES-54653:
   name: "Freak Out - Extreme Freeride"
   region: "PAL-M5"
@@ -24089,6 +24153,7 @@ SLES-54962:
     vu1RoundMode: 0 # Crashes without.
   gsHWFixes:
     textureInsideRT: 1 # Crowd textures.
+    preloadFrameData: 1
 SLES-54963:
   name: "Tony Hawk's Proving Ground"
   region: "PAL-E"
@@ -24122,6 +24187,7 @@ SLES-54974:
     vu1RoundMode: 0 # Crashes without.
   gsHWFixes:
     textureInsideRT: 1 # Crowd textures.
+    preloadFrameData: 1
 SLES-54975:
   name: "George Of The Jungle"
   region: "PAL-E"
@@ -24165,12 +24231,14 @@ SLES-54990:
   gsHWFixes:
     mipmap: 1 # Fixes garbage textures in the distance.
     halfPixelOffset: 2 # Corrects most vertical lines.
+    getSkipCount: "GSC_BlueTongueGames" # Mipmap rendering on CPU.
 SLES-54991:
   name: "Nickelodeon SpongeBob and Friends - Attack of the Toybots"
   region: "PAL-M6"
   gsHWFixes:
     mipmap: 1 # Fixes garbage textures in the distance.
     halfPixelOffset: 2 # Corrects most vertical lines.
+    getSkipCount: "GSC_BlueTongueGames" # Mipmap rendering on CPU.
 SLES-54992:
   name: "PDC World Championship Darts 2008"
   region: "PAL-M6"
@@ -24844,6 +24912,8 @@ SLES-55242:
   memcardFilters: # Allows import of Yakuza 1 data.
     - "SLES-55242"
     - "SLES-54171"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLES-55243:
   name: "FIFA 09"
   region: "PAL-E"
@@ -25853,6 +25923,7 @@ SLES-82028:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
 SLES-82029:
   name: "Star Ocean 3 - Till the End of Time [Disc 2 of 2]"
   region: "PAL-E"
@@ -25863,6 +25934,7 @@ SLES-82029:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
   memcardFilters:
     - "SLES-82028"
 SLES-82030:
@@ -25947,6 +26019,8 @@ SLES-82039:
     getSkipCount: "GSC_ShinOnimusha"
   memcardFilters:
     - "SLES-82038"
+  gsHWFixes:
+    halfPixelOffset: 1 # post processing
 SLES-82042:
   name: "Metal Gear Solid 3 - Subsistence [Disc 1 of 3]"
   region: "PAL-E-F"
@@ -27229,12 +27303,16 @@ SLKA-25280:
   memcardFilters:
     - "SLKA-25280"
     - "SLKA-25342"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLKA-25281:
   name: "Ryu ga Gotoku 2 [Disc 2 of 2]"
   region: "NTSC-K"
   memcardFilters:
     - "SLKA-25280"
     - "SLKA-25342"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLKA-25282:
   name: "MX vs. ATV Unleashed"
   region: "NTSC-K"
@@ -27438,6 +27516,7 @@ SLKA-25330:
     texturePreloading: 1 # Spikes all over the place otherwise.
     textureInsideRT: 1 # Fixes light shinging through objects.
     cpuCLUTRender: 1 # Fixes light shining through objects.
+    getSkipCount: "GSC_Battlefield2" # Depth clear.
     beforeDraw: "OI_Battlefield2" # Framebuffer copy, fixes rendering for bottom part of screen.
 SLKA-25331:
   name: "Marc Ecko's Getting Up - Contents Under Pressure"
@@ -27492,6 +27571,8 @@ SLKA-25341:
 SLKA-25342:
   name: "Ryu ga Gotoku"
   region: "NTSC-K"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLKA-25343:
   name: "Thrillville - Off the Rails"
   region: "NTSC-K"
@@ -29343,6 +29424,7 @@ SLPM-61010:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes corrupt textures.
+    halfPixelOffset: 1
 SLPM-61011:
   name: "Silent Hill 2 (Black Ribbon) [Video Trial]"
   region: "NTSC-J"
@@ -32492,6 +32574,7 @@ SLPM-65023:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes corrupt textures.
+    halfPixelOffset: 1
 SLPM-65024:
   name: "BioHazard - 5th Anniversary Package - Nightmare Returns [Disc 1 of 2]"
   region: "NTSC-J"
@@ -32547,6 +32630,7 @@ SLPM-65038:
   compat: 5
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes corrupt textures.
+    halfPixelOffset: 1
 SLPM-65039:
   name: "Densha de Go! Shinkansen"
   region: "NTSC-J"
@@ -33134,6 +33218,7 @@ SLPM-65209:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
   patches:
     BEC32D49:
       content: |-
@@ -33279,6 +33364,7 @@ SLPM-65234:
   region: "NTSC-J"
   gsHWFixes:
     textureInsideRT: 1 # Fixes inside RT shuffling.
+    getSkipCount: "GSC_BigMuthaTruckers"
     beforeDraw: "OI_BigMuthaTruckers"
 SLPM-65235:
   name: "New Roommania - Porori Seishun"
@@ -34030,6 +34116,7 @@ SLPM-65438:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
 SLPM-65439:
   name: "Star Ocean 3 [Director's Cut] [Disc 2 of 2]"
   region: "NTSC-J"
@@ -34040,6 +34127,7 @@ SLPM-65439:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
   memcardFilters:
     - "SLPM-65438"
 SLPM-65441:
@@ -35336,6 +35424,7 @@ SLPM-65800:
   gsHWFixes:
     alignSprite: 1 # Fixes vertical bars.
     halfPixelOffset: 2 # Fixes misalignment bloom effects.
+    getSkipCount: "GSC_TriAceGames"
 SLPM-65801:
   name: "Crash Bandicoot 5"
   region: "NTSC-J"
@@ -36752,6 +36841,8 @@ SLPM-66167:
 SLPM-66168:
   name: "Ryu Ga Gotoku"
   region: "NTSC-J"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLPM-66169:
   name: "J-League Winning Eleven 9 - Asia Championship"
   region: "NTSC-J"
@@ -37817,6 +37908,7 @@ SLPM-66419:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SLPM-66420:
   name: "Front Mission 4 [Ultimate Hits]"
   region: "NTSC-J"
@@ -38087,6 +38179,7 @@ SLPM-66478:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
 SLPM-66479:
   name: "Star Ocean 3 - Till the End of Time [Ultimate Hits] [Disc 2 of 2]"
   region: "NTSC-J"
@@ -38097,6 +38190,7 @@ SLPM-66479:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
   memcardFilters:
     - "SLPM-66478"
 SLPM-66480:
@@ -38196,6 +38290,7 @@ SLPM-66502:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes corrupt textures.
+    halfPixelOffset: 1
 SLPM-66503:
   name: "Metal Gear Solid 2 [Mega Hits]"
   region: "NTSC-J"
@@ -38579,6 +38674,8 @@ SLPM-66602:
     - "SLPM-66168"
     - "SLPM-74234"
     - "SLPM-74253"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLPM-66603:
   name: "Ryu ga Gotoku 2 [Disc 2 of 2]"
   region: "NTSC-J"
@@ -38588,6 +38685,8 @@ SLPM-66603:
     - "SLPM-66168"
     - "SLPM-74234"
     - "SLPM-74253"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLPM-66604:
   name: "Galaxy Angel - Moonlit Lovers [Banpresido the Best]"
   region: "NTSC-J"
@@ -39332,6 +39431,7 @@ SLPM-66782:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SLPM-66783:
   name: "Idol Janshi Suchie-Pai 4 [Limited Edition]"
   region: "NTSC-J"
@@ -40096,6 +40196,8 @@ SLPM-67003:
   name: "Sakura Taisen - Atsuki Chishioni"
   region: "NTSC-J"
   compat: 5
+  gsHWFixes:
+    getSkipCount: "GSC_SakuraTaisen"
 SLPM-67004:
   name: "Medal of Honor - Rising Sun"
   region: "NTSC-J"
@@ -40165,6 +40267,7 @@ SLPM-67502:
   compat: 5
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes corrupt textures.
+    halfPixelOffset: 1
 SLPM-67503:
   name: "FIFA 2002"
   region: "NTSC-K"
@@ -40638,6 +40741,7 @@ SLPM-74230:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes corrupt textures.
+    halfPixelOffset: 1
 SLPM-74231:
   name: "Kessen III [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -40662,6 +40766,8 @@ SLPM-74233:
 SLPM-74234:
   name: "Ryu Ga Gotoku [PlayStation 2 The Best]"
   region: "NTSC-J"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLPM-74235:
   name: "Sengoku Musou [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -40780,6 +40886,8 @@ SLPM-74252:
 SLPM-74253:
   name: "Ryu ga Gotoku [PlayStation 2 the Best - Reprint]"
   region: "NTSC-J"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLPM-74254:
   name: "EX Jinsei Game II [PlayStation 2 the Best - Reprint]"
   region: "NTSC-J"
@@ -40901,6 +41009,8 @@ SLPM-74301:
     - "SLPM-66168"
     - "SLPM-74234"
     - "SLPM-74253"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLPM-74401:
   name: "Kessen"
   region: "NTSC-J"
@@ -43189,6 +43299,8 @@ SLPS-25142:
 SLPS-25143:
   name: "dot hack - Mutation Part 2"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SCPS-55029"
     - "SCPS-55042"
@@ -43251,6 +43363,8 @@ SLPS-25157:
 SLPS-25158:
   name: "dot hack - Outbreak Part 3"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SCPS-55029"
     - "SCPS-55042"
@@ -43423,6 +43537,8 @@ SLPS-25201:
 SLPS-25202:
   name: "dot hack - Quarantine Part 4"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SCPS-55029"
     - "SCPS-55042"
@@ -44672,6 +44788,8 @@ SLPS-25527:
   name: "dot hack - Fragment"
   region: "NTSC-J"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1
 SLPS-25528:
   name: "Summon Night EX Thesis - Yoake no Tsubasa"
   region: "NTSC-J"
@@ -45906,6 +46024,7 @@ SLPS-25840:
     vu1RoundMode: 0 # Crashes without.
   gsHWFixes:
     textureInsideRT: 1 # Crowd textures.
+    preloadFrameData: 1
 SLPS-25841:
   name: "Tales of Destiny [Director's Cut] [Premium Box]"
   region: "NTSC-J"
@@ -46102,6 +46221,7 @@ SLPS-25890:
     vu1RoundMode: 0 # Crashes without.
   gsHWFixes:
     textureInsideRT: 1 # Crowd textures.
+    preloadFrameData: 1
 SLPS-25891:
   name: "Nogizaka Haruka no Himitsu - Cosplay, Hajimemashita"
   region: "NTSC-J"
@@ -46488,6 +46608,7 @@ SLPS-73104:
   region: "NTSC-J"
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
+    texturePreloading: 1
 SLPS-73105:
   name: "Kinnikuman Generations [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -47115,6 +47236,7 @@ SLUS-20001:
   compat: 5
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
+    texturePreloading: 1
 SLUS-20002:
   name: "Ridge Racer V"
   region: "NTSC-U"
@@ -47589,6 +47711,8 @@ SLUS-20134:
   name: "Sky Odyssey"
   region: "NTSC-U"
   compat: 5
+  clampModes:
+    vu0ClampMode: 3 # Fixes runway line thickness on minimap.
 SLUS-20136:
   name: "Barbarian"
   region: "NTSC-U"
@@ -47954,6 +48078,7 @@ SLUS-20216:
   compat: 5
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes corrupt textures.
+    halfPixelOffset: 1
   patches:
     79B8A95F:
       content: |-
@@ -48305,6 +48430,7 @@ SLUS-20291:
   compat: 5
   gsHWFixes:
     textureInsideRT: 1 # Fixes inside RT shuffling.
+    getSkipCount: "GSC_BigMuthaTruckers"
     beforeDraw: "OI_BigMuthaTruckers"
 SLUS-20292:
   name: "Tsugunai - Atonement"
@@ -48750,6 +48876,8 @@ SLUS-20384:
   name: "SkyGunner"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    getSkipCount: "GSC_SkyGunner"
 SLUS-20385:
   name: "WWE Crush Hour"
   region: "NTSC-U"
@@ -49283,6 +49411,7 @@ SLUS-20488:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
 SLUS-20489:
   name: "Whirl Tour"
   region: "NTSC-U"
@@ -49651,6 +49780,8 @@ SLUS-20562:
   name: "dot hack - Mutation Part 2"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SLUS-20267"
     - "SLUS-20562"
@@ -49660,6 +49791,8 @@ SLUS-20563:
   name: "dot hack - Outbreak Part 3"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SLUS-20267"
     - "SLUS-20562"
@@ -49669,6 +49802,8 @@ SLUS-20564:
   name: "dot hack - Quarantine Part 4"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1
   memcardFilters:
     - "SLUS-20267"
     - "SLUS-20562"
@@ -49901,6 +50036,7 @@ SLUS-20605:
   region: "NTSC-U"
   gsHWFixes:
     textureInsideRT: 1 # Fixes inside RT shuffling.
+    getSkipCount: "GSC_BigMuthaTruckers"
     beforeDraw: "OI_BigMuthaTruckers"
 SLUS-20606:
   name: "Bounty Hunter - Seek & Destroy"
@@ -51324,6 +51460,7 @@ SLUS-20891:
     halfPixelOffset: 2 # Fixes bloom and ghosting in certain areas.
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
+    getSkipCount: "GSC_TriAceGames"
   memcardFilters:
     - "SLUS-20488"
 SLUS-20892:
@@ -53443,6 +53580,7 @@ SLUS-21262:
   gsHWFixes:
     alignSprite: 1 # Fixes vertical bars.
     halfPixelOffset: 2 # Fixes misalignment bloom effects.
+    getSkipCount: "GSC_TriAceGames"
 SLUS-21263:
   name: "Romancing SaGa"
   region: "NTSC-U"
@@ -53996,6 +54134,8 @@ SLUS-21348:
   compat: 5
   gameFixes:
     - EETimingHack # Fixes flickering.
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLUS-21349:
   name: "Taito Legends 2"
   region: "NTSC-U"
@@ -54647,6 +54787,7 @@ SLUS-21452:
     halfPixelOffset: 2 # Reduces bloom misalignment.
     roundSprite: 1 # Fixes area transition vertical lines and lessens red forest vertical lines.
     textureInsideRT: 1 # Required for swirl battle transition.
+    getSkipCount: "GSC_TriAceGames"
 SLUS-21453:
   name: "Disney's Meet the Robinsons"
   region: "NTSC-U"
@@ -55123,6 +55264,8 @@ SLUS-21574:
   name: "Dawn of Mana"
   region: "NTSC-U"
   compat: 5
+  speedHacks:
+    MTVUSpeedHack: 0
 SLUS-21575:
   name: "Naruto - Ultimate Ninja 2"
   region: "NTSC-U"
@@ -55294,6 +55437,7 @@ SLUS-21605:
   gsHWFixes:
     mipmap: 1 # Fixes garbage textures in the distance.
     halfPixelOffset: 2 # Corrects most vertical lines.
+    getSkipCount: "GSC_BlueTongueGames" # Mipmap rendering on CPU.
 SLUS-21606:
   name: "Metropolismania 2"
   region: "NTSC-U"
@@ -55635,6 +55779,7 @@ SLUS-21672:
     vu1RoundMode: 0 # Crashes without.
   gsHWFixes:
     textureInsideRT: 1 # Crowd textures.
+    preloadFrameData: 1
 SLUS-21673:
   name: "College Hoops 2K8"
   region: "NTSC-U"
@@ -56127,6 +56272,8 @@ SLUS-21769:
   memcardFilters: # Allows import of Yakuza 1 data.
     - "SLUS-21769"
     - "SLUS-21348"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLUS-21770:
   name: "Madden NFL '09"
   region: "NTSC-U"
@@ -57057,6 +57204,8 @@ SLUS-28031:
 SLUS-28032:
   name: "dot hack - Mutation Part 2 [Trade Demo]"
   region: "NTSC-U"
+  gsHWFixes:
+    halfPixelOffset: 1
 SLUS-28034:
   name: "Disgaea - Hour of Darkness [Trade Demo]"
   region: "NTSC-U"
@@ -57189,6 +57338,7 @@ SLUS-29009:
   region: "NTSC-U"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes corrupt textures.
+    halfPixelOffset: 1
 SLUS-29010:
   name: "Crash Bandicoot - The Wrath of Cortex [Demo]"
   region: "NTSC-U"
@@ -57853,6 +58003,8 @@ SLUS-29194:
 SLUS-29195:
   name: "Yakuza [Demo]"
   region: "NTSC-U"
+  gsHWFixes:
+    getSkipCount: "GSC_YakuzaGames"
 SLUS-29196:
   name: "Destroy All Humans! 2 [Demo]"
   region: "NTSC-U"
