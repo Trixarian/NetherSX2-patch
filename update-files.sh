@@ -18,7 +18,7 @@ if command -v "aapt" >/dev/null 2>&1; then
 	# Adds the placeholder file that makes RetroAchievements Notifications work
 	aapt a 15210-v1.5-4248-noads.apk assets/placeholder.png
 else
-	chmod +x lib/aaptlinux lib/apksignerlinux
+	chmod +x lib/aaptlinux
 	lib/aaptlinux r 15210-v1.5-4248-noads.apk assets/3rdparty.html
 	lib/aaptlinux a 15210-v1.5-4248-noads.apk assets/3rdparty.html
 
@@ -41,11 +41,11 @@ fi
 if command -v "apksigner" >/dev/null 2>&1; then
 	apksigner sign --ks lib/android.jks --ks-pass pass:android 15210-v1.5-4248-noads.apk
 else
-	lib/apksignerlinux sign --ks lib/android.jks --ks-pass pass:android 15210-v1.5-4248-noads.apk
+	exec java -jar lib/lib/apksigner.jar sign --ks lib/android.jks --ks-pass pass:android 15210-v1.5-4248-noads.apk
 fi
 # Alternate Key:
 # if command -v "apksigner" >/dev/null 2>&1; then
 # 	apksigner sign --ks lib/public.jks --ks-pass pass:public 15210-v1.5-4248-noads.apk
 # else
-# 	lib/apksignerlinux sign --ks lib/public.jks --ks-pass pass:public 15210-v1.5-4248-noads.apk
+# 	exec java -jar lib/lib/apksigner.jar sign --ks lib/public.jks --ks-pass pass:public 15210-v1.5-4248-noads.apk
 # fi
