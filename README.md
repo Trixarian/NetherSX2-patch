@@ -17,8 +17,9 @@ Windows:
 * [The Java(TM) SE Development Kit](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
 
 Linux:
-* The aapt or aapt2 package
-* The apksigner package
+* The aapt package (Script will switch to use local binary incase some distro didn't provide.)
+* The apksigner package (Script will switch to use local binary incase some distro didn't provide.)
+* The openjdk-17 package (If not installed already.)
 
 All:
 * A copy of the NetherSX2 APK (see below on how to build it yourself)
