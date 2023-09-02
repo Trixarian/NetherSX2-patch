@@ -5,7 +5,8 @@ They aim to do the following:
 * Remove the unnecessary ad services bloat left in the apk
 * Fix the RetroAchievements Notifications
 * Update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches
-* Resign the APK using the original keystore used by AetherSX2 to remove the Play Protect Warning
+* Add additional AetherSX2/NetherSX2 spesific fixes to the GameDB
+* Resign the APK to Remove the Play Protect Warning
 
 The Update Script can also be used to reupdate the GameDB, Controller Support, and Widescreen and No-Interlace Patches at a later date
 
