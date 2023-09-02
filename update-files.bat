@@ -1,28 +1,40 @@
-:: Fixes License Compliancy Issue
-lib\aapt r 15210-v1.5-4248-noads.apk assets/3rdparty.html
-lib\aapt a 15210-v1.5-4248-noads.apk assets/3rdparty.html
+@echo off
+:: Allows for Terminal Colors to be used
+set col=lib\cmdcolor.exe
 
-:: Updates No Interlace Patches
-lib\aapt r 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
-lib\aapt a 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
+:: Display Banner
+echo \033[91m======================== | %col%
+echo \033[91m NetherSX2 Updater v1.5  | %col%
+echo \033[91m======================== | %col%
 
-:: Updates Widescreen Patches
-lib\aapt r 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
-lib\aapt a 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
-
-:: Updates Game Controller Database
-lib\aapt r 15210-v1.5-4248-noads.apk assets/game_controller_db.txt
-lib\aapt a 15210-v1.5-4248-noads.apk assets/game_controller_db.txt
-
-:: Updates GameDB with removed features not supported by the libemucore.so from March 13th
+:: Updates to Latest GameDB with features removed that are not supported by the libemucore.so from March 13th
+<nul set /p "=\033[96mUpdating the \033[91mGameDB...                 " | %col%
 lib\aapt r 15210-v1.5-4248-noads.apk assets/GameIndex.yaml
-lib\aapt a 15210-v1.5-4248-noads.apk assets/GameIndex.yaml
+lib\aapt a 15210-v1.5-4248-noads.apk assets/GameIndex.yaml  > nul
+echo \033[92m[Done] | %col%
 
-:: Adds the placeholder file that makes RetroAchievements Notifications work
-lib\aapt a 15210-v1.5-4248-noads.apk assets/placeholder.png
+:: Updates the Controller Database
+<nul set /p "=\033[96mUpdating the \033[91mController Database...    " | %col%
+lib\aapt r 15210-v1.5-4248-noads.apk assets/game_controller_db.txt
+lib\aapt a 15210-v1.5-4248-noads.apk assets/game_controller_db.txt  > nul
+echo \033[92m[Done] | %col%
+
+:: Updates the Widescreen Patches
+<nul set /p "=\033[96mUpdating the \033[91mWidescreen Patches...     " | %col%
+lib\aapt r 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
+lib\aapt a 15210-v1.5-4248-noads.apk assets/cheats_ws.zip  > nul
+echo \033[92m[Done] | %col%
+
+:: Updates the No-Interlacing Patches
+<nul set /p "=\033[96mUpdating the \033[91mNo-Interlacing Patches... " | %col%
+lib\aapt r 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
+lib\aapt a 15210-v1.5-4248-noads.apk assets/cheats_ni.zip  > nul
+echo \033[92m[Done] | %col%
 
 :: Resigns the APK before exiting
+<nul set /p "=\033[96mResigning \033[91mNetherSX2 APK...             " | %col%
 java -jar lib\apksigner.jar sign --ks lib\android.jks --ks-pass pass:android 15210-v1.5-4248-noads.apk
 :: Alternate Key:
 :: java -jar lib\apksigner.jar sign --ks lib\public.jks --ks-pass pass:public 15210-v1.5-4248-noads.apk
+echo \033[92m[Done] | %col%
 pause

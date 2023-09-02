@@ -5,7 +5,8 @@ They aim to do the following:
 * Remove the unnecessary ad services bloat left in the apk
 * Fix the RetroAchievements Notifications
 * Update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches
-* Resign the APK using the original keystore used by AetherSX2 to remove the Play Protect Warning
+* Add additional AetherSX2/NetherSX2 spesific fixes to the GameDB
+* Resign the APK to Remove the Play Protect Warning
 
 The Update Script can also be used to reupdate the GameDB, Controller Support, and Widescreen and No-Interlace Patches at a later date
 
@@ -33,10 +34,11 @@ The best method is to use EZOnTheEyes' guide to build it yourself:
 Alternatively, NetherSX2-builder and xdelta patch in the Downloads section can be used to create a copy of NetherSX2 with these changes pre-applied 
 
 ## Using these scripts
-Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop it in the same folder as remove-adservices.bat and update-files.bat
-1. Run remove-adservices.bat to remove the Google Ad Services left in the APK. This will reduce the APK size by about 400KB 
-2. Run update-files.bat to apply the bug fixes and update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches
-3. Copy the now modified version of 15210-v1.5-4248-noads.apk back to your phone and install it using your File Manager
+Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop it in the same folder as patch-files.bat and update-files.bat
+1. Run patch-files.bat to patch your NetherSX2 APK to the latest version. This will reduce the APK size by about 400KB 
+2. Copy the now modified version of 15210-v1.5-4248-noads.apk back to your phone and install it using your File Manager
+
+You can now use update-files.bat with the above APK to update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches at a later date without needing to repatch it each time
 
 **Linux version:**
 
@@ -63,6 +65,7 @@ NOTE: No APKs are provided due to licensing issues. You have to build it yoursel
 * PCSX2: <https://github.com/PCSX2/pcsx2> 
 * AetherSX2: <https://www.aethersx2.com/archive/> 
 * EZOnTheEyes: <https://www.youtube.com/@EZOnTheEyes>
+* cmdcolor: <https://github.com/alecmev/cmdcolor>
 * Android Keystore: <https://github.com/jorfao/pkStore>
 * Alternate Keystore: <https://github.com/tytydraco/public-keystore>
 * Android build-tools: <https://androidsdkmanager.azurewebsites.net/Buildtools>
