@@ -5,7 +5,7 @@ if command -v "aapt" >/dev/null 2>&1; then
 	aapt a 15210-v1.5-4248-noads.apk assets/3rdparty.html
 	# Updates No Interlace Patches
 	aapt r 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
-	aapt a 15210-v1.5-4248-noads.apk assets/cheats_ni.zi
+	aapt a 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
 	# Updates Widescreen Patches
 	aapt r 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
 	aapt a 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
