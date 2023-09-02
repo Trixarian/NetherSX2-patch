@@ -18,30 +18,30 @@ if command -v "aapt" >/dev/null 2>&1; then
 	# Adds the placeholder file that makes RetroAchievements Notifications work
 	aapt a 15210-v1.5-4248-noads.apk assets/placeholder.png
 else
-	chmod +x lib/aaptlinux
-	lib/aaptlinux r 15210-v1.5-4248-noads.apk assets/3rdparty.html
-	lib/aaptlinux a 15210-v1.5-4248-noads.apk assets/3rdparty.html
+	chmod +x lib/aapt
+	lib/aapt r 15210-v1.5-4248-noads.apk assets/3rdparty.html
+	lib/aapt a 15210-v1.5-4248-noads.apk assets/3rdparty.html
 
-	lib/aaptlinux r 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
-	lib/aaptlinux a 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
+	lib/aapt r 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
+	lib/aapt a 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
 
-	lib/aaptlinux r 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
-	lib/aaptlinux a 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
+	lib/aapt r 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
+	lib/aapt a 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
 
-	lib/aaptlinux r 15210-v1.5-4248-noads.apk assets/game_controller_db.txt
-	lib/aaptlinux a 15210-v1.5-4248-noads.apk assets/game_controller_db.txt
+	lib/aapt r 15210-v1.5-4248-noads.apk assets/game_controller_db.txt
+	lib/aapt a 15210-v1.5-4248-noads.apk assets/game_controller_db.txt
 
-	lib/aaptlinux r 15210-v1.5-4248-noads.apk assets/GameIndex.yaml
-	lib/aaptlinux a 15210-v1.5-4248-noads.apk assets/GameIndex.yaml
+	lib/aapt r 15210-v1.5-4248-noads.apk assets/GameIndex.yaml
+	lib/aapt a 15210-v1.5-4248-noads.apk assets/GameIndex.yaml
 
-	lib/aaptlinux a 15210-v1.5-4248-noads.apk assets/placeholder.png
+	lib/aapt a 15210-v1.5-4248-noads.apk assets/placeholder.png
 fi
 
 # Resigns the APK before exiting
 if command -v "apksigner" >/dev/null 2>&1; then
 	apksigner sign --ks lib/android.jks --ks-pass pass:android 15210-v1.5-4248-noads.apk
 else
-	exec java -jar lib/lib/apksigner.jar sign --ks lib/android.jks --ks-pass pass:android 15210-v1.5-4248-noads.apk
+	exec java -jar lib/apksigner.jar sign --ks lib/android.jks --ks-pass pass:android 15210-v1.5-4248-noads.apk
 fi
 # Alternate Key:
 # if command -v "apksigner" >/dev/null 2>&1; then
