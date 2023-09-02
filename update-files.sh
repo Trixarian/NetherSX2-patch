@@ -18,6 +18,7 @@ if command -v "aapt" >/dev/null 2>&1; then
 	# Adds the placeholder file that makes RetroAchievements Notifications work
 	aapt a 15210-v1.5-4248-noads.apk assets/placeholder.png
 else
+	chmod +x lib/aaptlinux lib/apksignerlinux
 	lib/aaptlinux r 15210-v1.5-4248-noads.apk assets/3rdparty.html
 	lib/aaptlinux a 15210-v1.5-4248-noads.apk assets/3rdparty.html
 
