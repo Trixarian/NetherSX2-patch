@@ -13,6 +13,7 @@ if command -v "aapt" >/dev/null 2>&1; then
 	aapt r 15210-v1.5-4248-noads.apk play-services-ads-identifier.properties
 	aapt r 15210-v1.5-4248-noads.apk play-services-ads-base.properties
 else
+	chmod +x lib/aaptlinux lib/apksignerlinux
 	lib/aaptlinux r 15210-v1.5-4248-noads.apk user-messaging-platform.properties
 	lib/aaptlinux r 15210-v1.5-4248-noads.apk play-services-tasks.properties
 	lib/aaptlinux r 15210-v1.5-4248-noads.apk play-services-measurement-sdk-api.properties
