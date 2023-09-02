@@ -18,7 +18,7 @@ Windows:
 
 Linux:
 * The OpenJDK package
-Optional: The aapt and apksigner packages (the Linux version uses it's own binaries if these packages aren't installed)
+* Optional: The aapt and apksigner packages (the Linux version uses it's own binaries if these packages aren't installed)
 
 All:
 * A copy of the NetherSX2 APK (see below on how to build it)
