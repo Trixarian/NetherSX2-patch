@@ -4,7 +4,7 @@ These are Unofficial companion scripts for NetherSX2 to expand on the amazing wo
 They aim to do the following:
 * Remove the unnecessary ad services bloat left in the apk
 * Fix the RetroAchievements Notifications
-* Update the GameDB (which auto-magically applies game fixes), Controller Support, and the Widescreen and No-Interlace Patches
+* Update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches
 * Resign the APK using the original keystore used by AetherSX2 to remove the Play Protect Warning
 
 The Update Script can also be used to reupdate the GameDB, Controller Support, and Widescreen and No-Interlace Patches at a later date
@@ -17,21 +17,20 @@ Windows:
 * [The Java(TM) SE Development Kit](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
 
 Linux:
-* The aapt package (Script will switch to use local binary incase some distros didn't provide.)
-* The apksigner package (Script will switch to use local binary incase some distros didn't provide.)
-* The openjdk-17 package (If not installed already. Note: some distros named openjdk-17 different, use your distro's package searcher.)
+* The OpenJDK package
+Optional: The aapt and apksigner packages (the Linux version uses it's own binaries if these packages aren't installed)
 
 All:
-* A copy of the NetherSX2 APK (see below on how to build it yourself)
+* A copy of the NetherSX2 APK (see below on how to build it)
 
-The rest comes prepackaged for your convience
+The rest comes prepackaged for your convenience
 
 ## Getting a copy of the NetherSX2 APK
 The best method is to use EZOnTheEyes' guide to build it yourself:
 
 [![NetherSX2 Installation and Usage Guide](http://img.youtube.com/vi/2y3uRlYq4SY/0.jpg)](http://www.youtube.com/watch?v=2y3uRlYq4SY)
 
-Alternatively, NetherSX2-builder and xdelta patch in the Downloads section below can be used to create a copy of NetherSX2 with these changes pre-applied 
+Alternatively, NetherSX2-builder and xdelta patch in the Downloads section can be used to create a copy of NetherSX2 with these changes pre-applied 
 
 ## Using these scripts
 Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop it in the same folder as remove-adservices.bat and update-files.bat
@@ -54,7 +53,7 @@ And there you go, you should now have an updated and bug fixed copy of NetherSX2
 
 ## Downloads
 * [NetherSX2-builder.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.4/NetherSX2-builder.zip) - Alternate way to build the NetherSX2 APK for yourself with these fixes already pre-applied. It can be used with these scripts to update it's contents
-* [NetherSX2-patch.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.4/NetherSX2-patch.zip) - Copy of these scripts. They're meant to be used with a copy of NetherSX2's APK. See Above on how to generate it
+* [NetherSX2-patch.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.4/NetherSX2-patch.zip) - Copy of these scripts. They're meant to be used with a NetherSX2's APK. See above on how to generate it
 * [nethersx2.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.4/nethersx2.xdelta) - The xdelta patch that can be applied to the AetherSX2 4248 apk with any patching program that supports the format and comes with all the changes pre-applied. This allows the creation of NetherSX2 on systems other than Windows, including Android when using the UniPatcher application
 
 
