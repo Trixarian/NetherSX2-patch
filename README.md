@@ -44,9 +44,10 @@ You can now use update-files.bat with the above APK to update the GameDB, Contro
 
 Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop it in the same folder and then run these commands:
 ```bash
-chmod +x remove-adservices.sh update-files.sh
+chmod +x patch-apk.sh update-files.sh
 # then run sh file
-./remove-adservices.sh
+./patch-apk.sh
+# If your apk was already patched and you want to update it, then run it.
 ./update-files.sh
 ```
 Credit: [TheKingFireS](https://github.com/TheKingFireS)
