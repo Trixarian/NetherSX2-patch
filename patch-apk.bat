@@ -7,19 +7,28 @@ echo \033[91m======================== | %col%
 echo \033[91m NetherSX2 Patcher v1.5  | %col%
 echo \033[91m======================== | %col%
 
+:: Check if the NetherSX2 APK exists and if it's named 
+if not exist 15210-v1.5-4248-noads.apk goto nofile
+
 :: Ad Services Cleanup
 <nul set /p "=\033[96mRemoving the \033[91mAd Services leftovers...         " | %col%
-lib\aapt r 15210-v1.5-4248-noads.apk user-messaging-platform.properties
-lib\aapt r 15210-v1.5-4248-noads.apk play-services-tasks.properties
-lib\aapt r 15210-v1.5-4248-noads.apk play-services-measurement-sdk-api.properties
-lib\aapt r 15210-v1.5-4248-noads.apk play-services-measurement-base.properties
-lib\aapt r 15210-v1.5-4248-noads.apk play-services-basement.properties
-lib\aapt r 15210-v1.5-4248-noads.apk play-services-base.properties
-lib\aapt r 15210-v1.5-4248-noads.apk play-services-appset.properties
-lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads.properties
-lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-lite.properties
-lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-identifier.properties
-lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-base.properties
+lib\aapt r 15210-v1.5-4248-noads.apk user-messaging-platform.properties > nul
+lib\aapt r 15210-v1.5-4248-noads.apk play-services-tasks.properties > nul
+lib\aapt r 15210-v1.5-4248-noads.apk play-services-measurement-sdk-api.properties > nul
+lib\aapt r 15210-v1.5-4248-noads.apk play-services-measurement-base.properties > nul
+lib\aapt r 15210-v1.5-4248-noads.apk play-services-basement.properties > nul
+lib\aapt r 15210-v1.5-4248-noads.apk play-services-base.properties > nul
+lib\aapt r 15210-v1.5-4248-noads.apk play-services-appset.properties > nul
+lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads.properties > nul
+lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-lite.properties > nul
+lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-identifier.properties > nul
+lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-base.properties > nul
+echo \033[92m[Done] | %col%
+
+:: Updates the FAQ to show that we're using the latest version of NetherSX2
+<nul set /p "=\033[96mUpdating the \033[91mFAQ...                           " | %col%
+lib\aapt r 15210-v1.5-4248-noads.apk assets/faq.html
+lib\aapt a 15210-v1.5-4248-noads.apk assets/faq.html > nul
 echo \033[92m[Done] | %col%
 
 :: Updates to Latest GameDB with features removed that are not supported by the libemucore.so from March 13th
@@ -54,6 +63,7 @@ echo \033[92m[Done] | %col%
 
 :: Adds the placeholder file that makes RetroAchievements Notifications work
 <nul set /p "=\033[96mFixing the \033[91mRetroAchievements Notifications... " | %col%
+lib\aapt r 15210-v1.5-4248-noads.apk assets/placeholder.png > nul
 lib\aapt a 15210-v1.5-4248-noads.apk assets/placeholder.png > nul
 echo \033[92m[Done] | %col%
 
@@ -63,4 +73,12 @@ java -jar lib\apksigner.jar sign --ks lib\android.jks --ks-pass pass:android 152
 :: Alternate Key:
 :: java -jar lib\apksigner.jar sign --ks lib\public.jks --ks-pass pass:public 15210-v1.5-4248-noads.apk
 echo \033[92m[Done] | %col%
+goto end
+
+:nofile
+echo \033[31mError: No APK found or wrong one provided! | %col%
+echo \033[31mPlease provide a copy of NetherSX2 named 15210-v1.5-4248-noads.apk! | %col%
+goto end
+
+:end
 pause

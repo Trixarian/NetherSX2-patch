@@ -34,8 +34,8 @@ The best method is to use EZOnTheEyes' guide to build it yourself:
 Alternatively, NetherSX2-builder and xdelta patch in the Downloads section can be used to create a copy of NetherSX2 with these changes pre-applied 
 
 ## Using these scripts
-Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop it in the same folder as patch-files.bat and update-files.bat
-1. Run patch-files.bat to patch your NetherSX2 APK to the latest version. This will reduce the APK size by about 400KB 
+Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop it in the same folder as patch-apk.bat and update-files.bat
+1. Run patch-apk.bat to patch your NetherSX2 APK to the latest version. This will reduce the APK size by about 400KB 
 2. Copy the now modified version of 15210-v1.5-4248-noads.apk back to your phone and install it using your File Manager
 
 You can now use update-files.bat with the above APK to update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches at a later date without needing to repatch it each time

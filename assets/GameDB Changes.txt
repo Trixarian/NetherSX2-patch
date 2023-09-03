@@ -6,6 +6,11 @@ eeCycleRate
 moveHandler
 nativePaletteDraw
 
+Functions changed after March 13th:
+===================================
+AutoFlush's function now has three options instead of two. 1 was reassigned to mean Sprites Only while 2 is the Default behaviour
+For AutoFlush compatibility, please replace autoFlush: 2 with autoFlush: 1
+
 Functions with name changes after March 13th:
 =============================================
 Before              ---> After

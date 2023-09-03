@@ -7,6 +7,9 @@ echo \033[91m======================== | %col%
 echo \033[91m NetherSX2 Updater v1.5  | %col%
 echo \033[91m======================== | %col%
 
+:: Check if the NetherSX2 APK exists and if it's named 
+if not exist 15210-v1.5-4248-noads.apk goto nofile
+
 :: Updates to Latest GameDB with features removed that are not supported by the libemucore.so from March 13th
 <nul set /p "=\033[96mUpdating the \033[91mGameDB...                 " | %col%
 lib\aapt r 15210-v1.5-4248-noads.apk assets/GameIndex.yaml
@@ -32,9 +35,17 @@ lib\aapt a 15210-v1.5-4248-noads.apk assets/cheats_ni.zip  > nul
 echo \033[92m[Done] | %col%
 
 :: Resigns the APK before exiting
-<nul set /p "=\033[96mResigning \033[91mNetherSX2 APK...             " | %col%
+<nul set /p "=\033[96mResigning the \033[91mNetherSX2 APK...         " | %col%
 java -jar lib\apksigner.jar sign --ks lib\android.jks --ks-pass pass:android 15210-v1.5-4248-noads.apk
 :: Alternate Key:
 :: java -jar lib\apksigner.jar sign --ks lib\public.jks --ks-pass pass:public 15210-v1.5-4248-noads.apk
 echo \033[92m[Done] | %col%
+goto end
+
+:nofile
+echo \033[31mError: No APK found or wrong one provided! | %col%
+echo \033[31mPlease provide a copy of NetherSX2 named 15210-v1.5-4248-noads.apk! | %col%
+goto end
+
+:end
 pause
