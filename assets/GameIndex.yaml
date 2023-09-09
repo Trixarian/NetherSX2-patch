@@ -163,8 +163,6 @@ PAPX-90216:
 PAPX-90218:
   name: "SkyGunner"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_SkyGunner"
 PAPX-90220:
   name: "Surveillance - Kanshisha"
   region: "NTSC-J"
@@ -561,8 +559,6 @@ PCPX-96320:
 PCPX-96321:
   name: "SkyGunner [Trial]"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_SkyGunner"
 PCPX-96322:
   name: "Ico [Trial]"
   region: "NTSC-J"
@@ -860,12 +856,9 @@ SCAJ-20010:
   gsHWFixes:
     textureInsideRT: 1 # Fixes inside RT shuffling.
     getSkipCount: "GSC_BigMuthaTruckers"
-    beforeDraw: "OI_BigMuthaTruckers"
 SCAJ-20011:
   name: "Armored Core 3 - Silent Line"
   region: "NTSC-HK"
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
@@ -1784,7 +1777,6 @@ SCAJ-20179:
     halfPixelOffset: 1 # Fixes lighting misalignment and reduces ground shadows (probably texture cache issue).
     roundSprite: 2 # Fixes font artifacts.
     textureInsideRT: 1 # Fixes bad crystal surfaces.
-    getSkipCount: "GSC_XenosagaE3"
 SCAJ-20180:
   name: "Xenosaga Episode III - Also Sprach Zarathustra [Disc 2 of 2]"
   region: "NTSC-Unk"
@@ -1793,7 +1785,6 @@ SCAJ-20180:
     halfPixelOffset: 1 # Fixes lighting misalignment and reduces ground shadows (probably texture cache issue).
     roundSprite: 2 # Fixes font artifacts.
     textureInsideRT: 1 # Fixes bad crystal surfaces.
-    getSkipCount: "GSC_XenosagaE3"
 SCAJ-20181:
   name: "Minna no Tennis"
   region: "NTSC-Unk"
@@ -2820,9 +2811,7 @@ SCED-52049:
   clampModes:
     vuClampMode: 3 # Fixes minor SPS on characters.
   gsHWFixes:
-    preloadFrameData: 1 # Fixes bad textures on Jake.
     halfPixelOffset: 2 # Fixes double image.
-    cpuCLUTRender: 1 # Fixes Jake going black in Smellovision.
 SCED-52051:
   name: "Official PlayStation 2 Magazine Demo 43"
   region: "PAL-M5"
@@ -4392,9 +4381,7 @@ SCES-51248:
     vuClampMode: 3 # Fixes minor SPS on characters.
   gsHWFixes:
     roundSprite: 1 # Fix lines in the sky.
-    preloadFrameData: 1 # Fixes bad textures on Jake.
     halfPixelOffset: 2 # Fixes double image.
-    cpuCLUTRender: 1 # Fixes Jake going black in Smellovision.
 SCES-51407:
   name: "Exclusive PlayStation 2 Summer Sample Disc"
   region: "PAL-A"
@@ -6582,13 +6569,11 @@ SCKA-20086:
   region: "NTSC-K"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
 SCKA-20087:
   name: "Shin Onimusha - Dawn of Dreams [Disc 2 of 2]"
   region: "NTSC-K"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
   memcardFilters:
     - "SCKA-20086"
 SCKA-20089:
@@ -6605,7 +6590,6 @@ SCKA-20090:
   gsHWFixes:
     mergeSprite: 1 # Reduces bloom but fixes blurriness around models + Recommended to use Shadeboost brightness 80.
     halfPixelOffset: 2 # Depth of field effect aligned properly if CRC hack is off + Shifts buildings correctly.
-    getSkipCount: "GSC_GodHand"
 SCKA-20091:
   name: "MLB 07 - The Show"
   region: "NTSC-K"
@@ -6634,7 +6618,6 @@ SCKA-20095:
   region: "NTSC-K"
   gsHWFixes:
     roundSprite: 2 # Reduces misalignment issues but the game is just bad for upscaling.
-    getSkipCount: "GSC_Okami"
 SCKA-20096:
   name: "Barnyard"
   region: "NTSC-K"
@@ -8296,8 +8279,6 @@ SCPS-55013:
 SCPS-55014:
   name: "Armored Core 3"
   region: "NTSC-J"
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
@@ -8592,9 +8573,11 @@ SCPS-56016:
   gameFixes:
     - GIFFIFOHack
   gsHWFixes:
-    mipmap: 1
-    autoFlush: 1
-    estimateTextureRegion: 1 # Improves performance.
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size.
+    gpuPaletteConversion: 2 # Improves performance and reduces hash cache size.
+    autoFlush: 1 # Corrects shadows (Currently still broken even with this).
+    mipmap: 2 # Mipmap + trilinear, matches sw renderer.
+    trilinearFiltering: 1
 SCPS-72001:
   name: "Gran Turismo 3 - A-Spec"
   region: "NTSC-J"
@@ -11528,12 +11511,16 @@ SLED-53980:
     autoFlush: 1 # Fixes misaligned lights at native resolution.
 SLED-53983:
   name: "Fight Night Round 3 [Demo]"
-  region: "PAL"
+  region: "PAL-E"
   gameFixes:
     - GIFFIFOHack # Fixes flag corruption.
 SLED-54022:
-  name: "Lara Croft Tomb Raider - Legend"
-  region: "PAL-Unk"
+  name: "Lara Croft Tomb Raider - Legend [Demo]"
+  region: "PAL-E"
+  gsHWFixes:
+    mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
+    textureInsideRT: 1 # Needed for post processing effects.
+    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
 SLED-54032:
   name: "Sonic Riders [Demo]"
   region: "PAL-E"
@@ -14907,7 +14894,6 @@ SLES-51355:
   gsHWFixes:
     textureInsideRT: 1 # Fixes inside RT shuffling.
     getSkipCount: "GSC_BigMuthaTruckers"
-    beforeDraw: "OI_BigMuthaTruckers"
 SLES-51356:
   name: "Road Trip Adventure"
   region: "PAL-M3"
@@ -15026,8 +15012,6 @@ SLES-51398:
 SLES-51399:
   name: "Armored Core 3"
   region: "PAL-E"
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
@@ -16648,8 +16632,6 @@ SLES-52203:
   name: "Armored Core 3 - Silent Line"
   region: "PAL-E"
   compat: 5
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
@@ -17257,8 +17239,6 @@ SLES-52478:
   name: "Red Dead Revolver"
   region: "PAL-M5"
   compat: 4
-  gsHWFixes:
-    getSkipCount: "GSC_RedDeadRevolver"
 SLES-52479:
   name: "Samurai Jack - The Shadow of Aku"
   region: "PAL-M5"
@@ -17441,12 +17421,24 @@ SLES-52545:
   name: "Star Wars Battlefront"
   region: "PAL-M3"
   compat: 5
+  gsHWFixes:
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
+    recommendedBlendingLevel: 3 # Improves reflections on certain characters and objects on certain levels.
 SLES-52546:
   name: "Star Wars Battlefront"
   region: "PAL-F"
+  gsHWFixes:
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
+    recommendedBlendingLevel: 3 # Improves reflections on certain characters and objects on certain levels.
 SLES-52547:
   name: "Star Wars Battlefront"
   region: "PAL-G"
+  gsHWFixes:
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
+    recommendedBlendingLevel: 3 # Improves reflections on certain characters and objects on certain levels.
 SLES-52551:
   name: "Samurai Warriors"
   region: "PAL-E"
@@ -18910,6 +18902,8 @@ SLES-53045:
 SLES-53046:
   name: "Counter Terrorist Special Forces - Fire for Effect"
   region: "PAL-M5"
+  clampModes:
+    vu1ClampMode: 3 # Fixes smoke particles.
 SLES-53047:
   name: "Punisher, The"
   region: "PAL-E-F"
@@ -21300,10 +21294,11 @@ SLES-53904:
   clampModes:
     vuClampMode: 0 # Fixes black artifacts on tracks
   gsHWFixes:
-    partialTargetInvalidation: 1
-    mipmap: 1
-    autoFlush: 1
-    estimateTextureRegion: 1 # Improves performance.
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size.
+    gpuPaletteConversion: 2 # Improves performance and reduces hash cache size.
+    autoFlush: 1 # Corrects shadows (Currently still broken even with this).
+    mipmap: 2 # Mipmap + trilinear, matches sw renderer.
+    trilinearFiltering: 1
 SLES-53906:
   name: "50 Cent - Bulletproof"
   region: "PAL-F"
@@ -21968,8 +21963,6 @@ SLES-54171:
   compat: 5
   gameFixes:
     - EETimingHack # Fixes flickering.
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLES-54172:
   name: "Garfield 2 - Tale of Two Kitties"
   region: "PAL-M11"
@@ -22678,7 +22671,6 @@ SLES-54439:
   region: "PAL-M3"
   gsHWFixes:
     roundSprite: 2 # Reduces misalignment issues but the game is just bad for upscaling.
-    getSkipCount: "GSC_Okami"
 SLES-54440:
   name: "GT-R Touring"
   region: "PAL-E"
@@ -22866,7 +22858,6 @@ SLES-54490:
   gsHWFixes:
     mergeSprite: 1 # Reduces bloom but fixes blurriness around models + Recommended to use Shadeboost brightness 80.
     halfPixelOffset: 2 # Depth of field effect aligned properly + Shifts buildings correctly.
-    getSkipCount: "GSC_GodHand"
 SLES-54492:
   name: "Need for Speed - Carbon [Collector's Edition]"
   region: "PAL-E"
@@ -24921,8 +24912,6 @@ SLES-55242:
   memcardFilters: # Allows import of Yakuza 1 data.
     - "SLES-55242"
     - "SLES-54171"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLES-55243:
   name: "FIFA 09"
   region: "PAL-E"
@@ -26018,14 +26007,12 @@ SLES-82038:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
 SLES-82039:
   name: "Onimusha - Dawn of Dreams [Disc 2 of 2]"
   region: "PAL-M5"
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
   memcardFilters:
     - "SLES-82038"
   gsHWFixes:
@@ -26424,8 +26411,6 @@ SLKA-25039:
 SLKA-25041:
   name: "Armored Core 3 - Silent Line"
   region: "NTSC-K"
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
@@ -27312,16 +27297,12 @@ SLKA-25280:
   memcardFilters:
     - "SLKA-25280"
     - "SLKA-25342"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLKA-25281:
   name: "Ryu ga Gotoku 2 [Disc 2 of 2]"
   region: "NTSC-K"
   memcardFilters:
     - "SLKA-25280"
     - "SLKA-25342"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLKA-25282:
   name: "MX vs. ATV Unleashed"
   region: "NTSC-K"
@@ -27580,8 +27561,6 @@ SLKA-25341:
 SLKA-25342:
   name: "Ryu ga Gotoku"
   region: "NTSC-K"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLKA-25343:
   name: "Thrillville - Off the Rails"
   region: "NTSC-K"
@@ -29029,7 +29008,6 @@ SLPM-60149:
     roundSprite: 1 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
-    getSkipCount: "GSC_AceCombat4"
     gpuTargetCLUT: 1 # Fixes broken sun.
 SLPM-60150:
   name: "Tamamayu Monogatari 2 - Horobi no Mushi"
@@ -29131,8 +29109,11 @@ SLPM-60194:
   name: "Kotoba no Puzzle - Mojipittan"
   region: "NTSC-J"
 SLPM-60195:
-  name: "Kaidou Battle - Nikko, Haruna, Rokko, Hakone"
+  name: "Kaido Battle - Nikko, Haruna, Rokko, Hakone [Taikenban]"
   region: "NTSC-J"
+  gsHWFixes:
+    alignSprite: 1 # Fixes vertical lines.
+    wildArmsHack: 1 # De-blurs the 3D image.
 SLPM-60197:
   name: "Exciting Pro Wres 4"
   region: "NTSC-J"
@@ -29161,8 +29142,12 @@ SLPM-60205:
   name: "Initial D - Special Stage"
   region: "NTSC-J"
 SLPM-60206:
-  name: "Shutokou Battle 01"
+  name: "Shutokou Battle 01 [Taikenban]"
   region: "NTSC-J"
+  gsHWFixes:
+    alignSprite: 1 # Fixes vertical lines.
+    wildArmsHack: 1 # Improves visual clarity whilst upscaling.
+    roundSprite: 1 # Reduces graphics garbage on UI whilst upscaling.
 SLPM-60207:
   name: "Rockman X7"
   region: "NTSC-J"
@@ -29216,8 +29201,11 @@ SLPM-60226:
   name: "Shadow Hearts II"
   region: "NTSC-J"
 SLPM-60228:
-  name: "Kaidou Battle 2 - Chain Reaction"
+  name: "Kaido Battle 2 - Chain Reaction [Taikenban]"
   region: "NTSC-J"
+  gsHWFixes:
+    alignSprite: 1 # Fixes vertical lines.
+    wildArmsHack: 1 # De-blurs the 3D image.
 SLPM-60237:
   name: "Densha de Go! Final"
   region: "NTSC-J"
@@ -29718,8 +29706,11 @@ SLPM-61114:
   name: "Shadow of Rome"
   region: "NTSC-J"
 SLPM-61115:
-  name: "Racing Battle - C1 Grand Prix"
+  name: "Racing Battle - C1 Grand Prix [Taikenban]"
   region: "NTSC-J"
+  gsHWFixes:
+    alignSprite: 1 # Fixes vertical lines.
+    wildArmsHack: 1 # De-blurs the 3D image.
 SLPM-61116:
   name: "Bouken-ou Beet - Darkness Century"
   region: "NTSC-J"
@@ -29754,8 +29745,11 @@ SLPM-61120:
     mergeSprite: 1 # Align sprite fixes FMVs but not garbage in-game, so needs merge sprite instead.
     texturePreloading: 1 # Performs better with partial preload because it is slow on locations outside gameplay foremost.
 SLPM-61121:
-  name: "Kaidou - Touge no Densetsu"
+  name: "Kaido - Touge no Densetsu [Taikenban]"
   region: "NTSC-J"
+  gsHWFixes:
+    alignSprite: 1 # Fixes vertical lines.
+    wildArmsHack: 1 # De-blurs the 3D image.
 SLPM-61122:
   name: "Dengeki PS2 PlayStation D81"
   region: "NTSC-J"
@@ -29872,6 +29866,10 @@ SLPM-61154:
 SLPM-61155:
   name: "Lara Croft Tomb Raider - Legend"
   region: "NTSC-J"
+  gsHWFixes:
+    mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
+    textureInsideRT: 1 # Needed for post processing effects.
+    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
 SLPM-61156:
   name: "Dengeki PS2 PlayStation D93"
   region: "NTSC-J"
@@ -33376,7 +33374,6 @@ SLPM-65234:
   gsHWFixes:
     textureInsideRT: 1 # Fixes inside RT shuffling.
     getSkipCount: "GSC_BigMuthaTruckers"
-    beforeDraw: "OI_BigMuthaTruckers"
 SLPM-65235:
   name: "New Roommania - Porori Seishun"
   region: "NTSC-J"
@@ -34972,6 +34969,10 @@ SLPM-65686:
 SLPM-65687:
   name: "Star Wars - Battlefront"
   region: "NTSC-J"
+  gsHWFixes:
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
+    recommendedBlendingLevel: 3 # Improves reflections on certain characters and objects on certain levels.
 SLPM-65688:
   name: "Berserk - Millennium Falcon-hen - Seima Senki no Shou"
   region: "NTSC-J"
@@ -35618,8 +35619,6 @@ SLPM-65853:
 SLPM-65854:
   name: "Red Dead Revolver"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_RedDeadRevolver"
 SLPM-65855:
   name: "Girls Bravo - Romance 15's [Deluxe Pack]"
   region: "NTSC-J"
@@ -36137,9 +36136,7 @@ SLPM-65995:
   clampModes:
     vuClampMode: 3 # Fixes minor SPS on characters.
   gsHWFixes:
-    preloadFrameData: 1 # Fixes bad textures on Jake.
     halfPixelOffset: 2 # Fixes double image.
-    cpuCLUTRender: 1 # Fixes Jake going black in Smellovision.
 SLPM-65996:
   name: "Hametsu no Mars [Limited Edition]"
   region: "NTSC-J"
@@ -36771,6 +36768,10 @@ SLPM-66147:
 SLPM-66148:
   name: "Star Wars - Battlefront [EA Best Hits]"
   region: "NTSC-J"
+  gsHWFixes:
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
+    recommendedBlendingLevel: 3 # Improves reflections on certain characters and objects on certain levels.
 SLPM-66149:
   name: "Shirogane no Torikago [Limited Edition]"
   region: "NTSC-J"
@@ -36852,8 +36853,6 @@ SLPM-66167:
 SLPM-66168:
   name: "Ryu Ga Gotoku"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLPM-66169:
   name: "J-League Winning Eleven 9 - Asia Championship"
   region: "NTSC-J"
@@ -36958,7 +36957,7 @@ SLPM-66189:
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting and makes snow not look like snow sludge.
 SLPM-66190:
-  name: "Star Wars Battlefront II"
+  name: "Star Wars - Battlefront II"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes bloom misalignment.
@@ -37326,14 +37325,12 @@ SLPM-66275:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
 SLPM-66276:
   name: "Shin Onimusha - Dawn of Dreams [Disc 2 of 2]"
   region: "NTSC-J"
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
   memcardFilters:
     - "SLPM-66275"
 SLPM-66277:
@@ -37742,12 +37739,11 @@ SLPM-66374:
   region: "NTSC-J"
   compat: 5
 SLPM-66375:
-  name: "Ookami"
+  name: "Okami"
   region: "NTSC-J"
   compat: 5
   gsHWFixes:
     roundSprite: 2 # Reduces misalignment issues but the game is just bad for upscaling.
-    getSkipCount: "GSC_Okami"
 SLPM-66376:
   name: "KimiStar - Kimi to Study [BGM Collection Package]"
   region: "NTSC-J"
@@ -37951,6 +37947,8 @@ SLPM-66427:
 SLPM-66429:
   name: "Special Forces - Fire for Effect"
   region: "NTSC-J"
+  clampModes:
+    vu1ClampMode: 3 # Fixes smoke particles.
 SLPM-66430:
   name: "Destroy All Humans!"
   region: "NTSC-J"
@@ -38451,7 +38449,6 @@ SLPM-66550:
   gsHWFixes:
     mergeSprite: 1 # Reduces bloom but fixes blurriness around models + Recommended to use Shadeboost brightness 80.
     halfPixelOffset: 2 # Depth of field effect aligned properly + Shifts buildings correctly.
-    getSkipCount: "GSC_GodHand"
 SLPM-66551:
   name: "Appleseed EX"
   region: "NTSC-J"
@@ -38685,8 +38682,6 @@ SLPM-66602:
     - "SLPM-66168"
     - "SLPM-74234"
     - "SLPM-74253"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLPM-66603:
   name: "Ryu ga Gotoku 2 [Disc 2 of 2]"
   region: "NTSC-J"
@@ -38696,8 +38691,6 @@ SLPM-66603:
     - "SLPM-66168"
     - "SLPM-74234"
     - "SLPM-74253"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLPM-66604:
   name: "Galaxy Angel - Moonlit Lovers [Banpresido the Best]"
   region: "NTSC-J"
@@ -40377,8 +40370,6 @@ SLPM-67523:
 SLPM-67524:
   name: "Armored Core 3"
   region: "NTSC-K"
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
@@ -40763,7 +40754,6 @@ SLPM-74232:
     - SoftwareRendererFMVHack # Wrong white textures in FMV.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
   memcardFilters:
     - "SLPM-66275"
 SLPM-74233:
@@ -40771,14 +40761,11 @@ SLPM-74233:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
   memcardFilters:
     - "SLPM-74232"
 SLPM-74234:
   name: "Ryu Ga Gotoku [PlayStation 2 The Best]"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLPM-74235:
   name: "Sengoku Musou [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -40796,7 +40783,6 @@ SLPM-74239:
   region: "NTSC-J"
   gsHWFixes:
     roundSprite: 2 # Reduces misalignment issues but the game is just bad for upscaling.
-    getSkipCount: "GSC_Okami"
 SLPM-74240:
   name: "Tengai Makyou III - Namida [Best Version]"
   region: "NTSC-J"
@@ -40806,7 +40792,6 @@ SLPM-74241:
   gsHWFixes:
     mergeSprite: 1 # Reduces bloom but fixes blurriness around models + Recommended to use Shadeboost brightness 80.
     halfPixelOffset: 2 # Depth of field effect aligned properly + Shifts buildings correctly.
-    getSkipCount: "GSC_GodHand"
 SLPM-74242:
   name: "Devil May Cry 3 [Special Edition] [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -40883,7 +40868,6 @@ SLPM-74251:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
   memcardFilters:
     - "SLPM-66275"
 SLPM-74252:
@@ -40891,14 +40875,11 @@ SLPM-74252:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
   memcardFilters:
     - "SLPM-74251"
 SLPM-74253:
   name: "Ryu ga Gotoku [PlayStation 2 the Best - Reprint]"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLPM-74254:
   name: "EX Jinsei Game II [PlayStation 2 the Best - Reprint]"
   region: "NTSC-J"
@@ -41020,8 +41001,6 @@ SLPM-74301:
     - "SLPM-66168"
     - "SLPM-74234"
     - "SLPM-74253"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLPM-74401:
   name: "Kessen"
   region: "NTSC-J"
@@ -42956,7 +42935,6 @@ SLPS-25052:
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     gpuTargetCLUT: 1 # Fixes broken sun.
-    getSkipCount: "GSC_AceCombat4"
 SLPS-25053:
   name: "Eikan wa Kimi ni - Koushien no Hasha"
   region: "NTSC-J"
@@ -43180,8 +43158,6 @@ SLPS-25112:
   name: "Armored Core 3"
   region: "NTSC-J"
   compat: 5
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
@@ -43419,8 +43395,6 @@ SLPS-25168:
 SLPS-25169:
   name: "Armored Core 3 - Silent Line"
   region: "NTSC-J"
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
@@ -45240,7 +45214,6 @@ SLPS-25640:
     halfPixelOffset: 1 # Fixes lighting misalignment and reduces ground shadows (probably texture cache issue).
     roundSprite: 2 # Fixes font artifacts.
     textureInsideRT: 1 # Fixes bad crystal surfaces.
-    getSkipCount: "GSC_XenosagaE3"
   memcardFilters: # Allows import of Xenosaga II save data.
     - "SLPS-25640"
     - "SLPS-25368"
@@ -45253,7 +45226,6 @@ SLPS-25641:
     halfPixelOffset: 1 # Fixes lighting misalignment and reduces ground shadows (probably texture cache issue).
     roundSprite: 2 # Fixes font artifacts.
     textureInsideRT: 1 # Fixes bad crystal surfaces.
-    getSkipCount: "GSC_XenosagaE3"
   memcardFilters:
     - "SLPS-25640"
     - "SLPS-25368"
@@ -46404,6 +46376,10 @@ SLPS-25944:
 SLPS-25945:
   name: "Lara Croft Tomb Raider - Legend"
   region: "NTSC-J"
+  gsHWFixes:
+    mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
+    textureInsideRT: 1 # Needed for post processing effects.
+    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
 SLPS-25947:
   name: "Summon Night Gran-These - Horobi no Ken to Yakusoku no Kishi"
   region: "NTSC-J"
@@ -46698,7 +46674,6 @@ SLPS-73205:
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     gpuTargetCLUT: 1 # Fixes broken sun.
-    getSkipCount: "GSC_AceCombat4"
 SLPS-73206:
   name: "Super Robot Taisen Alpha 2nd [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -47146,7 +47121,6 @@ SLPS-73410:
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     gpuTargetCLUT: 1 # Fixes broken sun.
-    getSkipCount: "GSC_AceCombat4"
 SLPS-73411:
   name: "Armored Core 2 - Another Age [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -47178,8 +47152,6 @@ SLPS-73416:
 SLPS-73417:
   name: "Armored Core 3 [PlayStation 2 The Best]"
   region: "NTSC-J"
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
@@ -47197,8 +47169,6 @@ SLPS-73419:
 SLPS-73420:
   name: "Armored Core 3 - Silent Line [PlayStation 2 The Best]"
   region: "NTSC-J"
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
@@ -47838,7 +47808,6 @@ SLUS-20152:
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     gpuTargetCLUT: 1 # Fixes broken sun.
-    getSkipCount: "GSC_AceCombat4"
   patches:
     A32F7CD0:
       content: |-
@@ -48455,7 +48424,6 @@ SLUS-20291:
   gsHWFixes:
     textureInsideRT: 1 # Fixes inside RT shuffling.
     getSkipCount: "GSC_BigMuthaTruckers"
-    beforeDraw: "OI_BigMuthaTruckers"
 SLUS-20292:
   name: "Tsugunai - Atonement"
   region: "NTSC-U"
@@ -48900,8 +48868,6 @@ SLUS-20384:
   name: "SkyGunner"
   region: "NTSC-U"
   compat: 5
-  gsHWFixes:
-    getSkipCount: "GSC_SkyGunner"
 SLUS-20385:
   name: "WWE Crush Hour"
   region: "NTSC-U"
@@ -49171,8 +49137,6 @@ SLUS-20434:
 SLUS-20435:
   name: "Armored Core 3"
   region: "NTSC-U"
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
@@ -49499,8 +49463,6 @@ SLUS-20500:
   name: "Red Dead Revolver"
   region: "NTSC-U"
   compat: 5
-  gsHWFixes:
-    getSkipCount: "GSC_RedDeadRevolver"
 SLUS-20502:
   name: "Colin McRae Rally 3"
   region: "NTSC-U"
@@ -50062,7 +50024,6 @@ SLUS-20605:
   gsHWFixes:
     textureInsideRT: 1 # Fixes inside RT shuffling.
     getSkipCount: "GSC_BigMuthaTruckers"
-    beforeDraw: "OI_BigMuthaTruckers"
 SLUS-20606:
   name: "Bounty Hunter - Seek & Destroy"
   region: "NTSC-U"
@@ -50242,8 +50203,6 @@ SLUS-20644:
   name: "Armored Core 3 - Silent Line"
   region: "NTSC-U"
   compat: 5
-  roundModes:
-    eeRoundMode: 0 # Fixes Z-Fighting.
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
@@ -51530,9 +51489,13 @@ SLUS-20897:
   name: "Swords of Yi"
   region: "NTSC-U"
 SLUS-20898:
-  name: "Star Wars Battlefront"
+  name: "Star Wars - Battlefront"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
+    recommendedBlendingLevel: 3 # Improves reflections on certain characters and objects on certain levels.
 SLUS-20899:
   name: "Samurai Jack - The Shadow of Aku"
   region: "NTSC-U"
@@ -52249,9 +52212,7 @@ SLUS-21018:
   clampModes:
     vuClampMode: 3 # Fixes minor SPS on characters.
   gsHWFixes:
-    preloadFrameData: 1 # Fixes bad textures on Jake.
     halfPixelOffset: 2 # Fixes double image.
-    cpuCLUTRender: 1 # Fixes Jake going black in Smellovision.
 SLUS-21019:
   name: "Technic Beat"
   region: "NTSC-U"
@@ -52643,10 +52604,11 @@ SLUS-21095:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
-    mipmap: 1
-    autoFlush: 1
-    partialTargetInvalidation: 1
-    estimateTextureRegion: 1 # Improves performance.
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size.
+    gpuPaletteConversion: 2 # Improves performance and reduces hash cache size.
+    autoFlush: 1 # Corrects shadows (Currently still broken even with this).
+    mipmap: 2 # Mipmap + trilinear, matches sw renderer.
+    trilinearFiltering: 1
 SLUS-21096:
   name: "Ape Escape - Pumped & Primed"
   region: "NTSC-U"
@@ -52764,7 +52726,6 @@ SLUS-21115:
   compat: 5
   gsHWFixes:
     roundSprite: 2 # Reduces misalignment issues but the game is just bad for upscaling.
-    getSkipCount: "GSC_Okami"
 SLUS-21116:
   name: "187 - Ride or Die"
   region: "NTSC-U"
@@ -53079,7 +53040,6 @@ SLUS-21180:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
 SLUS-21181:
   name: "D.I.C.E. - DNA Integrated Cybernetic Enterprises"
   region: "NTSC-U"
@@ -53456,7 +53416,7 @@ SLUS-21239:
   region: "NTSC-U"
   compat: 5
 SLUS-21240:
-  name: "Star Wars Battlefront II"
+  name: "Star Wars - Battlefront II"
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
@@ -54162,8 +54122,6 @@ SLUS-21348:
   compat: 5
   gameFixes:
     - EETimingHack # Fixes flickering.
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLUS-21349:
   name: "Taito Legends 2"
   region: "NTSC-U"
@@ -54259,7 +54217,6 @@ SLUS-21362:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misalignment and upscaling lines.
-    getSkipCount: "GSC_ShinOnimusha"
   memcardFilters:
     - "SLUS-21180"
 SLUS-21363:
@@ -54439,7 +54396,6 @@ SLUS-21389:
     halfPixelOffset: 1 # Fixes lighting misalignment and reduces ground shadows.
     roundSprite: 2 # Fixes font artifacts.
     textureInsideRT: 1 # Fixes bad crystal surfaces.
-    getSkipCount: "GSC_XenosagaE3"
   memcardFilters: # Allows import of Xenosaga II save data.
     - "SLUS-21389"
     - "SLUS-20892"
@@ -54591,7 +54547,6 @@ SLUS-21417:
     halfPixelOffset: 1 # Fixes lighting misalignment and reduces ground shadows.
     roundSprite: 2 # Fixes font artifacts.
     textureInsideRT: 1 # Fixes bad crystal surfaces.
-    getSkipCount: "GSC_XenosagaE3"
   memcardFilters:
     - "SLUS-21389"
     - "SLUS-20892"
@@ -55113,7 +55068,6 @@ SLUS-21503:
   gsHWFixes:
     mergeSprite: 1 # Reduces bloom but fixes blurriness around models + Recommended to use Shadeboost brightness 80.
     halfPixelOffset: 2 # Depth of field effect aligned properly + Shifts buildings correctly.
-    getSkipCount: "GSC_GodHand"
 SLUS-21536:
   name: "Sims 2, The - Pets"
   region: "NTSC-U"
@@ -56300,8 +56254,6 @@ SLUS-21769:
   memcardFilters: # Allows import of Yakuza 1 data.
     - "SLUS-21769"
     - "SLUS-21348"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLUS-21770:
   name: "Madden NFL '09"
   region: "NTSC-U"
@@ -56428,6 +56380,12 @@ SLUS-21793:
   name: "DT Carnage"
   region: "NTSC-U"
   compat: 3
+  gsHWFixes:
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size.
+    gpuPaletteConversion: 2 # Improves performance and reduces hash cache size.
+    autoFlush: 1 # Corrects shadows (Currently still broken even with this).
+    mipmap: 2 # Mipmap + trilinear, matches sw renderer.
+    trilinearFiltering: 1
 SLUS-21794:
   name: "Go, Diego, Go! Great Dinosaur Rescue"
   region: "NTSC-U"
@@ -58031,8 +57989,6 @@ SLUS-29194:
 SLUS-29195:
   name: "Yakuza [Demo]"
   region: "NTSC-U"
-  gsHWFixes:
-    getSkipCount: "GSC_YakuzaGames"
 SLUS-29196:
   name: "Destroy All Humans! 2 [Demo]"
   region: "NTSC-U"

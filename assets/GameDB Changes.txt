@@ -28,3 +28,5 @@ Notes:
 * With Growlanser "textureInsideRT: 1" was replaced with "moveHandler". It's better to leave it in since a fix is better than no fix
 * Check if getSkipCount parameter existed before March 13th: https://github.com/PCSX2/pcsx2/blame/d08461bd4c10561e12e6278805ef960b65382230/pcsx2/GS/Renderers/HW/GSHwHack.h#L45
 * They started removing textureInsideRT from games (like Final Fantasy) due to fixes in the code. They're not present in NetherSX2's core, so it's best to leave them in or use the older settings to work around the issues it fixes
+* Removed a bunch of CRC hacks due to https://github.com/PCSX2/pcsx2/pull/8825 - keeping FFX hacks because FFXII crashes otherwise...
+* Probably safe to remove these too: https://github.com/PCSX2/pcsx2/pull/8422, https://github.com/PCSX2/pcsx2/pull/9750
