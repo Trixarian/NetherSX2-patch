@@ -1,7 +1,7 @@
 # NetherSX2-patch
 These are Unofficial companion scripts for NetherSX2 to expand on the amazing work already done by Anon and EZOnTheEyes
 
-![NetherSX2-Patch in Action](http://trixarian.net/nethersx2-in-action.jpg)
+![NetherSX2-Patch in Action](http://trixarian.net/nethersx2-in-action2.jpg)
 
 They aim to do the following:
 * Remove the unnecessary ad services bloat left in the apk
