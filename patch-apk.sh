@@ -2,7 +2,7 @@
 # alias to display terminal header
 display_header() {
 	printf "\e[1;91m========================\n"
-	printf " NetherSX2 Patcher v1.5\n"
+	printf " NetherSX2 Patcher v1.6\n"
 	printf "========================\e[0m\n"
 }
 

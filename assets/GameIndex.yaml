@@ -10498,6 +10498,8 @@ SCUS-97621:
   name: "Twisted Metal - Head-On [Extra Twisted Edition]"
   region: "NTSC-U"
   compat: 5
+  clampModes:
+    vu1ClampMode: 3 # Fixes missing textures.
   gameFixes:
     - VUSyncHack # Fixes black doors on vehicles.
   patches:
@@ -10506,6 +10508,8 @@ SCUS-97621:
         author=refraction
         // COP2 rearrangement. RSQRT directly followed by DIV and a few ops using Q causes issues
         // Fixes fire effects
+        patch=1,EE,00237eb0,word,4b000060
+        patch=1,EE,00237ec0,word,4a0203bd
         patch=1,EE,002461d8,word,4bf4b33c
         patch=1,EE,002461dc,word,4b806d9c
         patch=1,EE,002461e0,word,4bc069fc
@@ -13802,6 +13806,7 @@ SLES-50920:
   compat: 5
   gsHWFixes:
     preloadFrameData: 1 # Fixes invisible lava, there is another issue that needs skipdraw 1 for blurry font but it removes much brightness.
+    cpuSpriteRenderBW: 2 # Fixes sky and lava when upscaling.
     halfPixelOffset: 2 # Fixes font rendering.
     partialTargetInvalidation: 1 # Fixes broken textures.
   patches:
@@ -27767,6 +27772,11 @@ SLKA-25401:
 SLKA-25402:
   name: "Devil May Cry 3"
   region: "NTSC-K"
+  roundModes:
+    eeRoundMode: 0 # Fixes inability to enter door in Mission 18.
+  gsHWFixes:
+    halfPixelOffset: 2 # Reduces ghosting but still an issue compared to native.
+    roundSprite: 2 # Clears up much of the blurring that HPO Special does not.
 SLKA-25404:
   name: "NBA Live 08"
   region: "NTSC-K"
@@ -40937,6 +40947,12 @@ SLPM-74267:
 SLPM-74268:
   name: "Devil May Cry 3 - Special Edition"
   region: "NTSC-J"
+  compat: 5
+  roundModes:
+    eeRoundMode: 0 # Fixes inability to enter door in Mission 18.
+  gsHWFixes:
+    halfPixelOffset: 2 # Reduces ghosting but still an issue compared to native.
+    roundSprite: 2 # Clears up much of the blurring that HPO Special does not.
 SLPM-74269:
   name: "Ryuu ga Gotoku"
   region: "NTSC-J"
@@ -42952,6 +42968,7 @@ SLPS-25057:
   region: "NTSC-J"
   gsHWFixes:
     preloadFrameData: 1 # Fixes invisible lava, there is another issue that needs skipdraw 1 for blurry font but it removes much brightness.
+    cpuSpriteRenderBW: 2 # Fixes sky and lava when upscaling.
     halfPixelOffset: 2 # Fixes font rendering.
     partialTargetInvalidation: 1 # Fixes broken textures.
   patches:
@@ -48545,6 +48562,7 @@ SLUS-20318:
   compat: 5
   gsHWFixes:
     preloadFrameData: 1 # Fixes invisible lava, there is another issue that needs skipdraw 1 for blurry font but it removes much brightness.
+    cpuSpriteRenderBW: 2 # Fixes sky and lava when upscaling.
     halfPixelOffset: 2 # Fixes font rendering.
     partialTargetInvalidation: 1 # Fixes broken textures.
   patches:
@@ -48717,6 +48735,7 @@ SLUS-20353:
   region: "NTSC-U"
   gsHWFixes:
     preloadFrameData: 1 # Fixes invisible lava, there is another issue that needs skipdraw 1 for blurry font but it removes much brightness.
+    cpuSpriteRenderBW: 2 # Fixes sky and lava when upscaling.
     halfPixelOffset: 2 # Fixes font rendering.
     partialTargetInvalidation: 1 # Fixes broken textures.
 SLUS-20354:
@@ -51877,6 +51896,23 @@ SLUS-20964:
   gsHWFixes:
     halfPixelOffset: 2 # Reduces ghosting but still an issue compared to native.
     roundSprite: 2 # Clears up much of the blurring that HPO Special does not.
+  patches:
+    default:
+      content: |-
+        //Progressive scan, deinterlacing
+        patch=0,EE,201029C4,extended,3C050000
+        patch=0,EE,201029CC,extended,3C060050
+        patch=0,EE,201029D4,extended,3C070001
+        patch=0,EE,20102C84,extended,3C0700E0
+        patch=0,EE,0013CCFC,extended,30630000
+        patch=0,EE,20134B64,extended,0804D2FC
+        //Disable Bloom, Blur, Noise, Filters
+        patch=1,EE,001C4BD0,word,1000000B
+        patch=1,EE,001AA2B4,word,3C033BB0
+        patch=0,EE,200FFF98,extended,341B0003
+        patch=0,EE,200FFF9C,extended,145B0002
+        patch=0,EE,200FFFA4,extended,34020000
+        patch=0,EE,200FFFAC,extended,341B0001
 SLUS-20965:
   name: "Tony Hawk's Underground 2"
   region: "NTSC-U"
@@ -54211,6 +54247,23 @@ SLUS-21361:
   gsHWFixes:
     halfPixelOffset: 2 # Reduces ghosting but still an issue compared to native.
     roundSprite: 2 # Clears up much of the blurring that HPO Special does not.
+  patches:
+    default:
+      content: |-
+        //Progressive scan, deinterlacing
+        patch=0,EE,201029C4,extended,3C050000
+        patch=0,EE,201029CC,extended,3C060050
+        patch=0,EE,201029D4,extended,3C070001
+        patch=0,EE,20102C84,extended,3C0700E0
+        patch=0,EE,0013CCFC,extended,30630000
+        patch=0,EE,20134B64,extended,0804D2FC
+        //Disable Bloom, Blur, Noise, Filters
+        patch=1,EE,001C4BD0,word,1000000B
+        patch=1,EE,001AA2B4,word,3C033BB0
+        patch=0,EE,200FFF98,extended,341B0003
+        patch=0,EE,200FFF9C,extended,145B0002
+        patch=0,EE,200FFFA4,extended,34020000
+        patch=0,EE,200FFFAC,extended,341B0001
 SLUS-21362:
   name: "Onimusha - Dawn of Dreams [Disc 2 of 2]"
   region: "NTSC-U"

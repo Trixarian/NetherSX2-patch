@@ -4,7 +4,7 @@ set col=lib\cmdcolor.exe
 
 :: Display Banner
 echo \033[91m======================== | %col%
-echo \033[91m NetherSX2 Patcher v1.5  | %col%
+echo \033[91m NetherSX2 Patcher v1.6  | %col%
 echo \033[91m======================== | %col%
 
 :: Check if the NetherSX2 APK exists and if it's named 
