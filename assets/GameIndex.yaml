@@ -114,8 +114,6 @@ PAPX-90202:
 PAPX-90203:
   name: "Gran Turismo 2000 [Trial]"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_PolyphonyDigitalGames" # Fixes post processing.
 PAPX-90204:
   name: "TVDJ"
   region: "NTSC-J"
@@ -128,18 +126,12 @@ PAPX-90206:
 PAPX-90207:
   name: "Gran Turismo 3 - A-Spec - Autobacs Gentei Replay Theater"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_PolyphonyDigitalGames" # Fixes post processing.
 PAPX-90208:
   name: "Gran Turismo 3 - A-Spec - Replay Theater"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_PolyphonyDigitalGames" # Fixes post processing.
 PAPX-90209:
   name: "Gran Turismo 3 - A-Spec - Netz Toyota - Replay Theater Disc"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_PolyphonyDigitalGames" # Fixes post processing.
 PAPX-90210:
   name: "Yappa RPG desho."
   region: "NTSC-J"
@@ -231,8 +223,6 @@ PAPX-90503:
 PAPX-90504:
   name: "Gran Turismo Concept - Airtrek Turbo Special Edition [Demo]"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_PolyphonyDigitalGames" # Fixes post processing.
 PAPX-90505:
   name: "2002 Natsu no Osusume Soft Otameshi Disc"
   region: "NTSC-J"
@@ -264,7 +254,6 @@ PAPX-90512:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
     halfPixelOffset: 1 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
-    getSkipCount: "GSC_PolyphonyDigitalGames" # Fixes post processing.
 PAPX-90514:
   name: "Fuyu no Osusume Soft Otameshi Disc"
   region: "NTSC-J"
@@ -403,16 +392,12 @@ PBPX-95501:
 PBPX-95502:
   name: "Gran Turismo 3 - A-Spec"
   region: "NTSC-J"
-  gsHWFixes:
-    getSkipCount: "GSC_PolyphonyDigitalGames" # Fixes post processing.
 PBPX-95503:
   name: "Gran Turismo 3 - A-Spec [PS2 Bundle]"
   region: "NTSC-U"
   memcardFilters:
     - "PBPX-95503"
     - "SCUS-97102"
-  gsHWFixes:
-    getSkipCount: "GSC_PolyphonyDigitalGames" # Fixes post processing.
 PBPX-95506:
   name: "PlayStation 2 - Demo Disc 2001"
   region: "PAL-M5"
@@ -1988,7 +1973,6 @@ SCAJ-30007:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
     halfPixelOffset: 1 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
-
 SCAJ-30008:
   name: "Gran Turismo 4 [PlayStation 2 The Best]"
   region: "NTSC-Unk"
@@ -2096,6 +2080,8 @@ SCCS-40022:
 SCCS-60001:
   name: "Sakura Taisen - Atsuki Chishio Ni"
   region: "NTSC-C"
+  gsHWFixes:
+    getSkipCount: "GSC_SakuraTaisen"
 SCCS-60002:
   name: "Gran Turismo 4 [Review Copy]"
   region: "NTSC-C"
@@ -3452,6 +3438,7 @@ SCED-53538:
     eeClampMode: 2 # Fixes camera and stops constant coin noises on Pirates Cove.
   gsHWFixes:
     alignSprite: 1
+    getSkipCount: "GSC_Tekken5"
 SCED-53611:
   name: "Official PlayStation 2 Magazine - German Kids Special"
   region: "PAL-G"
@@ -17423,7 +17410,7 @@ SLES-52544:
   name: "Trivial Pursuit Unhinged"
   region: "PAL-M3"
 SLES-52545:
-  name: "Star Wars Battlefront"
+  name: "Star Wars - Battlefront"
   region: "PAL-M3"
   compat: 5
   gsHWFixes:
@@ -17431,14 +17418,14 @@ SLES-52545:
     trilinearFiltering: 1
     recommendedBlendingLevel: 3 # Improves reflections on certain characters and objects on certain levels.
 SLES-52546:
-  name: "Star Wars Battlefront"
+  name: "Star Wars - Battlefront"
   region: "PAL-F"
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
     recommendedBlendingLevel: 3 # Improves reflections on certain characters and objects on certain levels.
 SLES-52547:
-  name: "Star Wars Battlefront"
+  name: "Star Wars - Battlefront"
   region: "PAL-G"
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
@@ -17733,69 +17720,113 @@ SLES-52646:
 SLES-52647:
   name: "Club Football 2005 - Manchester United"
   region: "PAL-M6"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52648:
   name: "Club Football 2005 - Borussia Dortmund"
   region: "PAL-G"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52649:
   name: "Club Football 2005 - Olympique de Marseille"
   region: "PAL-E-F"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52650:
   name: "Club Football 2005 - Juventus"
   region: "PAL-M3"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52651:
   name: "Club Football 2005 - FC Barcelona"
   region: "PAL-M4"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52652:
   name: "Club Football 2005 - Liverpool FC"
   region: "PAL-E"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52653:
   name: "Club Football 2005 - Liverpool FC"
   region: "PAL-M3"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52654:
   name: "Club Football 2005 - Real Madrid"
   region: "PAL-M5"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52655:
   name: "Club Football 2005 - FC Bayern München"
   region: "PAL-M3"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52656:
   name: "Club Football 2005 - AC Milan"
   region: "PAL-M3"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52657:
   name: "Club Football 2005 - Arsenal"
   region: "PAL-E-F"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52658:
   name: "Club Football 2005 - Hamburger SV"
   region: "PAL-G"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52659:
   name: "Club Football 2005 - Paris Saint-Germain"
   region: "PAL-E-F"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52660:
   name: "Club Football 2005 - FC Internazionale"
   region: "PAL-M3"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52661:
   name: "Club Football 2005 - Ajax Amsterdam"
   region: "PAL-M4"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52662:
   name: "Club Football 2005 - Newcastle United"
   region: "PAL-E"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52663:
   name: "Club Football 2005 - Chelsea FC"
   region: "PAL-E"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52664:
   name: "Club Football 2005 - Rangers FC"
   region: "PAL-E"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52665:
   name: "Club Football 2005 - Celtic FC"
   region: "PAL-E"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52666:
   name: "Club Football 2005 - Tottenham Hotspur"
   region: "PAL-E"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52667:
   name: "Club Football 2005 - Birmingham City"
   region: "PAL-E"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52668:
   name: "Club Football 2005 - Aston Villa"
   region: "PAL-E"
+  gsHWFixes:
+    roundSprite: 2 # Fixes upscaling lines.
 SLES-52669:
   name: "Forgotten Realms - Demon Stone"
   region: "PAL-M5"
@@ -21316,6 +21347,7 @@ SLES-53908:
   gsHWFixes:
     mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
     textureInsideRT: 1 # Needed for post processing effects.
+    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
 SLES-53909:
   name: "Full Spectrum Warrior - Ten Hammers"
   region: "PAL-G"
@@ -35784,7 +35816,7 @@ SLPM-65897:
   name: "Racing Battle - C1 Grand Prix"
   region: "NTSC-J"
   gsHWFixes:
-    alignSprite: 1 # Fixes black lines when upscaling.
+    alignSprite: 1 # Fixes vertical lines.
     wildArmsHack: 1 # De-blurs the 3D image.
 SLPM-65898:
   name: "Castle Fantasia [Deluxe Pack]"
@@ -36259,7 +36291,7 @@ SLPM-66022:
   name: "Kaido Touge no Densetsu"
   region: "NTSC-J"
   gsHWFixes:
-    alignSprite: 1 # Fixes black lines when upscaling.
+    alignSprite: 1 # Fixes vertical lines.
     wildArmsHack: 1 # De-blurs the 3D image.
 SLPM-66023:
   name: "Fushigi Yuugi - ShigiYuugi Kurotake Kaiden Gaiden - Kagami no Fujo [Limited Edition]"
@@ -38488,6 +38520,7 @@ SLPM-66558:
   gsHWFixes:
     mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
     textureInsideRT: 1 # Needed for post processing effects.
+    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
     getSkipCount: "GSC_TombRaiderLegend"
 SLPM-66559:
   name: "Winning Post 6 [KOEI Selection]"
@@ -54478,7 +54511,8 @@ SLUS-21394:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
-    alignSprite: 1 # Fixes black lines when upscaling.
+    alignSprite: 1 # Fixes vertical lines.
+    wildArmsHack: 1 # De-blurs the 3D image.
 SLUS-21395:
   name: "Avatar - The Last Airbender"
   region: "NTSC-U"
@@ -57903,7 +57937,7 @@ SLUS-29163:
   name: "NCAA March Madness '06 [Demo]"
   region: "NTSC-U"
 SLUS-29164:
-  name: "Star Wars Battlefront II [Online Public Beta]"
+  name: "Star Wars - Battlefront II [Online Public Beta]"
   region: "NTSC-U"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes bloom misalignment.
