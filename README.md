@@ -69,6 +69,7 @@ NOTE: No APKs are provided due to licensing issues. You have to build it yoursel
 * AetherSX2: <https://www.aethersx2.com/archive/> 
 * EZOnTheEyes: <https://www.youtube.com/@EZOnTheEyes>
 * cmdcolor: <https://github.com/alecmev/cmdcolor>
+* md5sums: http://www.pc-tools.net/win32/md5sums
 * Android Keystore: <https://github.com/jorfao/pkStore>
 * Alternate Keystore: <https://github.com/tytydraco/public-keystore>
 * Android build-tools: <https://androidsdkmanager.azurewebsites.net/Buildtools>
