@@ -26059,7 +26059,6 @@ SLES-82042:
   region: "PAL-E-F"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26068,7 +26067,6 @@ SLES-82043:
   region: "PAL-E-F"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26079,7 +26077,6 @@ SLES-82044:
   region: "PAL-I"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26088,7 +26085,6 @@ SLES-82045:
   region: "PAL-I"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26099,7 +26095,6 @@ SLES-82046:
   region: "PAL-G"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26108,7 +26103,6 @@ SLES-82047:
   region: "PAL-G"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26119,7 +26113,6 @@ SLES-82048:
   region: "PAL-S"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26128,7 +26121,6 @@ SLES-82049:
   region: "PAL-S"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26139,7 +26131,6 @@ SLES-82050:
   region: "PAL-E-F"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26150,7 +26141,6 @@ SLES-82051:
   region: "PAL-I"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26161,7 +26151,6 @@ SLES-82052:
   region: "PAL-G"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -26172,7 +26161,6 @@ SLES-82053:
   region: "PAL-S"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -27632,7 +27620,6 @@ SLKA-25353:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -27642,7 +27629,6 @@ SLKA-25354:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -27654,7 +27640,6 @@ SLKA-25355:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -36668,7 +36653,6 @@ SLPM-66117:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -36677,7 +36661,6 @@ SLPM-66118:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -36686,7 +36669,6 @@ SLPM-66119:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -37117,7 +37099,6 @@ SLPM-66220:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -37128,7 +37109,6 @@ SLPM-66221:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -37139,7 +37119,6 @@ SLPM-66222:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -37150,7 +37129,6 @@ SLPM-66223:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -37161,7 +37139,6 @@ SLPM-66224:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -53519,7 +53496,6 @@ SLUS-21243:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -54256,7 +54232,6 @@ SLUS-21359:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
@@ -54265,7 +54240,6 @@ SLUS-21360:
   region: "NTSC-U"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     autoFlush: 1 # Fixes lens flare.
     halfPixelOffset: 2 # Fixes blurriness.
