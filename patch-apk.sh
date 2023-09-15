@@ -21,7 +21,7 @@ printf " NetherSX2 Patcher v1.6\n"
 printf "========================\e[0m\n"
 
 # Check if the NetherSX2 APK exists and if it's named
-if [ ! -f "15210-v1.5-4248-noads.apk" ]; then
+if [ ! -f "15210-v1.5-4248-noads.apk" ] || [ "$(md5sum "15210-v1.5-4248-noads.apk" | awk '{print $1}')" = "c98b0e4152d3b02fbfb9f62581abada5" ]; then
 	printf "\e[0;31mError: No APK found or wrong one provided!\n"
 	printf "Please provide a copy of NetherSX2 named 15210-v1.5-4248-noads.apk!\e[0m\n"
 	exit 1
