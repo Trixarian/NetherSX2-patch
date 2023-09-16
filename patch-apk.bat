@@ -12,9 +12,7 @@ echo \033[91m======================== | %col%
 if not exist 15210-v1.5-4248-noads.apk goto nofile
 :: Check if the NetherSX2 APK isn't just a renamed AetherSX2 4248 APK
 for /f %%f in ('""lib\md5sum.exe" "15210-v1.5-4248-noads.apk""') do (
-  if %%f equ %md5hash% (
-    goto nopatch
-  )
+  if %%f equ %md5hash% goto nofile
 )
 
 :: Ad Services Cleanup
@@ -84,11 +82,6 @@ goto end
 
 :nofile
 echo \033[31mError: No APK found or wrong one provided! | %col%
-echo \033[31mPlease provide a copy of NetherSX2 named 15210-v1.5-4248-noads.apk! | %col%
-goto end
-
-:nopatch
-echo \033[31mError: Cannot patch copies of AetherSX2 4248 without breaking them! | %col%
 echo \033[31mPlease provide a copy of NetherSX2 named 15210-v1.5-4248-noads.apk! | %col%
 goto end
 
