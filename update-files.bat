@@ -8,7 +8,7 @@ echo \033[91m======================== | %col%
 echo \033[91m NetherSX2 Updater v1.6  | %col%
 echo \033[91m======================== | %col%
 
-:: Check if the NetherSX2 APK exists and if it's named 
+:: Check if the NetherSX2 APK exists and if it's named correctly
 if not exist 15210-v1.5-4248-noads.apk goto nofile
 :: Check if the NetherSX2 APK isn't just a renamed AetherSX2 4248 APK
 for /f %%f in ('""lib\md5sum.exe" "15210-v1.5-4248-noads.apk""') do (
