@@ -1,6 +1,6 @@
 @echo off
 :: ********************************* CONFIG **********************************
-set patch_name=NetherSX2 Builder v1.7
+set patch_name=NetherSX2 Builder v1.6
 set patch_author=
 set md5hash=c98b0e4152d3b02fbfb9f62581abada5
 set xdelta_name=nethersx2.xdelta
