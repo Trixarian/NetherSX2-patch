@@ -20,6 +20,7 @@ Windows:
 * [The Java(TM) SE Development Kit](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)
 
 Linux:
+* The xdelta3 package
 * The OpenJDK package (this name my vary depending on your Linux Distro)
 * Optional: The aapt and apksigner packages (the Linux version uses it's own binaries if these packages aren't installed)
 
