@@ -162,16 +162,18 @@ PAPX-90222:
   name: "Jak x Daxter - Kyuu Sekai no Isan [Demo, Taikenban]"
   region: "NTSC-J"
   gsHWFixes:
+    roundSprite: 1 # Fix lines in the sky.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    textureInsideRT: 1
 PAPX-90223:
   name: "Jak x Daxter - Kyuu Sekai no Isan [Demo, Taikenban]"
   region: "NTSC-J"
   gsHWFixes:
+    roundSprite: 1 # Fix lines in the sky.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    textureInsideRT: 1
 PAPX-90224:
   name: "Sidewinder F"
   region: "NTSC-J"
@@ -264,9 +266,10 @@ PAPX-90516:
   name: "Jak and Daxter II [Trial]"
   region: "NTSC-J"
   gsHWFixes:
+    roundSprite: 1 # Fix lines in the sky.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 PAPX-90517:
   name: "Prince of Persia - Jikan no Suna [Trial]"
@@ -1115,9 +1118,10 @@ SCAJ-20073:
   name: "Jak and Daxter II"
   region: "NTSC-Unk"
   gsHWFixes:
+    roundSprite: 1 # Fix lines in the sky.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCAJ-20074:
   name: "King of Fighters 2002, The"
@@ -2738,7 +2742,6 @@ SCED-51700:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCED-51728:
   name: "EverQuest - Online Adventures [Demo]"
@@ -3199,7 +3202,6 @@ SCED-52952:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCED-52969:
   name: "EyeToy - Play 2"
@@ -3953,7 +3955,6 @@ SCES-50361:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCES-50408:
   name: "PaRappa the Rapper 2"
   region: "PAL-M5"
@@ -4121,7 +4122,6 @@ SCES-50614:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCES-50759:
   name: "Virtua Fighter 4"
   region: "PAL-M5"
@@ -4452,7 +4452,6 @@ SCES-51608:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCES-51610:
   name: "This is Football 2004 [Red Devils 2004]"
@@ -4780,7 +4779,6 @@ SCES-52460:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCES-52529:
   name: "Sly 2 - Band of Thieves"
@@ -4992,7 +4990,6 @@ SCES-53286:
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     textureInsideRT: 1 # Fixes broken character models.
   memcardFilters: # Reads Ratchet Gladiator data.
     - "SCES-53286"
@@ -6077,7 +6074,6 @@ SCKA-20010:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCKA-20011:
   name: "Ratchet & Clank 2"
@@ -6264,7 +6260,6 @@ SCKA-20040:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCKA-20041:
   name: "EyeToy - Play 2"
@@ -7121,7 +7116,6 @@ SCPS-15021:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCPS-15022:
   name: "Dual Hearts"
   region: "NTSC-J"
@@ -7298,7 +7292,6 @@ SCPS-15057:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCPS-15058:
   name: "Arc the Lad - Generation"
@@ -7822,7 +7815,6 @@ SCPS-19210:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCPS-19211:
   name: "Ratchet & Clank [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -8231,7 +8223,6 @@ SCPS-55004:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCPS-55005:
   name: "Gran Turismo - Concept 2001 Tokyo"
   region: "NTSC-J"
@@ -8496,7 +8487,6 @@ SCPS-56003:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCPS-56004:
   name: "Otostaz"
   region: "NTSC-K"
@@ -8598,6 +8588,7 @@ SCUS-21494:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SCUS-90174:
   name: "Disney-Pixar Toy Story 3 [PlayStation 2 Bundle]"
   region: "NTSC-U"
@@ -8700,6 +8691,7 @@ SCUS-97117:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality.
     halfPixelOffset: 2 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SCUS-97118:
   name: "NFL GameDay 2001 [Demo]"
   region: "NTSC-U"
@@ -8720,7 +8712,6 @@ SCUS-97124:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCUS-97125:
   name: "Frequency"
   region: "NTSC-U"
@@ -8910,14 +8901,12 @@ SCUS-97170:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCUS-97171:
   name: "Jak and Daxter - The Precursor Legacy [PS Underground Demo]"
   region: "NTSC-U"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCUS-97172:
   name: "World Tour Soccer 2002"
   region: "NTSC-U"
@@ -9267,7 +9256,6 @@ SCUS-97265:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCUS-97266:
   name: "Final Fantasy XI [Disc 1 of 2]"
@@ -9305,7 +9293,6 @@ SCUS-97273:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCUS-97274:
   name: "Jak II [Video Demo]"
@@ -9432,7 +9419,6 @@ SCUS-97330:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCUS-97331:
   name: "Official U.S. PlayStation Magazine Demo Disc 078"
@@ -9560,7 +9546,6 @@ SCUS-97374:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCUS-97377:
   name: "Syphon Filter - The Omega Strain [Regular Demo]"
   region: "NTSC-U"
@@ -9693,7 +9678,6 @@ SCUS-97412:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCUS-97413:
   name: "Ratchet & Clank - Up Your Arsenal [Public Beta v1.0]"
@@ -9821,7 +9805,6 @@ SCUS-97440:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCUS-97441:
   name: "Getaway The - Black Monday [Demo]"
@@ -10048,7 +10031,6 @@ SCUS-97486:
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     textureInsideRT: 1 # Fixes broken character models.
 SCUS-97487:
   name: "Ratchet - Deadlocked [Public Beta v.1]"
@@ -10165,7 +10147,6 @@ SCUS-97509:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCUS-97510:
   name: "ATV Offroad Fury 2 [Greatest Hits]"
@@ -10211,7 +10192,6 @@ SCUS-97516:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
 SCUS-97517:
   name: "Killzone [Greatest Hits]"
@@ -10337,7 +10317,6 @@ SCUS-97555:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
 SCUS-97556:
   name: "MLB '07 - The Show"
   region: "NTSC-U"
@@ -10804,6 +10783,7 @@ SLAJ-25075:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
   memcardFilters:
     - "SLAJ-25075"
     - "SLPM-66232"
@@ -10882,6 +10862,7 @@ SLAJ-25091:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLAJ-25092:
   name: "Shin Sangoku Musou 4 [PlayStation 2 The Best]"
   region: "NTSC-Unk"
@@ -11132,6 +11113,7 @@ SLED-51975:
     recommendedBlendingLevel: 3 # Improves reflection quality.
     halfPixelOffset: 2 # Fixes misaligned post-processing.
     PCRTCOverscan: 1 # Fixes image alignment.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLED-51987:
   name: "Kya - Dark Lineage"
   region: "PAL-Unk"
@@ -11241,6 +11223,7 @@ SLED-52736:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality and map opacity.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
 SLED-52851:
@@ -11400,6 +11383,7 @@ SLED-53650:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLED-53664:
   name: "FIFA 06 - Demo Pre-Release Version"
   region: "PAL-Unk"
@@ -11530,6 +11514,7 @@ SLED-54312:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLED-54315:
   name: "LEGO Star Wars II - The Original Trilogy"
   region: "PAL-Unk"
@@ -13254,6 +13239,7 @@ SLES-50731:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes blurriness.
     cpuCLUTRender: 1 # Fixes "Busted" scenes.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-50735:
   name: "Jade Cocoon 2"
   region: "PAL-E"
@@ -16202,6 +16188,7 @@ SLES-51967:
     recommendedBlendingLevel: 3 # Improves reflection quality.
     halfPixelOffset: 2 # Fixes misaligned post-processing.
     PCRTCOverscan: 1 # Fixes image alignment.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-51968:
   name: "SpongeBob SquarePants - Battle for Bikini Bottom"
   region: "PAL-E"
@@ -17682,8 +17669,8 @@ SLES-52636:
   region: "PAL-M5"
   compat: 5
   gsHWFixes:
-    autoFlush: 1 # Fixes incorrect colors.
     alignSprite: 1 # Fixes vertical lines such as in FMVs.
+    halfPixelOffset: 1 # Fixes lines while upscaling
 SLES-52637:
   name: "TOCA Racer Driver 2"
   region: "PAL-M5"
@@ -17976,6 +17963,7 @@ SLES-52725:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality and map opacity.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
 SLES-52726:
@@ -20324,6 +20312,7 @@ SLES-53557:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
   memcardFilters: # Reads Underground 2 save for extra money.
     - "SLES-53557"
     - "SLES-53558"
@@ -20338,6 +20327,7 @@ SLES-53558:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
   memcardFilters:
     - "SLES-53557"
     - "SLES-53558"
@@ -20352,6 +20342,7 @@ SLES-53559:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
   memcardFilters:
     - "SLES-53557"
     - "SLES-53558"
@@ -21214,6 +21205,7 @@ SLES-53857:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
   memcardFilters:
     - "SLES-53557"
     - "SLES-53558"
@@ -22340,6 +22332,7 @@ SLES-54321:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-54322:
   name: "Need for Speed - Carbon"
   region: "PAL-M8"
@@ -22349,6 +22342,7 @@ SLES-54322:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-54323:
   name: "Need for Speed - Carbon"
   region: "PAL-I-S"
@@ -22358,6 +22352,7 @@ SLES-54323:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-54324:
   name: "Need for Speed - Carbon"
   region: "PAL-R"
@@ -22367,6 +22362,7 @@ SLES-54324:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-54326:
   name: "Raceway - Drag Stock Racing"
   region: "PAL-E"
@@ -22641,6 +22637,7 @@ SLES-54402:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-54410:
   name: "Monster Trux Arenas - Special Edition"
   region: "PAL-Unk"
@@ -22904,6 +22901,7 @@ SLES-54492:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-54493:
   name: "Need for Speed - Carbon [Collector's Edition]"
   region: "PAL-F-G"
@@ -22913,6 +22911,7 @@ SLES-54493:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-54494:
   name: "Little Britain - The Video Game"
   region: "PAL-E"
@@ -24324,26 +24323,31 @@ SLES-55002:
   region: "PAL-E"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes depth line.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-55003:
   name: "Need for Speed - ProStreet"
   region: "PAL-F-G"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes depth line.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-55004:
   name: "Need for Speed - ProStreet"
   region: "PAL-I-S"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes depth line.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-55005:
   name: "Need for Speed - ProStreet"
   region: "PAL-M8"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes depth line.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-55006:
   name: "Need for Speed - ProStreet"
   region: "PAL-R"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes depth line.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-55007:
   name: "Boogie"
   region: "PAL-M7"
@@ -25170,18 +25174,21 @@ SLES-55349:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
     halfPixelOffset: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-55350:
   name: "Need for Speed - Undercover"
   region: "PAL-F-G"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
     halfPixelOffset: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-55351:
   name: "Need for Speed - Undercover"
   region: "PAL-I-S"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
     halfPixelOffset: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-55352:
   name: "Need for Speed - Undercover"
   region: "PAL-SC"
@@ -25189,12 +25196,14 @@ SLES-55352:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
     halfPixelOffset: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-55353:
   name: "Need for Speed - Undercover"
   region: "PAL-M6"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
     halfPixelOffset: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLES-55354:
   name: "Shin Megami Tensei - Persona 3 FES"
   region: "PAL-E"
@@ -26769,6 +26778,7 @@ SLKA-25136:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality.
     halfPixelOffset: 2 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLKA-25137:
   name: "Sims, The - Bustin' Out"
   region: "NTSC-K"
@@ -26944,6 +26954,7 @@ SLKA-25185:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLKA-25186:
   name: "King of Fighters, The - Maximum Impact [Limited Edition]"
   region: "NTSC-K"
@@ -27182,6 +27193,7 @@ SLKA-25241:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality and map opacity.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
 SLKA-25242:
@@ -27550,6 +27562,7 @@ SLKA-25334:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLKA-25335:
   name: "Shadow the Hedgehog"
   region: "NTSC-K"
@@ -28059,6 +28072,7 @@ SLPM-55003:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLPM-55004:
   name: "Burnout Revenge (EASY 1980)"
   region: "NTSC-J"
@@ -28236,6 +28250,7 @@ SLPM-55061:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLPM-55062:
   name: "Jikkyou Powerful Major League 3"
   region: "NTSC-J"
@@ -28418,6 +28433,7 @@ SLPM-55127:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
     halfPixelOffset: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLPM-55128:
   name: "Rugby 08"
   region: "NTSC-J"
@@ -28742,6 +28758,7 @@ SLPM-55244:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
     halfPixelOffset: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLPM-55245:
   name: "Himawari - Pebble in the Sky"
   region: "NTSC-J"
@@ -29286,6 +29303,7 @@ SLPM-60250:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality and map opacity.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
 SLPM-60251:
@@ -35333,6 +35351,7 @@ SLPM-65766:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality and map opacity.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
 SLPM-65767:
@@ -36374,6 +36393,7 @@ SLPM-66051:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality and map opacity.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
 SLPM-66052:
@@ -37170,6 +37190,7 @@ SLPM-66232:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
   memcardFilters:
     - "SLAJ-25075"
     - "SLPM-66232"
@@ -38516,6 +38537,7 @@ SLPM-66562:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
   memcardFilters:
     - "SLAJ-25075"
     - "SLPM-66232"
@@ -38758,6 +38780,7 @@ SLPM-66617:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLPM-66618:
   name: "Yumemishi [First Print Limited Edition]"
   region: "NTSC-J"
@@ -39761,6 +39784,7 @@ SLPM-66869:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLPM-66870:
   name: "Kuri no Okurimono [First Print Special Edition]"
   region: "NTSC-J"
@@ -39978,6 +40002,7 @@ SLPM-66932:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes depth line.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLPM-66933:
   name: "Kimi ga Aruji de Shitsuji ga Ore de - Oshie Nikki [Limited Edition]"
   region: "NTSC-J"
@@ -40059,6 +40084,7 @@ SLPM-66960:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality and map opacity.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
 SLPM-66961:
@@ -40409,6 +40435,7 @@ SLPM-67527:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes blurriness.
     cpuCLUTRender: 1 # Fixes "Busted" scenes.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLPM-67528:
   name: "Hajime no Ippo - Victorious Boxers [Championship Edition]"
   region: "NTSC-K"
@@ -48787,6 +48814,7 @@ SLUS-20362:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes blurriness.
     cpuCLUTRender: 1 # Fixes "Busted" scenes.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLUS-20363:
   name: "Sled Storm"
   region: "NTSC-U"
@@ -51078,6 +51106,7 @@ SLUS-20811:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality.
     halfPixelOffset: 2 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLUS-20812:
   name: "Dynasty Warriors 4 - Extreme Edition"
   region: "NTSC-U"
@@ -52514,6 +52543,7 @@ SLUS-21065:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality and map opacity.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
 SLUS-21066:
@@ -53643,6 +53673,7 @@ SLUS-21267:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
   memcardFilters:
     - "SLUS-21267"
     - "SLUS-21351"
@@ -54178,6 +54209,7 @@ SLUS-21351:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
   memcardFilters:
     - "SLUS-21267"
     - "SLUS-21351"
@@ -55069,6 +55101,7 @@ SLUS-21493:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLUS-21494:
   name: "Need for Speed - Carbon [Collector's Edition]"
   region: "NTSC-U"
@@ -55078,6 +55111,7 @@ SLUS-21494:
     recommendedBlendingLevel: 3 # Improves car colour and reflection quality.
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLUS-21495:
   name: "Sudoku, Carol Vorderman's"
   region: "NTSC-U"
@@ -55752,6 +55786,7 @@ SLUS-21658:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes depth line.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLUS-21660:
   name: "Disney Princess - Enchanted Journey"
   region: "NTSC-U"
@@ -56474,6 +56509,7 @@ SLUS-21801:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
     halfPixelOffset: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLUS-21802:
   name: "Naked Brothers Band - The Video Game"
   region: "NTSC-U"
@@ -57558,6 +57594,7 @@ SLUS-29073:
     - EETimingHack # Broken textures.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLUS-29074:
   name: "DDRMAX2 Dance Dance Revolution [Demo]"
   region: "NTSC-U"
@@ -57718,6 +57755,7 @@ SLUS-29118:
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality and map opacity.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
+    texturePreloading: 1 # Performs much better with partial preloading.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
 SLUS-29123:
@@ -57867,6 +57905,7 @@ SLUS-29155:
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLUS-29156:
   name: "Marvel Nemesis - Rise of the Imperfects [Demo]"
   region: "NTSC-U"
@@ -58030,6 +58069,7 @@ SLUS-29193:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
     roundSprite: 2 # Fixes blurriness.
+    texturePreloading: 1 # Performs much better with partial preloading.
 SLUS-29194:
   name: "FIFA '07 [Demo]"
   region: "NTSC-U"
