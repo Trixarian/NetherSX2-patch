@@ -5,7 +5,7 @@ set md5hash=c98b0e4152d3b02fbfb9f62581abada5
 
 :: Display Banner
 echo \033[91m======================== | %col%
-echo \033[91m NetherSX2 Patcher v1.6  | %col%
+echo \033[91m NetherSX2 Patcher v1.7  | %col%
 echo \033[91m======================== | %col%
 
 :: Check if the NetherSX2 APK exists and if it's named correctly
@@ -28,6 +28,14 @@ lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads.properties > nul
 lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-lite.properties > nul
 lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-identifier.properties > nul
 lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-base.properties > nul
+echo \033[92m[Done] | %col%
+
+:: Adds Additional Options to App Settings
+<nul set /p "=\033[96mAdding more options to \033[91mApp Settings...        " | %col%
+lib\aapt r 15210-v1.5-4248-noads.apk res/xml/advanced_preferences.xml
+lib\aapt a 15210-v1.5-4248-noads.apk res/xml/advanced_preferences.xml > nul
+lib\aapt r 15210-v1.5-4248-noads.apk res/xml/graphics_preferences.xml
+lib\aapt a 15210-v1.5-4248-noads.apk res/xml/graphics_preferences.xml > nul
 echo \033[92m[Done] | %col%
 
 :: Updates the FAQ to show that we're using the latest version of NetherSX2

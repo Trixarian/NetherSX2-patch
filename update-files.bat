@@ -5,7 +5,7 @@ set md5hash=c98b0e4152d3b02fbfb9f62581abada5
 
 :: Display Banner
 echo \033[91m======================== | %col%
-echo \033[91m NetherSX2 Updater v1.6  | %col%
+echo \033[91m NetherSX2 Updater v1.7  | %col%
 echo \033[91m======================== | %col%
 
 :: Check if the NetherSX2 APK exists and if it's named correctly
