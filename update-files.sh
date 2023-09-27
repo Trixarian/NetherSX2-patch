@@ -17,7 +17,7 @@ display_light_red() {
 # start of script
 clear
 printf "\e[1;91m========================\n"
-printf " NetherSX2 Patcher v1.6\n"
+printf " NetherSX2 Patcher v1.7\n"
 printf "========================\e[0m\n"
 
 # Check if the NetherSX2 APK exists and if it's named
