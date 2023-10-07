@@ -18,25 +18,25 @@ for /f %%f in ('""lib\md5sum.exe" "15210-v1.5-4248-noads.apk""') do (
 :: Updates to Latest GameDB with features removed that are not supported by the libemucore.so from March 13th
 <nul set /p "=\033[96mUpdating the \033[91mGameDB...                 " | %col%
 lib\aapt r 15210-v1.5-4248-noads.apk assets/GameIndex.yaml
-lib\aapt a 15210-v1.5-4248-noads.apk assets/GameIndex.yaml  > nul
+lib\aapt a 15210-v1.5-4248-noads.apk assets/GameIndex.yaml > nul
 echo \033[92m[Done] | %col%
 
 :: Updates the Controller Database
 <nul set /p "=\033[96mUpdating the \033[91mController Database...    " | %col%
 lib\aapt r 15210-v1.5-4248-noads.apk assets/game_controller_db.txt
-lib\aapt a 15210-v1.5-4248-noads.apk assets/game_controller_db.txt  > nul
+lib\aapt a 15210-v1.5-4248-noads.apk assets/game_controller_db.txt > nul
 echo \033[92m[Done] | %col%
 
 :: Updates the Widescreen Patches
 <nul set /p "=\033[96mUpdating the \033[91mWidescreen Patches...     " | %col%
 lib\aapt r 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
-lib\aapt a 15210-v1.5-4248-noads.apk assets/cheats_ws.zip  > nul
+lib\aapt a 15210-v1.5-4248-noads.apk assets/cheats_ws.zip > nul
 echo \033[92m[Done] | %col%
 
 :: Updates the No-Interlacing Patches
 <nul set /p "=\033[96mUpdating the \033[91mNo-Interlacing Patches... " | %col%
 lib\aapt r 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
-lib\aapt a 15210-v1.5-4248-noads.apk assets/cheats_ni.zip  > nul
+lib\aapt a 15210-v1.5-4248-noads.apk assets/cheats_ni.zip > nul
 echo \033[92m[Done] | %col%
 
 :: Resigns the APK before exiting
