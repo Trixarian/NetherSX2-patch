@@ -30,15 +30,6 @@ lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-identifier.properties > n
 lib\aapt r 15210-v1.5-4248-noads.apk play-services-ads-base.properties > nul
 echo \033[92m[Done] | %col%
 
-:: Adds UI Theme to APK
-<nul set /p "=\033[96mApplying the \033[91mCustom UI Theme...               " | %col%
-for /r %%i in (res\drawable\*.png) do (
-  lib\aapt r 15210-v1.5-4248-noads.apk res/drawable/%%~nxi > nul
-  lib\aapt a 15210-v1.5-4248-noads.apk res/drawable/%%~nxi > nul
-  lib\aapt r 15210-v1.5-4248-noads.apk res/drawable/%%~ni.xml > nul
-)
-echo \033[92m[Done] | %col%
-
 :: Adds Additional Options to App Settings
 <nul set /p "=\033[96mAdding more options to \033[91mApp Settings...        " | %col%
 lib\aapt r 15210-v1.5-4248-noads.apk res/xml/advanced_preferences.xml

@@ -4,9 +4,9 @@ set col=lib\cmdcolor.exe
 set md5hash=c98b0e4152d3b02fbfb9f62581abada5
 
 :: Display Banner
-echo \033[91m============================ | %col%
-echo \033[91m NetherSX2 Theme Reset v1.7  | %col%
-echo \033[91m============================ | %col%
+echo \033[91m============================== | %col%
+echo \033[91m NetherSX2 Theme-o-Matic v1.7  | %col%
+echo \033[91m============================== | %col%
 
 :: Check if the NetherSX2 APK exists and if it's named correctly
 if not exist 15210-v1.5-4248-noads.apk goto nofile
@@ -15,21 +15,14 @@ for /f %%f in ('""lib\md5sum.exe" "15210-v1.5-4248-noads.apk""') do (
   if %%f equ %md5hash% goto nofile
 )
 
-:: Reset to the default UI Theme
-<nul set /p "=\033[96mResetting \033[91mUI Theme...          " | %col%
-:: Temporarially renaming folders to restore original UI
-move res/drawable res/drawable-tmp > nul
-move res/drawable-og res/drawable > nul
-for /r %%i in (res\drawable\*.xml) do (
+:: Adds UI Theme to APK
+<nul set /p "=\033[96mApplying the \033[91mCustom UI Theme...               " | %col%
+for /r %%i in (res\drawable\*.png) do (
   lib\aapt r 15210-v1.5-4248-noads.apk res/drawable/%%~nxi > nul
   lib\aapt a 15210-v1.5-4248-noads.apk res/drawable/%%~nxi > nul
-  lib\aapt r 15210-v1.5-4248-noads.apk res/drawable/%%~ni.png > nul
+  lib\aapt r 15210-v1.5-4248-noads.apk res/drawable/%%~ni.xml > nul
 )
-:: And moving them back
-move res/drawable res/drawable-og > nul
-move res/drawable-tmp res/drawable > nul
 echo \033[92m[Done] | %col%
-
 
 :: Resigns the APK before exiting
 <nul set /p "=\033[96mResigning the \033[91mNetherSX2 APK... " | %col%
