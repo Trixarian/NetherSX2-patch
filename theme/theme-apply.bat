@@ -16,7 +16,7 @@ for /f %%f in ('""lib\md5sum.exe" "15210-v1.5-4248-noads.apk""') do (
 )
 
 :: Adds UI Theme to APK
-<nul set /p "=\033[96mApplying the \033[91mCustom UI Theme...               " | %col%
+<nul set /p "=\033[96mApplying the \033[91mCustom UI Theme..." | %col%
 for /r %%i in (res\drawable\*.png) do (
   lib\aapt r 15210-v1.5-4248-noads.apk res/drawable/%%~nxi > nul
   lib\aapt a 15210-v1.5-4248-noads.apk res/drawable/%%~nxi > nul
