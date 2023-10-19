@@ -1,4 +1,6 @@
 @echo off
+:: Sets the window's title
+Title NetherSX2 Builder
 :: ********************************* CONFIG **********************************
 set patch_name=NetherSX2 Builder v1.7
 set patch_author=
