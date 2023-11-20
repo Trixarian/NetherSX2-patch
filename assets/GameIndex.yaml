@@ -1929,7 +1929,7 @@ SCAJ-25047:
   name: "Dororo"
   region: "NTSC-Unk"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    recommendBlendingLevel: 2 # Fixes dark font to more bright like software mode.
 SCAJ-30001:
   name: "Xenosaga - Episode I - Der Wille zur Macht [PS2 The Best]"
   region: "NTSC-Unk"
@@ -5048,7 +5048,7 @@ SCES-53300:
   clampModes:
     vuClampMode: 3 # Fixes SPS ingame and prevents flickering or invisible characters.
   gsHWFixes:
-    minimumBlendingLevel: 4 # Mitigates grayer text font in bottom left.
+    recommendBlendingLevel: 4 # Mitigates grayer text font in bottom left.
     partialTargetInvalidation: 1 # Fixes loading screen picture.
 SCES-53304:
   name: "Buzz! The Music Quiz"
@@ -6480,7 +6480,7 @@ SCKA-20064:
   clampModes:
     vuClampMode: 3 # Fixes SPS ingame and prevents flickering or invisible characters.
   gsHWFixes:
-    minimumBlendingLevel: 4 # Mitigates grayer text font in bottom left.
+    recommendBlendingLevel: 4 # Mitigates grayer text font in bottom left.
     partialTargetInvalidation: 1 # Fixes loading screen picture.
 SCKA-20065:
   name: "Urban Reign"
@@ -10018,7 +10018,7 @@ SCUS-97474:
   clampModes:
     vuClampMode: 3 # Fixes SPS ingame and prevents flickering or invisible characters.
   gsHWFixes:
-    minimumBlendingLevel: 4 # Mitigates grayer text font in bottom left.
+    recommendBlendingLevel: 4 # Mitigates grayer text font in bottom left.
     partialTargetInvalidation: 1 # Fixes loading screen picture.
   patches:
     75ED4282:
@@ -10034,7 +10034,7 @@ SCUS-97475:
   clampModes:
     vuClampMode: 3 # Fixes SPS ingame and prevents flickering or invisible characters.
   gsHWFixes:
-    minimumBlendingLevel: 4 # Mitigates grayer text font in bottom left.
+    recommendBlendingLevel: 4 # Mitigates grayer text font in bottom left.
     partialTargetInvalidation: 1 # Fixes loading screen picture.
   patches:
     314F0905:
@@ -10137,7 +10137,7 @@ SCUS-97489:
   clampModes:
     vuClampMode: 3 # Fixes SPS ingame and prevents flickering or invisible characters.
   gsHWFixes:
-    minimumBlendingLevel: 4 # Mitigates grayer text font in bottom left.
+    recommendBlendingLevel: 4 # Mitigates grayer text font in bottom left.
     partialTargetInvalidation: 1 # Fixes loading screen picture.
 SCUS-97490:
   name: "Rogue Galaxy"
@@ -10754,7 +10754,7 @@ SLAJ-25047:
   name: "Dororo"
   region: "NTSC-C-J"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    recommendBlendingLevel: 2 # Fixes dark font to more bright like software mode.
 SLAJ-25048:
   name: "Sengoku Musou Mushoden"
   region: "NTSC-Unk"
@@ -11292,7 +11292,7 @@ SLED-52736:
   name: "Need for Speed - Underground 2 [Demo]"
   region: "PAL-E"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes missing post processing.
+    recommendBlendingLevel: 2 # Fixes missing post processing.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
@@ -11363,7 +11363,7 @@ SLED-53109:
     preloadFrameData: 1 # Fixes overbrightness.
     cpuSpriteRenderBW: 1 # Fixes broken window and shadow rendering.
     cpuCLUTRender: 1 # Fixes broken headlights.
-    minimumBlendingLevel: 3
+    recommendBlendingLevel: 3
 SLED-53137:
   name: "Stolen"
   region: "PAL-Unk"
@@ -11448,7 +11448,7 @@ SLED-53650:
   name: "Need for Speed - Most Wanted"
   region: "PAL-E"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Improves car reflections.
+    recommendBlendingLevel: 2 # Improves car reflections.
     halfPixelOffset: 2 # Fixes blurriness.
     cpuCLUTRender: 1 # Final colour adjustment LUT.
     gpuTargetCLUT: 1 # Fixes sun penetrating bridges (along with HPO special).
@@ -11481,7 +11481,7 @@ SLED-53731:
   name: "Battlefield 2 - Modern Combat [Demo]"
   region: "PAL-E"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes ground texture rendering.
+    recommendBlendingLevel: 4 # Fixes ground texture rendering.
     halfPixelOffset: 2 # Offset post-processing.
     texturePreloading: 1 # Spikes all over the place otherwise.
     textureInsideRT: 1 # Fixes light shinging through objects.
@@ -11561,7 +11561,7 @@ SLED-54022:
   gsHWFixes:
     mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
     textureInsideRT: 1 # Needed for post processing effects.
-    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
+    recommendBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
 SLED-54032:
   name: "Sonic Riders [Demo]"
   region: "PAL-E"
@@ -18023,7 +18023,7 @@ SLES-52725:
   region: "PAL-M8"
   compat: 5
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes missing post processing.
+    recommendBlendingLevel: 2 # Fixes missing post processing.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
@@ -18095,7 +18095,7 @@ SLES-52755:
   name: "Blood Will Tell - Tezuka Osamu's Dororo"
   region: "PAL-M5"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    recommendBlendingLevel: 2 # Fixes dark font to more bright like software mode.
 SLES-52760:
   name: "Pro Evolution Soccer 4"
   region: "PAL-M4"
@@ -18976,7 +18976,7 @@ SLES-53044:
     preloadFrameData: 1 # Fixes overbrightness.
     cpuSpriteRenderBW: 1 # Fixes broken window and shadow rendering.
     cpuCLUTRender: 1 # Fixes broken headlights.
-    minimumBlendingLevel: 3
+    recommendBlendingLevel: 3
 SLES-53045:
   name: "Street Racing Syndicate"
   region: "PAL-M5"
@@ -19265,7 +19265,7 @@ SLES-53151:
     preloadFrameData: 1 # Fixes overbrightness.
     cpuSpriteRenderBW: 1 # Fixes broken window and shadow rendering.
     cpuCLUTRender: 1 # Fixes broken headlights.
-    minimumBlendingLevel: 3
+    recommendBlendingLevel: 3
 SLES-53152:
   name: "Mashed Fully Loaded"
   region: "PAL-M5"
@@ -19509,7 +19509,7 @@ SLES-53300:
   clampModes:
     vuClampMode: 3 # Fixes SPS ingame and prevents flickering or invisible characters.
   gsHWFixes:
-    minimumBlendingLevel: 4 # Mitigates grayer text font in bottom left.
+    recommendBlendingLevel: 4 # Mitigates grayer text font in bottom left.
     partialTargetInvalidation: 1 # Fixes loading screen picture.
 SLES-53301:
   name: "Bomberman Hardball"
@@ -20139,7 +20139,7 @@ SLES-53523:
   roundModes:
     vu1RoundMode: 0 # Fixes textures and crashes.
   gsHWFixes:
-    minimumBlendingLevel: 3 # Fixes broken light and shadow rendering.
+    recommendBlendingLevel: 3 # Fixes broken light and shadow rendering.
     mipmap: 2 # Mipmap + trilinear, improves ground textures and water textures and reflections.
     trilinearFiltering: 1
     textureInsideRT: 1 # Fixes rainbow artifacting around edges of screen.
@@ -20648,7 +20648,7 @@ SLES-53647:
   roundModes:
     vu1RoundMode: 0 # Fixes textures and crashes.
   gsHWFixes:
-    minimumBlendingLevel: 3 # Fixes broken light and shadow rendering.
+    recommendBlendingLevel: 3 # Fixes broken light and shadow rendering.
     mipmap: 2 # Mipmap + trilinear, improves ground textures and water textures and reflections.
     trilinearFiltering: 1
     textureInsideRT: 1 # Fixes rainbow artifacting around edges of screen.
@@ -20908,7 +20908,7 @@ SLES-53729:
   name: "Battlefield 2 - Modern Combat"
   region: "PAL-M4"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes ground texture rendering.
+    recommendBlendingLevel: 4 # Fixes ground texture rendering.
     autoFlush: 1 # Post-processing.
     halfPixelOffset: 2 # Offset post-processing.
     texturePreloading: 1 # Spikes all over the place otherwise.
@@ -20920,7 +20920,7 @@ SLES-53730:
   name: "Battlefield 2 - Modern Combat"
   region: "PAL-M3"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes ground texture rendering.
+    recommendBlendingLevel: 4 # Fixes ground texture rendering.
     autoFlush: 1 # Post-processing.
     halfPixelOffset: 2 # Offset post-processing.
     texturePreloading: 1 # Spikes all over the place otherwise.
@@ -21388,7 +21388,7 @@ SLES-53908:
   gsHWFixes:
     mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
     textureInsideRT: 1 # Needed for post processing effects.
-    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
+    recommendBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
 SLES-53909:
   name: "Full Spectrum Warrior - Ten Hammers"
   region: "PAL-G"
@@ -23271,7 +23271,7 @@ SLES-54629:
   name: "Shin Megami Tensei - Devil Summoner - Raidou Kuzunoha vs. the Soulless Army"
   region: "PAL-E"
   gsHWFixes:
-    minimumBlendingLevel: 3 # Fixes broken effect rendering.
+    recommendBlendingLevel: 3 # Fixes broken effect rendering.
 SLES-54630:
   name: "Chi Vuol Essere Milionario - Party Edition"
   region: "PAL-I"
@@ -25726,7 +25726,7 @@ SLES-55579:
     vu0ClampMode: 0 # Fixes black textures and SPS.
   gsHWFixes:
     deinterlace: 8 # Game requires AdaptiveTFF de-interlacing when auto for the (starter) FMVs.
-    minimumBlendingLevel: 3 # Fixes missing colortints like on faces and models being too dark.
+    recommendBlendingLevel: 3 # Fixes missing colortints like on faces and models being too dark.
 SLES-55581:
   name: "FIFA 10"
   region: "PAL-M5"
@@ -27165,7 +27165,7 @@ SLKA-25225:
   region: "NTSC-K"
   compat: 5
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    recommendBlendingLevel: 2 # Fixes dark font to more bright like software mode.
 SLKA-25226:
   name: "Incredibles, The"
   region: "NTSC-K"
@@ -27215,7 +27215,7 @@ SLKA-25241:
   name: "Need for Speed - Underground 2"
   region: "NTSC-K"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes missing post processing.
+    recommendBlendingLevel: 2 # Fixes missing post processing.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
@@ -27374,7 +27374,7 @@ SLKA-25283:
     preloadFrameData: 1 # Fixes overbrightness.
     cpuSpriteRenderBW: 1 # Fixes broken window and shadow rendering.
     cpuCLUTRender: 1 # Fixes broken headlights.
-    minimumBlendingLevel: 3
+    recommendBlendingLevel: 3
 SLKA-25284:
   name: "Sakura Taisen 3"
   region: "NTSC-K"
@@ -28189,7 +28189,7 @@ SLPM-55034:
   name: "Battlefield 2 - Modern Combat [EASY 1980]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes ground texture rendering.
+    recommendBlendingLevel: 4 # Fixes ground texture rendering.
     autoFlush: 1 # Post-processing.
     halfPixelOffset: 2 # Offset post-processing.
     texturePreloading: 1 # Improves performance.
@@ -29333,7 +29333,7 @@ SLPM-60250:
   name: "Need for Speed - Underground 2 [Trial]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes missing post processing.
+    recommendBlendingLevel: 2 # Fixes missing post processing.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
@@ -29945,7 +29945,7 @@ SLPM-61155:
   gsHWFixes:
     mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
     textureInsideRT: 1 # Needed for post processing effects.
-    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
+    recommendBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
 SLPM-61156:
   name: "Dengeki PS2 PlayStation D93"
   region: "NTSC-J"
@@ -34560,7 +34560,7 @@ SLPM-65526:
   name: "Dororo"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    recommendBlendingLevel: 2 # Fixes dark font to more bright like software mode.
 SLPM-65527:
   name: "FIFA Total Football"
   region: "NTSC-J"
@@ -35426,7 +35426,7 @@ SLPM-65766:
   name: "Need for Speed - Underground 2"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes missing post processing.
+    recommendBlendingLevel: 2 # Fixes missing post processing.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
@@ -36465,7 +36465,7 @@ SLPM-66051:
   name: "Need for Speed Underground 2 [EA Best Hits]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes missing post processing.
+    recommendBlendingLevel: 2 # Fixes missing post processing.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
@@ -36836,7 +36836,7 @@ SLPM-66137:
   name: "Clover Heart's - Looking for Happiness [The Best]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes transparancy.
+    recommendBlendingLevel: 4 # Fixes transparancy.
 SLPM-66138:
   name: "Desire [Best Version]"
   region: "NTSC-J"
@@ -37130,7 +37130,7 @@ SLPM-66206:
   name: "Battlefield 2 - Modern Combat"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes ground texture rendering.
+    recommendBlendingLevel: 4 # Fixes ground texture rendering.
     autoFlush: 1 # Post-processing.
     halfPixelOffset: 2 # Offset post-processing.
     texturePreloading: 1 # Spikes all over the place otherwise.
@@ -37142,7 +37142,7 @@ SLPM-66207:
   name: "Dororo [Sega the Best 2800]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    recommendBlendingLevel: 2 # Fixes dark font to more bright like software mode.
 SLPM-66208:
   name: "Sakura Taisen V - Episode 0 - Samurai Girl of Wild [Sega the Best]"
   region: "NTSC-J"
@@ -37311,7 +37311,7 @@ SLPM-66246:
   region: "NTSC-J"
   compat: 5
   gsHWFixes:
-    minimumBlendingLevel: 3 # Fixes broken effect rendering.
+    recommendBlendingLevel: 3 # Fixes broken effect rendering.
 SLPM-66247:
   name: "Meine Liebe II - Hokori to Seigi to Ai"
   region: "NTSC-J"
@@ -37448,7 +37448,7 @@ SLPM-66277:
     preloadFrameData: 1 # Fixes overbrightness.
     cpuSpriteRenderBW: 1 # Fixes broken window and shadow rendering.
     cpuCLUTRender: 1 # Fixes broken headlights.
-    minimumBlendingLevel: 3
+    recommendBlendingLevel: 3
 SLPM-66278:
   name: "Shin Gouketuji Ichizoku - Bonnou Kaihou"
   region: "NTSC-J"
@@ -37548,7 +37548,7 @@ SLPM-66302:
   region: "NTSC-J"
   gsHWFixes:
     gpuTargetCLUT: 1 # Fixes colours.
-    minimumBlendingLevel: 4 # Fixes transparancy.
+    recommendBlendingLevel: 4 # Fixes transparancy.
 SLPM-66303:
   name: "Shin Sangoku Musou 2"
   region: "NTSC-J"
@@ -38585,7 +38585,7 @@ SLPM-66558:
   gsHWFixes:
     mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
     textureInsideRT: 1 # Needed for post processing effects.
-    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
+    recommendBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
     getSkipCount: "GSC_TombRaiderLegend"
 SLPM-66559:
   name: "Winning Post 6 [KOEI Selection]"
@@ -38907,7 +38907,7 @@ SLPM-66634:
   name: "Devil Summoner - Kuzunoha Raidou tai Chouriki Heidan [Atlus Best Collection]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 3 # Fixes broken effect rendering.
+    recommendBlendingLevel: 3 # Fixes broken effect rendering.
 SLPM-66635:
   name: "Wind - A Breath of Heart [Alchemist Best Collection]"
   region: "NTSC-J"
@@ -38964,7 +38964,7 @@ SLPM-66651:
   name: "Battlefield 2 - Modern Combat [EA Best Hits]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes ground texture rendering.
+    recommendBlendingLevel: 4 # Fixes ground texture rendering.
     autoFlush: 1 # Post-processing.
     halfPixelOffset: 2 # Offset post-processing.
     texturePreloading: 1 # Spikes all over the place otherwise.
@@ -40153,7 +40153,7 @@ SLPM-66960:
   name: "Need for Speed - Underground 2 [EA-SY! 1980]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes missing post processing.
+    recommendBlendingLevel: 2 # Fixes missing post processing.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
   gameFixes:
     - SoftwareRendererFMVHack # Workaround for strange HPO Normal screen shake.
@@ -44107,7 +44107,7 @@ SLPS-25332:
   name: "Snow [First Limited Edition]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes transparancy.
+    recommendBlendingLevel: 4 # Fixes transparancy.
 SLPS-25333:
   name: "Gallop Racer Lucky 7"
   region: "NTSC-J"
@@ -44173,7 +44173,7 @@ SLPS-25342:
   name: "Snow"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes transparancy.
+    recommendBlendingLevel: 4 # Fixes transparancy.
 SLPS-25343:
   name: "Gunslinger Girl Vol.1"
   region: "NTSC-J"
@@ -44380,12 +44380,12 @@ SLPS-25390:
   name: "Clover Heart's - Looking for Happiness [Limited Edition]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes transparancy.
+    recommendBlendingLevel: 4 # Fixes transparancy.
 SLPS-25391:
   name: "Clover Heart's - Looking for Happiness"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes transparancy.
+    recommendBlendingLevel: 4 # Fixes transparancy.
 SLPS-25392:
   name: "Desire"
   region: "NTSC-J"
@@ -46500,7 +46500,7 @@ SLPS-25945:
   gsHWFixes:
     mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
     textureInsideRT: 1 # Needed for post processing effects.
-    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
+    recommendBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
 SLPS-25947:
   name: "Summon Night Gran-These - Horobi no Ken to Yakusoku no Kishi"
   region: "NTSC-J"
@@ -51048,7 +51048,7 @@ SLUS-20782:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    recommendBlendingLevel: 2 # Fixes dark font to more bright like software mode.
 SLUS-20784:
   name: "Italian Job, The"
   region: "NTSC-U"
@@ -51475,7 +51475,7 @@ SLUS-20872:
     preloadFrameData: 1 # Fixes overbrightness.
     cpuSpriteRenderBW: 1 # Fixes broken window and shadow rendering.
     cpuCLUTRender: 1 # Fixes broken headlights.
-    minimumBlendingLevel: 3
+    recommendBlendingLevel: 3
 SLUS-20873:
   name: "Silent Hill 4 - The Room"
   region: "NTSC-U"
@@ -52380,7 +52380,7 @@ SLUS-21026:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes ground texture rendering.
+    recommendBlendingLevel: 4 # Fixes ground texture rendering.
     autoFlush: 1 # Post-processing.
     halfPixelOffset: 2 # Offset post-processing.
     texturePreloading: 1 # Spikes all over the place otherwise.
@@ -52608,7 +52608,7 @@ SLUS-21065:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes missing post processing.
+    recommendBlendingLevel: 2 # Fixes missing post processing.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
 SLUS-21066:
   name: "Urbz, The - Sims in the City"
@@ -52977,7 +52977,7 @@ SLUS-21139:
   roundModes:
     vu1RoundMode: 0 # Fixes textures and crashes.
   gsHWFixes:
-    minimumBlendingLevel: 3 # Fixes broken light and shadow rendering.
+    recommendBlendingLevel: 3 # Fixes broken light and shadow rendering.
     mipmap: 2 # Mipmap + trilinear, improves ground textures and water textures and reflections.
     trilinearFiltering: 1
     textureInsideRT: 1 # Fixes rainbow artifacting around edges of screen.
@@ -53312,7 +53312,7 @@ SLUS-21203:
   gsHWFixes:
     mipmap: 1 # Fixes distant characters and models but there are still some flickering textures.
     textureInsideRT: 1 # Needed for post processing effects.
-    minimumBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
+    recommendBlendingLevel: 4 # Fixes multiple lighting effects from lights, computers, cave walls and more.
     getSkipCount: "GSC_TombRaiderLegend"
 SLUS-21204:
   name: "Victorious Boxers 2 - Fighting Spirit"
@@ -54792,7 +54792,7 @@ SLUS-21431:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
-    minimumBlendingLevel: 3 # Fixes broken effect rendering.
+    recommendBlendingLevel: 3 # Fixes broken effect rendering.
 SLUS-21432:
   name: "NRA Gun Club"
   region: "NTSC-U"
@@ -57013,7 +57013,7 @@ SLUS-21902:
     vu0ClampMode: 0 # Fixes black textures and SPS.
   gsHWFixes:
     deinterlace: 8 # Game requires AdaptiveTFF de-interlacing when auto for the (starter) FMVs.
-    minimumBlendingLevel: 3 # Fixes missing colortints like on faces and models being too dark.
+    recommendBlendingLevel: 3 # Fixes missing colortints like on faces and models being too dark.
 SLUS-21904:
   name: "Teenage Mutant Ninja Turtles - Smash-Up"
   region: "NTSC-U"
@@ -57419,7 +57419,7 @@ SLUS-28064:
   name: "Shin Megami Tensei - Devil Summoner [Trade Demo]"
   region: "NTSC-U"
   gsHWFixes:
-    minimumBlendingLevel: 3 # Fixes broken effect rendering.
+    recommendBlendingLevel: 3 # Fixes broken effect rendering.
 SLUS-28065:
   name: "Odin Sphere [Trade Demo]"
   region: "NTSC-U"
@@ -57801,7 +57801,7 @@ SLUS-29117:
   name: "Battlefield 2 - Modern Combat [Public Beta Vol.1.0]"
   region: "NTSC-U"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes ground texture rendering.
+    recommendBlendingLevel: 4 # Fixes ground texture rendering.
     autoFlush: 1 # Post-processing.
     halfPixelOffset: 2 # Offset post-processing.
     texturePreloading: 1 # Spikes all over the place otherwise.
@@ -57813,7 +57813,7 @@ SLUS-29118:
   name: "Need for Speed - Underground 2 [Demo]"
   region: "NTSC-U"
   gsHWFixes:
-    minimumBlendingLevel: 2 # Fixes missing post processing.
+    recommendBlendingLevel: 2 # Fixes missing post processing.
     halfPixelOffset: 1 # Fixes misaligned post-processing.
 SLUS-29123:
   name: "Ghost in the Shell - Stand Alone Complex [Demo]"
@@ -57900,7 +57900,7 @@ SLUS-29147:
     preloadFrameData: 1 # Fixes overbrightness.
     cpuSpriteRenderBW: 1 # Fixes broken window and shadow rendering.
     cpuCLUTRender: 1 # Fixes broken headlights.
-    minimumBlendingLevel: 3
+    recommendBlendingLevel: 3
 SLUS-29148:
   name: "Incredible Hulk, The - Ultimate Destruction [Demo]"
   region: "NTSC-U"
@@ -57928,7 +57928,7 @@ SLUS-29152:
   name: "Battlefield 2 - Modern Combat [Regular Demo]"
   region: "NTSC-U"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes ground texture rendering.
+    recommendBlendingLevel: 4 # Fixes ground texture rendering.
     autoFlush: 1 # Post-processing.
     halfPixelOffset: 2 # Offset post-processing.
     texturePreloading: 1 # Spikes all over the place otherwise.
