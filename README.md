@@ -1,6 +1,7 @@
 <p align="center">
-  <img width="312" height="312" src="https://github.com/Trixarian/NetherSX2-classic/assets/983358/3aa80bb7-64b1-452e-90cd-a875f37d7701">
+  <img width="312" height="312" src="https://github.com/Trixarian/NetherSX2-patch/assets/983358/fc052bb1-b671-4af9-a2e0-45966b354c4a">
 </p>
+
 
 # NetherSX2-patch
 These are Unofficial companion scripts for NetherSX2 to expand on the amazing work already done by Anon and EZOnTheEyes
