@@ -3,7 +3,6 @@
   <img width="312" height="312" src="/.github/assets/logo_dark.png#gh-light-mode-only">
 </p>
 
-
 # NetherSX2-patch
 These are Unofficial companion scripts for NetherSX2 to expand on the amazing work already done by Anon and EZOnTheEyes
 
