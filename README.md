@@ -1,5 +1,6 @@
 <p align="center">
-  <img width="312" height="312" src="https://github.com/Trixarian/NetherSX2-patch/assets/983358/fc052bb1-b671-4af9-a2e0-45966b354c4a">
+  <img width="312" height="312" src="/.github/assets/logo_light.png#gh-dark-mode-only">
+  <img width="312" height="312" src="/.github/assets/logo_dark.png#gh-light-mode-only">
 </p>
 
 
