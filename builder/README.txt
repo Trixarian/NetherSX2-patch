@@ -9,6 +9,7 @@
 5. Enjoy!
 
 Credits:
+https://github.com/HardcodedCat
 https://www.aethersx2.com/archive/
 https://github.com/jmacd/xdelta-gpl
 https://github.com/alecmev/cmdcolor
