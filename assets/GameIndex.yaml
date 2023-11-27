@@ -162,17 +162,13 @@ PAPX-90222:
   name: "Jak x Daxter - Kyuu Sekai no Isan [Demo, Taikenban]"
   region: "NTSC-J"
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
     textureInsideRT: 1
 PAPX-90223:
   name: "Jak x Daxter - Kyuu Sekai no Isan [Demo, Taikenban]"
   region: "NTSC-J"
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
     textureInsideRT: 1
 PAPX-90224:
   name: "Sidewinder F"
@@ -267,9 +263,7 @@ PAPX-90516:
   name: "Jak and Daxter II [Trial]"
   region: "NTSC-J"
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 PAPX-90517:
@@ -1128,9 +1122,7 @@ SCAJ-20073:
   name: "Jak and Daxter II"
   region: "NTSC-Unk"
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCAJ-20074:
@@ -2238,8 +2230,7 @@ SCED-50614:
   region: "PAL-M6"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    textureInsideRT: 1
 SCED-50615:
   name: "Official Demo Disc 1 - Retail Edition November 01"
   region: "PAL-E"
@@ -2765,7 +2756,7 @@ SCED-51700:
   region: "PAL-M5"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCED-51728:
   name: "EverQuest - Online Adventures [Demo]"
@@ -3235,7 +3226,7 @@ SCED-52952:
     - InstantDMAHack # Fixes holes in face geometry.
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCED-52969:
   name: "EyeToy - Play 2"
@@ -3992,7 +3983,7 @@ SCES-50361:
   compat: 5
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCES-50408:
   name: "PaRappa the Rapper 2"
   region: "PAL-M5"
@@ -4159,7 +4150,7 @@ SCES-50614:
   region: "PAL-Unk"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCES-50759:
   name: "Virtua Fighter 4"
   region: "PAL-M5"
@@ -4490,7 +4481,7 @@ SCES-51608:
   compat: 5
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCES-51610:
   name: "This is Football 2004 [Red Devils 2004]"
@@ -4822,7 +4813,7 @@ SCES-52460:
     - InstantDMAHack # Fixes holes in face geometry.
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCES-52529:
   name: "Sly 2 - Band of Thieves"
@@ -5034,10 +5025,8 @@ SCES-53286:
   gameFixes:
     - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
     textureInsideRT: 1 # Fixes broken character models.
   memcardFilters: # Reads Ratchet Gladiator data.
     - "SCES-53286"
@@ -5923,7 +5912,8 @@ SCES-55510:
   name: "Jak and Daxter - The Lost Frontier"
   region: "PAL-M12"
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
+    mipmap: 2 # Fixes broken textures.
+    textureInsideRT: 1
 SCES-55513:
   name: "SingStar Polskie Hity"
   region: "PAL-PL"
@@ -6120,7 +6110,7 @@ SCKA-20010:
   region: "NTSC-K"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCKA-20011:
   name: "Ratchet & Clank 2"
@@ -6306,7 +6296,7 @@ SCKA-20040:
     - InstantDMAHack # Fixes holes in face geometry.
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCKA-20041:
   name: "EyeToy - Play 2"
@@ -7162,7 +7152,7 @@ SCPS-15021:
   region: "NTSC-J"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCPS-15022:
   name: "Dual Hearts"
   region: "NTSC-J"
@@ -7339,7 +7329,7 @@ SCPS-15057:
   region: "NTSC-J"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCPS-15058:
   name: "Arc the Lad - Generation"
@@ -7892,7 +7882,7 @@ SCPS-19210:
   region: "NTSC-J"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCPS-19211:
   name: "Ratchet & Clank [PS2 The Best]"
   region: "NTSC-J"
@@ -8303,7 +8293,7 @@ SCPS-55004:
   region: "NTSC-J"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCPS-55005:
   name: "Gran Turismo - Concept 2001 Tokyo"
   region: "NTSC-J"
@@ -8568,7 +8558,7 @@ SCPS-56003:
   region: "NTSC-K"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCPS-56004:
   name: "Otostaz"
   region: "NTSC-K"
@@ -8790,7 +8780,7 @@ SCUS-97124:
   compat: 5
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCUS-97125:
   name: "Frequency"
   region: "NTSC-U"
@@ -8977,13 +8967,13 @@ SCUS-97170:
   region: "NTSC-U"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCUS-97171:
   name: "Jak and Daxter - The Precursor Legacy [PS Underground Demo]"
   region: "NTSC-U"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCUS-97172:
   name: "World Tour Soccer 2002"
   region: "NTSC-U"
@@ -9334,7 +9324,7 @@ SCUS-97265:
   compat: 5
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCUS-97266:
   name: "Final Fantasy XI [Disc 1 of 2]"
@@ -9371,13 +9361,14 @@ SCUS-97273:
   region: "NTSC-U"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCUS-97274:
   name: "Jak II [Video Demo]"
   region: "NTSC-U"
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
+    mipmap: 2 # Fixes broken textures.
+    textureInsideRT: 1
 SCUS-97275:
   name: "SOCOM II - U.S. Navy SEALs"
   region: "NTSC-U"
@@ -9497,7 +9488,7 @@ SCUS-97330:
     - InstantDMAHack # Fixes holes in face geometry.
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCUS-97331:
   name: "Official U.S. PlayStation Magazine Demo Disc 078"
@@ -9624,7 +9615,7 @@ SCUS-97374:
     - EETimingHack # Fixes SPR errors while going in-game.
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCUS-97377:
   name: "Syphon Filter - The Omega Strain [Regular Demo]"
   region: "NTSC-U"
@@ -9755,7 +9746,7 @@ SCUS-97412:
     - InstantDMAHack # Fixes holes in face geometry.
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCUS-97413:
   name: "Ratchet & Clank - Up Your Arsenal [Public Beta v1.0]"
@@ -9824,10 +9815,8 @@ SCUS-97429:
   gameFixes:
     - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     textureInsideRT: 1 # Fixes broken character models.
   memcardFilters:
@@ -9882,7 +9871,7 @@ SCUS-97440:
   region: "NTSC-U"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCUS-97441:
   name: "Getaway The - Black Monday [Demo]"
@@ -10102,10 +10091,8 @@ SCUS-97486:
   gameFixes:
     - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
     textureInsideRT: 1 # Fixes broken character models.
 SCUS-97487:
   name: "Ratchet - Deadlocked [Public Beta v.1]"
@@ -10125,10 +10112,8 @@ SCUS-97488:
   gameFixes:
     - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     textureInsideRT: 1 # Fixes broken character models.
 SCUS-97489:
@@ -10221,7 +10206,7 @@ SCUS-97509:
   region: "NTSC-U"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCUS-97510:
   name: "ATV Offroad Fury 2 [Greatest Hits]"
@@ -10266,7 +10251,7 @@ SCUS-97516:
     - InstantDMAHack # Fixes holes in face geometry.
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
 SCUS-97517:
   name: "Killzone [Greatest Hits]"
@@ -10391,7 +10376,7 @@ SCUS-97555:
   region: "NTSC-U"
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
+    textureInsideRT: 1
 SCUS-97556:
   name: "MLB '07 - The Show"
   region: "NTSC-U"
@@ -10403,7 +10388,8 @@ SCUS-97558:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
+    mipmap: 2 # Fixes broken textures.
+    textureInsideRT: 1
 SCUS-97560:
   name: "SOCOM - U.S. Navy SEALs - Combined Assault [Demo]"
   region: "NTSC-U"
@@ -10443,10 +10429,8 @@ SCUS-97574:
   gameFixes:
     - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     textureInsideRT: 1 # Fixes broken character models.
 SCUS-97579:
@@ -58274,10 +58258,8 @@ TCES-53286:
   gameFixes:
     - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     textureInsideRT: 1 # Fixes broken character models.
 TCPS-10058:
