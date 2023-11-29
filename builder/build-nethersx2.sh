@@ -61,7 +61,7 @@ patch() {
 
 nofile() {
     echo -ne "\e[96mDownloading \e[0m\e[94mAetherSX2...\e[0m"
-    curl -s -o "$input_path/15210-v1.5-4248.apk" "https://www.aethersx2.com/archive/android/alpha/15210-v1.5-4248.apk"
+    curl -s -o "$input_path/15210-v1.5-4248.apk" "https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk"
     echo -e "\e[92m[Done]\e[0m"
     patch
 }
