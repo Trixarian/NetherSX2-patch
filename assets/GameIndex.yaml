@@ -266,6 +266,7 @@ PAPX-90516:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 PAPX-90517:
   name: "Prince of Persia - Jikan no Suna [Trial]"
   region: "NTSC-J"
@@ -1125,6 +1126,7 @@ SCAJ-20073:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCAJ-20074:
   name: "King of Fighters 2002, The"
   region: "NTSC-Unk"
@@ -2758,6 +2760,7 @@ SCED-51700:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCED-51728:
   name: "EverQuest - Online Adventures [Demo]"
   region: "PAL-E"
@@ -3228,6 +3231,7 @@ SCED-52952:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCED-52969:
   name: "EyeToy - Play 2"
   region: "PAL-M12"
@@ -4483,6 +4487,7 @@ SCES-51608:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCES-51610:
   name: "This is Football 2004 [Red Devils 2004]"
   region: "PAL-BE"
@@ -4815,6 +4820,7 @@ SCES-52460:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCES-52529:
   name: "Sly 2 - Band of Thieves"
   region: "PAL-M11"
@@ -5022,12 +5028,14 @@ SCES-53285:
 SCES-53286:
   name: "Jak X - Combat Racing"
   region: "PAL-M7"
-  gameFixes:
-    - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
+    roundSprite: 1 # Fix lines in the sky.
+    textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    textureInsideRT: 1 # Fixes broken character models.
+    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
+    trilinearFiltering: 1 # Fixes smooths texture transitions.
+    beforeDraw: "OI_JakGames"
   memcardFilters: # Reads Ratchet Gladiator data.
     - "SCES-53286"
     - "SCES-53285"
@@ -6112,6 +6120,7 @@ SCKA-20010:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCKA-20011:
   name: "Ratchet & Clank 2"
   region: "NTSC-K"
@@ -6298,6 +6307,7 @@ SCKA-20040:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCKA-20041:
   name: "EyeToy - Play 2"
   region: "NTSC-K"
@@ -7331,6 +7341,7 @@ SCPS-15057:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCPS-15058:
   name: "Arc the Lad - Generation"
   region: "NTSC-J"
@@ -9326,6 +9337,7 @@ SCUS-97265:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCUS-97266:
   name: "Final Fantasy XI [Disc 1 of 2]"
   region: "NTSC-U"
@@ -9363,6 +9375,7 @@ SCUS-97273:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCUS-97274:
   name: "Jak II [Video Demo]"
   region: "NTSC-U"
@@ -9490,6 +9503,7 @@ SCUS-97330:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCUS-97331:
   name: "Official U.S. PlayStation Magazine Demo Disc 078"
   region: "NTSC-U"
@@ -9616,6 +9630,7 @@ SCUS-97374:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
+    beforeDraw: "OI_JakGames"
 SCUS-97377:
   name: "Syphon Filter - The Omega Strain [Regular Demo]"
   region: "NTSC-U"
@@ -9748,6 +9763,7 @@ SCUS-97412:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCUS-97413:
   name: "Ratchet & Clank - Up Your Arsenal [Public Beta v1.0]"
   region: "NTSC-U"
@@ -9812,13 +9828,14 @@ SCUS-97429:
   name: "Jak X - Combat Racing"
   region: "NTSC-U"
   compat: 5
-  gameFixes:
-    - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
+    roundSprite: 1 # Fix lines in the sky.
+    textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
     cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
-    textureInsideRT: 1 # Fixes broken character models.
+    trilinearFiltering: 1 # Fixes smooths texture transitions.
+    beforeDraw: "OI_JakGames"
   memcardFilters:
     - "SCUS-97429"
     - "SCUS-97465"
@@ -10088,12 +10105,14 @@ SCUS-97485:
 SCUS-97486:
   name: "Jak X - Combat Racing [Regular Demo]"
   region: "NTSC-U"
-  gameFixes:
-    - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
+    roundSprite: 1 # Fix lines in the sky.
+    textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    textureInsideRT: 1 # Fixes broken character models.
+    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
+    trilinearFiltering: 1 # Fixes smooths texture transitions.
+    beforeDraw: "OI_JakGames"
 SCUS-97487:
   name: "Ratchet - Deadlocked [Public Beta v.1]"
   region: "NTSC-U"
@@ -10109,13 +10128,14 @@ SCUS-97488:
   name: "Jak X - Combat Racing [Public Beta v.1]"
   region: "NTSC-U"
   compat: 5
-  gameFixes:
-    - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
+    roundSprite: 1 # Fix lines in the sky.
+    textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
     cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
-    textureInsideRT: 1 # Fixes broken character models.
+    trilinearFiltering: 1 # Fixes smooths texture transitions.
+    beforeDraw: "OI_JakGames"
 SCUS-97489:
   name: "SOCOM 3 - U.S. Navy SEALs [Public Beta v.1]"
   region: "NTSC-U"
@@ -10208,6 +10228,7 @@ SCUS-97509:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCUS-97510:
   name: "ATV Offroad Fury 2 [Greatest Hits]"
   region: "NTSC-U"
@@ -10253,6 +10274,7 @@ SCUS-97516:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
     autoFlush: 1 # Fixes lighting.
+    beforeDraw: "OI_JakGames"
 SCUS-97517:
   name: "Killzone [Greatest Hits]"
   region: "NTSC-U"
@@ -10377,6 +10399,7 @@ SCUS-97555:
   gsHWFixes:
     mipmap: 2 # Fixes broken textures.
     textureInsideRT: 1
+    beforeDraw: "OI_JakGames"
 SCUS-97556:
   name: "MLB '07 - The Show"
   region: "NTSC-U"
@@ -10426,13 +10449,14 @@ SCUS-97572:
 SCUS-97574:
   name: "Jak X - Combat Racing [Greatest Hits]"
   region: "NTSC-U"
-  gameFixes:
-    - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
+    roundSprite: 1 # Fix lines in the sky.
+    textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
     cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
-    textureInsideRT: 1 # Fixes broken character models.
+    trilinearFiltering: 1 # Fixes smooths texture transitions.
+    beforeDraw: "OI_JakGames"
 SCUS-97579:
   name: "ATV Offroad Fury 4 [Demo]"
   region: "NTSC-U"
@@ -58255,13 +58279,14 @@ TCES-53286:
   name: "Jak X Beta Trial Code"
   region: "PAL-E"
   compat: 5
-  gameFixes:
-    - InstantDMAHack # Fixes bad IPU DMA timing.
   gsHWFixes:
+    roundSprite: 1 # Fix lines in the sky.
+    textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
     cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
-    textureInsideRT: 1 # Fixes broken character models.
+    trilinearFiltering: 1 # Fixes smooths texture transitions.
+    beforeDraw: "OI_JakGames"
 TCPS-10058:
   name: "Densha de Go! Shinkansen [with Controller]"
   region: "NTSC-J"
