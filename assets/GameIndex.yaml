@@ -5033,7 +5033,6 @@ SCES-53286:
     textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
   memcardFilters: # Reads Ratchet Gladiator data.
@@ -9833,7 +9832,6 @@ SCUS-97429:
     textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
   memcardFilters:
@@ -10110,7 +10108,6 @@ SCUS-97486:
     textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
 SCUS-97487:
@@ -10133,7 +10130,6 @@ SCUS-97488:
     textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
 SCUS-97489:
@@ -10454,7 +10450,6 @@ SCUS-97574:
     textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
 SCUS-97579:
@@ -58284,7 +58279,6 @@ TCES-53286:
     textureInsideRT: 1 # Fixes broken character models.
     autoFlush: 1 # Fixes lighting.
     mipmap: 2 # Fixes broken textures.
-    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
 TCPS-10058:
