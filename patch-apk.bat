@@ -25,7 +25,7 @@ if exist 15210-v1.5-4248.apk goto patch
 if not exist 15210-v1.5-4248-noads.apk (
   goto getapk 
 ) else (
-  :: Check if we're patching our own produced NetherSX2 apk
+  :: Check if we're patching our self-produced NetherSX2 apk
   for /f %%f in ('""lib\md5sum.exe" "15210-v1.5-4248-noads.apk""') do (
     if %%f neq %verhash% ( 
       goto update
