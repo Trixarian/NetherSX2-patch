@@ -16,9 +16,9 @@ display_light_red() {
 
 # start of script
 clear
-printf "\e[1;91m========================\n"
-printf " NetherSX2 Patcher v1.7\n"
-printf "========================\e[0m\n"
+printf "\e[1;91m==========================\n"
+printf " NetherSX2 Patcher v1.7.1\n"
+printf "==========================\e[0m\n"
 
 # Check if the NetherSX2 APK exists and if it's named
 if [ ! -f "15210-v1.5-4248-noads.apk" ] || [ "$(md5sum "15210-v1.5-4248-noads.apk" | awk '{print $1}')" = "c98b0e4152d3b02fbfb9f62581abada5" ]; then

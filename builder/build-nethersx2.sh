@@ -1,6 +1,6 @@
 #!/bin/bash
 # ********************************* CONFIG **********************************
-patch_name="NetherSX2 Builder v1.7"
+patch_name="NetherSX2 Builder v1.7.1"
 patch_author=""
 md5hash="c98b0e4152d3b02fbfb9f62581abada5"
 xdelta_name="nethersx2.xdelta"
