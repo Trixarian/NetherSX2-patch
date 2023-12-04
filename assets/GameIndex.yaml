@@ -16974,7 +16974,8 @@ SLES-52322:
     cpuFramebufferConversion: 1 # Fixes garbage rendering presentation.
     textureInsideRT: 1 # Fixes rendering
     disablePartialInvalidation: 1 # Corrects color from textureInsideRT, unique to 4248.
-    roundSprite: 1 # Fixes blue rectangle and line artifacts
+    halfPixelOffset: 2 # Fixes block shaped artifacts when upscaling
+    roundSprite: 1 # Fixes blue line artifacts when upscaling
 SLES-52323:
   name: "Richard Burns Rally"
   region: "PAL-M5"
@@ -50828,7 +50829,8 @@ SLUS-20732:
     cpuFramebufferConversion: 1 # Fixes garbage rendering presentation.
     textureInsideRT: 1 # Fixes rendering
     disablePartialInvalidation: 1 # Corrects color from textureInsideRT, unique to 4248.
-    roundSprite: 1 # Fixes blue rectangle and line artifacts
+    halfPixelOffset: 2 # Fixes block shaped artifacts when upscaling
+    roundSprite: 1 # Fixes blue line artifacts when upscaling
 SLUS-20733:
   name: "Castlevania - Lament of Innocence"
   region: "NTSC-U"
