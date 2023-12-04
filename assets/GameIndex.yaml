@@ -16971,6 +16971,11 @@ SLES-52322:
     texturePreloading: 1 # Performs better with partial preload because it is slow on locations outside gameplay foremost.
     mergeSprite: 1 # Fixes misaligned white lines.
     PCRTCOverscan: 1 # Fixes missing HUD.
+    cpuFramebufferConversion: 1 # Fixes garbage rendering presentation.
+    textureInsideRT: 1 # Fixes rendering
+    disablePartialInvalidation: 1 # Corrects color from textureInsideRT, unique to 4248.
+    halfPixelOffset: 2 # Fixes block shaped artifacts when upscaling
+    roundSprite: 1 # Fixes blue line artifacts when upscaling
 SLES-52323:
   name: "Richard Burns Rally"
   region: "PAL-M5"
@@ -20089,16 +20094,19 @@ SLES-53501:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 1 # Fixes bloom misalignment.
+    recommendedBlendingLevel: 3 # Corrects lightning when using Vulkan
 SLES-53502:
   name: "Star Wars - Battlefront II"
   region: "PAL-F"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes bloom misalignment.
+    recommendedBlendingLevel: 3 # Corrects lightning when using Vulkan
 SLES-53503:
   name: "Star Wars - Battlefront II"
   region: "PAL-G"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes bloom misalignment.
+    recommendedBlendingLevel: 3 # Corrects lightning when using Vulkan
 SLES-53504:
   name: "Agent Hugo"
   region: "PAL-M11"
@@ -37117,6 +37125,7 @@ SLPM-66190:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes bloom misalignment.
+    recommendedBlendingLevel: 3 # Corrects lightning when using Vulkan
 SLPM-66191:
   name: "Tiger Woods PGA Tour 06"
   region: "NTSC-J"
@@ -50817,6 +50826,11 @@ SLUS-20732:
     texturePreloading: 1 # Performs better with partial preload because it is slow on locations outside gameplay foremost.
     mergeSprite: 1 # Fixes misaligned white lines.
     PCRTCOverscan: 1 # Fixes missing HUD.
+    cpuFramebufferConversion: 1 # Fixes garbage rendering presentation.
+    textureInsideRT: 1 # Fixes rendering
+    disablePartialInvalidation: 1 # Corrects color from textureInsideRT, unique to 4248.
+    halfPixelOffset: 2 # Fixes block shaped artifacts when upscaling
+    roundSprite: 1 # Fixes blue line artifacts when upscaling
 SLUS-20733:
   name: "Castlevania - Lament of Innocence"
   region: "NTSC-U"
@@ -53608,6 +53622,7 @@ SLUS-21240:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 1 # Fixes bloom misalignment.
+    recommendedBlendingLevel: 3 # Corrects lightning when using Vulkan
 SLUS-21241:
   name: "NHL '06"
   region: "NTSC-U"
