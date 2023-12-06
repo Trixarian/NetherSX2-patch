@@ -1,0 +1,1 @@
+java -jar lib\apktool.jar d -s -o "NetherSX2" "15210-v1.5-4248-noads.apk"
