@@ -3,14 +3,15 @@
 Title NetherSX2 Patcher
 :: Allows for Terminal Colors to be used
 set col=lib\cmdcolor.exe
+set patch=patch.xdelta
 set md5hash=c98b0e4152d3b02fbfb9f62581abada5
-set verhash=330f7cc1289b9a1b7ea783505f18329e
+set verhash=cc34cefdc0341b21bb1949b52d5327e8
 set /A vercheck=0
 
 :: Display Banner
-echo \033[91m========================== | %col%
-echo \033[91m NetherSX2 Patcher v1.7.1  | %col%
-echo \033[91m========================== | %col%
+echo \033[91m======================== | %col%
+echo \033[91m NetherSX2 Patcher v1.8  | %col%
+echo \033[91m======================== | %col%
 
 :: Makes sure Java is installed and in the PATH
 java >nul 2>&1
@@ -41,10 +42,16 @@ if not exist 15210-v1.5-4248-noads.apk (
 for /f %%f in ('""lib\md5sum.exe" "15210-v1.5-4248.apk""') do (
   if %%f neq %md5hash% goto wrongmd5
 )
-set /A vercheck=1
+:: Check if we should use the Old UI
+if exist lib\old-ui.xdelta set patch=old-ui.xdelta
 :: Patching the AetherSX2 into a copy of NetherSX2
-<nul set /p "=\033[96mPatching to \033[91mNetherSX2...                      " | %col%
-lib\xdelta -d -f -s 15210-v1.5-4248.apk lib\patch.xdelta 15210-v1.5-4248-noads.apk
+set /A vercheck=1
+if %patch% equ old-ui.xdelta (
+  <nul set /p "=\033[96mPatching to \033[91mNetherSX2 with Old UI...          " | %col%
+) else (
+  <nul set /p "=\033[96mPatching to \033[91mNetherSX2 with New UI...          " | %col%
+)
+lib\xdelta -d -f -s 15210-v1.5-4248.apk lib\%patch% 15210-v1.5-4248-noads.apk
 echo \033[92m[Done] | %col%
 goto update
 
