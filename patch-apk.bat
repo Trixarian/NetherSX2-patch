@@ -135,7 +135,7 @@ if %vercheck%==0 (
 
 :: Resigns the APK before exiting
 <nul set /p "=\033[96mResigning the \033[91mNetherSX2 APK...                " | %col%
-java -jar lib\apksigner.jar sign --ks lib\android.jks --ks-pass pass:android 15210-v1.5-4248-noads[patched].apk  
+java -jar lib\apksigner.jar sign --ks lib\android.jks --ks-pass pass:android_sign --key-pass pass:android_sign_alias 15210-v1.5-4248-noads[patched].apk
 :: Alternate Key:
 :: java -jar lib\apksigner.jar sign --ks lib\public.jks --ks-pass pass:public 15210-v1.5-4248-noads[patched].apk
 del 15210-v1.5-4248-noads[patched].apk.idsig >nul 2>&1
