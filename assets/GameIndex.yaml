@@ -11630,7 +11630,7 @@ SLED-54401:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
@@ -19391,7 +19391,7 @@ SLES-53196:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
@@ -19402,7 +19402,7 @@ SLES-53197:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
@@ -20668,7 +20668,7 @@ SLES-53641:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
@@ -22674,7 +22674,7 @@ SLES-54384:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
@@ -28553,7 +28553,7 @@ SLPM-55141:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
@@ -38122,7 +38122,7 @@ SLPM-66430:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
@@ -51953,7 +51953,7 @@ SLUS-20945:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
@@ -54906,7 +54906,7 @@ SLUS-21439:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
@@ -57982,7 +57982,7 @@ SLUS-29150:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
@@ -58204,7 +58204,7 @@ SLUS-29196:
   gsHWFixes:
     mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
     trilinearFiltering: 1
-    textureInsideRT: 1 # Fixes shadow maps.
+    textureInsideRT: 2 # Fixes shadow maps.
     roundSprite: 2 # Fixes misaligned bloom.
     mergeSprite: 1 # Fixes misaligned bloom.
     halfPixelOffset: 2 # Fixes misaligned bloom.
