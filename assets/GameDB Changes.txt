@@ -6,6 +6,8 @@ eeCycleRate
 moveHandler
 nativePaletteDraw
 
+FpuNegDivHack got replaced with eeDivRoundMode
+
 Functions changed after March 13th:
 ===================================
 AutoFlush's function now has three options instead of two. 1 was reassigned to mean Sprites Only while 2 is the Default behaviour
