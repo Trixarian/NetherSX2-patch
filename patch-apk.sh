@@ -17,7 +17,7 @@ display_light_red() {
 # start of script
 clear
 printf "\e[1;91m==========================\n"
-printf " NetherSX2 Patcher v1.7.1\n"
+printf " NetherSX2 Patcher v1.8\n"
 printf "==========================\e[0m\n"
 
 # Check if the NetherSX2 APK exists and if it's named
@@ -192,14 +192,14 @@ fi
 if command -v "apksigner" >/dev/null 2>&1; then
 	display_cyan "Resigning the "
 	display_light_red "NetherSX2 APK...                "
-	apksigner sign --ks lib/android.jks --ks-pass pass:android 15210-v1.5-4248-noads.apk
+	apksigner sign --ks lib/android.jks --ks-pass pass:android_sign --key-pass pass:android_sign_alias 15210-v1.5-4248-noads.apk
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
 else
 	display_cyan "Resigning the "
 	display_light_red "NetherSX2 APK...                "
-	java -jar lib/apksigner.jar sign --ks lib/android.jks --ks-pass pass:android 15210-v1.5-4248-noads.apk
+	java -jar lib/apksigner.jar sign --ks lib/android.jks --ks-pass pass:android_sign --key-pass pass:android_sign_alias 15210-v1.5-4248-noads.apk
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
