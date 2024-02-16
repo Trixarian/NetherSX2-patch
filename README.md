@@ -33,8 +33,8 @@ The rest comes prepackaged for your convenience
 1. Run patch-apk.bat to patch your self-provided copy of the AetherSX2 4248 apk or to download a copy for you
 2. Allow it to finish patching, building and signing your copy of NetherSX2
 3. This will produce two copies of NetherSX2: 
-  * 15210-v1.8-4248-noads.apk - Comes with the Original GameDB
-  * 15210-v1.8-4248-noads[patched].apk - Comes with the updated GameDB
+   - 15210-v1.8-4248-noads.apk - Comes with the Original GameDB
+   - 15210-v1.8-4248-noads[patched].apk - Comes with the updated GameDB
 Use whichever one you prefer
 4. Copy your prefered apk file to your phone and install it using your File Manager
 
