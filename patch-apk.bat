@@ -9,6 +9,7 @@ set patch=patch.xdelta
 set vername=15210-%ver%-4248-noads
 set md5hash=c98b0e4152d3b02fbfb9f62581abada5
 set verhash=cc34cefdc0341b21bb1949b52d5327e8
+set oldhash=cc34cefdc0341b21bb1949b52d5327e8
 set /A vercheck=0
 
 :: Display Banner
@@ -41,6 +42,12 @@ if not exist %vername%.apk (
   :: Check if we're patching our self-produced NetherSX2 apk
   for /f %%f in ('""lib\md5sum.exe" "%vername%.apk""') do (
     if %%f neq %verhash% ( 
+      goto update
+    ) else (
+      set /A vercheck=1
+      goto update
+    )
+    if %%f neq %oldhash% ( 
       goto update
     ) else (
       set /A vercheck=1
