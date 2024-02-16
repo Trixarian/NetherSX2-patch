@@ -8,8 +8,8 @@ set ver=v1.8
 set patch=patch.xdelta
 set vername=15210-%ver%-4248-noads
 set md5hash=c98b0e4152d3b02fbfb9f62581abada5
-set verhash=cc34cefdc0341b21bb1949b52d5327e8
-set oldhash=cc34cefdc0341b21bb1949b52d5327e8
+set verhash=2406fc75e1bca97a633538da282fe282
+set oldhash=aec3ef2433d951a2b7f56f9a4315dca2
 set /A vercheck=0
 
 :: Display Banner
@@ -62,7 +62,7 @@ for /f %%f in ('""lib\md5sum.exe" "15210-v1.5-4248.apk""') do (
   if %%f neq %md5hash% goto wrongmd5
 )
 :: Check if we should use the Old UI
-if exist old-ui.xdelta move old-ui.xdelta lib\
+if exist old-ui.xdelta move old-ui.xdelta lib\ >nul 2>&1
 if exist lib\old-ui.xdelta set patch=old-ui.xdelta
 :: Patching the AetherSX2 into a copy of NetherSX2
 set /A vercheck=1
