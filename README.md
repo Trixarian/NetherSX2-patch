@@ -35,7 +35,6 @@ The rest comes prepackaged for your convenience
 3. This will produce two copies of NetherSX2: 
    - 15210-v1.8-4248-noads.apk - Comes with the Original GameDB
    - 15210-v1.8-4248-noads[patched].apk - Comes with the updated GameDB
-Use whichever one you prefer
 4. Copy your prefered apk file to your phone and install it using your File Manager
 
 You can now rerun patch-apk.bat with the above APK to update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches at a later date without needing to repatch it each time
