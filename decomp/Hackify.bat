@@ -37,12 +37,3 @@ lib\hexalter 4248\classes.dex 0x3BDAB4=0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0
 :: Fix checksum
 lib\hexalter 4248\classes.dex 0x8=0xdd,0xa2,0x21,0x3a
 :: --End Patch Native Library--
-
-::Copy Patched files
-::xcopy patch\* 4248\* /E /Y
-::Delete Trash Files
-::del /F 4248\unknown\*.properties
-pause 
-
-:: 6E 10 93 02 02 00 0C 03 71 20 B3 90 13 00
-:: dd bs=1 conv=notrunc if="$WORKDIR/$CLASSES_PATH" skip=$((0x3C5A24)) seek=$((0x3BDAA6)) of="$WORKDIR/$CLASSES_PATH" count=14

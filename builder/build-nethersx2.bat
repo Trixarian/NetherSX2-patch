@@ -2,7 +2,7 @@
 :: Sets the window's title
 Title NetherSX2 Builder
 :: ********************************* CONFIG **********************************
-set patch_name=NetherSX2 Builder v1.8
+set patch_name=NetherSX2 Builder v1.9
 set patch_author=
 set md5hash=c98b0e4152d3b02fbfb9f62581abada5
 set xdelta_name=nethersx2.xdelta
