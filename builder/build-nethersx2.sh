@@ -50,7 +50,7 @@ patch() {
         if command -v xdelta3 &> /dev/null; then
             xdelta3 -d -f -s "$i" "$xdelta_patch" "$output_path/$(basename "$i" .apk)$patched_end.apk"
         else
-			chmod $p2f/lib/xdelta3 +x
+			chmod +x $p2f/lib/xdelta3
             $p2f/lib/xdelta3 -d -f -s "$i" "$xdelta_patch" "$output_path/$(basename "$i" .apk)$patched_end.apk"
         fi
     done
@@ -62,7 +62,7 @@ patch() {
 
 nofile() {
     echo -ne "\e[96mDownloading \e[0m\e[94mAetherSX2...\e[0m"
-    curl -sL -o "$input_path/15210-v1.5-4248.apk" "https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk"
+    curl -sL -o "$input_path/15210-v1.9-4248.apk" "https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk"
     echo -e "\e[92m[Done]\e[0m"
     patch
 }

@@ -4,7 +4,7 @@ Title NetherSX2 Patcher
 :: Allows for Terminal Colors to be used
 set col=lib\cmdcolor.exe
 :: Setting base variables
-set ver=v1.8
+set ver=v1.9
 set patch=patch.xdelta
 set vername=15210-%ver%-4248-noads
 set md5hash=c98b0e4152d3b02fbfb9f62581abada5
@@ -31,6 +31,7 @@ for /r %%i in (*.apk) do (
 )
 :: Check if an NetherSX2 APK exists and if it's named correctly
 if exist 15210-v1.5-4248-noads.apk set vername=15210-v1.5-4248-noads
+if exist 15210-v1.8-4248-noads.apk set vername=15210-v1.8-4248-noads
 if exist %vername%[patched].apk (
   set /A vercheck=1
   ren %vername%[patched].apk %vername%.apk >nul 2>&1

@@ -93,7 +93,7 @@ goto end
 
 :nofile
 <nul set /p "=\033[96mDownloading \033[94mAetherSX2... " | %col%
-powershell -Command "(new-object System.Net.WebClient).DownloadFile('https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk','15210-v1.5-4248.apk')"
+powershell -Command "(new-object System.Net.WebClient).DownloadFile('https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk','15210-v1.9-4248.apk')"
 echo \033[92m[Done] | %col%
 goto patch
 
