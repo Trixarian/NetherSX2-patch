@@ -23,6 +23,7 @@ Windows:
 
 Linux:
 * The xdelta3 package
+* wget, if downloading the APK is needed
 * The OpenJDK package (this name my vary depending on your Linux Distro)
 * Optional: The aapt and apksigner packages (the Linux version uses it's own binaries if these packages aren't installed)
 * A copy of the NetherSX2 APK
@@ -42,7 +43,7 @@ If you prefer the Older UI Design, drop the old-ui.xdelta file in the extras fol
 
 **Linux version:**
 
-Once you have a copy of the NetherSX2 APK named 15210-v1.5-4248-noads.apk, drop it in the same folder as patch-apk.sh and run these commands:
+Run these commands:
 ```bash
 chmod +x patch-apk.sh
 # then run sh file

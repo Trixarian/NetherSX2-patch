@@ -21,8 +21,24 @@ printf " NetherSX2 Patcher v1.8\n"
 printf "==========================\e[0m\n"
 
 # Check if the NetherSX2 APK exists and if it's named
-if [ ! -f "15210-v1.5-4248-noads.apk" ] || [ "$(md5sum "15210-v1.5-4248-noads.apk" | awk '{print $1}')" = "c98b0e4152d3b02fbfb9f62581abada5" ]; then
-	printf "\e[0;31mError: No APK found or wrong one provided!\n"
+if [ ! -f "15210-v1.5-4248.apk" ]; then
+	wget https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk
+	if [ ! $? -eq 0 ]; then
+		printf "Failed to download unmodified APK!\n"
+		exit 1
+	fi
+fi
+
+if [ ! -f "15210-v1.5-4248-noads.apk" ]; then
+	xdelta3 -d -f -s 15210-v1.5-4248.apk builder/lib/nethersx2.xdelta 15210-v1.5-4248-noads.apk
+	if [ ! $? -eq 0 ]; then
+		printf "Failed to apply nethersx2 patch to APK!\n"
+		exit 1
+	fi
+fi
+
+if [ "$(md5sum "15210-v1.5-4248-noads.apk" | awk '{print $1}')" = "c98b0e4152d3b02fbfb9f62581abada5" ]; then
+	printf "\e[0;31mError: Incorrect APK provided! Original unpatched APK should not be renamed -noads.\n"
 	printf "Please provide a copy of NetherSX2 named 15210-v1.5-4248-noads.apk!\e[0m\n"
 	exit 1
 fi
