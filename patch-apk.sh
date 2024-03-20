@@ -43,32 +43,45 @@ if [ "$(md5sum "15210-v1.5-4248-noads.apk" | awk '{print $1}')" = "c98b0e4152d3b
 	exit 1
 fi
 
+cp 15210-v1.5-4248-noads.apk 15210-v1.5-4248-patched.apk
+
 if command -v "aapt" >/dev/null 2>&1; then
 	# Ad Services Cleanup
 	display_cyan "Removing the "
 	display_light_red "Ad Services leftovers...         "
-	aapt r 15210-v1.5-4248-noads.apk user-messaging-platform.properties			> /dev/null 2>&1
-	aapt r 15210-v1.5-4248-noads.apk play-services-tasks.properties				> /dev/null 2>&1
-	aapt r 15210-v1.5-4248-noads.apk play-services-measurement-sdk-api.properties		> /dev/null 2>&1
-	aapt r 15210-v1.5-4248-noads.apk play-services-measurement-base.properties		> /dev/null 2>&1
-	aapt r 15210-v1.5-4248-noads.apk play-services-basement.properties			> /dev/null 2>&1
-	aapt r 15210-v1.5-4248-noads.apk play-services-base.properties				> /dev/null 2>&1
-	aapt r 15210-v1.5-4248-noads.apk play-services-appset.properties			> /dev/null 2>&1
-	aapt r 15210-v1.5-4248-noads.apk play-services-ads.properties				> /dev/null 2>&1
-	aapt r 15210-v1.5-4248-noads.apk play-services-ads-lite.properties			> /dev/null 2>&1
-	aapt r 15210-v1.5-4248-noads.apk play-services-ads-identifier.properties		> /dev/null 2>&1
-	aapt r 15210-v1.5-4248-noads.apk play-services-ads-base.properties			> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk user-messaging-platform.properties			> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk play-services-tasks.properties				> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk play-services-measurement-sdk-api.properties		> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk play-services-measurement-base.properties		> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk play-services-basement.properties			> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk play-services-base.properties				> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk play-services-appset.properties			> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk play-services-ads.properties				> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk play-services-ads-lite.properties			> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk play-services-ads-identifier.properties		> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk play-services-ads-base.properties			> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	else
 		printf "\e[1;32m[Already removed]\e[0m\n"
 	fi
 
+    # Adds Additional Options to App Settings
+	display_cyan "Adding "
+	display_light_red "Additional Options...                  "
+	aapt r 15210-v1.5-4248-patched.apk res/xml/advanced_preferences.xml
+	aapt a 15210-v1.5-4248-patched.apk res/xml/advanced_preferences.xml >/dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk res/xml/graphics_preferences.xml
+	aapt a 15210-v1.5-4248-patched.apk res/xml/graphics_preferences.xml >/dev/null 2>&1
+	if [ $? -eq 0 ]; then
+		display_done
+	fi
+
 	# Updates the FAQ to show that we're using the latest version of NetherSX2
 	display_cyan "Updating the "
 	display_light_red "FAQ...                           "
-	aapt r 15210-v1.5-4248-noads.apk assets/faq.html
-	aapt a 15210-v1.5-4248-noads.apk assets/faq.html					> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk assets/faq.html
+	aapt a 15210-v1.5-4248-patched.apk assets/faq.html					> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
@@ -76,8 +89,8 @@ if command -v "aapt" >/dev/null 2>&1; then
 	# Updates to Latest GameDB with features removed that are not supported by the libemucore.so from March 13th
 	display_cyan "Updating the "
 	display_light_red "GameDB...                        "
-	aapt r 15210-v1.5-4248-noads.apk assets/GameIndex.yaml
-	aapt a 15210-v1.5-4248-noads.apk assets/GameIndex.yaml					> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk assets/GameIndex.yaml
+	aapt a 15210-v1.5-4248-patched.apk assets/GameIndex.yaml					> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
@@ -85,8 +98,8 @@ if command -v "aapt" >/dev/null 2>&1; then
 	# Updates the Game Controller Database
 	display_cyan "Updating the "
 	display_light_red "Controller Database...           "
-	aapt r 15210-v1.5-4248-noads.apk assets/game_controller_db.txt
-	aapt a 15210-v1.5-4248-noads.apk assets/game_controller_db.txt				> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk assets/game_controller_db.txt
+	aapt a 15210-v1.5-4248-patched.apk assets/game_controller_db.txt				> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
@@ -94,8 +107,8 @@ if command -v "aapt" >/dev/null 2>&1; then
 	# Updates the Widescreen Patches
 	display_cyan "Updating the "
 	display_light_red "Widescreen Patches...            "
-	aapt r 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
-	aapt a 15210-v1.5-4248-noads.apk assets/cheats_ws.zip					> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk assets/cheats_ws.zip
+	aapt a 15210-v1.5-4248-patched.apk assets/cheats_ws.zip					> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
@@ -103,8 +116,8 @@ if command -v "aapt" >/dev/null 2>&1; then
 	# Updates the No-Interlacing Patches
 	display_cyan "Updating the "
 	display_light_red "No-Interlacing Patches...        "
-	aapt r 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
-	aapt a 15210-v1.5-4248-noads.apk assets/cheats_ni.zip					> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk assets/cheats_ni.zip
+	aapt a 15210-v1.5-4248-patched.apk assets/cheats_ni.zip					> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
@@ -112,8 +125,8 @@ if command -v "aapt" >/dev/null 2>&1; then
 	# Fixes License Compliancy Issue
 	display_cyan "Fixing the "
 	display_light_red "License Compliancy Issue...        "
-	aapt r 15210-v1.5-4248-noads.apk assets/3rdparty.html
-	aapt a 15210-v1.5-4248-noads.apk assets/3rdparty.html					> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk assets/3rdparty.html
+	aapt a 15210-v1.5-4248-patched.apk assets/3rdparty.html					> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
@@ -121,8 +134,8 @@ if command -v "aapt" >/dev/null 2>&1; then
 	# Adds the placeholder file that makes RetroAchievements Notifications work
 	display_cyan "Fixing the "
 	display_light_red "RetroAchievements Notifications... "
-	aapt r 15210-v1.5-4248-noads.apk assets/placeholder.png					> /dev/null 2>&1
-	aapt a 15210-v1.5-4248-noads.apk assets/placeholder.png					> /dev/null 2>&1
+	aapt r 15210-v1.5-4248-patched.apk assets/placeholder.png					> /dev/null 2>&1
+	aapt a 15210-v1.5-4248-patched.apk assets/placeholder.png					> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
@@ -130,17 +143,17 @@ else
 	chmod +x lib/aapt
 	display_cyan "Removing the "
 	display_light_red "Ad Services leftovers...         "
-	lib/aapt r 15210-v1.5-4248-noads.apk user-messaging-platform.properties			> /dev/null 2>&1
-	lib/aapt r 15210-v1.5-4248-noads.apk play-services-tasks.properties			> /dev/null 2>&1
-	lib/aapt r 15210-v1.5-4248-noads.apk play-services-measurement-sdk-api.properties	> /dev/null 2>&1
-	lib/aapt r 15210-v1.5-4248-noads.apk play-services-measurement-base.properties		> /dev/null 2>&1
-	lib/aapt r 15210-v1.5-4248-noads.apk play-services-basement.properties			> /dev/null 2>&1
-	lib/aapt r 15210-v1.5-4248-noads.apk play-services-base.properties			> /dev/null 2>&1
-	lib/aapt r 15210-v1.5-4248-noads.apk play-services-appset.properties			> /dev/null 2>&1
-	lib/aapt r 15210-v1.5-4248-noads.apk play-services-ads.properties			> /dev/null 2>&1
-	lib/aapt r 15210-v1.5-4248-noads.apk play-services-ads-lite.properties			> /dev/null 2>&1
-	lib/aapt r 15210-v1.5-4248-noads.apk play-services-ads-identifier.properties		> /dev/null 2>&1
-	lib/aapt r 15210-v1.5-4248-noads.apk play-services-ads-base.properties			> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk user-messaging-platform.properties			> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk play-services-tasks.properties			> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk play-services-measurement-sdk-api.properties	> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk play-services-measurement-base.properties		> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk play-services-basement.properties			> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk play-services-base.properties			> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk play-services-appset.properties			> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk play-services-ads.properties			> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk play-services-ads-lite.properties			> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk play-services-ads-identifier.properties		> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk play-services-ads-base.properties			> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	else
@@ -149,56 +162,56 @@ else
 
 	display_cyan "Updating the "
 	display_light_red "FAQ...                           "
-	lib/aapt r 15210-v1.5-4248-noads.apk assets/faq.html
-	lib/aapt a 15210-v1.5-4248-noads.apk assets/faq.html					> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk assets/faq.html
+	lib/aapt a 15210-v1.5-4248-patched.apk assets/faq.html					> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
 
 	display_cyan "Updating the "
 	display_light_red "GameDB...                        "
-	lib/aapt r 15210-v1.5-4248-noads.apk assets/GameIndex.yaml
-	lib/aapt a 15210-v1.5-4248-noads.apk assets/GameIndex.yaml				> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk assets/GameIndex.yaml
+	lib/aapt a 15210-v1.5-4248-patched.apk assets/GameIndex.yaml				> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
 
 	display_cyan "Updating the "
 	display_light_red "Controller Database...           "
-	lib/aapt r 15210-v1.5-4248-noads.apk assets/game_controller_db.txt
-	lib/aapt a 15210-v1.5-4248-noads.apk assets/game_controller_db.txt			> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk assets/game_controller_db.txt
+	lib/aapt a 15210-v1.5-4248-patched.apk assets/game_controller_db.txt			> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
 
 	display_cyan "Updating the "
 	display_light_red "Widescreen Patches...            "
-	lib/aapt r 15210-v1.5-4248-noads.apk assets/cheats_ws.zip
-	lib/aapt a 15210-v1.5-4248-noads.apk assets/cheats_ws.zip				> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk assets/cheats_ws.zip
+	lib/aapt a 15210-v1.5-4248-patched.apk assets/cheats_ws.zip				> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
 
 	display_cyan "Updating the "
 	display_light_red "No-Interlacing Patches...        "
-	lib/aapt r 15210-v1.5-4248-noads.apk assets/cheats_ni.zip
-	lib/aapt a 15210-v1.5-4248-noads.apk assets/cheats_ni.zip				> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk assets/cheats_ni.zip
+	lib/aapt a 15210-v1.5-4248-patched.apk assets/cheats_ni.zip				> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
 
 	display_cyan "Fixing the "
 	display_light_red "License Compliancy Issue...        "
-	lib/aapt r 15210-v1.5-4248-noads.apk assets/3rdparty.html
-	lib/aapt a 15210-v1.5-4248-noads.apk assets/3rdparty.html				> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk assets/3rdparty.html
+	lib/aapt a 15210-v1.5-4248-patched.apk assets/3rdparty.html				> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
 
 	display_cyan "Fixing the "
 	display_light_red "RetroAchievements Notifications... "
-	lib/aapt r 15210-v1.5-4248-noads.apk assets/placeholder.png				> /dev/null 2>&1
-	lib/aapt a 15210-v1.5-4248-noads.apk assets/placeholder.png				> /dev/null 2>&1
+	lib/aapt r 15210-v1.5-4248-patched.apk assets/placeholder.png				> /dev/null 2>&1
+	lib/aapt a 15210-v1.5-4248-patched.apk assets/placeholder.png				> /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
@@ -208,14 +221,14 @@ fi
 if command -v "apksigner" >/dev/null 2>&1; then
 	display_cyan "Resigning the "
 	display_light_red "NetherSX2 APK...                "
-	apksigner sign --ks lib/android.jks --ks-pass pass:android_sign --key-pass pass:android_sign_alias 15210-v1.5-4248-noads.apk
+	apksigner sign --ks lib/android.jks --ks-pass pass:android_sign --key-pass pass:android_sign_alias 15210-v1.5-4248-patched.apk
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
 else
 	display_cyan "Resigning the "
 	display_light_red "NetherSX2 APK...                "
-	java -jar lib/apksigner.jar sign --ks lib/android.jks --ks-pass pass:android_sign --key-pass pass:android_sign_alias 15210-v1.5-4248-noads.apk
+	java -jar lib/apksigner.jar sign --ks lib/android.jks --ks-pass pass:android_sign --key-pass pass:android_sign_alias 15210-v1.5-4248-patched.apk
 	if [ $? -eq 0 ]; then
 		display_done
 	fi
@@ -224,14 +237,14 @@ fi
 # if command -v "apksigner" >/dev/null 2>&1; then
 # 	display_cyan "Resigning the "
 # 	display_light_red "NetherSX2 APK...                "
-# 	apksigner sign --ks lib/public.jks --ks-pass pass:public 15210-v1.5-4248-noads.apk
+# 	apksigner sign --ks lib/public.jks --ks-pass pass:public 15210-v1.5-4248-patched.apk
 # 	if [ $? -eq 0 ]; then
 # 		display_done
 # 	fi
 # else
 # 	display_cyan "Resigning the "
 # 	display_light_red "NetherSX2 APK...                "
-# 	java -jar lib/apksigner.jar sign --ks lib/public.jks --ks-pass pass:public 15210-v1.5-4248-noads.apk
+# 	java -jar lib/apksigner.jar sign --ks lib/public.jks --ks-pass pass:public 15210-v1.5-4248-patched.apk
 # 	if [ $? -eq 0 ]; then
 # 		display_done
 # 	fi
