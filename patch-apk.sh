@@ -17,7 +17,7 @@ display_light_red() {
 # start of script
 clear
 printf "\e[1;91m==========================\n"
-printf " NetherSX2 Patcher v1.8\n"
+printf " NetherSX2 Patcher v1.9\n"
 printf "==========================\e[0m\n"
 
 # Check if the NetherSX2 APK exists and if it's named
@@ -30,7 +30,7 @@ if [ ! -f "15210-v1.5-4248.apk" ]; then
 fi
 
 if [ ! -f "15210-v1.5-4248-noads.apk" ]; then
-	xdelta3 -d -f -s 15210-v1.5-4248.apk builder/lib/nethersx2.xdelta 15210-v1.5-4248-noads.apk
+	xdelta3 -d -f -s 15210-v1.5-4248.apk lib/patch.xdelta 15210-v1.5-4248-noads.apk
 	if [ ! $? -eq 0 ]; then
 		printf "Failed to apply nethersx2 patch to APK!\n"
 		exit 1
@@ -64,17 +64,6 @@ if command -v "aapt" >/dev/null 2>&1; then
 		display_done
 	else
 		printf "\e[1;32m[Already removed]\e[0m\n"
-	fi
-
-    # Adds Additional Options to App Settings
-	display_cyan "Adding "
-	display_light_red "Additional Options...                  "
-	aapt r 15210-v1.5-4248-patched.apk res/xml/advanced_preferences.xml
-	aapt a 15210-v1.5-4248-patched.apk res/xml/advanced_preferences.xml >/dev/null 2>&1
-	aapt r 15210-v1.5-4248-patched.apk res/xml/graphics_preferences.xml
-	aapt a 15210-v1.5-4248-patched.apk res/xml/graphics_preferences.xml >/dev/null 2>&1
-	if [ $? -eq 0 ]; then
-		display_done
 	fi
 
 	# Updates the FAQ to show that we're using the latest version of NetherSX2

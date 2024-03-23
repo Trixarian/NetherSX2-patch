@@ -8,8 +8,6 @@ set ver=v1.9
 set patch=patch.xdelta
 set vername=15210-%ver%-4248-noads
 set md5hash=c98b0e4152d3b02fbfb9f62581abada5
-set verhash=2406fc75e1bca97a633538da282fe282
-set oldhash=aec3ef2433d951a2b7f56f9a4315dca2
 set /A vercheck=0
 
 :: Display Banner
@@ -93,16 +91,6 @@ if %vercheck%==0 (
   lib\aapt r %vername%[patched].apk play-services-ads-lite.properties >nul 2>&1
   lib\aapt r %vername%[patched].apk play-services-ads-identifier.properties >nul 2>&1
   lib\aapt r %vername%[patched].apk play-services-ads-base.properties >nul 2>&1
-  echo \033[92m[Done] | %col%
-)
-
-:: Adds Additional Options to App Settings
-if %vercheck%==0 (
-  <nul set /p "=\033[96mAdding more options to \033[91mApp Settings...        " | %col%
-  lib\aapt r %vername%[patched].apk res/xml/advanced_preferences.xml
-  lib\aapt a %vername%[patched].apk res/xml/advanced_preferences.xml >nul 2>&1
-  lib\aapt r %vername%[patched].apk res/xml/graphics_preferences.xml
-  lib\aapt a %vername%[patched].apk res/xml/graphics_preferences.xml >nul 2>&1
   echo \033[92m[Done] | %col%
 )
 
