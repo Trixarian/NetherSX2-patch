@@ -22,11 +22,8 @@ Windows:
 * [The Java(TM) SE Development Kit](https://www.oracle.com/java/technologies/downloads/#jdk21-windows)
 
 Linux:
-* The xdelta3 package
-* wget, if downloading the APK is needed
 * The OpenJDK package (this name my vary depending on your Linux Distro)
-* Optional: The aapt and apksigner packages (the Linux version uses it's own binaries if these packages aren't installed)
-* A copy of the NetherSX2 APK
+* Optional: The aapt, apksigner and xdelta3 packages (the script will attempt to use it's own binaries if these packages aren't installed)
 
 The rest comes prepackaged for your convenience
 
@@ -49,7 +46,7 @@ chmod +x patch-apk.sh
 # then run sh file
 ./patch-apk.sh
 ```
-Credit: [TheKingFireS](https://github.com/TheKingFireS)
+Credit: [TheKingFireS](https://github.com/TheKingFireS) + [BryanJacobs](https://github.com/BryanJacobs)
 
 And there you go, you should now have an updated and bug fixed copy of NetherSX2 on your phone!
 
