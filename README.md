@@ -59,9 +59,9 @@ And there you go, you should now have an updated and bug fixed copy of NetherSX2
 ## Using Builder on Windows + Linux
 1. Grab a copy of [NetherSX2-builder.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/NetherSX2-builder.zip) file from this repository
 2. Unzip the zip file by right clicking and selecting Extracting Here, and enter the now extracted builder folder
-3. On Windows, run the build-nethersx2.bat to build your copy of the latest NetherSX2 in the PatchedAPK folder
-4. On Linux, right click the build-nethersx2.sh file, click Properties and set it as executable, then double click on the build-nethersx2.sh file to run it
-5. Alternatively if you're running it from the terminal use the following commands:
+3. On Windows, run build-nethersx2.bat to build your copy of the latest NetherSX2 in the PatchedAPK folder
+4. On Linux, right click the build-nethersx2.sh file, click Properties and set it as executable, then double click on build-nethersx2.sh to run it
+5. Alternatively if you're running it from the Linux terminal, use the following commands:
 ```bash
 chmod +x build-nethersx2.sh
 ./build-nethersx2.sh
