@@ -27,7 +27,9 @@ Linux:
 Android:
 * The [UniPatcher App](https://play.google.com/store/apps/details?id=org.emunix.unipatcher&hl=en_US&gl=US)
 * A copy of the [AetherSX2 4248 apk](https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk)
-* Either: [nethersx2.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/nethersx2.xdelta) for the New Touchscreen Buttons or [nethersx2-oldui.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/nethersx2-oldui.xdelta) for the Classic AetherSX2 Buttons
+* Either:
+  - [nethersx2.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/nethersx2.xdelta) for the New Touchscreen Buttons
+  - [nethersx2-oldui.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/nethersx2-oldui.xdelta) for the Classic AetherSX2 Buttons
 
 The rest comes prepackaged for your convenience
 
