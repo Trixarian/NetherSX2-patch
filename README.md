@@ -1,6 +1,5 @@
 <p align="center">
-  <img width="312" height="312" src="/.github/assets/logo_light.png#gh-dark-mode-only">
-  <img width="312" height="312" src="/.github/assets/logo_dark.png#gh-light-mode-only">
+  <img width="312" height="312" src="/.github/assets/logo_light.png">
 </p>
 
 # NetherSX2-patch
@@ -25,6 +24,11 @@ Linux:
 * The OpenJDK package (this name my vary depending on your Linux Distro)
 * Optional: The aapt, apksigner and xdelta3 packages (the script will attempt to use it's own binaries if these packages aren't installed)
 
+Android:
+* The [UniPatcher App](https://play.google.com/store/apps/details?id=org.emunix.unipatcher&hl=en_US&gl=US)
+* A copy of the [AetherSX2 4248 apk](https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk)
+* Either: [nethersx2.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/nethersx2.xdelta) for the New Touchscreen Buttons or [nethersx2-oldui.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/nethersx2-oldui.xdelta) for the Classic AetherSX2 Buttons
+
 The rest comes prepackaged for your convenience
 
 ## Using these scripts
@@ -33,7 +37,7 @@ The rest comes prepackaged for your convenience
 3. This will produce two copies of NetherSX2: 
    - 15210-v1.8-4248-noads.apk - Comes with the Original GameDB
    - 15210-v1.8-4248-noads[patched].apk - Comes with the updated GameDB
-4. Copy your prefered apk file to your phone and install it using your File Manager
+4. Copy your prefered apk file to your phone and install it using your File Manager app (normally named Files or File Manager depending on your phone)
 
 You can now rerun patch-apk.bat with the above APK to update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches at a later date without needing to repatch it each time
 If you prefer the Older UI Design, drop the old-ui.xdelta file in the extras folder into the main folder (the one with patch-apk.bat) to make the script revert NetherSX2 to the Older UI design
@@ -48,7 +52,16 @@ chmod +x patch-apk.sh
 ```
 Credit: [TheKingFireS](https://github.com/TheKingFireS) + [BryanJacobs](https://github.com/BryanJacobs)
 
-And there you go, you should now have an updated and bug fixed copy of NetherSX2 on your phone!
+And there you go, you should now have an updated and bug fixed copy of NetherSX2 for your phone!
+
+## Using UniPatcher on Android
+1. Install UniPatcher from the Play Store, download the required AetherSX2 4248 apk and prefered xdelta file
+2. Start UniPatcher, tap the Patch file box and select the nethersx2.xdelta or nethersx2-oldui.xdelta file
+3. Tap the Rom file box and select the 15210-v1.5-4248.apk file
+4. Tap the Output file box and just tap save on the name it gives you (should be 15210-v1.5-4248 [patched].apk by default)
+5. Tap the red save icon at the bottom right. A "Patching complete" message should popup if it worked
+
+Now just install the 15210-v1.5-4248 [patched].apk file using your File Manager app (normally named Files or File Manager depending on your phone)
 
 ## Downloads
 ### Stable
@@ -68,7 +81,7 @@ NOTE: No APKs are provided due to licensing issues. You have to build it yoursel
 * EZOnTheEyes: <https://www.youtube.com/@EZOnTheEyes>
 * Xdelta-GPL: <https://github.com/jmacd/xdelta-gpl>
 * cmdcolor: <https://github.com/alecmev/cmdcolor>
-* md5sums: http://www.pc-tools.net/win32/md5sums
+* md5sums: <http://www.pc-tools.net/win32/md5sums>
 * Android Keystore: <https://github.com/jorfao/pkStore>
 * Alternate Keystore: <https://github.com/tytydraco/public-keystore>
 * Android build-tools: <https://androidsdkmanager.azurewebsites.net/Buildtools>
