@@ -60,11 +60,10 @@ And there you go, you should now have an updated and bug fixed copy of NetherSX2
 1. Grab a copy of [NetherSX2-builder.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/NetherSX2-builder.zip) file from this repository
 2. Unzip the zip file by right clicking and selecting Extracting Here, and enter the now extracted builder folder
 3. On Windows, run the build-nethersx2.bat to build your copy of the latest NetherSX2 in the PatchedAPK folder
-4a. On Linux, right click the build-nethersx2.sh file, click Properties and set it as executable
-4b. Alternatively if you're running it from the terminal use the following commands:
+4. On Linux, right click the build-nethersx2.sh file, click Properties and set it as executable, then double click on the build-nethersx2.sh file to run it
+5. Alternatively if you're running it from the terminal use the following commands:
 ```bash
 chmod +x build-nethersx2.sh
-# then run sh file
 ./build-nethersx2.sh
 ```
 Now just copy the 15210-v1.5-4248-noads.apk in the PatchedAPK folder to your phone and install it using your File Manager app (normally named Files or File Manager depending on your phone)
