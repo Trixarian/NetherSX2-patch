@@ -32,7 +32,7 @@ Android:
 The rest comes prepackaged for your convenience
 
 ## Using these scripts
-1. Run patch-apk.bat to patch your self-provided copy of the AetherSX2 4248 apk or to download a copy for you
+1. Run patch-apk.bat (selecting Run Anyway when prompted) to patch your self-provided copy of the AetherSX2 4248 apk or to download a copy for you
 2. Allow it to finish patching, building and signing your copy of NetherSX2
 3. This will produce two copies of NetherSX2: 
    - 15210-v1.8-4248-noads.apk - Comes with the Original GameDB
@@ -54,6 +54,19 @@ Credit: [TheKingFireS](https://github.com/TheKingFireS) + [BryanJacobs](https://
 
 And there you go, you should now have an updated and bug fixed copy of NetherSX2 for your phone!
 
+## Using Builder on Windows + Linux
+1. Grab a copy of [NetherSX2-builder.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/NetherSX2-builder.zip) file from this repository
+2. Unzip the zip file by right clicking and selecting Extracting Here, and enter the now extracted builder folder
+3. On Windows, run the build-nethersx2.bat to build your copy of the latest NetherSX2 in the PatchedAPK folder
+4a. On Linux, right click the build-nethersx2.sh file, click Properties and set it as executable
+4b. Alternatively if you're running it from the terminal use the following commands:
+```bash
+chmod +x build-nethersx2.sh
+# then run sh file
+./build-nethersx2.sh
+```
+Now just copy the 15210-v1.5-4248-noads.apk in the PatchedAPK folder to your phone and install it using your File Manager app (normally named Files or File Manager depending on your phone)
+
 ## Using UniPatcher on Android
 1. Install UniPatcher from the Play Store, download the required AetherSX2 4248 apk and prefered xdelta file
 2. Start UniPatcher, tap the Patch file box and select the nethersx2.xdelta or nethersx2-oldui.xdelta file
@@ -62,6 +75,15 @@ And there you go, you should now have an updated and bug fixed copy of NetherSX2
 5. Tap the red save icon at the bottom right. A "Patching complete" message should popup if it worked
 
 Now just install the 15210-v1.5-4248 [patched].apk file using your File Manager app (normally named Files or File Manager depending on your phone)
+
+## Installing NetherSX2
+One you've used one of the above methods to create your NetherSX2 apk, it's time to install it on your phone
+
+1. Backup your files. The easiest method is to use the AetherSX2's built in Transfer Data function by using it's Export feature to move your files to an external folder. This will backup your bios files, memcards, save states, game settings, covers and texture packs
+2. After backing up your files, you need to remove any previous copies of AetherSX2 or NetherSX2. Do this by Uninstalling the app normally. Be sure NOT to keep any files if prompted
+3. With the Backup and Uninstalls done, all that remains is to navigate to where you put your NetherSX2 apk with your File Manager (named Files or File Manager depending on your phone) and tapping it to install it to your phone
+4. Once installed, run the app and configure it normally. Once at the Game List screen, you can access the Transfer Data/Backup Data feature and Import the files you exported earlier by navigating to the folder you put all your backed up files. This should import your bios files, memcards, save states, game settings, covers and texture packs
+5. Now spend some time redoing the Global App Settings and you should be ready to go
 
 ## Downloads
 ### Stable
@@ -77,7 +99,6 @@ NOTE: No APKs are provided due to licensing issues. You have to build it yoursel
 
 ## Credits
 * PCSX2: <https://github.com/PCSX2/pcsx2> 
-* AetherSX2: <https://www.aethersx2.com/archive/> 
 * EZOnTheEyes: <https://www.youtube.com/@EZOnTheEyes>
 * Xdelta-GPL: <https://github.com/jmacd/xdelta-gpl>
 * cmdcolor: <https://github.com/alecmev/cmdcolor>

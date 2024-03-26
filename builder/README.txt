@@ -1,5 +1,5 @@
 ========================
- NetherSX2 Builder v1.7
+ NetherSX2 Builder v1.9
 ========================
 
 1. Double click build-nethersx2.bat (or run 'bash build-nethersx2.sh')
@@ -10,7 +10,6 @@
 
 Credits:
 https://github.com/HardcodedCat
-https://www.aethersx2.com/archive/
 https://github.com/jmacd/xdelta-gpl
 https://github.com/alecmev/cmdcolor
 https://www.youtube.com/@EZOnTheEyes
