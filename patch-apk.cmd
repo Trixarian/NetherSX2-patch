@@ -24,35 +24,23 @@ for /r %%i in (*.apk) do (
   for /f %%f in ('""lib\md5sum.exe" "%%i""') do (
     if %%f equ %md5hash% (
       ren "%%i" 15210-v1.5-4248.apk >nul 2>&1
-    )   
+    )
   )
 )
 :: Check if an NetherSX2 APK exists and if it's named correctly
 if exist 15210-v1.5-4248-noads.apk set vername=15210-v1.5-4248-noads
-if exist 15210-v1.8-4248-noads.apk set vername=15210-v1.8-4248-noads
+if exist 15210-v1.8-4248-noads.apk (
+  set /A vercheck=1
+  set vername=15210-v1.8-4248-noads
+)
 if exist %vername%[patched].apk (
   set /A vercheck=1
   ren %vername%[patched].apk %vername%.apk >nul 2>&1
 )
-if exist 15210-v1.5-4248.apk goto patch
 if not exist %vername%.apk (
   goto getapk 
 ) else (
-  :: Check if we're patching our self-produced NetherSX2 apk
-  for /f %%f in ('""lib\md5sum.exe" "%vername%.apk""') do (
-    if %%f neq %verhash% ( 
-      goto update
-    ) else (
-      set /A vercheck=1
-      goto update
-    )
-    if %%f neq %oldhash% ( 
-      goto update
-    ) else (
-      set /A vercheck=1
-      goto update
-    )
-  )
+  goto update
 )
 
 :patch

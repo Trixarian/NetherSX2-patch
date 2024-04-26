@@ -63,6 +63,7 @@ if not exist "%output_path%\" md "%output_path%"
 :: Patching the file
 <nul set /p "=\033[96mPatching to \033[91mNetherSX2... " | %col%
 for /r %%i in (*.apk) do "%p2f%lib\xdelta.exe" -d -f -s "%%i" %xdelta_patch% "%output_path%\%%~ni%patched_end%.apk"
+ren "%output_path%\15210-v1.5-4248-noads.apk" 15210-v1.9-4248-noads.apk
 echo \033[92m[Done] | %col%
 timeout /t 3
 cd "%output_path%"
@@ -93,7 +94,7 @@ goto end
 
 :nofile
 <nul set /p "=\033[96mDownloading \033[94mAetherSX2... " | %col%
-powershell -Command "(new-object System.Net.WebClient).DownloadFile('https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk','15210-v1.9-4248.apk')"
+powershell -Command "(new-object System.Net.WebClient).DownloadFile('https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk','15210-v1.5-4248.apk')"
 echo \033[92m[Done] | %col%
 goto patch
 
