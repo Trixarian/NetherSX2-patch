@@ -69,8 +69,8 @@ chmod +x build-nethersx2.sh
 Now just copy the 15210-v1.5-4248-noads.apk in the PatchedAPK folder to your phone and install it using your File Manager app (normally named Files or File Manager depending on your phone)
 
 ## Using UniPatcher on Android
-1. Install UniPatcher from the Play Store, download the required AetherSX2 4248 apk and prefered xdelta file
-2. Start UniPatcher, tap the Patch file box and select the nethersx2.xdelta or nethersx2-oldui.xdelta file
+1. Install [UniPatcher](https://play.google.com/store/apps/details?id=org.emunix.unipatcher&hl=en_US&gl=US) from the Play Store, download the required [AetherSX2 4248 apk](https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk) and prefered xdelta file
+2. Start UniPatcher, tap the Patch file box and select the [nethersx2.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/nethersx2.xdelta) or [nethersx2-oldui.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/nethersx2-oldui.xdelta) file
 3. Tap the Rom file box and select the 15210-v1.5-4248.apk file
 4. Tap the Output file box and just tap save on the name it gives you (should be 15210-v1.5-4248 [patched].apk by default)
 5. Tap the red save icon at the bottom right. A "Patching complete" message should popup if it worked
