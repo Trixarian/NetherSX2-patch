@@ -196,16 +196,20 @@ PAPX-90222:
   name: "Jak x Daxter - Kyuu Sekai no Isan [Demo]"
   region: "NTSC-J"
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 PAPX-90223:
   name: "Jak x Daxter - Kyuu Sekai no Isan [Demo]"
   region: "NTSC-J"
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 PAPX-90224:
   name: "Sidewinder F"
   region: "NTSC-J"
@@ -299,6 +303,9 @@ PAPX-90506:
 PAPX-90507:
   name: "Official Disc 2003"
   region: "NTSC-J"
+  gsHWFixes:
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
 PAPX-90508:
   name: "Gran Turismo 4 - Lupo Cup Training Version"
   region: "NTSC-J"
@@ -310,6 +317,9 @@ PAPX-90508:
 PAPX-90511:
   name: "Siren [Trial]"
   region: "NTSC-J"
+  gsHWFixes:
+    roundSprite: 1 # Fixes gaps between menu options.
+    cpuSpriteRenderBW: 4 # Fixes sky rendering.
 PAPX-90512:
   name: "Gran Turismo 4 - Toyota Prius [Trial]"
   region: "NTSC-J"
@@ -737,6 +747,10 @@ PCPX-96622:
 PCPX-96624:
   name: "Gran Turismo Concept - 2001 Tokyo"
   region: "NTSC-J"
+  gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves banding in car showcase as well as car brightness and sheen.
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
 PCPX-96625:
   name: "Play-Pre 2 Volume 4 - 2002 April"
   region: "NTSC-J"
@@ -2019,6 +2033,8 @@ SCAJ-20190:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SCAJ-20191:
   name: "Super Robot Taisen OG - Original Generations Gaiden [Limited Edition]"
   region: "NTSC-Unk"
@@ -2236,6 +2252,8 @@ SCAJ-30011:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SCCS-40001:
   name: "Ape Escape 2"
   region: "NTSC-C"
@@ -2977,10 +2995,6 @@ SCED-51657:
   name: "Official PlayStation Magazine Demo 33"
   region: "PAL-P"
   compat: 5
-  patches:
-    90C0E5F1:
-      content: |-
-        comment=Must enable FPU Negative Div Hack gamefix for Dakar 2 Demo
 SCED-51669:
   name: "MotoGP 3"
   region: "PAL-E"
@@ -4099,6 +4113,8 @@ SCED-54680:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SCED-54682:
   name: "UPS2 Speciale Platinum 2007"
   region: "PAL-M5"
@@ -4289,9 +4305,11 @@ SCES-50361:
   region: "PAL-M6"
   compat: 5
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 SCES-50408:
   name: "PaRappa the Rapper 2"
   region: "PAL-M5"
@@ -4467,9 +4485,11 @@ SCES-50614:
   name: "Jak and Daxter - The Precursor Legacy"
   region: "PAL-Unk"
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 SCES-50759:
   name: "Virtua Fighter 4"
   region: "PAL-M5"
@@ -5143,6 +5163,7 @@ SCES-52424:
   patches:
     1D54FEA9:
       content: |-
+        // Fixes collision/missle hit issues.
         patch=0,EE,001A3154,word,48498800
         patch=0,EE,001A3158,word,4B00682C
         patch=0,EE,001A3164,word,484A8800
@@ -5798,6 +5819,8 @@ SCES-54206:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SCES-54219:
   name: "Buzz! Junior - Jungle Party"
   region: "PAL-M7"
@@ -7423,6 +7446,8 @@ SCKA-30006:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SCKA-30007:
   name: "God of War 2 [Big Hit Series]"
   region: "NTSC-K"
@@ -7433,6 +7458,8 @@ SCKA-30007:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SCKA-90002:
   name: "Jeolche Jeolmyeong Dosi"
   region: "NTSC-K"
@@ -7705,6 +7732,10 @@ SCPS-15010:
   name: "Gran Turismo - Concept 2001 Tokyo"
   region: "NTSC-J"
   compat: 5
+  gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves banding in car showcase as well as car brightness and sheen.
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
 SCPS-15011:
   name: "Extermination"
   region: "NTSC-J"
@@ -7757,9 +7788,11 @@ SCPS-15021:
   name: "Jak x Daxter - Kyuusekai no Isan"
   region: "NTSC-J"
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 SCPS-15022:
   name: "Dual Hearts"
   region: "NTSC-J"
@@ -8598,6 +8631,10 @@ SCPS-19207:
 SCPS-19208:
   name: "Gran Turismo - Concept 2001 Tokyo [PlayStation 2 the Best]"
   region: "NTSC-J"
+  gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves banding in car showcase as well as car brightness and sheen.
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
 SCPS-19209:
   name: "Boku no Summer Vacation 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
@@ -8605,9 +8642,11 @@ SCPS-19210:
   name: "Jak x Daxter - Kyuusekai no Isan [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 SCPS-19211:
   name: "Ratchet & Clank [PlayStation 2 the Best]"
   region: "NTSC-J"
@@ -9043,15 +9082,18 @@ SCPS-55004:
   name: "Jak x Daxter - Kyuu Sekai no Isan"
   region: "NTSC-J"
   gsHWFixes:
-    roundSprite: 1 # Fix lines in the sky.
-    autoFlush: 1 # Fixes lighting.
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
-    cpuSpriteRenderBW: 2 # Fixes water textures. Can't use BW 4 here because of post effects.
-    textureInsideRT: 1 # Fixes broken character models.
+    cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 SCPS-55005:
   name: "Gran Turismo - Concept 2001 Tokyo"
   region: "NTSC-J"
+  gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves banding in car showcase as well as car brightness and sheen.
+    mipmap: 2 # Mipmap + trilinear, improves ground textures to match sw renderer.
+    trilinearFiltering: 1
 SCPS-55006:
   name: "Wild ARMs - Advanced 3rd"
   region: "NTSC-J"
@@ -9320,9 +9362,11 @@ SCPS-56003:
   name: "Jak and Daxter - The Precursor Legacy"
   region: "NTSC-K"
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 SCPS-56004:
   name: "Otostaz"
   region: "NTSC-K"
@@ -9575,9 +9619,11 @@ SCUS-97124:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 SCUS-97125:
   name: "Frequency"
   region: "NTSC-U"
@@ -9772,16 +9818,20 @@ SCUS-97170:
   name: "Jak and Daxter - The Precursor Legacy [Cingular Wireless Demo]"
   region: "NTSC-U"
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 SCUS-97171:
   name: "Jak and Daxter - The Precursor Legacy [PS Underground Demo]"
   region: "NTSC-U"
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves reflection quality.
     mipmap: 2 # Fixes broken textures.
     trilinearFiltering: 1 # Fixes water textures.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
+    autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 SCUS-97172:
   name: "World Tour Soccer 2002"
   region: "NTSC-U"
@@ -10979,6 +11029,8 @@ SCUS-97481:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SCUS-97482:
   name: "God of War II - The Colossus Battle [Demo]"
   region: "NTSC-U"
@@ -10989,6 +11041,8 @@ SCUS-97482:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SCUS-97483:
   name: "Gran Turismo 4 MX-5 Edition [Demo]"
   region: "NTSC-U"
@@ -12061,6 +12115,8 @@ SLED-50488:
 SLED-50489:
   name: "Stuntman [Demo]"
   region: "PAL-E"
+  gameFixes:
+    - BlitInternalFPSHack # Fixes internal FPS detection.
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes textures.
     mipmap: 2 # Mipmap + trilinear, improves some textures to match sw renderer.
@@ -12095,6 +12151,8 @@ SLED-50980:
 SLED-51012:
   name: "Stuntman [Demo]"
   region: "PAL-E"
+  gameFixes:
+    - BlitInternalFPSHack # Fixes internal FPS detection.
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes textures.
     mipmap: 2 # Mipmap + trilinear, improves some textures to match sw renderer.
@@ -13620,6 +13678,8 @@ SLES-50288:
   name: "Stuntman"
   region: "PAL-M5"
   compat: 5
+  gameFixes:
+    - BlitInternalFPSHack # Fixes internal FPS detection.
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes textures.
     mipmap: 2 # Mipmap + trilinear, improves some textures to match sw renderer.
@@ -16219,17 +16279,6 @@ SLES-51341:
 SLES-51343:
   name: "Galerians - Ash"
   region: "PAL-M5"
-  patches:
-    1AE08CF5:
-      content: |-
-        author=kozarovv
-        // Floats workaround to make HW GSDX mode working.
-        // There is still overflow on GS, but this time GSDX can handle it just fine in HW mode.
-        patch=1,EE,001e7130,word,3c017e00
-        patch=1,EE,001e7138,word,44812800
-        patch=1,EE,001e7150,word,44813000
-        patch=1,EE,001e7160,word,44813800
-        patch=1,EE,001e7170,word,44810000
 SLES-51344:
   name: "Guilty Gear X2"
   region: "PAL-E"
@@ -16632,6 +16681,8 @@ SLES-51511:
   region: "PAL-M6"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
+  clampModes:
+    vu1ClampMode: 3 # Fixes missing vertices on ramps.
 SLES-51522:
   name: "Return to Castle Wolfenstein - Operation Resurrection"
   region: "PAL-S"
@@ -16823,9 +16874,17 @@ SLES-51650:
 SLES-51653:
   name: "Mace Griffin - Bounty Hunter"
   region: "PAL-M4"
+  gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves lighting.
+    mipmap: 2 # Mipmap + trilinear, improves ground and wall textures to match sw renderer.
+    trilinearFiltering: 1
 SLES-51654:
   name: "Mace Griffin - Bounty Hunter"
   region: "PAL-G"
+  gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves lighting.
+    mipmap: 2 # Mipmap + trilinear, improves ground and wall textures to match sw renderer.
+    trilinearFiltering: 1
 SLES-51658:
   name: "Piglet's Big Game"
   region: "PAL-G"
@@ -19327,7 +19386,11 @@ SLES-52636:
   name: "Colin McRae Rally 2005"
   region: "PAL-M5"
   compat: 5
+  gameFixes:
+    - FullVU0SyncHack # Fixes in-game timer.
   gsHWFixes:
+    recommendedBlendingLevel: 3 # Fixes missing lighting and car reflections.
+    halfPixelOffset: 1 # Fixes 4 split lines in stage intros.
     autoFlush: 1 # Fixes incorrect colors.
     alignSprite: 1 # Fixes vertical lines such as in FMVs.
     mipmap: 2 # Mipmap + trilinear, improves some textures to match sw renderer.
@@ -22615,9 +22678,13 @@ SLES-53676:
   name: "WWE SmackDown! vs. RAW 2006"
   region: "PAL-E"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes Hollywood Hulk Hogan's entrance and slow-mo finisher.
 SLES-53677:
   name: "WWE SmackDown! vs. RAW 2006"
   region: "PAL-I"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes Hollywood Hulk Hogan's entrance and slow-mo finisher.
 SLES-53682:
   name: "James Pond - Codename - RoboCod"
   region: "PAL-E"
@@ -25022,10 +25089,14 @@ SLES-54487:
 SLES-54488:
   name: "WWE SmackDown! vs. RAW 2007"
   region: "PAL-I"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes Hollywood Hulk Hogan's entrance and slow-mo finisher.
 SLES-54489:
   name: "WWE SmackDown! vs. RAW 2007"
   region: "PAL-E"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes Hollywood Hulk Hogan's entrance and slow-mo finisher.
 SLES-54490:
   name: "God Hand"
   region: "PAL-M5"
@@ -27004,6 +27075,7 @@ SLES-55170:
 SLES-55172:
   name: "Code Lyoko - Quest for Infinity"
   region: "PAL-M4"
+  roundModes:
   gsHWFixes:
     deinterlace: 9 # Game requires adaptive bff de-interlacing instead of auto for the UI at native.
     halfPixelOffset: 1 # Reduces ghosting effects.
@@ -29339,6 +29411,8 @@ SLKA-25167:
 SLKA-25168:
   name: "WWE SmackDown! vs. RAW 2007"
   region: "NTSC-K"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes Hollywood Hulk Hogan's entrance and slow-mo finisher.
 SLKA-25169:
   name: "UEFA Euro 2004 - Portugal"
   region: "NTSC-K"
@@ -29978,6 +30052,8 @@ SLKA-25317:
 SLKA-25318:
   name: "WWE SmackDown! vs. RAW 2006"
   region: "NTSC-K"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes Hollywood Hulk Hogan's entrance and slow-mo finisher.
 SLKA-25319:
   name: "보글보글 스폰지밥 - 레디, 액션!"
   region: "NTSC-K"
@@ -32716,6 +32792,8 @@ SLPM-61161:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SLPM-61162:
   name: "Dragon Ball Z - Sparking! Meteor"
   region: "NTSC-J"
@@ -37607,6 +37685,8 @@ SLPM-65580:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
+  clampModes:
+    vu1ClampMode: 3 # Fixes missing vertices on ramps.
 SLPM-65581:
   name: "Disney's The Haunted Mansion"
   region: "NTSC-J"
@@ -39318,6 +39398,8 @@ SLPM-66018:
 SLPM-66019:
   name: "Stuntman"
   region: "NTSC-J"
+  gameFixes:
+    - BlitInternalFPSHack # Fixes internal FPS detection.
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes textures.
     mipmap: 2 # Mipmap + trilinear, improves some textures to match sw renderer.
@@ -39497,6 +39579,8 @@ SLPM-66067:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
+  clampModes:
+    vu1ClampMode: 3 # Fixes missing vertices on ramps.
 SLPM-66068:
   name: "Richard Burns Rally"
   region: "NTSC-J"
@@ -40477,6 +40561,8 @@ SLPM-66267:
 SLPM-66268:
   name: "Smackdown! vs. Raw 2006 - Exciting Pro Wrestling 7"
   region: "NTSC-J"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes Hollywood Hulk Hogan's entrance and slow-mo finisher.
 SLPM-66269:
   name: "Blazing Souls [Limited Edition]"
   region: "NTSC-J"
@@ -42015,6 +42101,8 @@ SLPM-66626:
 SLPM-66627:
   name: "WWE SmackDown! vs. RAW 2007"
   region: "NTSC-J"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes Hollywood Hulk Hogan's entrance and slow-mo finisher.
 SLPM-66628:
   name: "OutRun 2 SP [First Print Limited Edition]"
   region: "NTSC-J"
@@ -43560,6 +43648,8 @@ SLPM-67013:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SLPM-67014:
   name: "Sengoku Musou 2 - Moushouden"
   region: "NTSC-J"
@@ -43576,6 +43666,8 @@ SLPM-67017:
     halfPixelOffset: 2 # Fixes misaligned bloom.
     roundSprite: 1 # Fixes chromatic effect.
     autoFlush: 1 # Fixes sun occlusion.
+    mipmap: 2 # Mipmap + trilinear, fixes miptrick textures to match sw renderer.
+    trilinearFiltering: 1
 SLPM-67502:
   name: "Devil May Cry"
   region: "NTSC-K"
@@ -49811,6 +49903,12 @@ SLPS-25924:
 SLPS-25925:
   name: "NHL 2K9"
   region: "NTSC-J"
+  patches:
+    69C963FA:
+      content: |-
+        comment= patch by prafull , someother1ne
+        // Fixes hang at start
+        patch=1,EE,00430C70,word,00000000
 SLPS-25927:
   name: "TOMB RAIDER: UNDERWORLD"
   name: "Tomb Raider - Underworld"
@@ -49829,6 +49927,12 @@ SLPS-25929:
 SLPS-25930:
   name: "Major League Baseball 2K9"
   region: "NTSC-J"
+  patches:
+    69C963FA:
+      content: |-
+        comment= patch by prafull , someother1ne
+        // Fixes hang at start
+        patch=1,EE,003AFCA0,word,00000000
 SLPS-25931:
   name: "Katekyoo Hitman Reborn! Nerae! Ring x Vongola Trainers [Best Collection]"
   region: "NTSC-J"
@@ -51808,6 +51912,8 @@ SLUS-20250:
   name: "Stuntman"
   region: "NTSC-U"
   compat: 5
+  gameFixes:
+    - BlitInternalFPSHack # Fixes internal FPS detection.
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes textures.
     mipmap: 2 # Mipmap + trilinear, improves some textures to match sw renderer.
@@ -53127,6 +53233,10 @@ SLUS-20505:
   name: "Mace Griffin - Bounty Hunter"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    recommendedBlendingLevel: 3 # Improves lighting.
+    mipmap: 2 # Mipmap + trilinear, improves ground and wall textures to match sw renderer.
+    trilinearFiltering: 1
 SLUS-20506:
   name: "Black & Bruised"
   region: "NTSC-U"
@@ -53403,17 +53513,6 @@ SLUS-20560:
   name: "Galerians - Ash"
   region: "NTSC-U"
   compat: 5
-  patches:
-    B506C936:
-      content: |-
-        author=kozarovv
-        // Floats workaround to make HW GSDX mode working.
-        // There is still overflow on GS, but this time GSDX can handle it just fine in HW mode.
-        patch=1,EE,001e12a8,word,3c017e00
-        patch=1,EE,001e12b0,word,44812800
-        patch=1,EE,001e12c8,word,44813000
-        patch=1,EE,001e12d8,word,44813800
-        patch=1,EE,001e12e8,word,44810000
 SLUS-20561:
   name: "Disaster Report"
   region: "NTSC-U"
@@ -53920,6 +54019,8 @@ SLUS-20649:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
+  clampModes:
+    vu1ClampMode: 3 # Fixes missing vertices on ramps.
 SLUS-20650:
   name: "MVP Baseball 2003"
   region: "NTSC-U"
@@ -55252,10 +55353,6 @@ SLUS-20894:
   name: "Worms 3D"
   region: "NTSC-U"
   compat: 5
-  patches:
-    default:
-      content: |-
-        comment=You need to set the EE cycle speed to -1 to be able to load the game.
 SLUS-20895:
   name: "Bujingai - The Forsaken City"
   region: "NTSC-U"
@@ -57751,6 +57848,8 @@ SLUS-21286:
   name: "WWE SmackDown! vs. RAW 2006"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes Hollywood Hulk Hogan's entrance and slow-mo finisher.
 SLUS-21287:
   name: "Prince of Persia - The Two Thrones"
   region: "NTSC-U"
@@ -58700,6 +58799,8 @@ SLUS-21427:
   name: "WWE SmackDown! vs. RAW 2007"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes Hollywood Hulk Hogan's entrance and slow-mo finisher.
 SLUS-21428:
   name: "Bionicle Heroes"
   region: "NTSC-U"
@@ -60299,6 +60400,7 @@ SLUS-21743:
   name: "Code Lyoko - Quest for Infinity"
   region: "NTSC-U"
   compat: 5
+  roundModes:
   gsHWFixes:
     deinterlace: 9 # Game requires adaptive bff de-interlacing instead of auto for the UI at native.
     halfPixelOffset: 1 # Reduces ghosting effects.
@@ -61767,6 +61869,8 @@ SLUS-29068:
   region: "NTSC-U"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
+  clampModes:
+    vu1ClampMode: 3 # Fixes missing vertices on ramps.
 SLUS-29069:
   name: "Prince of Persia - The Sands of Time [Demo]"
   region: "NTSC-U"
