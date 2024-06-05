@@ -29673,7 +29673,7 @@ SLKA-25078:
   gsHWFixes:
     autoFlush: 1 # Fixes missing blur layer on reflections and surfaces.
 SLKA-25080:
-  name: ".hack/Infection Part 1"
+  name: ".hack//Infection Part 1"
   region: "NTSC-K"
   gsHWFixes:
     halfPixelOffset: 1 # Sharpens world in far distances.
@@ -48156,13 +48156,11 @@ SLPS-25263:
 SLPS-25264:
   name: "RAhXEPhON - Soukyuu Gensoukyoku [Plusculus]"
   region: "NTSC-J"
-  roundModes:
   gsHWFixes:
     autoFlush: 1 # Fixes DOF effect.
 SLPS-25265:
   name: "RAhXEPhON - Soukyuu Gensoukyoku [Standard Edition]"
   region: "NTSC-J"
-  roundModes:
   gsHWFixes:
     autoFlush: 1 # Fixes DOF effect.
 SLPS-25266:
@@ -48304,7 +48302,7 @@ SLPS-25309:
   gsHWFixes:
     partialTargetInvalidation: 1 # Fixes menu corruption.
 SLPS-25310:
-  name: "Disney/Pixar Finding Nemo"
+  name: "Disney/Pixar's Finding Nemo"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
