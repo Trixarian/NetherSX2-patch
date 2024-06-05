@@ -93,7 +93,9 @@ One you've used one of the above methods to create your NetherSX2 apk, it's time
 * [nethersx2.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/nethersx2.xdelta) - The xdelta patch that can be applied to the AetherSX2 4248 apk with any patching program that supports the format and comes with all the changes pre-applied. This allows the creation of NetherSX2 on systems other than Windows, including Android when using the UniPatcher application
 * [nethersx2-oldui.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/nethersx2-oldui.xdelta) - Same as the above, but only using the classic AetherSX2 buttons
 ### Development Builds
-* --Coming Soon--
+* [NetherSX2-builder.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.9-dev/NetherSX2-builder.zip) - Alternate way to build the NetherSX2 APK for yourself with these fixes already pre-applied. It can be used with this script to update it's contents
+* [NetherSX2-patch.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.9-dev/NetherSX2-patch.zip) - Copy of this script
+* [nethersx2.xdelta](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.9-dev/ne0thersx2.xdelta) - The xdelta patch that can be applied to the AetherSX2 4248 apk with any patching program that supports the format and comes with all the changes pre-applied. This allows the creation of NetherSX2 on systems other than Windows, including Android when using the UniPatcher application
 
 
 NOTE: No APKs are provided due to licensing issues. You have to build it yourselves using the above methods
