@@ -2,7 +2,7 @@
  NetherSX2 Builder v1.9
 ========================
 
-1. Double click build-nethersx2.bat (or run 'bash build-nethersx2.sh')
+1. Double click build-nethersx2.cmd (or run 'bash build-nethersx2.sh')
 2. Wait for patching to be done and press any key if prompted
 3. Copy 15210-v1.5-4248-noads.apk in the PatchedAPK folder on to your phone
 4. Install the APK from your Android File Manager

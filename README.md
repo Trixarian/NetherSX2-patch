@@ -34,15 +34,15 @@ Android:
 The rest comes prepackaged for your convenience
 
 ## Using these scripts
-1. Run patch-apk.bat (selecting Run Anyway when prompted) to patch your self-provided copy of the AetherSX2 4248 apk or to download a copy for you
+1. Run patch-apk.cmd (selecting Run Anyway when prompted) to patch your self-provided copy of the AetherSX2 4248 apk or to download a copy for you
 2. Allow it to finish patching, building and signing your copy of NetherSX2
 3. This will produce two copies of NetherSX2: 
    - 15210-v1.8-4248-noads.apk - Comes with the Original GameDB
    - 15210-v1.8-4248-noads[patched].apk - Comes with the updated GameDB
 4. Copy your prefered apk file to your phone and install it using your File Manager app (normally named Files or File Manager depending on your phone)
 
-You can now rerun patch-apk.bat with the above APK to update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches at a later date without needing to repatch it each time
-If you prefer the Older UI Design, drop the old-ui.xdelta file in the extras folder into the main folder (the one with patch-apk.bat) to make the script revert NetherSX2 to the Older UI design
+You can now rerun patch-apk.cmd with the above APK to update the GameDB, Controller Support, and the Widescreen and No-Interlace Patches at a later date without needing to repatch it each time
+If you prefer the Older UI Design, drop the old-ui.xdelta file in the extras folder into the main folder (the one with patch-apk.cmd) to make the script revert NetherSX2 to the Older UI design
 
 **Linux version:**
 
@@ -59,7 +59,7 @@ And there you go, you should now have an updated and bug fixed copy of NetherSX2
 ## Using Builder on Windows + Linux
 1. Grab a copy of [NetherSX2-builder.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/NetherSX2-builder.zip) file from this repository
 2. Unzip the zip file by right clicking and selecting Extracting Here, and enter the now extracted builder folder
-3. On Windows, run build-nethersx2.bat to build your copy of the latest NetherSX2 in the PatchedAPK folder
+3. On Windows, run build-nethersx2.cmd to build your copy of the latest NetherSX2 in the PatchedAPK folder
 4. On Linux, right click the build-nethersx2.sh file, click Properties and set it as executable, then double click on build-nethersx2.sh to run it
 5. Alternatively if you're running it from the Linux terminal, use the following commands:
 ```bash
