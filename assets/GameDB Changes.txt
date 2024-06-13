@@ -13,6 +13,9 @@ Functions changed after March 13th:
 AutoFlush's function now has three options instead of two. 1 was reassigned to mean Sprites Only while 2 is the Default behaviour
 For AutoFlush compatibility, please replace autoFlush: 2 with autoFlush: 1
 Also compare autoFlush: 1 behaviour in the latest GameDB with 4248's one to find instances it's still used
+halfPixelOffset now has five (0-4) options instead of four, with 4 being the newly added "Align to Native" mode
+Best practice is to set halfPixelOffset to 1 when you encounter halfPixelOffset set as 4 in the GameDB
+Emulator now uses Full Mipmapping and Trilinear filtering by default with only the option to disabled it (with mipmap 0)
 
 Functions with name changes after March 13th:
 =============================================
@@ -25,6 +28,7 @@ InstantVU1SpeedHack ---> instantVU1
 Functions removed after March 13th that should be kept:
 =======================================================
 partialTargetInvalidation - it fixes texture corruption issues
+mipmap and trilinearFiltering have largely been removed from the GameDB
 
 Notes:
 ======
@@ -32,4 +36,3 @@ Notes:
 * Check if getSkipCount parameter existed before March 13th: https://github.com/PCSX2/pcsx2/blame/d08461bd4c10561e12e6278805ef960b65382230/pcsx2/GS/Renderers/HW/GSHwHack.h#L45
 * They started removing textureInsideRT from games (like Final Fantasy) due to fixes in the code. They're not present in NetherSX2's core, so it's best to leave them in or use the older settings to work around the issues it fixes
 * Removed a bunch of CRC hacks due to https://github.com/PCSX2/pcsx2/pull/8825 - keeping FFX hacks because FFXII crashes otherwise...
-* Probably safe to remove these too: https://github.com/PCSX2/pcsx2/pull/8422, https://github.com/PCSX2/pcsx2/pull/9750, https://github.com/PCSX2/pcsx2/pull/8440
