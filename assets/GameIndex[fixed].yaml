@@ -2490,6 +2490,7 @@ SCED-51165:
   name: "This Is Football 2003"
   region: "PAL-M7"
 SCED-51166:
+  name: "Le Monde des Bleus 2003 - Un Nouveau DÃ©fi"
   region: "PAL-F"
 SCED-51173:
   name: "Magazine Ufficiale PlayStation 2 Demo Italia 09/02"
@@ -3298,6 +3299,7 @@ SCED-52991:
   name: "Official PlayStation 2 Magazine Demo 53" # French
   region: "PAL-M5"
 SCED-52996:
+  name: "Official PlayStation 2 Magazine SpÃ©cial NoÃ«l 2004"
   region: "PAL-F"
 SCED-52997:
   name: "Official PlayStation 2 Magazine Sonderausgabe 2004/3"
@@ -4173,6 +4175,7 @@ SCES-50598:
   name: "Monsterit Oy"
   region: "PAL-FI"
 SCES-50599:
+  name: "Monstres & Cie - L'ile de l'épouvante"
   region: "PAL-F"
 SCES-50600:
   name: "Die Monster AG - Schreckens-Insel"
@@ -4181,11 +4184,13 @@ SCES-50601:
   name: "Monster & Co - L'Isola dello Spavento"
   region: "PAL-I"
 SCES-50602:
+  name: "Monsterbedriften - Skrekkøya"
   region: "PAL-NO"
 SCES-50603:
   name: "Monstruos, S.A. - Isla de los sustos"
   region: "PAL-S"
 SCES-50604:
+  name: "Monsters, Inc - Skrämmarön"
   region: "PAL-SW"
 SCES-50605:
   name: "Monstros e Companhia - Ilha Assustadora"
@@ -5230,6 +5235,7 @@ SCES-53669:
   name: "Buzz! The Music Quiz"
   region: "PAL-E"
 SCES-53680:
+  name: "WRC avec Sébastien Loeb"
   region: "PAL-M5"
   gameFixes:
     - XGKickHack # Fixes SPS.
@@ -5388,6 +5394,7 @@ SCES-54077:
   name: "SingStar top.it"
   region: "PAL-I"
 SCES-54078:
+  name: "SingStar Norsk på Norsk"
   region: "PAL-NO"
 SCES-54094:
   name: "EyeToy - Play Sports"
@@ -5396,6 +5403,7 @@ SCES-54128:
   name: "Deutsch Rock-Pop"
   region: "PAL-G"
 SCES-54129:
+  name: "SingStar La Edad de Oro del Pop Español"
   region: "PAL-S"
 SCES-54131:
   name: "SingStar Anthems"
@@ -5608,6 +5616,7 @@ SCES-54600:
   name: "SingStar - Die Toten Hosen"
   region: "PAL-G"
 SCES-54601:
+  name: "SingStar - Après-Ski Party"
   region: "PAL-G"
 SCES-54613:
   name: "SingStar Pop Hits"
@@ -5627,6 +5636,7 @@ SCES-54639:
   name: "AFL Premiership 2007"
   region: "PAL-A"
 SCES-54641:
+  name: "SingStar - Après-Ski Party 2"
   region: "PAL-G"
 SCES-54676:
   name: "Buzz! Junior - RoboJam"
@@ -5814,6 +5824,7 @@ SCES-55160:
   name: "SingStar Hottest Hits"
   region: "PAL-E"
 SCES-55173:
+  name: "SingStar Operación Triunfo"
   region: "PAL-S"
 SCES-55176:
   name: "SingStar Amped"
@@ -5831,6 +5842,7 @@ SCES-55181:
   name: "SingStar Italian Party 2"
   region: "PAL-I"
 SCES-55182:
+  name: "SingStar Clásicos"
   region: "PAL-S"
 SCES-55183:
   name: "SingStar Turkish Party [Promo]"
@@ -5860,6 +5872,7 @@ SCES-55258:
   name: "SingStar Best of Disney"
   region: "PAL-G"
 SCES-55259:
+  name: "SingStar Canções Disney"
   region: "PAL-P"
 SCES-55260:
   name: "SingStar e la Magia Disney"
@@ -5976,6 +5989,7 @@ SCES-55514:
   name: "SingStar Studio 100"
   region: "PAL-NL"
 SCES-55515:
+  name: "SingStar Morangos com Açúcar"
   region: "PAL-P"
 SCES-55521:
   name: "SingStar SuomiPop"
@@ -6021,6 +6035,7 @@ SCES-55567:
   name: "SingStar The Wiggles"
   region: "PAL-E"
 SCES-55568:
+  name: "SingStar Svenska Stjärnor"
   region: "PAL-SW"
 SCES-55570:
   name: "SingStar Chartbreaker"
@@ -6034,6 +6049,7 @@ SCES-55573:
   clampModes:
     vu1ClampMode: 3 # Fixes bad polys in menu.
 SCES-55590:
+  name: "SingStar Store DrÃ¸mme"
   region: "PAL-D"
 SCES-55591:
   name: "Street Cricket Champions"
@@ -6042,6 +6058,7 @@ SCES-55594:
   name: "SingStar Vasco"
   region: "PAL-I"
 SCES-55606:
+  name: "SingStar Die größten Solokünstler"
   region: "PAL-G"
 SCES-55611:
   name: "SingStar Chart Hits"
@@ -6068,6 +6085,7 @@ SCES-55640:
   name: "SingStar Cantautori Italiani"
   region: "PAL-I"
 SCES-55641:
+  name: "SingStar Après-Ski Party 2"
   region: "PAL-G"
 SCES-55649:
   name: "Cart Kings"
@@ -13793,6 +13811,7 @@ SLES-50843:
   name: "Crashed"
   region: "PAL-M5"
 SLES-50845:
+  name: "Medal of Honor - En Première Ligne"
   region: "PAL-F"
 SLES-50846:
   name: "Medal of Honor - Frontline"
@@ -14140,6 +14159,7 @@ SLES-51023:
   region: "PAL-E"
   compat: 5
 SLES-51024:
+  name: "Roger Lemerre - La Sélection des Champions 2003"
   region: "PAL-F"
 SLES-51025:
   name: "BDFL Manager 2003"
@@ -14278,6 +14298,7 @@ SLES-51083:
   name: "Club Football - Borussia Dortmund"
   region: "PAL-G"
 SLES-51084:
+  name: "Club Football - FC Bayern München"
   region: "PAL-M3"
 SLES-51085:
   name: "Club Football - Aston Villa"
@@ -14522,6 +14543,7 @@ SLES-51194:
     cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51195:
+  name: "Harry Potter y la Cámara Secreta"
   region: "PAL-S"
   gameFixes:
     - EETimingHack # Fixes flickering textures.
@@ -14734,6 +14756,7 @@ SLES-51253:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
 SLES-51254:
+  name: "Herr der Ringe, Der - Die Zwei Türme"
   region: "PAL-G"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -14749,6 +14772,7 @@ SLES-51255:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
 SLES-51256:
+  name: "Señor de Los Anillos, El - Las Dos Torres"
   region: "PAL-S"
   compat: 5
   gsHWFixes:
@@ -15196,6 +15220,7 @@ SLES-51449:
   name: "Return to Castle Wolfenstein - Operation Resurrection"
   region: "PAL-E"
 SLES-51450:
+  name: "Return to Castle Wolfenstein - Opération Résurrection"
   region: "PAL-F"
 SLES-51451:
   name: "Whiteout"
@@ -15207,6 +15232,7 @@ SLES-51458:
   name: "BDFL Manager 2004"
   region: "PAL-G"
 SLES-51459:
+  name: "Roger Lemerre - La Sélection des Champions 2004"
   region: "PAL-F"
 SLES-51460:
   name: "Football Manager 2004"
@@ -15941,6 +15967,7 @@ SLES-51834:
   name: "Premier Manager 2003-2004"
   region: "PAL-F"
 SLES-51838:
+  name: "Astérix & Obélix XXL"
   region: "PAL-M5"
 SLES-51839:
   name: "Dragon Ball Z - Budokai 2"
@@ -16278,6 +16305,7 @@ SLES-51959:
   name: "Football Generation"
   region: "PAL-M5"
 SLES-51960:
+  name: "Disney/Pixar À Procura de Nemo"
   region: "PAL-P"
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
@@ -16408,11 +16436,13 @@ SLES-52017:
   region: "PAL-M5"
   compat: 5
 SLES-52018:
+  name: "Herr der Ringe, Der - Die Rückkehr des Königs"
   region: "PAL-G"
 SLES-52019:
   name: "Seigneur des Anneaux, Le - Le Retour du roi"
   region: "PAL-F"
 SLES-52020:
+  name: "Señor de Los Anillos, El - El Retorno del Rey"
   region: "PAL-S"
 SLES-52021:
   name: "Signore degli Anelli, Il - Il Ritorno del Re"
@@ -17876,6 +17906,7 @@ SLES-52654:
   gsHWFixes:
     roundSprite: 2 # Fixes upscaling lines.
 SLES-52655:
+  name: "Club Football 2005 - FC Bayern München"
   region: "PAL-M3"
   gsHWFixes:
     roundSprite: 2 # Fixes upscaling lines.
@@ -18054,6 +18085,7 @@ SLES-52710:
   region: "PAL-M5"
   compat: 5
 SLES-52711:
+  name: "Titeuf Méga-Compet"
   region: "PAL-F"
   gsHWFixes:
     autoFlush: 1 # Fixes sun occlusion through buildings.
@@ -18273,6 +18305,7 @@ SLES-52801:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
 SLES-52802:
+  name: "Seigneur des anneaux, Le - Le Tiers Âge"
   region: "PAL-F"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
@@ -18287,6 +18320,7 @@ SLES-52804:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
 SLES-52805:
+  name: "Señor de Los Anillos, El - La Tercera Edad"
   region: "PAL-S"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
@@ -18298,6 +18332,7 @@ SLES-52807:
   gsHWFixes:
     halfPixelOffset: 1 # Reduces lighting misalignment but doesn't fully fix it.
 SLES-52808:
+  name: "Désastreuses Aventures des orphelins Baudelaire, Les"
   region: "PAL-F"
   clampModes:
     eeClampMode: 3 # Fixes the inability to collect items.
@@ -18347,6 +18382,7 @@ SLES-52815:
     halfPixelOffset: 2 # Fixes bloom misalignment when upscaling.
     cpuCLUTRender: 1 # Fixes duplicated bloom when upscaling.
 SLES-52816:
+  name: "Disney/Pixar Los Increíbles"
   region: "PAL-S"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes bloom misalignment when upscaling.
@@ -18358,6 +18394,7 @@ SLES-52820:
     halfPixelOffset: 2 # Fixes bloom misalignment when upscaling.
     cpuCLUTRender: 1 # Fixes duplicated bloom when upscaling.
 SLES-52821:
+  name: "Disney/Pixar The Incredibles - Os Super-Heróis"
   region: "PAL-P"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes bloom misalignment when upscaling.
@@ -18372,6 +18409,7 @@ SLES-52824:
   name: "Furry Tales"
   region: "PAL-E-F"
 SLES-52825:
+  name: "Serie de Catastróficas Desdichas de Lemony Snicket, Una"
   region: "PAL-S"
   clampModes:
     eeClampMode: 3 # Fixes the inability to collect items.
@@ -18782,6 +18820,7 @@ SLES-52985:
     halfPixelOffset: 2 # Fixes bloom misalignment when upscaling.
     cpuCLUTRender: 1 # Fixes duplicated bloom when upscaling.
 SLES-52986:
+  name: "Nickelodeon Bob Esponja - La Película"
   region: "PAL-S"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Fixes missing lights.
@@ -19069,6 +19108,7 @@ SLES-53059:
   region: "PAL-E"
   compat: 5
 SLES-53060:
+  name: "Astérix & Obélix XXL 2 - Mission - Las Vegum"
   region: "PAL-M3"
 SLES-53061:
   name: "Atari Anthology"
@@ -19295,6 +19335,7 @@ SLES-53146:
   name: "I Fantastici Quattro"
   region: "PAL-I"
 SLES-53147:
+  name: "4 Fantásticos, Los"
   region: "PAL-S"
 SLES-53148:
   name: "Fruitfall"
@@ -20019,6 +20060,7 @@ SLES-53464:
   name: "The Great British Football Quiz"
   region: "PAL-UK"
 SLES-53465:
+  name: "Maxi Quiz du Foot Français"
   region: "PAL-F"
 SLES-53466:
   name: "Il Grande Quiz sul Calcio Italiano"
@@ -20089,6 +20131,7 @@ SLES-53494:
   region: "PAL-E"
   compat: 5
 SLES-53495:
+  name: "Nickelodeon Bob L'éponge - Silence on Tourne!"
   region: "PAL-F"
 SLES-53496:
   name: "Nickelodeon SpongeBob - Ciak si Gira!"
@@ -20097,11 +20140,13 @@ SLES-53497:
   name: "Nickelodeon SpongeBob Schwammkopf - Film ab!"
   region: "PAL-G"
 SLES-53498:
+  name: "Nickelodeon Bob Esponja - ¡Luces, Cámara, Esponja!"
   region: "PAL-S"
 SLES-53499:
   name: "Nickelodeon SpongeBob SquarePants - Licht uit, Camera aan!"
   region: "PAL-NL"
 SLES-53500:
+  name: "Nickelodeon Svampbob Fyrkant - Tystnad, Tagning, TvÃ¤ttsvamp!"
   region: "PAL-SW"
 SLES-53501:
   name: "Star Wars - Battlefront II"
@@ -20655,6 +20700,7 @@ SLES-53639:
   name: "Ford Street Racing"
   region: "PAL-M5"
 SLES-53640:
+  name: "Das Große deutsche Fußball-Quiz"
   region: "PAL-G"
 SLES-53641:
   name: "Destroy All Humans!"
@@ -20849,6 +20895,7 @@ SLES-53706:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes lighting misalignment.
 SLES-53707:
+  name: "Chroniken von Narnia, Die - Der König von Narnia"
   region: "PAL-G"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes lighting misalignment.
@@ -20863,6 +20910,7 @@ SLES-53709:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes lighting misalignment.
 SLES-53710:
+  name: "Crónicas de Narnia, Las - El León, La Bruja y El Armario"
   region: "PAL-S"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes lighting misalignment.
@@ -20915,6 +20963,7 @@ SLES-53724:
   name: "World Series of Poker"
   region: "PAL-E"
 SLES-53725:
+  name: "Astérix & Obélix XXL 2 - Mission - Las Vegum"
   region: "PAL-M5"
 SLES-53726:
   name: "Harry Potter and the Goblet of Fire"
@@ -21248,6 +21297,7 @@ SLES-53848:
   region: "PAL-M5"
   compat: 5
 SLES-53849:
+  name: "Astérix & Obélix XXL 2 - Mission - Las Vegum"
   region: "PAL-M4"
 SLES-53850:
   name: "Teenage Mutant Ninja Turtles 3 - Mutant Nightmare"
@@ -22066,6 +22116,7 @@ SLES-54172:
   region: "PAL-M11"
   compat: 5
 SLES-54173:
+  name: "DreamWorks På Andra Sidan Häcken"
   region: "PAL-SW"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes fog line.
@@ -22593,6 +22644,7 @@ SLES-54376:
     autoFlush: 1 # Needed for recursive mipmap rendering.
     getSkipCount: "GSC_BlueTongueGames" # Render mipmaps on the CPU.
 SLES-54377:
+  name: "Nick - Der tierisch verrückte Bauernhof"
   region: "PAL-G"
   gsHWFixes:
     halfPixelOffset: 2 # Fix text and post blur.
@@ -22796,6 +22848,7 @@ SLES-54451:
   name: "Himmel und Huhn - Ace in Action"
   region: "PAL-G"
 SLES-54452:
+  name: "Disney Chicken Little - As en Acción"
   region: "PAL-S"
 SLES-54453:
   name: "Chicken Little - Asso Spaziale!"
@@ -23181,6 +23234,7 @@ SLES-54591:
   name: "Special Forces"
   region: "PAL-E"
 SLES-54592:
+  name: "Pétanque Pro"
   region: "PAL-F"
 SLES-54593:
   name: "Space Rebellion"
@@ -23189,6 +23243,7 @@ SLES-54596:
   name: "Heatseeker"
   region: "PAL-M3"
 SLES-54604:
+  name: "¡Qué pasa Neng! El videojuego"
   region: "PAL-S"
 SLES-54606:
   name: "Harley-Davidson - Race to the Rally"
@@ -23702,6 +23757,7 @@ SLES-54779:
     halfPixelOffset: 1 # Fixes ghosting.
     alignSprite: 1 # Fixes vertical lines.
 SLES-54780:
+  name: "Harry Potter og Føniksordenen"
   region: "PAL-SC"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes ghosting.
@@ -23992,8 +24048,10 @@ SLES-54885:
   name: "Moto X Maniac"
   region: "PAL-E"
 SLES-54886:
+  name: "Astérix aux Jeux Olympiques"
   region: "PAL-F"
 SLES-54887:
+  name: "Thrillville - Verrückte Achterbahn"
   region: "PAL-G"
   clampModes:
     vu1ClampMode: 3 # Fixes texture corruption light shimmering and reflective surfaces.
@@ -24553,6 +24611,7 @@ SLES-55050:
         patch=1,EE,001a9c08,word,484E9000
         patch=1,EE,001a9c0c,word,4BDBD9FF
 SLES-55051:
+  name: "MX vs. ATV Extrême Limite"
   region: "PAL-F"
   patches:
     590C682E:
@@ -40989,6 +41048,7 @@ SLPM-68520:
     recommendedBlendingLevel: 3 # Fixes level and map menu brightness.
     preloadFrameData: 1 # Fixes glowing emblems.
 SLPM-68521:
+  name: ".hack frägment [Senkou Release-ban]"
   region: "NTSC-J"
 SLPM-68523:
   name: "Phantasy Star Universe (Premiere Disc)"
@@ -43404,6 +43464,7 @@ SLPS-25064:
   name: "Sea-Man"
   region: "NTSC-J"
 SLPS-25065:
+  name: "Kindan no Pet - Seaman - GassÃ© Hakase no Jikken-tou"
   region: "NTSC-J"
 SLPS-25067:
   name: "TVware Jouhou Kakumei Series - Pro Atlas for TV - Zenkokuban"
@@ -56284,6 +56345,7 @@ SLUS-21704:
   region: "NTSC-U"
   compat: 3
 SLUS-21705:
+  name: "Madden NFL 08 en Español"
   region: "NTSC-U"
   clampModes:
     vuClampMode: 3 # Missing geometry with microVU.

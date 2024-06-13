@@ -24,6 +24,7 @@ yaml.preserve_quotes = True
 yaml.allow_duplicate_keys = True
 yaml.width = 512
 yaml.representer.add_representer(type(None), my_represent_none)
+char_list = ['ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'þ', 'ÿ', '¸', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'Þ']
 ignore_list = ['bilinearUpscale', 'cpuSpriteRenderLevel', 'eeCycleRate', 'eeDivRoundMode', 'GSC_HitmanBloodMoney', 'GSC_MetalGearSolid3', 'GSC_NFSUndercover', 'GSC_PolyphonyDigitalGames', 'name-sort', 'nativePaletteDraw', 'OI_HauntingGround']
 replace_dic = {'autoFlush: 2': 'autoFlush: 1', 'halfPixelOffset: 4': 'halfPixelOffset: 1', 'instantVU1:': 'InstantVU1SpeedHack:', 'minimumBlendingLevel:': 'recommendedBlendingLevel:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:'}
 
@@ -35,9 +36,9 @@ with open(gamedb_file, encoding='utf8') as oldfile, open('GameIndex[fixed].yaml'
         if re.search(r'moveHandler: \".+\"', line): line = re.sub(r'moveHandler: \".+\"', 'textureInsideRT: 1', line)
         # We need the following four checks to fix ONE issue caused by a moron that inconsistently added moonrunes to the GameDB
         if line == prev_line: continue
-        if not line.isascii(): continue
         if 'name:' in line and '"' not in line: continue
         if 'name:' in line and re.search(r'[A-Z]+: ', line): continue
+        if not any(safe_char in line for safe_char in char_list) and not line.isascii(): continue
         if not any(ignore_word in line for ignore_word in ignore_list): newfile.write(line)
         prev_line = line
 
