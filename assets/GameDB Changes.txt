@@ -6,7 +6,7 @@ eeCycleRate
 moveHandler
 nativePaletteDraw
 
-FpuNegDivHack got replaced with eeDivRoundMode
+They replaced FpuNegDivHack with eeDivRoundMode in the GameDB
 
 Functions changed after March 13th:
 ===================================
@@ -24,6 +24,7 @@ Before              ---> After
 MTVUSpeedHack       ---> mtvu
 mvuFlagSpeedHack    ---> mvuFlag
 InstantVU1SpeedHack ---> instantVU1
+wildArmsHack        ---> forceEvenSpritePosition
 
 Functions removed after March 13th that should be kept:
 =======================================================

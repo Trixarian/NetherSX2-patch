@@ -16,7 +16,7 @@ def my_represent_none(self, data):
     # Makes null show up so we can process it
     return self.represent_scalar(u'tag:yaml.org,2002:null', u'null')
 
-# Setting our variables
+# Set our YAML variables
 yaml = YAML()
 yaml.indent(mapping=2, sequence=4, offset=2)
 yaml.default_flow_style = None
@@ -24,9 +24,11 @@ yaml.preserve_quotes = True
 yaml.allow_duplicate_keys = True
 yaml.width = 512
 yaml.representer.add_representer(type(None), my_represent_none)
+
+# Create our filters to help process the file
 char_list = ['ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'þ', 'ÿ', '¸', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'Þ']
 ignore_list = ['bilinearUpscale', 'cpuSpriteRenderLevel', 'eeCycleRate', 'eeDivRoundMode', 'GSC_HitmanBloodMoney', 'GSC_MetalGearSolid3', 'GSC_NFSUndercover', 'GSC_PolyphonyDigitalGames', 'name-sort', 'nativePaletteDraw', 'OI_HauntingGround']
-replace_dic = {'autoFlush: 2': 'autoFlush: 1', 'halfPixelOffset: 4': 'halfPixelOffset: 1', 'instantVU1:': 'InstantVU1SpeedHack:', 'minimumBlendingLevel:': 'recommendedBlendingLevel:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:'}
+replace_dic = {'autoFlush: 2': 'autoFlush: 1', 'forceEvenSpritePosition:': 'wildArmsHack:', 'halfPixelOffset: 4': 'halfPixelOffset: 1', 'instantVU1:': 'InstantVU1SpeedHack:', 'minimumBlendingLevel:': 'recommendedBlendingLevel:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:'}
 
 with open(gamedb_file, encoding='utf8') as oldfile, open('GameIndex[fixed].yaml', 'w', encoding='utf8') as newfile:
     prev_line = ''
@@ -42,13 +44,15 @@ with open(gamedb_file, encoding='utf8') as oldfile, open('GameIndex[fixed].yaml'
         if not any(ignore_word in line for ignore_word in ignore_list): newfile.write(line)
         prev_line = line
 
-# Uses the Magic if YAML Processing to clean out empty keys
-with open('GameIndex[fixed].yaml', encoding='utf8') as oldfile, open('GameIndex[fixed2].yaml', 'w', encoding='utf8') as newfile:
-    data = yaml.load(oldfile)
-    yaml.dump(data, newfile)
-with open('GameIndex[fixed2].yaml', encoding='utf8') as oldfile, open('GameIndex[fixed].yaml', 'w', encoding='utf8') as newfile:
-    for line in oldfile:
+# Uses the Magic of YAML Processing to clean up empty keys
+with open('GameIndex[fixed].yaml', encoding='utf8') as newfile, open('GameIndex[temp].yaml', 'w', encoding='utf8') as tempfile:
+    data = yaml.load(newfile)
+    yaml.dump(data, tempfile)
+with open('GameIndex[temp].yaml', encoding='utf8') as tempfile, open('GameIndex[fixed].yaml', 'w', encoding='utf8') as newfile:
+    for line in tempfile:
         if '{' in line: line = line.replace('{', '{ ')
         if '}' in line: line = line.replace('}', ' }')
         if ': null' not in line: newfile.write(line)
-os.remove('GameIndex[fixed2].yaml')
+
+# Remove the temp file
+os.remove('GameIndex[temp].yaml')
