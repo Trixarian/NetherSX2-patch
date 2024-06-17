@@ -20,10 +20,10 @@ Emulator now uses Full Mipmapping and Trilinear filtering by default with only t
 Functions with name changes after March 13th:
 =============================================
 Before              ---> After
-------------------------------------
+---------------------------------------------
+InstantVU1SpeedHack ---> instantVU1
 MTVUSpeedHack       ---> mtvu
 mvuFlagSpeedHack    ---> mvuFlag
-InstantVU1SpeedHack ---> instantVU1
 wildArmsHack        ---> forceEvenSpritePosition
 
 Functions removed after March 13th that should be kept:
