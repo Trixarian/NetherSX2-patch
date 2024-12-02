@@ -50,8 +50,8 @@ patch() {
         if command -v xdelta3 &>/dev/null; then
             xdelta3 -d -f -s "$i" "$xdelta_patch" "$output_path/$(basename "$i" .apk)$patched_end.apk"
         else
-            chmod +x $p2f/lib/xdelta3
-            $p2f/lib/xdelta3 -d -f -s "$i" "$xdelta_patch" "$output_path/$(basename "$i" .apk)$patched_end.apk"
+            chmod +x "$p2f/lib/xdelta3"
+            "$p2f/lib/xdelta3" -d -f -s "$i" "$xdelta_patch" "$output_path/$(basename "$i" .apk)$patched_end.apk"
         fi
     done
     echo -e "\e[92m[Done]\e[0m"
