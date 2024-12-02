@@ -8,7 +8,7 @@ patched_end="-noads"
 # ***************************************************************************
 
 # Setting Base Variables
-p2f="$(dirname "$(readlink -f "$0")")" 
+p2f="$(dirname "$(readlink -f "$0")")"
 input_path="$p2f/OriginalAPK"
 output_path="$p2f/PatchedAPK"
 xdelta_patch="$p2f/lib/$xdelta_name"
@@ -16,7 +16,7 @@ xdelta_patch="$p2f/lib/$xdelta_name"
 # Preparing to Start
 titlen="${#patch_name}"
 autlen="${#patch_author}"
-autlen=$((autlen+3))
+autlen=$((autlen + 3))
 if [ "$titlen" -ge "$autlen" ]; then
     result="$titlen"
 else
@@ -26,7 +26,7 @@ bline="=="
 index=1
 while [ "$index" -le "$result" ]; do
     bline="$bline="
-    index=$((index+1))
+    index=$((index + 1))
 done
 
 # Opening Banner
@@ -47,10 +47,10 @@ patch() {
     # Patching the file
     echo -ne "\e[96mPatching to \e[0m\e[91mNetherSX2...\e[0m"
     for i in "$input_path"/*.apk; do
-        if command -v xdelta3 &> /dev/null; then
+        if command -v xdelta3 &>/dev/null; then
             xdelta3 -d -f -s "$i" "$xdelta_patch" "$output_path/$(basename "$i" .apk)$patched_end.apk"
         else
-			chmod +x $p2f/lib/xdelta3
+            chmod +x $p2f/lib/xdelta3
             $p2f/lib/xdelta3 -d -f -s "$i" "$xdelta_patch" "$output_path/$(basename "$i" .apk)$patched_end.apk"
         fi
     done
@@ -93,4 +93,3 @@ for i in "$input_path"/*.apk; do
         wrongmd5
     fi
 done
-
