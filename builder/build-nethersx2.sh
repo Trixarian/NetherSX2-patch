@@ -80,7 +80,7 @@ if [ ! -d "$input_path" ]; then
 else
     # Checks if there's an apk to patch and if the md5 hash matches
     # Otherwise it downloads it from the AetherSX2 Archive
-    if [ -z "$(find $input_path -name "*.apk" -type f)" ]; then
+    if [ -z "$(find "$input_path" -name "*.apk" -type f)" ]; then
         nofile
     fi
 fi
