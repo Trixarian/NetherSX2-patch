@@ -56,6 +56,20 @@ Credit: [TheKingFireS](https://github.com/TheKingFireS) + [BryanJacobs](https://
 
 And there you go, you should now have an updated and bug fixed copy of NetherSX2 for your phone!
 
+**Docker version:**  
+
+To use Docker to patch the APK, copy the Dockerfile, build the container and run it:
+
+```bash
+wget https://raw.githubusercontent.com/Trixarian/NetherSX2-patch/refs/heads/main/Dockerfile
+wget https://raw.githubusercontent.com/Trixarian/NetherSX2-patch/refs/heads/main/entrypoint.sh
+
+docker build --platform linux/amd64  -t nethersx2-patch .
+docker run -it --rm -platform linux/amd64 -v ${PWD}/output/:/output nethersx2-patch
+```
+
+Your updated and bug fixed copy of NetherSX2 APK should be in `${PWD}/output`!
+
 ## Using Builder on Windows + Linux
 1. Grab a copy of [NetherSX2-builder.zip](https://github.com/Trixarian/NetherSX2-patch/releases/download/1.8/NetherSX2-builder.zip) file from this repository
 2. Unzip the zip file by right clicking and selecting Extracting Here, and enter the now extracted builder folder
