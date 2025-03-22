@@ -22,7 +22,12 @@ printf "==========================\e[0m\n"
 
 # Check if the NetherSX2 APK exists and if it's named
 if [ ! -f "15210-v1.5-4248.apk" ]; then
-	wget https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk
+	apk_url='https://github.com/Trixarian/NetherSX2-patch/releases/download/0.0/15210-v1.5-4248.apk'
+	if [ "$(uname -s)" = 'Darwin' ]; then
+		curl --location --silent --remote-name "${apk_url}"
+	else
+		wget "${apk_url}"
+	fi
 	if [ ! $? -eq 0 ]; then
 		printf "Failed to download unmodified APK!\n"
 		exit 1
@@ -129,6 +134,7 @@ if command -v "aapt" >/dev/null 2>&1; then
 		display_done
 	fi
 else
+	display_light_red "aapt not found in \$PATH. Continuing with bundled aapt"
 	chmod +x lib/aapt
 	display_cyan "Removing the "
 	display_light_red "Ad Services leftovers...         "
