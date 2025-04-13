@@ -5,6 +5,7 @@ cpuSpriteRenderLevel
 eeCycleRate
 moveHandler
 nativePaletteDraw
+nativeScaling
 
 They replaced FpuNegDivHack with eeDivRoundMode in the GameDB
 

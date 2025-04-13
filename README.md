@@ -3,7 +3,7 @@
 </p>
 
 # NetherSX2-patch
-These are Unofficial companion scripts for NetherSX2 to expand on the amazing work already done by Anon and EZOnTheEyes
+These are companion scripts for NetherSX2 to expand on the amazing work already done by Anon and EZOnTheEyes
 
 They aim to do the following:
 * Remove the unnecessary ad services bloat left in the apk
@@ -108,4 +108,3 @@ NOTE: No APKs are provided due to licensing issues. You have to build it yoursel
 * md5sums: <http://www.pc-tools.net/win32/md5sums>
 * Android Keystore: <https://github.com/jorfao/pkStore>
 * Alternate Keystore: <https://github.com/tytydraco/public-keystore>
-* Android build-tools: <https://androidsdkmanager.azurewebsites.net/Buildtools>
