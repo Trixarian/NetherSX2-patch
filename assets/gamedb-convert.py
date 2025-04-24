@@ -11,9 +11,18 @@ else:
     print('Usage: gamedb-convert.py GameIndex.yaml')
     sys.exit()
 
+# Makes null show up so we can process them blow
 def my_represent_none(self, data):
-    # Makes null show up so we can process it
     return self.represent_scalar(u'tag:yaml.org,2002:null', u'null')
+
+# Fixes issues created by yaml processing and removes empty keys
+def fix_db(file_name):
+    with open('GameIndex[temp].yaml', encoding='utf8') as tempfile, open(file_name, 'w', encoding='utf8') as newfile:
+        for line in tempfile:
+            if '{' in line: line = line.replace('{', '{ ')
+            if '}' in line: line = line.replace('}', ' }')
+            if ': null' not in line: newfile.write(line)
+    os.remove('GameIndex[temp].yaml')
 
 # Set our YAML variables
 yaml = YAML()
@@ -27,7 +36,7 @@ yaml.representer.add_representer(type(None), my_represent_none)
 # Create filters to process the file with
 char_list = ['ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'þ', 'ÿ', '¸', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'Þ']
 ignore_list = ['bilinearUpscale', 'cpuSpriteRenderLevel', 'eeCycleRate', 'eeDivRoundMode', 'GSC_HitmanBloodMoney', 'GSC_MetalGearSolid3', 'GSC_NFSUndercover', 'GSC_PolyphonyDigitalGames', 'name-sort', 'nativePaletteDraw', 'nativeScaling', 'OI_HauntingGround']
-replace_dic = {'autoFlush: 2': 'autoFlush: 1', 'forceEvenSpritePosition:': 'wildArmsHack:', 'halfPixelOffset: 4': 'halfPixelOffset: 1', 'instantVU1:': 'InstantVU1SpeedHack:', 'minimumBlendingLevel:': 'recommendedBlendingLevel:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:'}
+replace_dic = {'autoFlush: 2': 'autoFlush: 1', 'forceEvenSpritePosition:': 'wildArmsHack:', 'halfPixelOffset: 4': 'halfPixelOffset: 1', 'instantVU1:': 'InstantVU1SpeedHack:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:'}
 
 # Process file to make it compatible with NetherSX2
 print('Processing the GameDB file...')
@@ -45,15 +54,21 @@ with open(gamedb_file, encoding='utf8') as oldfile, open('GameIndex[fixed].yaml'
         if not any(ignore_word in line for ignore_word in ignore_list): newfile.write(line)
         prev_line = line
 
-# Uses the Magic of YAML Processing to clean up empty keys
+# Uses the Dark Arts (YAML Processing) to work it's magic
 print('Removing the empty keys from the GameDB...')
 with open('GameIndex[fixed].yaml', encoding='utf8') as newfile, open('GameIndex[temp].yaml', 'w', encoding='utf8') as tempfile:
     data = yaml.load(newfile)
     yaml.dump(data, tempfile)
-with open('GameIndex[temp].yaml', encoding='utf8') as tempfile, open('GameIndex[fixed].yaml', 'w', encoding='utf8') as newfile:
-    for line in tempfile:
-        if '{' in line: line = line.replace('{', '{ ')
-        if '}' in line: line = line.replace('}', ' }')
-        if ': null' not in line: newfile.write(line)
+fix_db('GameIndex[fixed].yaml')
+with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex[4248].yaml', encoding='utf8') as og, open('GameIndex[diff].yaml', encoding='utf8') as diff, open('GameIndex[temp].yaml', 'w', encoding='utf8') as merged:
+    print('Loading GameDB entries to merge...')
+    base_db = yaml.load(base)
+    og_db = yaml.load(og)
+    diff_db = yaml.load(diff)
+    print('Merging GameDB entries...')
+    base_db.update(og_db)
+    base_db.update(diff_db)
+    print('Creating GameIndex[merged].yaml file...')
+    yaml.dump(base_db, merged)
+fix_db('GameIndex[merged].yaml')
 print('All Done!')
-os.remove('GameIndex[temp].yaml')
