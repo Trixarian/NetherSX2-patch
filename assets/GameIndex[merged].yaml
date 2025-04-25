@@ -12751,7 +12751,6 @@ SLES-50495:
   name: "Who Wants to be a Millionaire - 2nd Edition"
   region: "PAL-E"
 SLES-50496:
-  name: "Qui veut gagner des millions – Seconde Edition"
   region: "PAL-F"
 SLES-50497:
   name: "Wer wird Millionaer 2"
@@ -38644,7 +38643,6 @@ SLPM-66717:
   name: "Standard Daisenryaku - Dengekisen [Sega the Best]"
   region: "NTSC-J"
 SLPM-66718:
-  name: "Sutandādo Daisenryaku - Ushinawareta Shoeri [Sega the Best]"
   region: "NTSC-J"
 SLPM-66719:
   name: "Tenka-bito [Sega the Best]"
@@ -40745,7 +40743,6 @@ SLPS-20052:
   name: "Global Folktale"
   region: "NTSC-J"
 SLPS-20053:
-  name: "Tenshi no Present - Māru Oukoku Monogatari"
   region: "NTSC-J"
 SLPS-20054:
   name: "FIFA World Championship 2001"
