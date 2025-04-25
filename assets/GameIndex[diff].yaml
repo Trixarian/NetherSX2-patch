@@ -6,12 +6,6 @@ SCAJ-20028:
     partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
     texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
-SCAJ-20102:
-  name: "Tales of Symphonia"
-  region: "NTSC-Unk"
-  gsHWFixes:
-    alignSprite: 1 # Fixes vertical lines.
-    getSkipCount: "GSC_TalesofSymphonia"
 SCAJ-20112:
   name: "Tales of Rebirth"
   region: "NTSC-Unk"
@@ -148,13 +142,6 @@ SLPS-25172:
     partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
     texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
-SLPS-25400:
-  name: "Tales of Symphonia"
-  region: "NTSC-J"
-  compat: 5
-  gsHWFixes:
-    alignSprite: 1 # Fixes vertical lines.
-    getSkipCount: "GSC_TalesofSymphonia"
 SLPS-25450:
   name: "Tales of Rebirth"
   region: "NTSC-J"
@@ -232,12 +219,6 @@ SLPS-72502:
     partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
     texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
-SLPS-73217:
-  name: "Tales of Symphonia [PlayStation 2 the Best]"
-  region: "NTSC-J"
-  gsHWFixes:
-    alignSprite: 1 # Fixes vertical lines.
-    getSkipCount: "GSC_TalesofSymphonia"
 SLPS-73219:
   name: "Tales of Destiny 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
