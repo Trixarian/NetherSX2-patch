@@ -66,7 +66,7 @@ replace_dic = {'autoFlush: 2': 'autoFlush: 1', 'forceEvenSpritePosition:': 'wild
 process_db(gamedb_file, 'GameIndex[fixed].yaml')
 print('Creating GameIndex[fixed].yaml...')
 fix_db('GameIndex[fixed].yaml')
-with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex[4248].yaml', encoding='utf8') as og, open('GameIndex[diff].yaml', encoding='utf8') as diff, open('GameIndex[temp].yaml', 'w', encoding='utf8') as merged:
+with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex[4248].yaml', encoding='utf8') as og, open('GameIndex[diff].yaml', encoding='utf8') as diff, open('GameIndex[merged].yaml', 'w', encoding='utf8') as merged:
     print('Loading GameDB entries to merge...')
     base_db = yaml.load(base)
     og_db = yaml.load(og)
@@ -78,7 +78,7 @@ with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex
     yaml.dump(base_db, merged)
 # Have to make sure there isn't any bad entries in the merged file
 process_db('GameIndex[merged].yaml', 'GameIndex[temp2].yaml')
-os.remove('GameIndex[merged].yaml')
+if os.path.isfile('GameIndex[merged].yaml'): os.remove('GameIndex[merged].yaml')
 os.rename('GameIndex[temp2].yaml', 'GameIndex[merged].yaml')
 fix_db('GameIndex[merged].yaml')
 print('All Done!')

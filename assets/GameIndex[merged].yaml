@@ -46125,7 +46125,7 @@ SLPS-73216:
   name: "Magna Carta [PlayStation 2 The Best]"
   region: "NTSC-J"
 SLPS-73217:
-  name: "Tales of Symphonia [PlayStation 2 the Best]"
+  name: "Tales of Symphonia [PlayStation 2 The Best]"
   region: "NTSC-J"
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
