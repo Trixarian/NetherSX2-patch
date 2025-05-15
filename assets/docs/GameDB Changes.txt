@@ -15,7 +15,8 @@ AutoFlush's function now has three options instead of two. 1 was reassigned to m
 For AutoFlush compatibility, please replace autoFlush: 2 with autoFlush: 1
 Also compare autoFlush: 1 behaviour in the latest GameDB with 4248's one to find instances it's still used
 halfPixelOffset now has five (0-4) options instead of four, with 4 being the newly added "Align to Native" mode
-Best practice is to set halfPixelOffset to 1 when you encounter halfPixelOffset set as 4 in the GameDB
+They added yet another halfPixelOffset option, bringing up the total to 5
+Best practice is to set halfPixelOffset to 1 when you encounter halfPixelOffset set as 4 or 5 in the GameDB
 Emulator now uses Full Mipmapping and Trilinear filtering by default with only the option to disabled it (with mipmap 0)
 
 Functions with name changes after March 13th:
@@ -26,6 +27,7 @@ InstantVU1SpeedHack ---> instantVU1
 MTVUSpeedHack       ---> mtvu
 mvuFlagSpeedHack    ---> mvuFlag
 wildArmsHack        ---> forceEvenSpritePosition
+GSC_Tekken5         ---> GSC_NamcoGames
 
 Functions removed after March 13th that should be kept:
 =======================================================
