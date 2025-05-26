@@ -1,4 +1,3 @@
-
 SCAJ-20028:
   name: "Tales of Destiny 2"
   region: "NTSC-Unk"
@@ -129,6 +128,12 @@ SCPS-55050:
     partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
     texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
+SLPM-66897:
+  name: "Tales of the Abyss"
+  region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes ghosting.
+    autoFlush: 1 # Fixes post lighting.
 SLPS-25172:
   name: "Tales of Destiny 2"
   region: "NTSC-J"
@@ -160,6 +165,13 @@ SLPS-25533:
     preloadFrameData: 1 # Reduces performance drops caused by effects
     texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
     getSkipCount: "GSC_TalesOfLegendia"
+SLPS-25586:
+  name: "Tales of the Abyss"
+  region: "NTSC-J"
+  compat: 5
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes ghosting.
+    autoFlush: 1 # Fixes post lighting.
 SLPS-25715:
   name: "Tales of Destiny"
   region: "NTSC-J"
@@ -226,6 +238,12 @@ SLPS-73242:
     preloadFrameData: 1 # Reduces performance drops caused by effects
     texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
     getSkipCount: "GSC_TalesOfLegendia"
+SLPS-73252:
+  name: "Tales of the Abyss [PlayStation 2 the Best]"
+  region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes ghosting.
+    autoFlush: 1 # Fixes post lighting.
 SLUS-21201:
   name: "Tales of Legendia"
   region: "NTSC-U"

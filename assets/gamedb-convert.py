@@ -10,7 +10,7 @@ else:
     print('Usage: gamedb-convert.py GameIndex.yaml')
     sys.exit()
 
-# Makes null show up so we can process them blow
+# Makes null show up so we can process it below
 def my_represent_none(self, data):
     return self.represent_scalar(u'tag:yaml.org,2002:null', u'null')
 
@@ -59,6 +59,7 @@ yaml.representer.add_representer(type(None), my_represent_none)
 
 # Create filters to process the file with
 char_list = ['ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'þ', 'ÿ', '¸', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'Þ']
+key_list = ['clampModes', 'dynaPatches', 'gameFixes', 'gsHWFixes', 'memcardFilters', 'patches', 'roundModes', 'speedHacks']
 ignore_list = ['bilinearUpscale', 'cpuSpriteRenderLevel', 'eeCycleRate', 'eeDivRoundMode', 'GSC_DTGames', 'GSC_GuitarHero', 'GSC_HitmanBloodMoney', 'GSC_MetalGearSolid3', 'GSC_NFSUndercover', 'GSC_PolyphonyDigitalGames', 'name-sort', 'nativePaletteDraw', 'nativeScaling', 'OI_HauntingGround']
 replace_dic = {'autoFlush: 2': 'autoFlush: 1', 'forceEvenSpritePosition:': 'wildArmsHack:', 'GSC_NamcoGames': 'GSC_Tekken5', 'halfPixelOffset: 4': 'halfPixelOffset: 1', 'halfPixelOffset: 5': 'halfPixelOffset: 1', 'instantVU1:': 'InstantVU1SpeedHack:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:'}
 
@@ -69,8 +70,12 @@ fix_db('GameIndex[fixed].yaml')
 with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex[4248].yaml', encoding='utf8') as og, open('GameIndex[diff].yaml', encoding='utf8') as diff, open('GameIndex[merged].yaml', 'w', encoding='utf8') as merged:
     print('Loading GameDB entries to merge...')
     base_db = yaml.load(base)
+    # Load in the two yaml files that will change the converted file and remove entries without any settings:
     og_db = yaml.load(og)
     diff_db = yaml.load(diff)
+    print('Removing unwanted entries prior to merging...')
+    og_db = {k: v for k, v in og_db.items() if any(required_key in v for required_key in key_list)}
+    diff_db = {k: v for k, v in diff_db.items() if any(required_key in v for required_key in key_list)}
     print('Merging GameDB entries...')
     base_db.update(og_db)
     base_db.update(diff_db)

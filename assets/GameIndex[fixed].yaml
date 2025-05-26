@@ -12062,6 +12062,7 @@ SLED-53440:
   name: "Area 51"
   region: "PAL-Unk"
   gsHWFixes:
+    textureInsideRT: 1 # Fixes shadows in some scenarios.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects, needs Special otherwise lights flicker.
 SLED-53442:
   name: "Crash Tag Team Racing [Demo]"
@@ -18406,6 +18407,7 @@ SLES-52570:
   region: "PAL-M5"
   compat: 5
   gsHWFixes:
+    textureInsideRT: 1 # Fixes shadows in some scenarios.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects, needs Special otherwise lights flicker.
 SLES-52571:
   name: "Pacific Air Warriors 2 - Dogfight"
@@ -19934,6 +19936,7 @@ SLES-53075:
   name: "Area 51"
   region: "PAL-M5"
   gsHWFixes:
+    textureInsideRT: 1 # Fixes shadows in some scenarios.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects, needs Special otherwise lights flicker.
 SLES-53076:
   name: "Trigger Man"
@@ -26561,6 +26564,7 @@ SLES-55349:
   region: "PAL-E"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
+    textureInsideRT: 1 # Fixes sun glare.
     halfPixelOffset: 2 # Fixes blurriness.
     gpuTargetCLUT: 1 # Fixes sun penetration.
   memcardFilters:
@@ -26580,6 +26584,7 @@ SLES-55350:
   region: "PAL-F-G"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
+    textureInsideRT: 1 # Fixes sun glare.
     halfPixelOffset: 2 # Fixes blurriness.
     gpuTargetCLUT: 1 # Fixes sun penetration.
   memcardFilters:
@@ -26599,6 +26604,7 @@ SLES-55351:
   region: "PAL-I-S"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
+    textureInsideRT: 1 # Fixes sun glare.
     halfPixelOffset: 2 # Fixes blurriness.
     gpuTargetCLUT: 1 # Fixes sun penetration.
   memcardFilters:
@@ -26619,6 +26625,7 @@ SLES-55352:
   compat: 5
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
+    textureInsideRT: 1 # Fixes sun glare.
     halfPixelOffset: 2 # Fixes blurriness.
     gpuTargetCLUT: 1 # Fixes sun penetration.
   memcardFilters:
@@ -26638,6 +26645,7 @@ SLES-55353:
   region: "PAL-M6"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
+    textureInsideRT: 1 # Fixes sun glare.
     halfPixelOffset: 2 # Fixes blurriness.
     gpuTargetCLUT: 1 # Fixes sun penetration.
   memcardFilters:
@@ -29580,6 +29588,7 @@ SLKA-25446:
   region: "NTSC-K"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
+    textureInsideRT: 1 # Fixes sun glare.
     halfPixelOffset: 2 # Fixes blurriness.
   memcardFilters:
     - "SLKA-25446"
@@ -30209,6 +30218,7 @@ SLPM-55127:
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
+    textureInsideRT: 1 # Fixes sun glare.
     halfPixelOffset: 2 # Fixes blurriness.
     gpuTargetCLUT: 1 # Fixes sun penetration.
   memcardFilters:
@@ -30588,6 +30598,7 @@ SLPM-55244:
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
+    textureInsideRT: 1 # Fixes sun glare.
     halfPixelOffset: 2 # Fixes blurriness.
     gpuTargetCLUT: 1 # Fixes sun penetration.
   memcardFilters:
@@ -40399,6 +40410,7 @@ SLPM-66468:
   name: "AREA-51"
   region: "NTSC-J"
   gsHWFixes:
+    textureInsideRT: 1 # Fixes shadows in some scenarios.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects, needs Special otherwise lights flicker.
 SLPM-66469:
   name: "Love-Com - Punch de Court [Limited Edition]"
@@ -52542,6 +52554,7 @@ SLUS-20595:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
+    textureInsideRT: 1 # Fixes shadows in some scenarios.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects, needs Special otherwise lights flicker.
 SLUS-20596:
   name: "UFC - Ultimate Fighting Championship - Sudden Impact"
@@ -59312,6 +59325,7 @@ SLUS-21801:
   compat: 5
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves car reflections.
+    textureInsideRT: 1 # Fixes sun glare.
     halfPixelOffset: 2 # Fixes blurriness.
     gpuTargetCLUT: 1 # Fixes sun penetration.
   memcardFilters:
