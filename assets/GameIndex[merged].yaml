@@ -587,6 +587,10 @@ PCPX-96309:
 PCPX-96310:
   name: "X-treme Racing SSX [Trial]"
   region: "NTSC-J"
+  roundModes:
+    eeRoundMode: 0 # Fixes riders vanishing into the floor.
+  gsHWFixes:
+    recommendedBlendingLevel: 4 # Fixes missing lighting.
 PCPX-96311:
   name: "Gran Turismo 3 Trial Disk Volume 1"
   region: "NTSC-J"
@@ -847,6 +851,18 @@ PKP2-00702:
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Vertical and horizontal lines in FMV.
+PSXC-00201:
+  name: "PSX Update Disc Version 1.10"
+  region: "NTSC-J"
+PSXC-00202:
+  name: "PSX Update Disc Version 1.20"
+  region: "NTSC-J"
+PSXC-00203:
+  name: "PSX Update Disc Version 1.31"
+  region: "NTSC-J"
+PSXC-00204:
+  name: "PSX Update Disc Version 2.11"
+  region: "NTSC-J"
 PUPX-93033:
   name: "PlayStation Seizou Kensa-you Disc 3 CD-ROM US-ban Ver1.1"
   region: "NTSC-U"
@@ -914,6 +930,8 @@ SCAJ-20001:
 SCAJ-20002:
   name: "Gallop Racer 6 - Revolution"
   region: "NTSC-Unk"
+  gsHWFixes:
+    recommendedBlendingLevel: 2 # Improves lighting, maximum blending is needed for full accuracy.
 SCAJ-20003:
   name: "Warrior in Argus"
   region: "NTSC-J"
@@ -3268,6 +3286,8 @@ SCED-52841:
   speedHacks:
     MTVUSpeedHack: 0 # Fixes SPS when entering Spain in Jackie's and Jade's character models.
     InstantVU1SpeedHack: 0 # Fixes SPS when entering Spain in Jackie's and Jade's character models.
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes half right.
 SCED-52846:
   name: "Killzone [Demo]"
   region: "PAL-E"
@@ -4907,6 +4927,8 @@ SCES-52412:
   speedHacks:
     MTVUSpeedHack: 0 # Fixes SPS when entering Spain in Jackie's and Jade's character models.
     InstantVU1SpeedHack: 0 # Fixes SPS when entering Spain in Jackie's and Jade's character models.
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes half right.
 SCES-52423:
   name: "Smash Court Tennis - Pro Tournament 2"
   region: "PAL-M5"
@@ -8829,6 +8851,11 @@ SCPS-55043:
 SCPS-55044:
   name: "Energy Airforce [Asia Version]"
   region: "NTSC-J"
+  speedHacks:
+    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
+  gsHWFixes:
+    recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
+    autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 SCPS-55045:
   name: "Poinie's Poin"
   region: "NTSC-J"
@@ -11796,8 +11823,8 @@ SLED-53442:
   gameFixes:
     - IbitHack # Fixes constant recompilation problems.
   gsHWFixes:
+    halfPixelOffset: 1 # Corrects the alignment of screen effects.
     PCRTCOverscan: 1 # Fixes offscreen image.
-    halfPixelOffset: 2 # Corrects the alignment of screen effects.
 SLED-53445:
   name: "Incredible Hulk, The - Ultimate Destruction [Demo]"
   region: "PAL-M3"
@@ -11979,7 +12006,7 @@ SLED-53977:
   region: "PAL-E"
   gsHWFixes:
     autoFlush: 1 # Fixes missing bloom from surfaces like windows.
-    halfPixelOffset: 1 # Sharpens world in far distances, aligns some bloom better.
+    halfPixelOffset: 2 # Sharpens world in far distances, aligns some bloom better.
     roundSprite: 1 # Fixes font artifacts.
 SLED-53980:
   name: "Urban Chaos - Riot Response [Demo]"
@@ -15829,9 +15856,19 @@ SLES-51646:
   name: "Energy Airforce"
   region: "PAL-M4"
   compat: 5
+  speedHacks:
+    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
+  gsHWFixes:
+    recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
+    autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 SLES-51647:
   name: "Energy Airforce"
   region: "PAL-I"
+  speedHacks:
+    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
+  gsHWFixes:
+    recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
+    autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 SLES-51649:
   name: "Judge Dredd - Dredd vs. Death"
   region: "PAL-M4"
@@ -17077,6 +17114,9 @@ SLES-52179:
   name: "Kaan - Barbarian's Blade"
   region: "PAL-M5"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1 # Fixes depth line and edge garbage.
+    gpuTargetCLUT: 2 # Fixes broken effects.
 SLES-52187:
   name: "Baldur's Gate - Dark Alliance II"
   region: "PAL-M3"
@@ -17360,6 +17400,11 @@ SLES-52309:
 SLES-52310:
   name: "Energy Airforce"
   region: "PAL-E"
+  speedHacks:
+    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
+  gsHWFixes:
+    recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
+    autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 SLES-52312:
   name: "World Championship Rugby"
   region: "PAL-E-F"
@@ -18526,6 +18571,8 @@ SLES-52738:
 SLES-52741:
   name: "The Red Star [Beta]"
   region: "PAL-E"
+  gsHWFixes:
+    halfPixelOffset: 1 # Fixes depth line and edge garbage.
 SLES-52745:
   name: "Hugo - Cannon Cruise"
   region: "PAL-M4"
@@ -18795,6 +18842,8 @@ SLES-52853:
   name: "Miami Vice"
   region: "PAL-M6"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes half right.
 SLES-52854:
   name: "Capcom Fighting Jam"
   region: "PAL-E"
@@ -19668,6 +19717,8 @@ SLES-53149:
 SLES-53150:
   name: "10 Pin - Champions Alley"
   region: "PAL-M6"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes half right.
 SLES-53151:
   name: "Juiced"
   region: "PAL-I"
@@ -20305,6 +20356,8 @@ SLES-53433:
 SLES-53434:
   name: "Red Baron"
   region: "PAL-M3"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes trees.
 SLES-53435:
   name: "SAS Anti-Terror Force"
   region: "PAL-M3"
@@ -20329,6 +20382,9 @@ SLES-53441:
 SLES-53443:
   name: "The Warriors"
   region: "PAL-M5"
+  gsHWFixes:
+    halfPixelOffset: 1 # Alings recursive blur effects.
+    autoFlush: 1 # Fixes missing recursive blur effects.
 SLES-53444:
   name: "Panzer Elite Action - Fields of Glory"
   region: "PAL-M5"
@@ -23632,6 +23688,8 @@ SLES-54579:
 SLES-54581:
   name: "The Red Star"
   region: "PAL-M5"
+  gsHWFixes:
+    halfPixelOffset: 1 # Fixes depth line and edge garbage.
 SLES-54582:
   name: "International Tennis Pro"
   region: "PAL-E"
@@ -26107,7 +26165,7 @@ SLES-55511:
   name: "MTV Pimp My Ride - Street Racing"
   region: "PAL-M5"
   gsHWFixes:
-    halfPixelOffset: 1 # Aligns bloom as best it can be.
+    halfPixelOffset: 1 # Helps misaligned bloom.
     autoFlush: 1 # Fixes bloom rendering.
 SLES-55512:
   name: "Sengoku Anthology"
@@ -26894,6 +26952,11 @@ SLKA-25001:
 SLKA-25002:
   name: "Energy Airforce"
   region: "NTSC-K"
+  speedHacks:
+    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
+  gsHWFixes:
+    recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
+    autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 SLKA-25003:
   name: "Herdy Gerdy"
   region: "NTSC-K"
@@ -27066,6 +27129,8 @@ SLKA-25053:
 SLKA-25054:
   name: "Grand Prix Challenge"
   region: "NTSC-K"
+  gameFixes:
+    - VIFFIFOHack # TODO check what this fixes.
 SLKA-25055:
   name: "Hitman 2 - Silent Assassin"
   region: "NTSC-K"
@@ -27606,6 +27671,8 @@ SLKA-25204:
 SLKA-25205:
   name: "Dragon Ball Z 3"
   region: "NTSC-K"
+  gsHWFixes:
+    halfPixelOffset: 1 # Aligns post effects.
 SLKA-25206:
   name: "Burnout 3 - Takedown"
   region: "NTSC-K"
@@ -29981,6 +30048,11 @@ SLPM-60182:
 SLPM-60183:
   name: "Energy Airforce TRIAL VERSION [Trial]"
   region: "NTSC-J"
+  speedHacks:
+    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
+  gsHWFixes:
+    recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
+    autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 SLPM-60184:
   name: "Gungrave [Trial]"
   region: "NTSC-J"
@@ -30635,6 +30707,8 @@ SLPM-61110:
 SLPM-61111:
   name: "Dragon Ball Z 3 [Trial]"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1 # Aligns post effects.
 SLPM-61112:
   name: "Swords of Destiny [Trial]"
   region: "NTSC-J"
@@ -34166,6 +34240,11 @@ SLPM-65177:
   name: "Energy Airforce"
   region: "NTSC-J"
   compat: 5
+  speedHacks:
+    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
+  gsHWFixes:
+    recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
+    autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 SLPM-65178:
   name: "Ferrari F355 Challenge"
   region: "NTSC-J"
@@ -38695,6 +38774,8 @@ SLPM-66325:
 SLPM-66326:
   name: "Ys - The Ark of Napishtim [KONAMI The BEST]"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # TODO check what this fixes.
 SLPM-66327:
   name: "Wallace & Gromit - The Curse of the Were-Rabbit"
   region: "NTSC-J"
@@ -40035,6 +40116,8 @@ SLPM-66645:
 SLPM-66646:
   name: "Shining Force EXA"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1 # Fixes misaligned bloom.
 SLPM-66649:
   name: "Taito MemoriesII - Joukan"
   region: "NTSC-J"
@@ -40591,6 +40674,11 @@ SLPM-66773:
 SLPM-66774:
   name: "Energy Airforce [Eternal Hits]"
   region: "NTSC-J"
+  speedHacks:
+    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
+  gsHWFixes:
+    recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
+    autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 SLPM-66775:
   name: "Taito Memories - Joukan [Eternal Hits]"
   region: "NTSC-J"
@@ -41769,6 +41857,14 @@ SLPM-68520:
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
     recommendedBlendingLevel: 3 # Fixes level and map menu brightness.
     preloadFrameData: 1 # Fixes glowing emblems.
+  memcardFilters:
+    - "SLPS-25338"
+    - "SLPS-25339"
+    - "SLPS-73202"
+    - "SLPS-73203"
+    - "SLPS-25408"
+    - "SLPS-25462"
+    - "SLPS-73247"
 SLPM-68521:
   name: ".hack//frägment [先行リリース版]"
   region: "NTSC-J"
@@ -42118,6 +42214,8 @@ SLPM-74259:
 SLPM-74260:
   name: "Shining Force EXA [PlayStation2 the Best]"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1 # Fixes misaligned bloom.
 SLPM-74261:
   name: "Shining Wind [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -42278,6 +42376,11 @@ SLPM-74412:
 SLPM-74414:
   name: "Energy Airforce [PlayStation2 The Best]"
   region: "NTSC-J"
+  speedHacks:
+    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
+  gsHWFixes:
+    recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
+    autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 SLPM-74415:
   name: "Shinobi [PlayStation2 the Best]"
   region: "NTSC-J"
@@ -45790,6 +45893,8 @@ SLPS-25459:
 SLPS-25460:
   name: "Dragon Ball Z 3"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 1 # Aligns post effects.
 SLPS-25461:
   name: "Armored Core - Formula Front"
   region: "NTSC-J"
@@ -46325,6 +46430,8 @@ SLPS-25601:
 SLPS-25602:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol. 2 - Bomber Powerfull & Yume Yume World DX"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25603:
   name: "Tensei - Swords of Destiny [Best Collection]"
   region: "NTSC-J"
@@ -46386,6 +46493,8 @@ SLPS-25619:
 SLPS-25620:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol. 3 - CR Marilyn Monroe"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25621:
   name: "Kashimashi! - Girl Meets Girl [Limited Edition]"
   region: "NTSC-J"
@@ -46516,6 +46625,8 @@ SLPS-25647:
 SLPS-25648:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol. 5 - CR Shinseiki Evangelion Second Impact & Pachisuro Shinseiki Evangelion"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25649:
   name: "Space Sheriff Spirits"
   region: "NTSC-J"
@@ -46649,6 +46760,8 @@ SLPS-25671:
 SLPS-25672:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol. 6 7Cafe - Katashiki Mei Bomber Powerfull 2"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25673:
   name: "Last Escort - The Black Butterfly Special Night"
   region: "NTSC-J"
@@ -46747,6 +46860,8 @@ SLPS-25698:
 SLPS-25699:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol. 8 CR Matsuura Aya"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25700:
   name: "Aoi no Tristia [The Best Price]"
   region: "NTSC-J"
@@ -46931,9 +47046,13 @@ SLPS-25744:
 SLPS-25745:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol. 1 - CR Shinseiki Evangelion [Special Price Edition]"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25746:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol. 9 CR Fever Captain Harlock"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25747:
   name: "Garouden Break Blow - Fist or Twist"
   region: "NTSC-J"
@@ -47149,6 +47268,8 @@ SLPS-25806:
   name: "Katekyoo Hitman Reborn! Dream Hyper Battle - Shinuki no Honoo to Kuroki Kioku"
   region: "NTSC-J"
   compat: 5
+  gsHWFixes:
+    roundSprite: 2 # Reduces font artifacts but characters still have major artifacts.
 SLPS-25807:
   name: "Saint Beast - Rasen no Shou [Limited Edition]"
   region: "NTSC-J"
@@ -47170,6 +47291,8 @@ SLPS-25812:
 SLPS-25813:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol.11 - Shinseiki Evangelion - Magokoro o, Kimi ni"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25814:
   name: "Shinseiki GPX Cyber Formula - Road to the Infinity 4"
   region: "NTSC-J"
@@ -47235,6 +47358,9 @@ SLPS-25828:
 SLPS-25829:
   name: "Another Century's Episode 2 Special Vocal Version"
   region: "NTSC-J"
+  memcardFilters:
+    - "SLPS-25394"
+    - "SLPS-25623"
 SLPS-25830:
   name: "Zero no Tsukaima - Muma ga Tsumugu Yokaze no Gensoukyoku [Limited Edition]"
   region: "NTSC-J"
@@ -47375,9 +47501,13 @@ SLPS-25860:
 SLPS-25861:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol.10 CR Neon Genesis Evangelion Kiseki no Kachi wa [Special Price Edition]"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25862:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol.5 - CR Neon Genesis Evangelion Sekandoinpakuto & Pachislot Neon Genesis Evangelion [Special Price Edition]"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25863:
   name: "Fatal Fury - Battle Archives 1 [SNK the Best]"
   region: "NTSC-J"
@@ -47399,6 +47529,8 @@ SLPS-25868:
 SLPS-25869:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol.12 CR Shinseiki Evangelion - Shito, Futatabi"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25871:
   name: "Drastic Killer"
   region: "NTSC-J"
@@ -47407,6 +47539,9 @@ SLPS-25872:
   region: "NTSC-J"
 SLPS-25874:
   name: "Simple 2000 Series Vol. 123 - The Office Love Jikenbo - Reijou Tantei"
+  region: "NTSC-J"
+SLPS-25875:
+  name: "xxxHolic - Shigatsu Tsuitachi no Izayoi Sowa [Best Collection]"
   region: "NTSC-J"
 SLPS-25876:
   name: "Shin Bokujou Monogatari - Pure Innocent Life [Best Collection]"
@@ -47522,6 +47657,8 @@ SLPS-25903:
 SLPS-25904:
   name: "Katekyoo Hitman Reborn! Dream Hyper Battle - Kindan no Yami no Delta"
   region: "NTSC-J"
+  gsHWFixes:
+    roundSprite: 2 # Reduces font artifacts but characters still have major artifacts.
 SLPS-25905:
   name: "Dragon Ball Z - Infinite World"
   region: "NTSC-J"
@@ -47540,12 +47677,18 @@ SLPS-25908:
 SLPS-25909:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol.13 - Shin Seiki Evangelion - Yakusoku no Toki"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25910:
   name: "Katekyoo Hitman Reborn! Dream Hyper Battle - Shinuki no Honoo to Kuroki Kioku [Best Collection]"
   region: "NTSC-J"
+  gsHWFixes:
+    roundSprite: 2 # Reduces font artifacts but characters still have major artifacts.
 SLPS-25911:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol.11 - Shinseiki Evangelion - Magokoro wo, Kimi ni [Special Price Edition]"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25912:
   name: "Soul Eater - Battle Resonance"
   region: "NTSC-J"
@@ -47656,9 +47799,13 @@ SLPS-25941:
 SLPS-25942:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol.14 - CR Shinseiki Evangelion - Saigo no Shisha"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25943:
   name: "Hisshou Pachinko Pachi-Slot Kouryaku Series Vol.14 - CR Shinseiki Evangelion - Saigo no Shisha [Limited Edition]"
   region: "NTSC-J"
+  gameFixes:
+    - EETimingHack # Fixes FMV hanging.
 SLPS-25944:
   name: "Kamen Rider - Climax Heroes"
   region: "NTSC-J"
@@ -48348,6 +48495,9 @@ SLPS-73258:
 SLPS-73259:
   name: ".hack//G.U. Vol.1 - Rebirth [PlayStation2 the Best]"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 2 # Sharpens world in far distances.
+    roundSprite: 1 # Corrects proportions of some letters in HUD.
 SLPS-73263:
   name: "Ar tonelico II - Sekai ni Hibiku Shoujo-Tachi no Metafalica [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -52716,6 +52866,8 @@ SLUS-20885:
   name: "The Red Star"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1 # Fixes depth line and edge garbage.
 SLUS-20886:
   name: "Sitting Ducks"
   region: "NTSC-U"
@@ -54552,6 +54704,9 @@ SLUS-21215:
   name: "The Warriors"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1 # Alings recursive blur effects.
+    autoFlush: 1 # Fixes missing recursive blur effects.
 SLUS-21216:
   name: "Soul Calibur III"
   region: "NTSC-U"
@@ -54780,6 +54935,8 @@ SLUS-21246:
 SLUS-21247:
   name: "Jackie Chan Adventures"
   region: "NTSC-U"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes half right.
 SLUS-21248:
   name: "Legend of Kay"
   region: "NTSC-U"
@@ -56572,6 +56729,8 @@ SLUS-21567:
   name: "Shining Force EXA"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 1 # Fixes misaligned bloom.
 SLUS-21568:
   name: "Arena Football - Road to Glory"
   region: "NTSC-U"
@@ -58100,7 +58259,7 @@ SLUS-21872:
   name: "MTV Pimp My Ride - Street Racing"
   region: "NTSC-U"
   gsHWFixes:
-    halfPixelOffset: 1 # Aligns bloom as best it can be.
+    halfPixelOffset: 1 # Helps misaligned bloom.
     autoFlush: 1 # Fixes bloom rendering.
 SLUS-21873:
   name: "Dynasty Warriors - Gundam 2"
@@ -58958,6 +59117,8 @@ SLUS-29084:
 SLUS-29085:
   name: "Champions of Norrath - Realms of EverQuest"
   region: "NTSC-U"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes half right.
 SLUS-29086:
   name: "FIFA Soccer 2004 [Demo]"
   region: "NTSC-U"
@@ -59545,10 +59706,9 @@ TCPS-10073:
   name: "Energy Airforce - Aim Strike! [TAITO 2002]"
   region: "NTSC-J"
   speedHacks:
-    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame.
-    MTVUSpeedHack: 0
+    InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
   gsHWFixes:
-    recommendedBlendingLevel: 5 # Alleviates color banding.
+    recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
     autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 TCPS-10074:
   name: "Space Invaders 25th Anniversary Bundle"
