@@ -863,7 +863,7 @@ SCAJ-10003:
   name: "Taiko no Tatsujin - Doki! Shinkyoku Darake no Haru Matsuri"
   region: "NTSC-Unk"
 SCAJ-10004:
-  name: "Time Crisis 2 [PlayStation2 the Best]"
+  name: "Time Crisis 2 [PlayStation 2 the Best]"
   region: "NTSC-Unk"
 SCAJ-10006:
   name: "Taiko no Tatsujin - Appare Sandaime"
@@ -1400,7 +1400,7 @@ SCAJ-20093:
   name: "Tenchu Kurenai"
   region: "NTSC-Unk"
 SCAJ-20094:
-  name: "Minna no Golf 4 [PlayStation2 the Best]"
+  name: "Minna no Golf 4 [PlayStation 2 the Best]"
   region: "NTSC-Unk"
 SCAJ-20095:
   name: "Digital Devil Saga - Avatar Tuner"
@@ -1654,7 +1654,7 @@ SCAJ-20135:
     - "SLPS-73210"
     - "SLPS-73240"
 SCAJ-20136:
-  name: "Ace Combat 5 - The Unsung War [PlayStation2 the Best]"
+  name: "Ace Combat 5 - The Unsung War [PlayStation 2 the Best]"
   region: "NTSC-Unk"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
@@ -1991,10 +1991,10 @@ SCAJ-20193:
   gameFixes:
     - FpuMulHack
 SCAJ-20194:
-  name: "Minna no Golf 4 [PlayStation2 the Best]"
+  name: "Minna no Golf 4 [PlayStation 2 the Best]"
   region: "NTSC-Unk"
 SCAJ-20195:
-  name: "Ape Escape 3 [PlayStation2 the Best]"
+  name: "Ape Escape 3 [PlayStation 2 the Best]"
   region: "NTSC-C"
   roundModes:
     vu0RoundMode: 2 # Fixes light sabre SPS in specific positions.
@@ -2005,7 +2005,7 @@ SCAJ-20195:
     halfPixelOffset: 2 # Fixes misaligned blur.
     autoFlush: 1 # Fixes corruption in cutscenes and brightens the image.
 SCAJ-20196:
-  name: "Wang Da Yu Ju Xiang [PlayStation2 the Best]"
+  name: "Wang Da Yu Ju Xiang [PlayStation 2 the Best]"
   region: "NTSC-C"
   roundModes:
     eeRoundMode: 3 # Prevents Wander from moving when charging the floor.
@@ -2034,12 +2034,12 @@ SCAJ-20197:
     roundSprite: 1 # Fixes lines in transitions.
     cpuSpriteRenderBW: 1 # Fixes upscaled FMV lines.
 SCAJ-20198:
-  name: "Everybody's Tennis [PlayStation2 the Best]"
+  name: "Everybody's Tennis [PlayStation 2 the Best]"
   region: "NTSC-Unk"
   roundModes:
     vu1RoundMode: 1 # Fixes the display of scores and text ingame.
 SCAJ-20199:
-  name: "Tekken 5 [PlayStation2 the Best]"
+  name: "Tekken 5 [PlayStation 2 the Best]"
   region: "NTSC-Unk"
   clampModes:
     eeClampMode: 2 # Fixes camera and stops constant coin noises on Pirates Cove.
@@ -2094,7 +2094,7 @@ SCAJ-25047:
   gsHWFixes:
     minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
 SCAJ-30001:
-  name: "Xenosaga - Episode I - Der Wille zur Macht [PlayStation2 the Best]"
+  name: "Xenosaga - Episode I - Der Wille zur Macht [PlayStation 2 the Best]"
   region: "NTSC-Unk"
   compat: 5
   gsHWFixes:
@@ -2155,7 +2155,7 @@ SCAJ-30007:
     halfPixelOffset: 1 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
     autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCAJ-30008:
-  name: "Gran Turismo 4 [PlayStation2 the Best]"
+  name: "Gran Turismo 4 [PlayStation 2 the Best]"
   region: "NTSC-C"
   roundModes:
     eeRoundMode: 3 # Using chop for both normal+div fixes crash in B5 license test.
@@ -6528,7 +6528,7 @@ SCKA-20027:
     halfPixelOffset: 2 # Aligns post effects.
     textureInsideRT: 1 # Fixes post shuffles.
 SCKA-20028:
-  name: "Ico [PlayStation2 Big Hit Series]"
+  name: "Ico [PlayStation 2 Big Hit Series]"
   region: "NTSC-K"
   compat: 5
   clampModes:
@@ -8318,17 +8318,17 @@ SCPS-17502:
   name: "Linux for PlayStation 2 - Release 1.0 [Disc 2] [Software Packages]"
   region: "NTSC-J"
 SCPS-19101:
-  name: "Ka [PlayStation2 the Best]"
+  name: "Ka [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
 SCPS-19102:
-  name: "Boku to Maou [PlayStation2 the Best]"
+  name: "Boku to Maou [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     autoFlush: 1 # Depth of field blur is incorrect without it.
 SCPS-19103:
-  name: "ICO [PlayStation2 the Best]"
+  name: "ICO [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
   clampModes:
@@ -8338,13 +8338,13 @@ SCPS-19103:
     halfPixelOffset: 1 # Fixes misaligned bloom.
     textureInsideRT: 1 # Fixes depth buffer post-processing.
 SCPS-19104:
-  name: "Pipo Saru 2001 [PlayStation2 the Best]"
+  name: "Pipo Saru 2001 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19105:
-  name: "Bravo Music [PlayStation2 the Best]"
+  name: "Bravo Music [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19151:
-  name: "ICO [PlayStation2 the Best]"
+  name: "ICO [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
   clampModes:
@@ -8354,7 +8354,7 @@ SCPS-19151:
     halfPixelOffset: 1 # Fixes misaligned bloom.
     textureInsideRT: 1 # Fixes depth buffer post-processing.
 SCPS-19152:
-  name: "Saru Get You! 2 [PlayStation2 the Best]"
+  name: "Saru Get You! 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes interlacing.
@@ -8362,10 +8362,10 @@ SCPS-19152:
     recommendedBlendingLevel: 3 # Improves shine on surfaces and lights.
     halfPixelOffset: 1 # Aligns motion blur more correctly to match software.
 SCPS-19153:
-  name: "Pipo Saru 2001 [PlayStation2 the Best]"
+  name: "Pipo Saru 2001 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19201:
-  name: "PaRappa the Rapper 2 [PlayStation2 the Best]"
+  name: "PaRappa the Rapper 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes noodles.
@@ -8373,28 +8373,28 @@ SCPS-19201:
   gsHWFixes:
     halfPixelOffset: 1 # Aligns depth of field effect.
 SCPS-19202:
-  name: "EXTERMINATION [PlayStation2 the Best]"
+  name: "EXTERMINATION [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Black FMV.
   gsHWFixes:
     halfPixelOffset: 1 # Fixes post processing position.
 SCPS-19203:
-  name: "Dark Cloud [PlayStation2 the Best]"
+  name: "Dark Cloud [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Distance is less blurry, game has reduced LOD so it will still look blurry.
 SCPS-19204:
-  name: "Legaia - Duel Saga [PlayStation2 the Best]"
+  name: "Legaia - Duel Saga [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19205:
-  name: "Wild ARMs - Advanced 3rd [PlayStation2 the Best]"
+  name: "Wild ARMs - Advanced 3rd [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     wildArmsHack: 1 # Fixes font artifacts and out-of-bound 2D textures.
     gpuPaletteConversion: 2 # Fixes micro-stuttering and drops in performance while also reducing hash cache explosions and GS usage.
 SCPS-19206:
-  name: "Ape Escape 2 [PlayStation2 the Best]"
+  name: "Ape Escape 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes interlacing.
@@ -8402,42 +8402,42 @@ SCPS-19206:
     recommendedBlendingLevel: 3 # Improves shine on surfaces and lights.
     halfPixelOffset: 1 # Aligns motion blur more correctly to match software.
 SCPS-19207:
-  name: "Popolocrois - Hajimari no Bouken [PlayStation2 the Best]"
+  name: "Popolocrois - Hajimari no Bouken [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19208:
-  name: "GRAN TURISMO Concept 2001 Tokyo [PlayStation2 the Best]"
+  name: "GRAN TURISMO Concept 2001 Tokyo [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves banding in car showcase as well as car brightness and sheen.
 SCPS-19209:
-  name: "Boku no Summer Vacation 2 [PlayStation2 the Best]"
+  name: "Boku no Summer Vacation 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19210:
-  name: "Jak x Daxter - Kyuu Sekai no Isan [PlayStation2 the Best]"
+  name: "Jak x Daxter - Kyuu Sekai no Isan [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves reflection quality.
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes gate warp effect and emissive texture effects.
 SCPS-19211:
-  name: "Ratchet & Clank [PlayStation2 the Best]"
+  name: "Ratchet & Clank [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Fixes SPR errors while going in-game.
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post bloom.
 SCPS-19213:
-  name: "Operator's Side [PlayStation2 the Best] [with Microphone]"
+  name: "Operator's Side [PlayStation 2 the Best] [with Microphone]"
   region: "NTSC-J"
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
 SCPS-19214:
-  name: "Operator's Side [PlayStation2 the Best]"
+  name: "Operator's Side [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
 SCPS-19215:
-  name: "Dark Chronicle [PlayStation2 the Best]"
+  name: "Dark Chronicle [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     eeClampMode: 3 # Fixes textbox.
@@ -8446,14 +8446,14 @@ SCPS-19215:
     roundSprite: 1 # Fixes font artifacts.
     cpuSpriteRenderBW: 2 # Fixes lines in geometry.
 SCPS-19251:
-  name: "Wild ARMs - Alter Code:F [PlayStation2 the Best]"
+  name: "Wild ARMs - Alter Code:F [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Imrpvoes cloud rendering.
     wildArmsHack: 1 # Fixes font artifacts and out-of-bound 2D textures.
     gpuPaletteConversion: 2 # Fixes micro-stuttering and drops in performance while also reducing hash cache explosions and GS usage.
 SCPS-19252:
-  name: "GRAN TURISMO 4 [PlayStation2 the Best]"
+  name: "GRAN TURISMO 4 [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     vuClampMode: 2 # Text in GT mode works.
@@ -8480,7 +8480,7 @@ SCPS-19253:
     wildArmsHack: 1 # Fixes font artifacts and out-of-bound 2D textures.
     gpuPaletteConversion: 2 # Fixes micro-stuttering and drops in performance while also reducing hash cache explosions and GS usage.
 SCPS-19254:
-  name: "Rogue Galaxy [PlayStation2 the Best]"
+  name: "Rogue Galaxy [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes text and menu color.
@@ -8490,10 +8490,10 @@ SCPS-19254:
     disablePartialInvalidation: 1 # Prevents UI and subtitles from disappearing.
     halfPixelOffset: 2 # Aligns post bloom.
 SCPS-19301:
-  name: "Minna no Golf 4 [PlayStation2 the Best]"
+  name: "Minna no Golf 4 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19302:
-  name: "Ratchet & Clank 2 - Going Commando [PlayStation2 the Best]"
+  name: "Ratchet & Clank 2 - Going Commando [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Fixes SPR errors while going in-game.
@@ -8501,12 +8501,12 @@ SCPS-19302:
     autoFlush: 1
     halfPixelOffset: 1 # Aligns post bloom.
 SCPS-19303:
-  name: "Boku no Natsuyasumi 2 [PlayStation2 the Best]"
+  name: "Boku no Natsuyasumi 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     roundSprite: 1 # Fixes menu text.
 SCPS-19304:
-  name: "GRAN TURISMO 4 Prologue [PlayStation2 the Best]"
+  name: "GRAN TURISMO 4 Prologue [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves banding in car showcase as well as car brightness and sheen.
@@ -8524,13 +8524,13 @@ SCPS-19304:
     - "SCPS-55007"
   # vuClampMode = 2  Text in GT mode works.
 SCPS-19305:
-  name: "SIREN [PlayStation2 the Best]"
+  name: "SIREN [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     roundSprite: 1 # Fixes gaps between menu options.
     cpuSpriteRenderBW: 4 # Fixes sky rendering.
 SCPS-19306:
-  name: "Dark Chronicle [PlayStation2 the Best]"
+  name: "Dark Chronicle [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     eeClampMode: 3 # Fixes textbox.
@@ -8539,10 +8539,10 @@ SCPS-19306:
     roundSprite: 1 # Fixes font artifacts.
     cpuSpriteRenderBW: 2 # Fixes lines in geometry.
 SCPS-19307:
-  name: "Popolocrois - The First Adventure [PlayStation2 the Best]"
+  name: "Popolocrois - The First Adventure [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19308:
-  name: "Saru Get You 2 [PlayStation2 the Best]"
+  name: "Saru Get You 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes interlacing.
@@ -8550,7 +8550,7 @@ SCPS-19308:
     recommendedBlendingLevel: 3 # Improves shine on surfaces and lights.
     halfPixelOffset: 1 # Aligns motion blur more correctly to match software.
 SCPS-19309:
-  name: "Ratchet & Clank 3 - Up Your Arsenal [PlayStation2 the Best]"
+  name: "Ratchet & Clank 3 - Up Your Arsenal [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Fixes SPR errors while going in-game.
@@ -8560,14 +8560,14 @@ SCPS-19309:
     halfPixelOffset: 1 # Aligns post bloom.
     autoFlush: 1 # Helps fix misaligned bloom.
 SCPS-19310:
-  name: "Ratchet & Clank [PlayStation2 the Best]"
+  name: "Ratchet & Clank [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Fixes SPR errors while going in-game.
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post bloom.
 SCPS-19311:
-  name: "Saru Get You 3 [PlayStation2 the Best]"
+  name: "Saru Get You 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     vu0RoundMode: 2 # Fixes light sabre SPS in specific positions.
@@ -8578,13 +8578,13 @@ SCPS-19311:
     halfPixelOffset: 2 # Fixes misaligned blur.
     autoFlush: 1 # Fixes corruption in cutscenes and brightens the image.
 SCPS-19312:
-  name: "SIREN [PlayStation2 the Best]"
+  name: "SIREN [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     roundSprite: 1 # Fixes gaps between menu options.
     cpuSpriteRenderBW: 4 # Fixes sky rendering.
 SCPS-19313:
-  name: "Wild ARMs - The 4th Detonator [PlayStation2 the Best]"
+  name: "Wild ARMs - The 4th Detonator [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     textureInsideRT: 1
@@ -8603,17 +8603,17 @@ SCPS-19313:
     - "SCPS-19251"
     - "SCPS-19253"
 SCPS-19315:
-  name: "EyeToy - Play [PlayStation2 the Best]"
+  name: "EyeToy - Play [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19316:
-  name: "Ratchet & Clank [PlayStation2 the Best]"
+  name: "Ratchet & Clank [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Fixes SPR errors while going in-game.
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post bloom.
 SCPS-19317:
-  name: "Ratchet & Clank 2 - Going Commando [PlayStation2 the Best]"
+  name: "Ratchet & Clank 2 - Going Commando [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Fixes SPR errors while going in-game.
@@ -8627,13 +8627,13 @@ SCPS-19317:
     - "SCPS-19310"
     - "SCPS-19316"
 SCPS-19318:
-  name: "GENJI [PlayStation2 the Best]"
+  name: "GENJI [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19319:
-  name: "Minna no Golf 4 [PlayStation2 the Best]"
+  name: "Minna no Golf 4 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19320:
-  name: "Wanda to Kyozou [PlayStation2 the Best]"
+  name: "Wanda to Kyozou [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     eeRoundMode: 3 # Prevents Wander from moving when charging the floor.
@@ -8649,7 +8649,7 @@ SCPS-19320:
     - "SCPS-19151"
     - "SCPS-55001"
 SCPS-19321:
-  name: "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle [PlayStation2 the Best]"
+  name: "Ratchet & Clank 4th - GiriGiri Ginga no Giga Battle [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Fixes SPR errors while going in-game.
@@ -8696,15 +8696,15 @@ SCPS-19323:
     - "SCPS-19251"
     - "SCPS-19253"
 SCPS-19324:
-  name: "Tourist Trophy - The Real Riding Simulator [PlayStation2 the Best]"
+  name: "Tourist Trophy - The Real Riding Simulator [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     vuClampMode: 2 # Fixes SPS in TT Mode menu caused by the moving tooltips.
 SCPS-19325:
-  name: "Saru! Get You! - Million Monkeys [PlayStation2 the Best]"
+  name: "Saru! Get You! - Million Monkeys [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19326:
-  name: "SIREN2 [PlayStation2 the Best]"
+  name: "SIREN2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - XGKickHack # Fixes SPS.
@@ -8733,27 +8733,27 @@ SCPS-19328:
     halfPixelOffset: 1 # Aligns post bloom.
     autoFlush: 1 # Helps fix misaligned bloom.
 SCPS-19329:
-  name: "Bleach - Blade Battlers [PlayStation2 the Best]"
+  name: "Bleach - Blade Battlers [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - OPHFlagHack # Special moves "Bankai" hang otherwise.
   gsHWFixes:
     preloadFrameData: 1 # Fixes removed bloom.
 SCPS-19330:
-  name: "Bleach - Hanatareshi Yabou [PlayStation2 the Best]"
+  name: "Bleach - Hanatareshi Yabou [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-19331:
-  name: "Bleach - Selected Soul [PlayStation2 the Best]"
+  name: "Bleach - Selected Soul [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned bloom effects.
 SCPS-19332:
-  name: "Minna no Tennis [PlayStation2 the Best]"
+  name: "Minna no Tennis [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     vu1RoundMode: 1 # Fixes the display of scores and text ingame.
 SCPS-19333:
-  name: "Wild ARMs - The Vth Vanguard [PlayStation2 the Best]"
+  name: "Wild ARMs - The Vth Vanguard [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     roundSprite: 1 # Fixes font sizes and lines in UI.
@@ -8978,7 +8978,7 @@ SCPS-55029:
     - "SLPS-73232"
     - "SLPS-73233"
 SCPS-55030:
-  name: "Hajime no Ippo - Victorious Boxers [PlayStation2 the Best]"
+  name: "Hajime no Ippo - Victorious Boxers [PlayStation 2 the Best]"
   region: "NTSC-J"
 SCPS-55031:
   name: "Ghost Vibration"
@@ -11577,10 +11577,10 @@ SLAJ-25091:
     # UG2 saves can be detected, but the code is unused.
     - "SLAJ-25054"
 SLAJ-25092:
-  name: "Shin Sangoku Musou 4 [PlayStation2 the Best]"
+  name: "Shin Sangoku Musou 4 [PlayStation 2 the Best]"
   region: "NTSC-Unk"
 SLAJ-25093:
-  name: "Sangoku Musou [PlayStation2 the Best]"
+  name: "Sangoku Musou [PlayStation 2 the Best]"
   region: "NTSC-Unk"
 SLAJ-25094:
   name: "Burnout Dominator"
@@ -30419,7 +30419,7 @@ SLPM-55144:
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes broken sprite rendering and crowd rendering.
 SLPM-55145:
-  name: "Akudaikan 3 [PlayStation2 The Best]"
+  name: "Akudaikan 3 [PlayStation 2 The Best]"
   region: "NTSC-J"
 SLPM-55146:
   name: "Jikkyou Powerful Pro Yakyuu 2009"
@@ -34391,7 +34391,7 @@ SLPM-62749:
   name: "Jissen Pachi-Slot Hisshouhou! Mister Magic Neo"
   region: "NTSC-J"
 SLPM-62750:
-  name: "Momotarou Dentetsu 16 - Hokkaido Daiidou no Maki! [PlayStation2 the Best]"
+  name: "Momotarou Dentetsu 16 - Hokkaido Daiidou no Maki! [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-62751:
   name: "Shin Sangoku Musou Series Collection Gekan Saikyou Data"
@@ -35622,7 +35622,7 @@ SLPM-65236:
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post effects.
 SLPM-65237:
-  name: "ZONE OF THE ENDERS -Z.O.E- [PlayStation2 the Best]"
+  name: "ZONE OF THE ENDERS -Z.O.E- [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     gpuPaletteConversion: 2 # Improves FPS and reduces HC size.
@@ -35931,7 +35931,7 @@ SLPM-65308:
     wildArmsHack: 1 # Improves visual clarity whilst upscaling.
     roundSprite: 1 # Reduces graphics garbage on UI whilst upscaling.
 SLPM-65309:
-  name: "Splashdown [PlayStation2 the Best]"
+  name: "Splashdown [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-65310:
   name: "The Mark of KRI"
@@ -40538,7 +40538,7 @@ SLPM-66462:
     autoFlush: 1 # Fixes lens flares and missing sun.
     halfPixelOffset: 1 # Aligns post effects.
 SLPM-66463:
-  name: "Def Jam - Fight for NY [PlayStation2 the Best]"
+  name: "Def Jam - Fight for NY [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Reduces post misalignment.
@@ -43133,55 +43133,55 @@ SLPM-69006:
   name: "PictureParadise Club Vol. 2 [Trial]"
   region: "NTSC-J"
 SLPM-74001:
-  name: "Gungriffon Blaze [PlayStation2 the Best]"
+  name: "Gungriffon Blaze [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74002:
-  name: "Shin Sangoku Musou [PlayStation2 the Best]"
+  name: "Shin Sangoku Musou [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74003:
-  name: "Crash Bandicoot 4 - Sakuretsu! Majin Power [PlayStation2 the Best]"
+  name: "Crash Bandicoot 4 - Sakuretsu! Majin Power [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Helps post misaligment.
     autoFlush: 1 # Fixes refraction effect.
 SLPM-74004:
-  name: "Maximo - Ghosts to Glory [PlayStation2 the Best]"
+  name: "Maximo - Ghosts to Glory [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74005:
-  name: "Sangokushi VII [PlayStation2 the Best]"
+  name: "Sangokushi VII [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74006:
-  name: "Rez [PlayStation2 the Best]"
+  name: "Rez [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74007:
-  name: "Busin - Wizardry Alternative [PlayStation2 the Best]"
+  name: "Busin - Wizardry Alternative [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74044:
-  name: "Space Channel 5 - Part 2 [PlayStation2 the Best]"
+  name: "Space Channel 5 - Part 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74101:
-  name: "Bomberman Land 2 [PlayStation2 the Best]"
+  name: "Bomberman Land 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74102:
-  name: "Momotarou Dentetsu 12 - Nishi Nihon hen mo Arimasse! [PlayStation2 the Best]"
+  name: "Momotarou Dentetsu 12 - Nishi Nihon hen mo Arimasse! [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74103:
-  name: "Momotarou Dentetsu USA [PlayStation2 the Best]"
+  name: "Momotarou Dentetsu USA [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74104:
-  name: "Momotarou Dentetsu 15 - Godai Bonbii Toujo! no Maki [PlayStation2 the Best]"
+  name: "Momotarou Dentetsu 15 - Godai Bonbii Toujo! no Maki [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74105:
-  name: "Momotarou Dentetsu 16 - Hokkaido Daiidou no Maki! [PlayStation2 the Best]"
+  name: "Momotarou Dentetsu 16 - Hokkaido Daiidou no Maki! [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74201:
-  name: "BioHazard Outbreak [PlayStation2 the Best]"
+  name: "BioHazard Outbreak [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74202:
-  name: "Fuuun Shinsengumi [PlayStation2 the Best]"
+  name: "Fuuun Shinsengumi [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74204:
-  name: "Shutokou Battle 01 [PlayStation2 the Best]"
+  name: "Shutokou Battle 01 [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
   gsHWFixes:
@@ -43189,64 +43189,64 @@ SLPM-74204:
     wildArmsHack: 1 # Improves visual clarity whilst upscaling.
     roundSprite: 1 # Reduces graphics garbage on UI whilst upscaling.
 SLPM-74205:
-  name: "Shin Megami Tensei III - Nocturne [PlayStation2 the Best]"
+  name: "Shin Megami Tensei III - Nocturne [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     eeRoundMode: 0 # Ladder glitch in "Assembly of Nihilo B11" level.
   gsHWFixes:
     halfPixelOffset: 1 # Fixes bilinear on lighting effects.
 SLPM-74206:
-  name: "Onimusha [PlayStation2 the Best]"
+  name: "Onimusha [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     texturePreloading: 1 # Performs much better with partial preload.
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs.
 SLPM-74208:
-  name: "Tengai Makyou II - Manji Maru [PlayStation2 the Best]"
+  name: "Tengai Makyou II - Manji Maru [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74209:
-  name: "Samurai Michi 2 [PlayStation2 the Best]"
+  name: "Samurai Michi 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74210:
-  name: "Puyo Puyo Fever [PlayStation2 the Best]"
+  name: "Puyo Puyo Fever [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74211:
-  name: "Shutokou Battle 0 [PlayStation2 the Best]"
+  name: "Shutokou Battle 0 [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
 SLPM-74212:
-  name: "Sengoku Musou Moushouden [PlayStation2 the Best]"
+  name: "Sengoku Musou Moushouden [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74213:
-  name: "Gensou Suikoden IV [PlayStation2 the Best]"
+  name: "Gensou Suikoden IV [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74214:
-  name: "Densha de Go! Final [PlayStation2 the Best]"
+  name: "Densha de Go! Final [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74215:
-  name: "Shin Sangoku Musou 3 [PlayStation2 the Best]"
+  name: "Shin Sangoku Musou 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74216:
-  name: "Shin Sangoku Musou 3 - Moushouden [PlayStation2 the Best]"
+  name: "Shin Sangoku Musou 3 - Moushouden [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74217:
-  name: "Shin Sangoku Musou 3 [PlayStation2 the Best] [Mega Pack]"
+  name: "Shin Sangoku Musou 3 [PlayStation 2 the Best] [Mega Pack]"
   region: "NTSC-J"
 SLPM-74218:
-  name: "Shining Tears [PlayStation2 the Best]"
+  name: "Shining Tears [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74219:
-  name: "Shin Sangoku Musou 3 - Empires [PlayStation2 the Best]"
+  name: "Shin Sangoku Musou 3 - Empires [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74220:
-  name: "Kengo 3 [PlayStation2 the Best]"
+  name: "Kengo 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74221:
-  name: "Kenka Banchou [PlayStation2 the Best]"
+  name: "Kenka Banchou [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74222:
-  name: "Samurai Kanzenban [PlayStation2 the Best]"
+  name: "Samurai Kanzenban [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Stops crash after intro movie.
@@ -43254,18 +43254,18 @@ SLPM-74223:
   name: "Kessen III"
   region: "NTSC-J"
 SLPM-74224:
-  name: "Sengoku Musou Moushouden [PlayStation2 the Best]"
+  name: "Sengoku Musou Moushouden [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74225:
-  name: "Nobunaga no Yabou - Tenka Sousei [PlayStation2 the Best]"
+  name: "Nobunaga no Yabou - Tenka Sousei [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74226:
-  name: "Metal Saga - Sajin no Kusari [PlayStation2 the Best]"
+  name: "Metal Saga - Sajin no Kusari [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes combat interface.
 SLPM-74227:
-  name: "Ikusa Gami [PlayStation2 the Best]"
+  name: "Ikusa Gami [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - VIF1StallHack # Fixes black screen on boot.
@@ -43274,27 +43274,27 @@ SLPM-74227:
     autoFlush: 1 # Fixes missing bloom effects.
     halfPixelOffset: 1 # Fixes misaligned lighting and bloom.
 SLPM-74228:
-  name: "Fuuun Bakumatsu-den [PlayStation2 the Best]"
+  name: "Fuuun Bakumatsu-den [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74229:
-  name: "BioHazard 4 [PlayStation2 the Best]"
+  name: "BioHazard 4 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
 SLPM-74230:
-  name: "Devil May Cry [PlayStation2 the Best]"
+  name: "Devil May Cry [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes corrupt textures.
     halfPixelOffset: 2 # Alleviates blur from upscaling.
     mipmap: 0 # Currently causes texture flickering.
 SLPM-74231:
-  name: "Kessen III [PlayStation2 the Best]"
+  name: "Kessen III [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74232:
-  name: "Shin Onimusha - Dawn of Dreams [PlayStation2 the Best] [Disc 1 of 2]"
+  name: "Shin Onimusha - Dawn of Dreams [PlayStation 2 the Best] [Disc 1 of 2]"
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Wrong white textures in FMV.
@@ -43303,33 +43303,33 @@ SLPM-74232:
   memcardFilters:
     - "SLPM-66275"
 SLPM-74233:
-  name: "Shin Onimusha - Dawn of Dreams [PlayStation2 the Best] [Disc 2 of 2]"
+  name: "Shin Onimusha - Dawn of Dreams [PlayStation 2 the Best] [Disc 2 of 2]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Mostly aligns post processing.
   memcardFilters:
     - "SLPM-74232"
 SLPM-74234:
-  name: "Ryu Ga Gotoku [PlayStation2 the Best]"
+  name: "Ryu Ga Gotoku [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Fixes flickering.
   gsHWFixes:
     alignSprite: 1 # Helps align bloom.
 SLPM-74235:
-  name: "Sengoku Musou [PlayStation2 the Best]"
+  name: "Sengoku Musou [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74236:
-  name: "Shin Sangoku Musou 4 [PlayStation2 the Best]"
+  name: "Shin Sangoku Musou 4 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74237:
-  name: "New Jinsei Game [PlayStation2 the Best]"
+  name: "New Jinsei Game [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74238:
-  name: "Gensou Suikoden V [PlayStation2 the Best]"
+  name: "Gensou Suikoden V [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74239:
-  name: "Okami [PlayStation2 the Best]"
+  name: "Okami [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post effects.
@@ -43337,19 +43337,19 @@ SLPM-74240:
   name: "Tengai Makyou III - Namida [Best Version]"
   region: "NTSC-J"
 SLPM-74241:
-  name: "GOD HAND [PlayStation2 the Best]"
+  name: "GOD HAND [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Depth of field effect aligned properly + Shifts buildings correctly.
 SLPM-74242:
-  name: "Devil May Cry 3 Special Edition [PlayStation2 the Best]"
+  name: "Devil May Cry 3 Special Edition [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     eeRoundMode: 0 # Fixes inability to enter door in Mission 18.
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post effects.
 SLPM-74243:
-  name: "True Crime - New York City [PlayStation2 the Best]"
+  name: "True Crime - New York City [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     eeClampMode: 2 # Fixes SPS on highway.
@@ -43362,22 +43362,22 @@ SLPM-74243:
     halfPixelOffset: 1 # Reduces post misalignment.
     autoFlush: 1 # Fixes shadow alignment.
 SLPM-74244:
-  name: "PHANTASY STAR UNIVERSE [PlayStation2 the Best]"
+  name: "PHANTASY STAR UNIVERSE [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     eeRoundMode: 0 # Fixes enemies not moving (especially Chapter 7 boss).
 SLPM-74245:
-  name: "Monster Hunter 2 [PlayStation2 the Best]"
+  name: "Monster Hunter 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     vuClampMode: 3 # Fixes lighting on character models as caves and other locations don't turn mobs into glow-in-the-dark creatures by themselves.
   gsHWFixes:
     maximumBlendingLevel: 0 # Fixes unnecessary load on the GPU.
 SLPM-74246:
-  name: "CAPCOM VS.SNK 2 MILLIONAIRE FIGHTING 2001 [PlayStation2 the Best]"
+  name: "CAPCOM VS.SNK 2 MILLIONAIRE FIGHTING 2001 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74247:
-  name: "Sengoku Musou 2 [PlayStation2 the Best]"
+  name: "Sengoku Musou 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     roundSprite: 2 # Helps to alleviate misaligned text.
@@ -43394,17 +43394,17 @@ SLPM-74247:
     - "SLPM-74224"
     - "SLPM-74249"
 SLPM-74248:
-  name: "Monster Hunter G [PlayStation2 the Best]"
+  name: "Monster Hunter G [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     vuClampMode: 3 # Fixes lighting on character models as caves and other locations don't turn mobs into glow-in-the-dark creatures by themselves.
   gsHWFixes:
     maximumBlendingLevel: 0 # Fixes unnecessary load on the GPU.
 SLPM-74249:
-  name: "Sengoku Musou Moushouden [PlayStation2 the Best]"
+  name: "Sengoku Musou Moushouden [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74250:
-  name: "Shin Sangoku Musou 4 Moushouden [PlayStation2 the Best]"
+  name: "Shin Sangoku Musou 4 Moushouden [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     autoFlush: 1 # Fixes sun luminosity.
@@ -43433,7 +43433,7 @@ SLPM-74254:
   name: "EX Jinsei Game II [PlayStation 2 the Best - Reprint]"
   region: "NTSC-J"
 SLPM-74255:
-  name: "Metal Gear Solid 2 - Sons of Liberty [PlayStation2 the Best] [Disc 1 of 2]"
+  name: "Metal Gear Solid 2 - Sons of Liberty [PlayStation 2 the Best] [Disc 1 of 2]"
   region: "NTSC-J"
   gameFixes:
     - InstantDMAHack # Fixes broken half-bottom artifacts.
@@ -43443,7 +43443,7 @@ SLPM-74255:
     autoFlush: 1 # Fixes motion blur effect.
     halfPixelOffset: 1 # Aligns blur from upscaling.
 SLPM-74256:
-  name: "Metal Gear Solid 2 - Sons of Liberty [PlayStation2 the Best] [Disc 2 of 2]"
+  name: "Metal Gear Solid 2 - Sons of Liberty [PlayStation 2 the Best] [Disc 2 of 2]"
   region: "NTSC-J"
   gameFixes:
     - InstantDMAHack # Fixes broken half-bottom artifacts.
@@ -43453,7 +43453,7 @@ SLPM-74256:
     autoFlush: 1 # Fixes motion blur effect.
     halfPixelOffset: 1 # Aligns blur from upscaling.
 SLPM-74257:
-  name: "Metal Gear Solid 3 - Snake Eater [PlayStation2 the Best] [Disc 1]"
+  name: "Metal Gear Solid 3 - Snake Eater [PlayStation 2 the Best] [Disc 1]"
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
@@ -43463,100 +43463,100 @@ SLPM-74257:
     halfPixelOffset: 1 # Aligns depth of field effect.
     autoFlush: 1 # Fixes lens flare.
 SLPM-74258:
-  name: "Metal Gear Solid 2 - Solid Snake [PlayStation2 the Best] [Disc 2]"
+  name: "Metal Gear Solid 2 - Solid Snake [PlayStation 2 the Best] [Disc 2]"
   region: "NTSC-J"
 SLPM-74259:
-  name: "Odin Sphere [PlayStation2 the Best]"
+  name: "Odin Sphere [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74260:
-  name: "Shining Force EXA [PlayStation2 the Best]"
+  name: "Shining Force EXA [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned bloom.
 SLPM-74261:
-  name: "Shining Wind [PlayStation2 the Best]"
+  name: "Shining Wind [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - DMABusyHack
 SLPM-74262:
-  name: "BioHazard 4 [PlayStation2 the Best]"
+  name: "BioHazard 4 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
 SLPM-74263:
-  name: "Nobunaga no Yabou - Tenka Sousei [PlayStation2 the Best]"
+  name: "Nobunaga no Yabou - Tenka Sousei [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74264:
-  name: "Sengoku Basara 2 Heroes [PlayStation2 the Best]"
+  name: "Sengoku Basara 2 Heroes [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74265:
-  name: "Nobunaga no Yabou - Kakushin [PlayStation2 the Best]"
+  name: "Nobunaga no Yabou - Kakushin [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74266:
-  name: "Sengoku Musou 2 - Empires [PlayStation2 the Best]"
+  name: "Sengoku Musou 2 - Empires [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74267:
-  name: "Gundam Musou Special [PlayStation2 the Best]"
+  name: "Gundam Musou Special [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74268:
-  name: "Devil May Cry 3 Special Edition [PlayStation2 the Best]"
+  name: "Devil May Cry 3 Special Edition [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post effects.
 SLPM-74269:
-  name: "Ryu Ga Gotoku [PlayStation2 the Best - 2nd Reprint]"
+  name: "Ryu Ga Gotoku [PlayStation 2 the Best - 2nd Reprint]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Fixes flickering.
   gsHWFixes:
     alignSprite: 1 # Helps align bloom.
 SLPM-74270:
-  name: "Fate/stay night[Realta Nua] [PlayStation2 the Best]"
+  name: "Fate/stay night[Realta Nua] [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74273:
-  name: "New Jinsei Game [PlayStation2 the Best]"
+  name: "New Jinsei Game [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74274:
   name: "EX Jinsei Game II [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74275:
-  name: "Sengoku Basara 2 Heroes [PlayStation2 the Best]"
+  name: "Sengoku Basara 2 Heroes [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74276:
-  name: "Sangoku Musou 2 [PlayStation2 the Best]"
+  name: "Sangoku Musou 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74277:
-  name: "Persona 3 FES [PlayStation2 the Best]"
+  name: "Persona 3 FES [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
 SLPM-74278:
-  name: "Persona 4 [PlayStation2 the Best]"
+  name: "Persona 4 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74279:
-  name: "Shin Sangoku Musou 4 - Moushouden [PlayStation2 the Best]"
+  name: "Shin Sangoku Musou 4 - Moushouden [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74281:
-  name: "Nobunaga no Yabou - Kakushin [PlayStation2 the Best]"
+  name: "Nobunaga no Yabou - Kakushin [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74282:
-  name: "Musou Orochi - Maou Sairin [PlayStation2 the Best]"
+  name: "Musou Orochi - Maou Sairin [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74283:
-  name: "Shin Sangoku Musou 4 - Empires [PlayStation2 the Best]"
+  name: "Shin Sangoku Musou 4 - Empires [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74284:
-  name: "Sengoku Musou 2 - Empires [PlayStation2 the Best]"
+  name: "Sengoku Musou 2 - Empires [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74286:
-  name: "Shin Sangoku Musou 5 Special [PlayStation2 the Best] [Disc 1]"
+  name: "Shin Sangoku Musou 5 Special [PlayStation 2 the Best] [Disc 1]"
   region: "NTSC-J"
 SLPM-74287:
-  name: "Shin Sangoku Musou 5 Special [PlayStation2 the Best] [Disc 2]"
+  name: "Shin Sangoku Musou 5 Special [PlayStation 2 the Best] [Disc 2]"
   region: "NTSC-J"
 SLPM-74288:
-  name: "BioHazard 4 [PlayStation2 the Best]"
+  name: "BioHazard 4 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
@@ -43585,51 +43585,51 @@ SLPM-74302:
     - "SLPM-74234"
     - "SLPM-74253"
 SLPM-74401:
-  name: "Kessen [PlayStation2 the Best]"
+  name: "Kessen [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74402:
-  name: "CAPCOM VS. SNK 2 MILLIONAIRE FIGHTING 2001 [PlayStation2 the Best]"
+  name: "CAPCOM VS. SNK 2 MILLIONAIRE FIGHTING 2001 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74403:
-  name: "Densha de Go! Shinkansen Sanyou Shinkansen hen [PlayStation2 the Best]"
+  name: "Densha de Go! Shinkansen Sanyou Shinkansen hen [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74404:
-  name: "Space Channel 5 - Part 2 [PlayStation2 the Best]"
+  name: "Space Channel 5 - Part 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74405:
-  name: "Samurai Complete Edition [PlayStation2 the Best]"
+  name: "Samurai Complete Edition [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack # Stops crash after intro movie.
 SLPM-74406:
-  name: "World Rally Championship [PlayStation2 the Best]"
+  name: "World Rally Championship [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     eeRoundMode: 0 # Fixes crash when using the Subaru.
   gameFixes:
     - XGKickHack # Fixes SPS while ingame.
 SLPM-74407:
-  name: "Jet de Go! 2 [PlayStation2 the Best]"
+  name: "Jet de Go! 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74408:
-  name: "Kingdom of Scribbling [PlayStation2 the Best]"
+  name: "Kingdom of Scribbling [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74409:
-  name: "Gun Survivor 2 - BioHazard Code - Veronica [PlayStation2 the Best]"
+  name: "Gun Survivor 2 - BioHazard Code - Veronica [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74410:
-  name: "Breath of Fire V - Dragon Quarter [PlayStation2 the Best]"
+  name: "Breath of Fire V - Dragon Quarter [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Aligns HUD and HUD bloom to match software.
     roundSprite: 1 # Helps fix some lines and lines in text.
 SLPM-74411:
-  name: "Culdcept II - Expansion [PlayStation2 the Best]"
+  name: "Culdcept II - Expansion [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74412:
   region: "NTSC-J"
 SLPM-74414:
-  name: "Energy Airforce [PlayStation2 The Best]"
+  name: "Energy Airforce [PlayStation 2 The Best]"
   region: "NTSC-J"
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes hanging while going ingame easiest test is making a replay and load the replay once or more which gives you blackscreen and 100% EE with low performance.
@@ -43637,24 +43637,24 @@ SLPM-74414:
     recommendedBlendingLevel: 5 # Alleviates color banding also the cockpit and missile shadows are darker if enabled.
     autoFlush: 1 # Corrects post-processing effect on jet exhausts.
 SLPM-74415:
-  name: "Shinobi [PlayStation2 the Best]"
+  name: "Shinobi [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74416:
-  name: "Clock Tower 3 [PlayStation2 the Best]"
+  name: "Clock Tower 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes brightness and striped lines in FMVs.
 SLPM-74420:
-  name: "Initial D - Special Stage [PlayStation2 the Best]"
+  name: "Initial D - Special Stage [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPM-74421:
-  name: "Dennou Senki - Virtual-On Marz [PlayStation2 the Best]"
+  name: "Dennou Senki - Virtual-On Marz [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     cpuSpriteRenderBW: 1 # Fixes CLUT colours.
     gpuPaletteConversion: 2 # Improves FPS and reduces HC size.
 SLPM-74901:
-  name: "METAL GEAR SOLID 2 SUBSTANCE [PlayStation2 the Best]"
+  name: "METAL GEAR SOLID 2 SUBSTANCE [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - InstantDMAHack # Fixes broken half-bottom artifacts.
@@ -45862,7 +45862,7 @@ SLPS-25128:
   name: "Victorious Boxers - Championship Edition"
   region: "NTSC-J"
 SLPS-25129:
-  name: "Victorious Boxers - Championship Edition [PlayStation2 the Best]"
+  name: "Victorious Boxers - Championship Edition [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-25130:
   name: "Roommate Asami - Okusama ha Joshikousei"
@@ -48942,10 +48942,10 @@ SLPS-25892:
   name: "Nogizaka Haruka no Himitsu - Cosplay Hajimemashita [Standard Edition]"
   region: "NTSC-J"
 SLPS-25893:
-  name: "Zero no Tsukaima - Muma ga Tsumugu Yokaze no Gensoukyoku [PlayStation2 The Best]"
+  name: "Zero no Tsukaima - Muma ga Tsumugu Yokaze no Gensoukyoku [PlayStation 2 The Best]"
   region: "NTSC-J"
 SLPS-25894:
-  name: "Aa Megami-sama [PlayStation2 the Best]"
+  name: "Aa Megami-sama [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-25896:
   name: "Moe Moe 2ji Taisen(Ryaku) Deluxe"
@@ -49363,64 +49363,64 @@ SLPS-73001:
 SLPS-73002:
   region: "NTSC-J"
 SLPS-73003:
-  name: "Farms Story 3 [PlayStation2 the Best]"
+  name: "Farms Story 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73004:
-  name: "Gambler Densetsu Tetsuya [PlayStation2 the Best]"
+  name: "Gambler Densetsu Tetsuya [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73005:
-  name: "Guilty Gear X - Plus [PlayStation2 the Best]"
+  name: "Guilty Gear X - Plus [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73006:
-  name: "Time Crisis II [PlayStation2 the Best]"
+  name: "Time Crisis II [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73007:
   name: "Kamaitachi no Yoru 2 - Kangokujima no Warabe Uta [Special Movie]"
   region: "NTSC-J"
 SLPS-73101:
-  name: "Kotoba no Puzzle - Mojipittan [PlayStation2 the Best]"
+  name: "Kotoba no Puzzle - Mojipittan [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73102:
-  name: "Bokujou Monogatari 3 - Heart ni Hi wo Tsukete [PlayStation2 the Best]"
+  name: "Bokujou Monogatari 3 - Heart ni Hi wo Tsukete [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73103:
-  name: "Makai Senki Disgaea [PlayStation2 the Best]"
+  name: "Makai Senki Disgaea [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
 SLPS-73104:
-  name: "Tekken Tag Tournament [PlayStation2 the Best]"
+  name: "Tekken Tag Tournament [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
 SLPS-73105:
-  name: "Kinnikuman Generations [PlayStation2 the Best]"
+  name: "Kinnikuman Generations [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73106:
-  name: "Pilot Nina Rou! 2 [PlayStation2 the Best]"
+  name: "Pilot Nina Rou! 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73107:
-  name: "Taiko no Tatsujin - Go! Go! Godaime [PlayStation2 the Best]"
+  name: "Taiko no Tatsujin - Go! Go! Godaime [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
 SLPS-73108:
-  name: "Phantom Brave [PlayStation2 the Best]"
+  name: "Phantom Brave [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
 SLPS-73109:
-  name: "Bokujou Monogatari 3 - Heart ni Hi wo Tsukete [PlayStation2 the Best]"
+  name: "Bokujou Monogatari 3 - Heart ni Hi wo Tsukete [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73110:
-  name: "Taiko no Tatsujin - Appare Sandaime [PlayStation2 the Best]"
+  name: "Taiko no Tatsujin - Appare Sandaime [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73111:
-  name: "Taiko no Tatsujin - Waku Waku Anime Matsuri [PlayStation2 the Best]"
+  name: "Taiko no Tatsujin - Waku Waku Anime Matsuri [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73201:
-  name: "Fatal Frame II - Crimson Butterfly [PlayStation2 the Best]"
+  name: "Fatal Frame II - Crimson Butterfly [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73202:
-  name: "Armored Core - Nexus [Disc 1] [PlayStation2 the Best]"
+  name: "Armored Core - Nexus [Disc 1] [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
@@ -49433,7 +49433,7 @@ SLPS-73202:
     - "SLPS-73202"
     - "SLPS-73203"
 SLPS-73203:
-  name: "Armored Core - Nexus [Disc 2] [PlayStation2 the Best]"
+  name: "Armored Core - Nexus [Disc 2] [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
@@ -49446,13 +49446,13 @@ SLPS-73203:
     - "SLPS-73202"
     - "SLPS-73203"
 SLPS-73204:
-  name: "Zettai Zetsumei Toshi [PlayStation2 the Best]"
+  name: "Zettai Zetsumei Toshi [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     autoFlush: 1 # Fixes incorrect blur effect.
     halfPixelOffset: 1 # Improves blur.
 SLPS-73205:
-  name: "Ace Combat 04 - Shattered Skies [PlayStation2 the Best]"
+  name: "Ace Combat 04 - Shattered Skies [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     eeRoundMode: 0 # Fixes autopilot being silly and crashing the plane.
@@ -49466,25 +49466,25 @@ SLPS-73205:
     mergeSprite: 1 # Fixes vertical lines.
     cpuSpriteRenderBW: 1 # Fixes missing sun sprite.
 SLPS-73206:
-  name: "Super Robot Taisen Alpha 2nd [PlayStation2 the Best]"
+  name: "Super Robot Taisen Alpha 2nd [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73207:
-  name: "Dragon Ball Z [PlayStation2 the Best]"
+  name: "Dragon Ball Z [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post effects.
 SLPS-73208:
-  name: "Dragon Ball Z 2 [PlayStation2 the Best]"
+  name: "Dragon Ball Z 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post effects.
 SLPS-73209:
-  name: "Tekken 4 [PlayStation2 the Best]"
+  name: "Tekken 4 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
 SLPS-73210:
-  name: "Katamari Damacy [PlayStation2 the Best]"
+  name: "Katamari Damacy [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     vu1RoundMode: 0 # Fixes SPS.
@@ -49495,21 +49495,21 @@ SLPS-73210:
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post effects.
 SLPS-73211:
-  name: "Summon Night 3 [PlayStation2 the Best]"
+  name: "Summon Night 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73212:
-  name: "Naruto Narutimett Hero [PlayStation2 the Best]"
+  name: "Naruto Narutimett Hero [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Aligns post effects.
 SLPS-73214:
-  name: "Shadow Hearts II [Director's Cut] [PlayStation2 the Best] [Disc 1 of 2]"
+  name: "Shadow Hearts II [Director's Cut] [PlayStation 2 the Best] [Disc 1 of 2]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes shadow positioning.
     autoFlush: 1 # Makes the shadow monsters appear.
 SLPS-73215:
-  name: "Shadow Hearts II [Director's Cut] [PlayStation2 the Best] [Disc 2 of 2]"
+  name: "Shadow Hearts II [Director's Cut] [PlayStation 2 the Best] [Disc 2 of 2]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes shadow positioning.
@@ -49517,16 +49517,16 @@ SLPS-73215:
   memcardFilters:
     - "SLPS-73214"
 SLPS-73216:
-  name: "Magna Carta [PlayStation2 the Best]"
+  name: "Magna Carta [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73217:
-  name: "Tales of Symphonia [PlayStation2 the Best]"
+  name: "Tales of Symphonia [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_TalesofSymphonia"
 SLPS-73218:
-  name: "Ace Combat 5 - The Unsung War [PlayStation2 the Best]"
+  name: "Ace Combat 5 - The Unsung War [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
@@ -49537,15 +49537,15 @@ SLPS-73218:
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
 SLPS-73219:
-  name: "Tales of Destiny 2 [PlayStation2 the Best]"
+  name: "Tales of Destiny 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   speedHacks:
     mvuFlagSpeedHack: 0 # Fixes graphical corruptions.
 SLPS-73220:
-  name: "Ultraman [PlayStation2 the Best]"
+  name: "Ultraman [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73221:
-  name: "Naruto Narutimett Hero 2 [PlayStation2 the Best]"
+  name: "Naruto Narutimett Hero 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     vu0ClampMode: 0 # Fixes glow effects.
@@ -49553,10 +49553,10 @@ SLPS-73221:
   gsHWFixes:
     halfPixelOffset: 2 # Aligns post effects.
 SLPS-73222:
-  name: "Harvest Moon - A Wonderful Life [PlayStation2 the Best]"
+  name: "Harvest Moon - A Wonderful Life [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73223:
-  name: "Tekken 5 [PlayStation2 the Best]"
+  name: "Tekken 5 [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     eeClampMode: 2 # Fixes camera and stops constant coin noises on Pirates Cove.
@@ -49567,7 +49567,7 @@ SLPS-73223:
     textureInsideRT: 1 # Fixes heat haze half screen problem.
     getSkipCount: "GSC_Tekken5"
 SLPS-73224:
-  name: "Xenosaga Episode II - Jenseits von Gut und Böse [PlayStation2 the Best] [Disc 1 of 2]"
+  name: "Xenosaga Episode II - Jenseits von Gut und Böse [PlayStation 2 the Best] [Disc 1 of 2]"
   region: "NTSC-J"
   gsHWFixes:
     autoFlush: 1 # Fixes shadows in cutscenes.
@@ -49581,7 +49581,7 @@ SLPS-73224:
     - "SLPS-25353"
     - "SLPS-73224"
 SLPS-73225:
-  name: "Xenosaga Episode II - Jenseits von Gut und Böse [PlayStation2 the Best] [Disc 2 of 2]"
+  name: "Xenosaga Episode II - Jenseits von Gut und Böse [PlayStation 2 the Best] [Disc 2 of 2]"
   region: "NTSC-J"
   gsHWFixes:
     autoFlush: 1 # Fixes shadows in cutscenes.
@@ -49595,19 +49595,19 @@ SLPS-73225:
     - "SLPS-25353"
     - "SLPS-73224"
 SLPS-73226:
-  name: "Tenchu Kurenai [PlayStation2 the Best]"
+  name: "Tenchu Kurenai [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73227:
-  name: "Another Century's Episode [PlayStation2 the Best]"
+  name: "Another Century's Episode [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73228:
-  name: "Fuuun Bakumatsu-den [PlayStation2 the Best]"
+  name: "Fuuun Bakumatsu-den [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73229:
-  name: "TearRing Saga Series - Berwick Saga [PlayStation2 the Best]"
+  name: "TearRing Saga Series - Berwick Saga [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73230:
-  name: ".hack Vol.1 & Vol.2 [PlayStation2 the Best] [Vol.1 Disc]"
+  name: ".hack Vol.1 & Vol.2 [PlayStation 2 the Best] [Vol.1 Disc]"
   region: "NTSC-J"
   memcardFilters:
     - "SCPS-55029"
@@ -49623,7 +49623,7 @@ SLPS-73230:
     - "SLPS-73232"
     - "SLPS-73233"
 SLPS-73231:
-  name: ".hack Vol.1 & Vol.2 [PlayStation2 the Best] [Vol.2 Disc]"
+  name: ".hack Vol.1 & Vol.2 [PlayStation 2 the Best] [Vol.2 Disc]"
   region: "NTSC-J"
   memcardFilters:
     - "SCPS-55029"
@@ -49639,7 +49639,7 @@ SLPS-73231:
     - "SLPS-73232"
     - "SLPS-73233"
 SLPS-73232:
-  name: ".hack Vol.3 & Vol.4 [PlayStation2 the Best] [Vol.3 Disc]"
+  name: ".hack Vol.3 & Vol.4 [PlayStation 2 the Best] [Vol.3 Disc]"
   region: "NTSC-J"
   memcardFilters:
     - "SCPS-55029"
@@ -49655,7 +49655,7 @@ SLPS-73232:
     - "SLPS-73232"
     - "SLPS-73233"
 SLPS-73233:
-  name: ".hack Vol.3 & Vol.4 [PlayStation2 the Best] [Vol.4 Disc]"
+  name: ".hack Vol.3 & Vol.4 [PlayStation 2 the Best] [Vol.4 Disc]"
   region: "NTSC-J"
   memcardFilters:
     - "SCPS-55029"
@@ -49671,33 +49671,33 @@ SLPS-73233:
     - "SLPS-73232"
     - "SLPS-73233"
 SLPS-73234:
-  name: "Kidou Senshi Z-Gundam - AEUG vs. Titans [PlayStation2 the Best]"
+  name: "Kidou Senshi Z-Gundam - AEUG vs. Titans [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73235:
-  name: "Dragon Ball Z 3 [PlayStation2 the Best]"
+  name: "Dragon Ball Z 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post effects.
 SLPS-73236:
-  name: "Venus & Braves [PlayStation2 the Best]"
+  name: "Venus & Braves [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack
 SLPS-73237:
-  name: "Tenchu San [PlayStation2 the Best]"
+  name: "Tenchu San [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes various shading effects.
     halfPixelOffset: 1 # Helps align post effects.
     autoFlush: 1 # Fixes missing effects.
 SLPS-73238:
-  name: "Super Robot Wars - Alpha 3 [PlayStation2 the Best]"
+  name: "Super Robot Wars - Alpha 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73239:
-  name: "Yu Yu Hakusho Forever [PlayStation2 the Best]"
+  name: "Yu Yu Hakusho Forever [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73240:
-  name: "Katamari Damacy [PlayStation2 the Best]"
+  name: "Katamari Damacy [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     vu1RoundMode: 0 # Fixes SPS.
@@ -49708,7 +49708,7 @@ SLPS-73240:
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post effects.
 SLPS-73241:
-  name: "Minna Daisuki Katamari Damacy [PlayStation2 the Best]"
+  name: "Minna Daisuki Katamari Damacy [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Aligns post effects.
@@ -49727,27 +49727,27 @@ SLPS-73241:
     - "SLPS-73210"
     - "SLPS-73240"
 SLPS-73242:
-  name: "Tales of Legendia [PlayStation2 the Best]"
+  name: "Tales of Legendia [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-73243:
-  name: "Namco X Capcom [PlayStation2 the Best]"
+  name: "Namco X Capcom [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73244:
-  name: "R-Type Final [PlayStation2 the Best]"
+  name: "R-Type Final [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
 SLPS-73245:
-  name: "Fatal Frame III - The Tormented [PlayStation2 the Best]"
+  name: "Fatal Frame III - The Tormented [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Reduces blurriness.
 SLPS-73246:
-  name: "Gundam True Odyssey [PlayStation2 the Best]"
+  name: "Gundam True Odyssey [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73247:
-  name: "Armored Core - Last Raven [PlayStation2 the Best]"
+  name: "Armored Core - Last Raven [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
@@ -49762,15 +49762,15 @@ SLPS-73247:
     - "SLPS-25462"
     - "SLPS-73247"
 SLPS-73248:
-  name: "Kagero II - Dark Illusion [PlayStation2 the Best]"
+  name: "Kagero II - Dark Illusion [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73249:
-  name: "Ar tonelico - Sekai no Owari de Utai Tsuzukeru Shoujo [PlayStation2 the Best]"
+  name: "Ar tonelico - Sekai no Owari de Utai Tsuzukeru Shoujo [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     roundSprite: 1 # Fixes vertical lines in FMVs, character portraits and other sprites.
 SLPS-73250:
-  name: "Ace Combat Zero - The Belkan War [PlayStation2 the Best]"
+  name: "Ace Combat Zero - The Belkan War [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
@@ -49792,7 +49792,7 @@ SLPS-73250:
     - "SLPS-25418"
     - "SLPS-73218"
 SLPS-73251:
-  name: "Naruto - Narutimett Hero 3 [PlayStation2 the Best]"
+  name: "Naruto - Narutimett Hero 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     vuClampMode: 2 # Fixes invisible QTE button prompts and overbright in some scenes.
@@ -49801,17 +49801,17 @@ SLPS-73251:
   gsHWFixes:
     halfPixelOffset: 2 # Aligns post effects.
 SLPS-73252:
-  name: "Tales of the Abyss [PlayStation2 the Best]"
+  name: "Tales of the Abyss [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Fixes post positioning.
     autoFlush: 1 # Fixes post lighting.
     getSkipCount: "GSC_Tekken5" # Fixes upscaling grid, same engine.
 SLPS-73253:
-  name: "Rurouni Kenshin - Enjou! Kyoto Rinne [PlayStation2 the Best]"
+  name: "Rurouni Kenshin - Enjou! Kyoto Rinne [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73254:
-  name: "Makai Senki Disgaea [PlayStation2 the Best]"
+  name: "Makai Senki Disgaea [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes flickering FMV's.
@@ -49830,16 +49830,16 @@ SLPS-73257:
   gsHWFixes:
     halfPixelOffset: 1 # Reduces blurriness.
 SLPS-73258:
-  name: "Kenka Banchou 2 - Full Throttle [PlayStation2 the Best]"
+  name: "Kenka Banchou 2 - Full Throttle [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73259:
-  name: ".hack//G.U. Vol.1 - Rebirth [PlayStation2 the Best]"
+  name: ".hack//G.U. Vol.1 - Rebirth [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Sharpens world in far distances.
     roundSprite: 1 # Corrects proportions of some letters in HUD.
 SLPS-73263:
-  name: "Ar tonelico II - Sekai ni Hibiku Shoujo-Tachi no Metafalica [PlayStation2 the Best]"
+  name: "Ar tonelico II - Sekai ni Hibiku Shoujo-Tachi no Metafalica [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     eeRoundMode: 0 # Fixes "Fall through floor" bug when approaching chests.
@@ -49847,16 +49847,16 @@ SLPS-73263:
     roundSprite: 2 # Fixes textboxes and character portraits.
     beforeDraw: "OI_ArTonelico2"
 SLPS-73264:
-  name: "Suzumiya Haruhi no Tomadoi [PlayStation2 the Best]"
+  name: "Suzumiya Haruhi no Tomadoi [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73265:
-  name: "Kagero 2 - Dark Illusion [PlayStation2 the Best]"
+  name: "Kagero 2 - Dark Illusion [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73266:
-  name: ".hack//G.U. Vol.2 - Kimi Omou Koe [PlayStation2 the Best]"
+  name: ".hack//G.U. Vol.2 - Kimi Omou Koe [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73267:
-  name: ".hack//G.U. Vol.3 - Aruku Youna Hayasa de [PlayStation2 the Best]"
+  name: ".hack//G.U. Vol.3 - Aruku Youna Hayasa de [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73269:
   name: "Kidou Senshi Gundam SEED - Rengou vs. Z.A.F.T."
@@ -49864,17 +49864,17 @@ SLPS-73269:
   roundModes:
     eeRoundMode: 1 # Fixes camera issue.
 SLPS-73270:
-  name: "Super Robot Taisen Z [PlayStation2 the Best]"
+  name: "Super Robot Taisen Z [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73401:
-  name: "Victorious Boxers - Championship Edition [PlayStation2 the Best]"
+  name: "Victorious Boxers - Championship Edition [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73402:
-  name: "Shutokou Battle 0 [PlayStation2 the Best]"
+  name: "Shutokou Battle 0 [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
 SLPS-73403:
-  name: "Armored Core 2 [PlayStation2 the Best]"
+  name: "Armored Core 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes random corruption.
@@ -49884,7 +49884,7 @@ SLPS-73403:
     recommendedBlendingLevel: 3 # Improves sky rendering.
     textureInsideRT: 1 # Fixes texture corruption.
 SLPS-73404:
-  name: "Klonoa 2 [PlayStation2 the Best]"
+  name: "Klonoa 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     eeClampMode: 3 # Objects appear in wrong places without it.
@@ -49894,26 +49894,26 @@ SLPS-73404:
   gsHWFixes:
     cpuCLUTRender: 1 # Fixes shadows, object and enemy colours, platform transitions.
 SLPS-73405:
-  name: "Fatal Frame [PlayStation2 the Best]"
+  name: "Fatal Frame [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Reduces blurriness.
     alignSprite: 1 # Fixes vertical lines on hidden ghosts.
 SLPS-73406:
-  name: "DOA 2 - Hardcore [PlayStation2 the Best]"
+  name: "DOA 2 - Hardcore [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
 SLPS-73407:
-  name: "Sidewinder MAX [PlayStation2 the Best]"
+  name: "Sidewinder MAX [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73408:
-  name: "7 (Seven) - Molmorth no Kiheitai [PlayStation2 the Best]"
+  name: "7 (Seven) - Molmorth no Kiheitai [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73409:
   name: "Exciting Pro Wrestling 3"
   region: "NTSC-J"
 SLPS-73410:
-  name: "Ace Combat 04 - Shattered Skies [PlayStation2 the Best]"
+  name: "Ace Combat 04 - Shattered Skies [PlayStation 2 the Best]"
   region: "NTSC-J"
   roundModes:
     eeRoundMode: 0 # Fixes autopilot being silly and crashing the plane.
@@ -49927,7 +49927,7 @@ SLPS-73410:
     mergeSprite: 1 # Fixes vertical lines.
     cpuSpriteRenderBW: 1 # Fixes missing sun sprite.
 SLPS-73411:
-  name: "Armored Core 2 - Another Age [PlayStation2 the Best]"
+  name: "Armored Core 2 - Another Age [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
@@ -49938,29 +49938,29 @@ SLPS-73411:
     - "SLPS-73403"
     - "SLPS-73411"
 SLPS-73412:
-  name: "Vampire Night [PlayStation2 the Best]"
+  name: "Vampire Night [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73413:
-  name: "Kamaitachi no Yoru 2 - Kangokujima no Warabe Uta [PlayStation2 the Best]"
+  name: "Kamaitachi no Yoru 2 - Kangokujima no Warabe Uta [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73415:
-  name: "Gallop Racer 6 - Revolution - [PlayStation2 the Best]"
+  name: "Gallop Racer 6 - Revolution - [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 2 # Improves lighting, maximum blending is needed for full accuracy.
 SLPS-73416:
-  name: "Super Robot Wars - Impact [PlayStation2 the Best]"
+  name: "Super Robot Wars - Impact [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     estimateTextureRegion: 1 # Reduces hash cache size.
 SLPS-73417:
-  name: "Armored Core 3 [PlayStation2 the Best]"
+  name: "Armored Core 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 1 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
 SLPS-73418:
-  name: "Shadow Hearts [PlayStation2 the Best]"
+  name: "Shadow Hearts [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
     eeClampMode: 3 # Fixes invisible characters in various scenes.
@@ -49968,10 +49968,10 @@ SLPS-73418:
     textureInsideRT: 2 # Fixes Post and transition effects.
     halfPixelOffset: 1 # Fixes lighting misalignment.
 SLPS-73419:
-  name: "Lupin III - Majutsu-Ou no Isan [PlayStation2 the Best]"
+  name: "Lupin III - Majutsu-Ou no Isan [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73420:
-  name: "Armored Core 3 - Silent Line [PlayStation2 the Best]"
+  name: "Armored Core 3 - Silent Line [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
@@ -49983,26 +49983,26 @@ SLPS-73420:
     - "SLPS-73417"
     - "SLPS-73420"
 SLPS-73421:
-  name: "Tenchu 3 [PlayStation2 the Best]"
+  name: "Tenchu 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes various shading effects.
     halfPixelOffset: 1 # Helps align post effects.
     autoFlush: 1 # Fixes missing effects.
 SLPS-73422:
-  name: "Ultraman Fighting Evolution 2 [PlayStation2 the Best]"
+  name: "Ultraman Fighting Evolution 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73423:
-  name: "Monster Farm 4 [PlayStation2 the Best]"
+  name: "Monster Farm 4 [PlayStation 2 the Best]"
   region: "NTSC-J"
   compat: 5
   gsHWFixes:
     halfPixelOffset: 1 # Corrects shadow misalignment.
 SLPS-73424:
-  name: "GUILTY GEAR XX [PlayStation2 the Best]"
+  name: "GUILTY GEAR XX [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73901:
-  name: "Xenosaga Episode 1 - Der Wille zur Macht [PlayStation2 the Best]"
+  name: "Xenosaga Episode 1 - Der Wille zur Macht [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     autoFlush: 1 # Fixes shadows in cutscenes.
