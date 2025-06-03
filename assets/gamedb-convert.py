@@ -5,62 +5,94 @@
 import re, sys, os
 from ruamel.yaml import YAML
 
-# Makes null show up so we can process it below
 def my_represent_none(self, data):
     return self.represent_scalar(u'tag:yaml.org,2002:null', u'null')
 
-# Set our YAML variables
 yaml = YAML()
 yaml.indent(mapping=2, sequence=4, offset=2)
-yaml.default_flow_style = None
+yaml.default_flow_style = False
 yaml.preserve_quotes = True
 yaml.allow_duplicate_keys = True
 yaml.width = 512
 yaml.representer.add_representer(type(None), my_represent_none)
 
-# Create filters to process the file with
 char_list = ['ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'þ', 'ÿ', '¸', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'Þ']
 key_list = ['clampModes', 'dynaPatches', 'gameFixes', 'gsHWFixes', 'memcardFilters', 'patches', 'roundModes', 'speedHacks']
-ignore_list = ['bilinearUpscale', 'cpuSpriteRenderLevel', 'eeCycleRate', 'eeDivRoundMode', 'GSC_DTGames', 'GSC_GuitarHero', 'GSC_HitmanBloodMoney', 'GSC_MetalGearSolid3', 'GSC_NFSUndercover', 'GSC_PolyphonyDigitalGames', 'name-sort', 'nativePaletteDraw', 'nativeScaling', 'OI_HauntingGround']
-replace_dic = {'autoFlush: 2': 'autoFlush: 1', 'forceEvenSpritePosition:': 'wildArmsHack:', 'GSC_NamcoGames': 'GSC_Tekken5', 'halfPixelOffset: 4': 'halfPixelOffset: 1', 'halfPixelOffset: 5': 'halfPixelOffset: 1', 'instantVU1:': 'InstantVU1SpeedHack:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:'}
+key_order = ['name', 'name-sort', 'name-en', 'region', 'compat', 'clampModes', 'roundModes', 'gameFixes', 'speedHacks', 'gsHWFixes', 'patches', 'dynaPatches', 'memcardFilters']
+ignore_list = ['bilinearUpscale', 'cpuSpriteRenderLevel', 'eeCycleRate', 'GSC_DTGames', 'GSC_GuitarHero', 'GSC_HitmanBloodMoney', 'GSC_MetalGearSolid3', 'GSC_NFSUndercover', 'GSC_PolyphonyDigitalGames', 'name-sort', 'nativePaletteDraw', 'nativeScaling', 'OI_HauntingGround']
+replace_dict = {'autoFlush: 2': 'autoFlush: 1', 'forceEvenSpritePosition:': 'wildArmsHack:', 'GSC_NamcoGames': 'GSC_Tekken5', 'halfPixelOffset: 4': 'halfPixelOffset: 2', 'halfPixelOffset: 5': 'halfPixelOffset: 2', 'instantVU1:': 'InstantVU1SpeedHack:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:', 'PlayStation2': 'PlayStation 2'}
 
-# Process file to make it compatible with NetherSX2
+def sort_keys(my_dict):
+    sorted_data = {}
+    for key, value in my_dict.items():
+        if isinstance(value, dict):
+            sorted_nested = {}
+            for nested_key in key_order:
+                if nested_key in value: sorted_nested[nested_key] = value[nested_key]
+            sorted_data[key] = sorted_nested
+        else: sorted_data[key] = value
+    return sorted_data
+
 def process_db(file_name, clean_name):
-    print('Processing ' + file_name + '...')
+    if not file_name == 'GameIndex[temp3].yaml': print('Processing ' + os.path.basename(file_name) + '...')
     if os.path.isfile(clean_name) and clean_name == 'GameIndex[fixed].yaml': os.remove('GameIndex[fixed].yaml')
     if os.path.isfile('GameIndex[temp].yaml'): os.remove('GameIndex[temp].yaml')
     with open(file_name, encoding='utf8') as newfile, open('GameIndex[temp].yaml', 'w', encoding='utf8') as tempfile:
         prev_line = ''
         for line in newfile:
-            for key in replace_dic:
-                if key in line: line = line.replace(key, replace_dic[key])
-            # Bruh... This is a really embarrasing typo you searched and replaced with: 
-            if 'PlayStation2' in line: line = line.replace('PlayStation2', 'PlayStation 2')
-            if re.search(r'moveHandler: \".+\"', line): line = re.sub(r'moveHandler: \".+\"', 'textureInsideRT: 1', line)
-            # We need the following four checks to fix ONE issue caused by someone inconsistently adding moonrunes to the GameDB
+            if any(k := key for key in replace_dict if key in line): line = line.replace(k, replace_dict[k])
+            if re.search(r'moveHandler: \".+\"', line):
+                line = re.sub(r'moveHandler: \".+\"', 'textureInsideRT: 1', line)
             if line == prev_line: continue
-            if 'name:' in line and '"' not in line: continue
-            if 'name:' in line and re.search(r'[A-Z]+: ', line): continue
+            if 'name:' in line and ('"' not in line or re.search(r'[A-Z]+: ', line)): continue
             if not any(safe_char in line for safe_char in char_list) and not line.isascii(): continue
             if not any(ignore_word in line for ignore_word in ignore_list): tempfile.write(line)
             prev_line = line
     os.rename('GameIndex[temp].yaml', clean_name)
 
-# Allows us to keep the newer names
+def restore_fix(file_name):
+    req_sort = False
+    print('Processing ' + os.path.basename(file_name) + '...')
+    if os.path.isfile('GameIndex[temp3].yaml'): os.remove('GameIndex[temp3].yaml')
+    with open(file_name, encoding='utf8') as newfile, open('GameIndex[temp3].yaml', 'w', encoding='utf8') as tempfile:
+        my_dict = yaml.load(newfile)
+        for key, value in my_dict.items():
+            if 'roundModes' in value and 'eeDivRoundMode' in value['roundModes']:
+                try:
+                    del my_dict[key]['roundModes']['eeDivRoundMode']
+                    if not value['roundModes']: del value['roundModes']
+                    if 'gameFixes' in value:
+                        if isinstance(value['gameFixes'], list): 
+                            my_dict[key]['gameFixes'].append('FpuNegDivHack')
+                    else:
+                        if not req_sort: req_sort = True 
+                        my_dict[key]['gameFixes'] = ['FpuNegDivHack']
+                except KeyError: continue
+        if req_sort: my_dict.update(sort_keys(my_dict))
+        yaml.dump(my_dict, tempfile)
+    process_db('GameIndex[temp3].yaml', 'GameIndex[fixed].yaml')
+
 def process_dict(my_dict, new_dict):
+    req_sort = False
+    my_dict = {k: v for k, v in my_dict.items() if any(required_key in v for required_key in key_list)}
     for key, value in my_dict.items():
         if 'name' in value and key in new_dict:
             try:
-                if new_dict[key]['name']:
-                    if not my_dict[key]['name'] == new_dict[key]['name']:
-                        my_dict[key]['name'] = new_dict[key]['name']
-            except KeyError:
-                continue
+                if not my_dict[key]['name'] in new_dict[key]['name']:
+                    my_dict[key]['name'] = new_dict[key]['name'] 
+            except KeyError: continue
+    for key, value in new_dict.items():
+        for nested_key in key_list:
+            if nested_key in value and key in my_dict:
+                try:
+                    if not my_dict[key][nested_key]: continue 
+                except KeyError:
+                    if not req_sort: req_sort = True
+                    my_dict[key][nested_key] = new_dict[key][nested_key]
+    if req_sort: my_dict.update(sort_keys(my_dict))
     return my_dict
 
-# Fixes issues created by yaml processing and removes empty keys
 def fix_db(file_name):
-    # Uses the Dark Arts (YAML Processing) to work it's magic
     print('Removing empty keys from ' + file_name + '...')
     with open(file_name, encoding='utf8') as newfile, open('GameIndex[temp].yaml', 'w', encoding='utf8') as tempfile:
         data = yaml.load(newfile)
@@ -77,30 +109,23 @@ else:
     print('Usage: python gamedb-convert.py GameIndex.yaml')
     sys.exit()
 
-# This is where the Magic Happens
-process_db(gamedb_file, 'GameIndex[fixed].yaml')
+restore_fix(gamedb_file)
 print('Creating GameIndex[fixed].yaml...')
 fix_db('GameIndex[fixed].yaml')
 with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex[4248].yaml', encoding='utf8') as og, open('GameIndex[diff].yaml', encoding='utf8') as diff, open('GameIndex[merged].yaml', 'w', encoding='utf8') as merged:
     print('Loading GameDB entries to merge...')
     base_db = yaml.load(base)
-    # Load in the two yaml files that will change the converted file and remove entries without any settings
     og_db = yaml.load(og)
     diff_db = yaml.load(diff)
-    print('Pre-processing GameDBs prior to merging...')
-    # Removing entries without settings from the two DBs we'll be merging into the converted one
-    og_db = {k: v for k, v in og_db.items() if any(required_key in v for required_key in key_list)}
-    diff_db = {k: v for k, v in diff_db.items() if any(required_key in v for required_key in key_list)}
-    # Grabbing the newer name entries to use with the older and diff GameDB files
+    print('Processing older GameDB prior to merging...')
     og_db = process_dict(og_db, base_db)
-    diff_db = process_dict(diff_db, base_db)
     print('Merging GameDB entries...')
     base_db.update(og_db)
     base_db.update(diff_db)
     print('Creating GameIndex[merged].yaml file...')
     yaml.dump(base_db, merged)
-# Have to make sure there isn't any bad entries in the merged file
 process_db('GameIndex[merged].yaml', 'GameIndex[temp2].yaml')
+if os.path.isfile('GameIndex[temp3].yaml'): os.remove('GameIndex[temp3].yaml')
 if os.path.isfile('GameIndex[merged].yaml'): os.remove('GameIndex[merged].yaml')
 os.rename('GameIndex[temp2].yaml', 'GameIndex[merged].yaml')
 fix_db('GameIndex[merged].yaml')

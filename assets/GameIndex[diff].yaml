@@ -3,9 +3,7 @@ SCAJ-20028:
   region: "NTSC-Unk"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCAJ-20112:
   name: "Tales of Rebirth"
   region: "NTSC-Unk"
@@ -13,9 +11,7 @@ SCAJ-20112:
     mvuFlagSpeedHack: 0 # Fixes graphical corruptions.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCAJ-20145:
   name: "Tales of Legendia"
   region: "NTSC-J"
@@ -23,9 +19,7 @@ SCAJ-20145:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
     getSkipCount: "GSC_TalesOfLegendia"
 SCAJ-20163:
   name: "Tales of the Abyss"
@@ -46,9 +40,7 @@ SCAJ-20182:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCAJ-20193:
   name: "Tales of Destiny [Director's Cut] [Premium Box]"
   region: "NTSC-C-J"
@@ -56,18 +48,14 @@ SCAJ-20193:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCKA-20008:
   name: "Tales of Destiny 2"
   region: "NTSC-K"
   compat: 5
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCKA-20050:
   name: "Tales of Legendia"
   region: "NTSC-K"
@@ -76,18 +64,14 @@ SCKA-20050:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
     getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20054:
   name: "Tales of Destiny 2 [PlayStation 2 Big Hit Series]"
   region: "NTSC-K"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCKA-20100:
   name: "Tales of Destiny"
   region: "NTSC-K"
@@ -95,9 +79,7 @@ SCKA-20100:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCKA-20119:
   name: "Tales of Destiny - Director's Cut"
   region: "NTSC-K"
@@ -105,9 +87,7 @@ SCKA-20119:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SCKA-20129:
   name: "Tales of Legendia"
   region: "NTSC-K"
@@ -116,32 +96,20 @@ SCKA-20129:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
     getSkipCount: "GSC_TalesOfLegendia"
 SCPS-55050:
   name: "Tales of Destiny 2"
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
-SLPM-66897:
-  name: "Tales of the Abyss"
-  region: "NTSC-J"
-  gsHWFixes:
-    halfPixelOffset: 2 # Fixes ghosting.
-    autoFlush: 1 # Fixes post lighting.
 SLPS-25172:
   name: "Tales of Destiny 2"
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SLPS-25450:
   name: "Tales of Rebirth"
   region: "NTSC-J"
@@ -150,9 +118,7 @@ SLPS-25450:
     mvuFlagSpeedHack: 0 # Fixes graphical corruptions.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SLPS-25533:
   name: "Tales of Legendia"
   region: "NTSC-J"
@@ -161,17 +127,8 @@ SLPS-25533:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
     getSkipCount: "GSC_TalesOfLegendia"
-SLPS-25586:
-  name: "Tales of the Abyss"
-  region: "NTSC-J"
-  compat: 5
-  gsHWFixes:
-    halfPixelOffset: 2 # Fixes ghosting.
-    autoFlush: 1 # Fixes post lighting.
 SLPS-25715:
   name: "Tales of Destiny"
   region: "NTSC-J"
@@ -179,9 +136,7 @@ SLPS-25715:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SLPS-25841:
   name: "Tales of Destiny [Director's Cut] [Premium Box]"
   region: "NTSC-J"
@@ -189,9 +144,7 @@ SLPS-25841:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
   memcardFilters: # Allows import of non-DC Tales of Destiny data.
     - "SLPS-25841"
     - "SLPS-25842"
@@ -204,9 +157,7 @@ SLPS-25842:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
   memcardFilters:
     - "SLPS-25841"
     - "SLPS-25842"
@@ -216,17 +167,13 @@ SLPS-72502:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SLPS-73219:
   name: "Tales of Destiny 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
 SLPS-73242:
   name: "Tales of Legendia [PlayStation 2 the Best]"
   region: "NTSC-J"
@@ -234,16 +181,8 @@ SLPS-73242:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
     getSkipCount: "GSC_TalesOfLegendia"
-SLPS-73252:
-  name: "Tales of the Abyss [PlayStation 2 the Best]"
-  region: "NTSC-J"
-  gsHWFixes:
-    halfPixelOffset: 2 # Fixes ghosting.
-    autoFlush: 1 # Fixes post lighting.
 SLUS-21201:
   name: "Tales of Legendia"
   region: "NTSC-U"
@@ -252,9 +191,7 @@ SLUS-21201:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
-    partialTargetInvalidation: 1 # Fixes performance loss caused by excessive junk texture generation
     preloadFrameData: 1 # Reduces performance drops caused by effects
-    texturePreloading: 1 # Fixes performance loss caused by excessive junk texture generation
     getSkipCount: "GSC_TalesOfLegendia"
 SLUS-21386:
   name: "Tales of the Abyss"
