@@ -1,0 +1,91 @@
+name
+
+name-sort - Missing in both
+name-en - Missing in both
+
+region
+compat
+
+roundModes:
+    eeDivRoundMode --> Replaced FpuNegDivHack that was under gameFixes
+    eeRoundMode
+    vuRoundMode
+    vu0RoundMode
+    vu1RoundMode
+
+clampModes:
+    eeClampMode
+    vuClampMode
+    vu0ClampMode
+    vu1ClampMode
+
+gameFixes:
+    BlitInternalFPSHack 
+    DMABusyHack 
+    EETimingHack 
+    FpuMulHack 
+    GIFFIFOHack 
+    GoemonTlbHack 
+    IbitHack 
+    InstantDMAHack 
+    OPHFlagHack 
+    SkipMPEGHack 
+    SoftwareRendererFMVHack 
+    VIF1StallHack 
+    VIFFIFOHack 
+    VuAddSubHack 
+    VUOverflowHack 
+    FullVU0SyncHack 
+    VUSyncHack 
+    XGKickHack
+
+gsHWFixes:
+    autoFlush - in both, but now has two values with 2 being the same as old 1
+    conservativeFramebuffer - has been removed by the time 3668 was made
+    cpuFramebufferConversion
+    readTCOnClose - in 4248, but not 3668
+    disableDepthSupport
+    preloadFrameData
+    disablePartialInvalidation
+    partialTargetInvalidation - in 4248, not in 3668, completely removed on 24 August 2023
+    textureInsideRT - works in both, but 3668 is missing the 2nd value so force it to 1
+    alignSprite
+    mergeSprite
+    forceEvenSpritePosition --> renamed wildArmsHack
+    bilinearUpscale - missing in both, added 18 March 2023
+    nativePaletteDraw - missing in both, added 1 April 2023
+    estimateTextureRegion - in 4248, not in 3668
+    PCRTCOffsets - in 4248, not in 3668
+    PCRTCOverscan - in 4248, not in 3668
+    mipmap
+    trilinearFiltering
+    skipDrawStart
+    skipDrawEnd
+    halfBottomOverride
+    halfPixelOffset - in both, but value 4 and 5 were added afterwards
+    nativeScaling - missing in both, added 17 June 2024
+    roundSprite
+    texturePreloading
+    deinterlace
+    cpuSpriteRenderBW - in both with the maximum value of 10
+    cpuSpriteRenderLevel - missing in both, added 28 March 2023
+    cpuCLUTRender
+    gpuTargetCLUT - in 4248, not in 3668
+    gpuPaletteConversion
+    minimumBlendingLevel - in 4248, not in 3668
+    maximumBlendingLevel - in 4248, not in 3668
+    recommendedBlendingLevel - in 4248, not in 3668 
+    getSkipCount -in 4248, not in 3668 
+    beforeDraw - in 4248, not in 3668 
+    moveHandler - missing in both, added 9 July 2023. Mostly for Growlancer and replaced textureInsideRT
+
+memcardFilters
+
+speedHacks:
+    mvuFlag --> renamed mvuFlagSpeedHack
+    instantVU1 --> renamed InstantVU1SpeedHack
+    mtvu --> renamed MTVUSpeedHack
+    eeCycleRate - missing in both, added 8 July 2023
+
+patches
+dynaPatches

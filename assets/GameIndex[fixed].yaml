@@ -1516,11 +1516,12 @@ SCAJ-20115:
   name: "Yoshitsune Eiyuuden"
   region: "NTSC-Unk"
 SCAJ-20116:
-  name: "Death by Degrees - Tekken - Nina Williams"
-  region: "NTSC-C-J"
+  name: "Death by Degrees"
+  region: "NTSC-C"
   gsHWFixes:
-    alignSprite: 1 # Fixes FMV lines.
+    getSkipCount: "GSC_Tekken5"
     halfPixelOffset: 1 # Fixes alignment of shuffles and post processing.
+    alignSprite: 1 # Fixes FMV lines.
     textureInsideRT: 1 # Fixes post shuffles.
 SCAJ-20117:
   name: "Fu-un Bakumatsu-den"
@@ -5150,8 +5151,9 @@ SCES-52586:
   region: "PAL-E-S"
   compat: 5
   gsHWFixes:
-    alignSprite: 1 # Fixes FMV lines.
+    getSkipCount: "GSC_Tekken5"
     halfPixelOffset: 1 # Fixes alignment of shuffles and post processing.
+    alignSprite: 1 # Fixes FMV lines.
     textureInsideRT: 1 # Fixes post shuffles.
 SCES-52596:
   name: "This is Football 2005"
@@ -5246,16 +5248,18 @@ SCES-53053:
   name: "Death by Degrees"
   region: "PAL-F-I"
   gsHWFixes:
-    alignSprite: 1 # Fixes FMV lines.
+    getSkipCount: "GSC_Tekken5"
     halfPixelOffset: 1 # Fixes alignment of shuffles and post processing.
+    alignSprite: 1 # Fixes FMV lines.
     textureInsideRT: 1 # Fixes post shuffles.
 SCES-53054:
   name: "Death by Degrees"
   region: "PAL-E-G"
   compat: 5
   gsHWFixes:
-    alignSprite: 1 # Fixes FMV lines.
+    getSkipCount: "GSC_Tekken5"
     halfPixelOffset: 1 # Fixes alignment of shuffles and post processing.
+    alignSprite: 1 # Fixes FMV lines.
     textureInsideRT: 1 # Fixes post shuffles.
 SCES-53055:
   name: "Eyetoy - Antigrav"
@@ -6610,8 +6614,9 @@ SCKA-20039:
   name: "Tekken Nina Williams In Death By Degree"
   region: "NTSC-K"
   gsHWFixes:
+    getSkipCount: "GSC_Tekken5"
+    halfPixelOffset: 1 # Fixes alignment of shuffles and post processing.
     alignSprite: 1 # Fixes FMV lines.
-    halfPixelOffset: 2 # Aligns post effects.
     textureInsideRT: 1 # Fixes post shuffles.
 SCKA-20040:
   name: "Jak 3"
@@ -8934,6 +8939,7 @@ SCPS-55019:
     roundSprite: 1 # Fixes door transition vertical lines and mini-map artifacts.
     textureInsideRT: 1 # Fixes missing battle effects.
 SCPS-55020:
+  name: "Kengō 2"
   region: "NTSC-J"
 SCPS-55021:
   name: "Super Robot Taisen Impact"
@@ -11385,7 +11391,7 @@ SLAJ-25041:
   name: "Harry Potter and the Prisoner of Azkaban"
   region: "NTSC-C"
   gsHWFixes:
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Aligns mirror reflections, removes some bloom-related ghosting.
     recommendedBlendingLevel: 4 # Improves lighting effects.
 SLAJ-25042:
@@ -12648,8 +12654,6 @@ SLES-50079:
   region: "PAL-E"
   clampModes:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
-  gameFixes:
-    - SoftwareRendererFMVHack # Fixes random corruption.
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves sky rendering.
     textureInsideRT: 1 # Fixes texture corruption.
@@ -15139,7 +15143,7 @@ SLES-51192:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51193:
@@ -15149,7 +15153,7 @@ SLES-51193:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51194:
@@ -15159,7 +15163,7 @@ SLES-51194:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51195:
@@ -15169,7 +15173,7 @@ SLES-51195:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51196:
@@ -15179,7 +15183,7 @@ SLES-51196:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51197:
@@ -15236,7 +15240,7 @@ SLES-51214:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51215:
@@ -15246,7 +15250,7 @@ SLES-51215:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51216:
@@ -15256,7 +15260,7 @@ SLES-51216:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51217:
@@ -15266,7 +15270,7 @@ SLES-51217:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51218:
@@ -15276,7 +15280,7 @@ SLES-51218:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51219:
@@ -15286,7 +15290,7 @@ SLES-51219:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
     texturePreloading: 0 # Performs better on certain areas like mid-game in and around the castle as the hash goes easily to 200 MB.
 SLES-51220:
@@ -18102,7 +18106,7 @@ SLES-52440:
   region: "PAL-M7"
   compat: 3
   gsHWFixes:
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Aligns mirror reflections, removes some bloom-related ghosting.
     recommendedBlendingLevel: 4 # Improves lighting effects.
 SLES-52444:
@@ -18323,7 +18327,7 @@ SLES-52527:
   name: "Harry Potter og Fangen fra Azkaban"
   region: "PAL-M4"
   gsHWFixes:
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Aligns mirror reflections, removes some bloom-related ghosting.
     recommendedBlendingLevel: 4 # Improves lighting effects.
 SLES-52531:
@@ -18599,7 +18603,7 @@ SLES-52600:
   name: "Harry Potter and the Prisoner of Azkaban"
   region: "PAL-PL"
   gsHWFixes:
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Aligns mirror reflections, removes some bloom-related ghosting.
     recommendedBlendingLevel: 4 # Improves lighting effects.
 SLES-52601:
@@ -28597,7 +28601,7 @@ SLKA-25172:
   name: "Harry Potter and the Prisoner of Azkaban"
   region: "NTSC-K"
   gsHWFixes:
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Aligns mirror reflections, removes some bloom-related ghosting.
     recommendedBlendingLevel: 4 # Improves lighting effects.
 SLKA-25173:
@@ -30723,7 +30727,7 @@ SLPM-55233:
   name: "Kin'iro no Corda [KOEI The Best]"
   region: "NTSC-J"
 SLPM-55234:
-  name: "Zill O'll Infinite [KOEI The Best]"
+  name: "Zill O'll infinite [KOEI The Best]"
   region: "NTSC-J"
 SLPM-55236:
   name: "Metal Gear Solid 3 - Snake Eater [KONAMI Dendou Selection] [Disc 1]"
@@ -31142,6 +31146,7 @@ SLPM-60176:
   name: "U - Underwater Unit [Trial]"
   region: "NTSC-J"
 SLPM-60177:
+  name: "Kengō 2 [Trial]"
   region: "NTSC-J"
 SLPM-60178:
   name: "Dramatic Soccer Game - Nihon Daihyou Senshu ni Narou! [Trial]"
@@ -31190,6 +31195,7 @@ SLPM-60194:
   name: "Kotoba no Puzzle - Mojipittan [Trial]"
   region: "NTSC-J"
 SLPM-60195:
+  name: "Kaidō Battle - Nikko, Haruna, Rokko, Hakone [Trial]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting during Rain.
@@ -31299,6 +31305,7 @@ SLPM-60226:
     halfPixelOffset: 1 # Fixes shadow positioning.
     autoFlush: 1 # Makes the shadow monsters appear.
 SLPM-60228:
+  name: "Kaidō Battle 2 - Chain Reaction [Trial]"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting during Rain/Storm.
@@ -31394,8 +31401,9 @@ SLPM-60257:
   name: "Death by Degrees - Tekken - Nina Williams [Trial]"
   region: "NTSC-J"
   gsHWFixes:
-    alignSprite: 1 # Fixes FMV lines.
+    getSkipCount: "GSC_Tekken5"
     halfPixelOffset: 1 # Fixes alignment of shuffles and post processing.
+    alignSprite: 1 # Fixes FMV lines.
     textureInsideRT: 1 # Fixes post shuffles.
 SLPM-60258:
   name: "Typing of the Dead - Zombie Panic [Trial]"
@@ -31726,6 +31734,7 @@ SLPM-61084:
   name: "Meiwaku Seijin Panic Maker [Trial]"
   region: "NTSC-J"
 SLPM-61086:
+  name: "Kengō 3 [Trial]"
   region: "NTSC-J"
 SLPM-61087:
   name: "Hagane no Renkinjutsushi - Akaki Elixir no Akuma [Trial]"
@@ -32347,7 +32356,7 @@ SLPM-62097:
   name: "Keisatsukan, The - Shinjuku 24-ji"
   region: "NTSC-J"
 SLPM-62098:
-  name: "Busin - Wizardry Alternative"
+  name: "BUSIN Wizardry Alternative"
   region: "NTSC-J"
 SLPM-62099:
   name: "Nihon Sumou Kyoukai Kounin - Nihon Oozumou - Kakutou-hen"
@@ -32526,7 +32535,7 @@ SLPM-62153:
   name: "Racing Construction - Mareru Tsukeru Hahiiru Ore - Dead Heat"
   region: "NTSC-J"
 SLPM-62154:
-  name: "DDRMAX ~DanceDanceRevolution 6thMIX~"
+  name: "DDRMAX Dance Dance Revolution 6th Mix"
   region: "NTSC-J"
   compat: 5
 SLPM-62155:
@@ -32789,7 +32798,7 @@ SLPM-62241:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLPM-62242:
   name: "Doukyuu - Billiard Master 2 [LowPrice Version]"
@@ -33687,7 +33696,7 @@ SLPM-62513:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLPM-62514:
   name: "Sim People [EA Best Hits]"
@@ -34611,7 +34620,7 @@ SLPM-64528:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLPM-64532:
   name: "Digital Holmes"
@@ -35701,6 +35710,7 @@ SLPM-65245:
     roundSprite: 2 # Fixes font artifacts.
     autoFlush: 1 # Fixes light bloom intensity.
 SLPM-65246:
+  name: "Kaidō Battle - Nikko, Haruna, Rokko, Hakone"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting during Rain.
@@ -36198,7 +36208,7 @@ SLPM-65377:
   name: "Shin Sangoku Musou 3 - Moushouden"
   region: "NTSC-J"
 SLPM-65378:
-  name: "Busin 0 - Wizardry Alternative Neo"
+  name: "BUSIN 0 Wizardry Alternative NEO"
   region: "NTSC-J"
   gsHWFixes:
     autoFlush: 1 # Corrects blur effects in menus.
@@ -36357,7 +36367,7 @@ SLPM-65420:
   name: "Dabitsuku 3 - Let's Become a Derby Owner"
   region: "NTSC-J"
 SLPM-65421:
-  name: "Ever 17 - The Out of Infinity [Premium Edition]"
+  name: "Ever17 the out of infinity [PREMIUM EDITION]"
   region: "NTSC-J"
 SLPM-65422:
   name: "Tom Clancy's Splinter Cell"
@@ -36720,6 +36730,7 @@ SLPM-65513:
   name: "Angel's Feather [Standard Edition]"
   region: "NTSC-J"
 SLPM-65514:
+  name: "Kaidō Battle 2 - Chain Reaction"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting during Rain/Storm.
@@ -36824,7 +36835,7 @@ SLPM-65546:
   name: "Cross Channel - To All People [Limited Edition]"
   region: "NTSC-J"
 SLPM-65547:
-  name: "Cross Channel - To All People"
+  name: "CROSS+CHANNEL To all people"
   region: "NTSC-J"
 SLPM-65548:
   name: "Freedom Fighters"
@@ -37041,7 +37052,7 @@ SLPM-65612:
   name: "Harry Potter and the Prisoner of Azkaban"
   region: "NTSC-J"
   gsHWFixes:
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Aligns mirror reflections, removes some bloom-related ghosting.
     recommendedBlendingLevel: 4 # Improves lighting effects.
 SLPM-65613:
@@ -38066,6 +38077,7 @@ SLPM-65875:
   name: "Growlanser IV - Wayfarer of the Time [Atlus Best Collection]"
   region: "NTSC-J"
 SLPM-65876:
+  name: "BUSIN 0 Wizardry Alternative NEO [ATLUS BEST COLLECTION]"
   region: "NTSC-J"
   gsHWFixes:
     autoFlush: 1 # Corrects blur effects in menus.
@@ -38130,7 +38142,7 @@ SLPM-65891:
   name: "Sangokushi X"
   region: "NTSC-J"
 SLPM-65892:
-  name: "Zill O'll Infinite"
+  name: "Zill O'll infinite"
   region: "NTSC-J"
 SLPM-65893:
   name: "Winning Post 6 Maximum 2005 [Premium Pack]"
@@ -38230,7 +38242,7 @@ SLPM-65917:
   name: "Transformers [2003] [Takara THE BEST]"
   region: "NTSC-J"
 SLPM-65918:
-  name: "Dear My Friend - Love Like Powdery Snow"
+  name: "Dear My Friend Love like powdery snow"
   region: "NTSC-J"
 SLPM-65919:
   name: "Rumble Fish, The"
@@ -39491,7 +39503,7 @@ SLPM-66214:
   name: "White Clarity - And, the Tears Became You [First Print Limited Edition]"
   region: "NTSC-J"
 SLPM-66215:
-  name: "White Clarity - And, the Tears Became You"
+  name: "WHITE CLARITY And The tears became you."
   region: "NTSC-J"
 SLPM-66217:
   name: "Jikkyou Powerful Pro Yakyuu 12 Ketteiban"
@@ -40338,7 +40350,7 @@ SLPM-66412:
   name: "Pizzicato Polka - Suisei Genya [2800 Collection]"
   region: "NTSC-J"
 SLPM-66413:
-  name: "Cross+Channel - To All People [2800 Collection]"
+  name: "CROSS+CHANNEL To all people [2800 Collection]"
   region: "NTSC-J"
 SLPM-66414:
   name: "Colorful Box - To Love [2800 Collection]"
@@ -40853,7 +40865,7 @@ SLPM-66524:
   name: "Angelique Etoile [Koei Best]"
   region: "NTSC-J"
 SLPM-66525:
-  name: "Zill O'll Infinite [Koei The Best]"
+  name: "Zill O'll infinite [KOEI The Best]"
   region: "NTSC-J"
 SLPM-66526:
   name: "Gaika no Gouhou - Air Land Force [KOEI Selection]"
@@ -41674,6 +41686,7 @@ SLPM-66717:
   name: "Standard Daisenryaku - Dengekisen [Sega the Best]"
   region: "NTSC-J"
 SLPM-66718:
+  name: "Sutandādo Daisenryaku - Ushinawareta Shoeri [Sega the Best]"
   region: "NTSC-J"
 SLPM-66719:
   name: "Tenka-bito [Sega the Best]"
@@ -43026,7 +43039,7 @@ SLPM-68005:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLPM-68007:
   name: "Karaoke Revolution-you Mic Doukon Otameshi Disc"
@@ -43662,6 +43675,7 @@ SLPM-74411:
   name: "Culdcept II - Expansion [PlayStation2 the Best]"
   region: "NTSC-J"
 SLPM-74412:
+  name: "Kengō 2 [PlayStation2 the Best]"
   region: "NTSC-J"
 SLPM-74414:
   name: "Energy Airforce [PlayStation2 The Best]"
@@ -43909,6 +43923,7 @@ SLPS-20052:
   name: "Global Folktale"
   region: "NTSC-J"
 SLPS-20053:
+  name: "Tenshi no Present - Māru Oukoku Monogatari"
   region: "NTSC-J"
 SLPS-20054:
   name: "FIFA World Championship 2001"
@@ -43926,6 +43941,7 @@ SLPS-20057:
   gameFixes:
     - XGKickHack # Fixes corrupted textures.
 SLPS-20058:
+  name: "Kengō"
   region: "NTSC-J"
 SLPS-20059:
   name: "Hresvelgr [International Edition]"
@@ -43954,7 +43970,7 @@ SLPS-20067:
   name: "Crazy Bump's - Kattobi Car Battle!"
   region: "NTSC-J"
 SLPS-20068:
-  name: "Midnight Club - Street Racing"
+  name: "MIDNIGHT CLUB STREET RACING"
   region: "NTSC-J"
   memcardFilters:
     - "SLPS-20068"
@@ -44447,7 +44463,7 @@ SLPS-20234:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLPS-20237:
   name: "Saikyou Toudai Shougi 3"
@@ -44476,7 +44492,7 @@ SLPS-20244:
   name: "Magical Sports - 2000 Koushien [NewPrice]"
   region: "NTSC-J"
 SLPS-20245:
-  name: "Low Rider"
+  name: "LOWRIDER Round The World"
   region: "NTSC-J"
 SLPS-20246:
   name: "RALLY SHOX"
@@ -45259,7 +45275,7 @@ SLPS-20489:
   name: "Simple 2000 Series Vol. 114 - The Onna Okappichi Torimonochou - Oharu-chan GoGoGo!"
   region: "NTSC-J"
   gsHWFixes:
-    getSkipCount: "GSC_Simple2000Vol114"
+    halfPixelOffset: 1 # Fixes DoF alignment.
 SLPS-20490:
   name: "Pachi-Slot Club Collection - IM Juggler EX - Juggler Selection"
   region: "NTSC-J"
@@ -45372,8 +45388,6 @@ SLPS-25007:
   region: "NTSC-J"
   clampModes:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
-  gameFixes:
-    - SoftwareRendererFMVHack # Fixes random corruption.
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves sky rendering.
     textureInsideRT: 1 # Fixes texture corruption.
@@ -45766,7 +45780,7 @@ SLPS-25098:
   name: "Air Ranger 2 - Rescue Helicopter"
   region: "NTSC-J"
 SLPS-25099:
-  name: "World Rally Championship"
+  name: "WRC WORLD RALLY CHAMPIONSHIP"
   region: "NTSC-J"
   roundModes:
     eeRoundMode: 0 # Fixes crash when using the Subaru.
@@ -45805,6 +45819,7 @@ SLPS-25106:
   name: "America Oudan Ultra Quiz"
   region: "NTSC-J"
 SLPS-25107:
+  name: "Kengō 2"
   region: "NTSC-J"
   compat: 5
 SLPS-25108:
@@ -45976,7 +45991,7 @@ SLPS-25148:
   name: "Panel Quiz Attack 25"
   region: "NTSC-J"
 SLPS-25149:
-  name: "Ever 17 - The Out of Infinity"
+  name: "Ever17 the out of infinity"
   region: "NTSC-J"
 SLPS-25150:
   name: "Only You"
@@ -46264,7 +46279,7 @@ SLPS-25225:
   name: "Ai Yori Aoshi [Standard Edition]"
   region: "NTSC-J"
 SLPS-25226:
-  name: "Memories Off - Duet"
+  name: "Memories Off Duet 1st & 2nd Stories"
   region: "NTSC-J"
 SLPS-25227:
   name: "Super Robot Wars - Alpha 2nd [Limited Edition]"
@@ -46398,7 +46413,7 @@ SLPS-25255:
   name: "Sidewinder V [Premium Flight Box]"
   region: "NTSC-J"
 SLPS-25256:
-  name: "Never 7 - The End of Infinity"
+  name: "Never7 the end of infinity"
   region: "NTSC-J"
   gameFixes:
     - SkipMPEGHack # Prevents the game from freezing.
@@ -46415,7 +46430,7 @@ SLPS-25260:
   name: "Virtual View - Megumi Eyes Play"
   region: "NTSC-J"
 SLPS-25261:
-  name: "Guilty Gear XX #Reload - The Midnight Carnival"
+  name: "GUILTY GEAR XX #RELOAD THE MIDNIGHT CARNIVAL"
   region: "NTSC-J"
 SLPS-25262:
   name: "Private Nurse Maria"
@@ -46802,6 +46817,7 @@ SLPS-25361:
   name: "Smash Court Professional Tournament 2"
   region: "NTSC-J"
 SLPS-25362:
+  name: "Tetsujin 28-gō"
   region: "NTSC-J"
   gsHWFixes:
     autoFlush: 1 # Fixes Depth of Field effect.
@@ -47099,8 +47115,9 @@ SLPS-25422:
   name: "Death by Degrees - Tekken - Nina Williams"
   region: "NTSC-J"
   gsHWFixes:
-    alignSprite: 1 # Fixes FMV lines.
+    getSkipCount: "GSC_Tekken5"
     halfPixelOffset: 1 # Fixes alignment of shuffles and post processing.
+    alignSprite: 1 # Fixes FMV lines.
     textureInsideRT: 1 # Fixes post shuffles.
 SLPS-25423:
   name: "Kaitou Apricot - Complete Edition [Limited Edition]"
@@ -47402,7 +47419,7 @@ SLPS-25505:
   region: "NTSC-J"
   compat: 5
 SLPS-25506:
-  name: "For Symphony - With All One's Heart"
+  name: "for Symphony with all one's heart"
   region: "NTSC-J"
 SLPS-25507:
   name: "Mai-Hime [Limited Edition]"
@@ -47699,6 +47716,8 @@ SLPS-25580:
 SLPS-25581:
   name: "Simple 2000 Series Vol. 92 - The Game of a Curse"
   region: "NTSC-J"
+  gsHWFixes:
+    cpuCLUTRender: 1 # Fixes corrupted and missing graphics.
 SLPS-25582:
   name: "Asutoro Kyudan Kessen"
   region: "NTSC-J"
@@ -49411,6 +49430,7 @@ SLPS-73001:
   name: "Pilot ni Narou! 2"
   region: "NTSC-J"
 SLPS-73002:
+  name: "Kengō [PlayStation 2 the Best]"
   region: "NTSC-J"
 SLPS-73003:
   name: "Farms Story 3 [PlayStation2 the Best]"
@@ -49930,8 +49950,6 @@ SLPS-73403:
   region: "NTSC-J"
   clampModes:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
-  gameFixes:
-    - SoftwareRendererFMVHack # Fixes random corruption.
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves sky rendering.
     textureInsideRT: 1 # Fixes texture corruption.
@@ -50140,8 +50158,6 @@ SLUS-20014:
   compat: 5
   clampModes:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
-  gameFixes:
-    - SoftwareRendererFMVHack # Fixes random corruption.
   gsHWFixes:
     recommendedBlendingLevel: 3 # Improves sky rendering.
     textureInsideRT: 1 # Fixes texture corruption.
@@ -52733,7 +52749,7 @@ SLUS-20576:
     - EETimingHack # Fixes flickering textures.
   gsHWFixes:
     recommendedBlendingLevel: 4 # Fixes missing lighting effects.
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLUS-20577:
   name: "Drome Racers"
@@ -54611,7 +54627,7 @@ SLUS-20926:
   name: "Harry Potter and the Prisoner of Azkaban"
   region: "NTSC-U"
   gsHWFixes:
-    cpuFramebufferConversion: 1 # Fixes right side of the screen from garbage textures.
+    textureInsideRT: 1 # Fixes right side shadow lookup.
     halfPixelOffset: 2 # Aligns mirror reflections, removes some bloom-related ghosting.
     recommendedBlendingLevel: 4 # Improves lighting effects.
 SLUS-20927:
@@ -54654,8 +54670,9 @@ SLUS-20934:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
-    alignSprite: 1 # Fixes FMV lines.
+    getSkipCount: "GSC_Tekken5"
     halfPixelOffset: 1 # Fixes alignment of shuffles and post processing.
+    alignSprite: 1 # Fixes FMV lines.
     textureInsideRT: 1 # Fixes post shuffles.
 SLUS-20935:
   name: "IHRA Professional Drag Racing 2005"

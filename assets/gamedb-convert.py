@@ -1,4 +1,4 @@
-# A simple script to make comparing GameDB files easier for NetherSX2
+# A conversion script that generates working GameDB for use with NetherSX2
 # Just drag and drop the GameIndex.yaml file from PCSX2 on to it to process it
 # Requires the ruamel.yaml library to be installed to work
 # Type pip install ruamel.yaml in the terminal to install it
@@ -16,11 +16,16 @@ yaml.allow_duplicate_keys = True
 yaml.width = 512
 yaml.representer.add_representer(type(None), my_represent_none)
 
-char_list = ['ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'þ', 'ÿ', '¸', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'Þ']
+char_list = ['ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'ā', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ē', 'ì', 'í', 'î', 'ï', 'ī', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ō', 'ø', 'ù', 'ú', 'û', 'ü', 'ū', 'ý', 'þ', 'ÿ', '¸', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'Þ']
 key_list = ['clampModes', 'dynaPatches', 'gameFixes', 'gsHWFixes', 'memcardFilters', 'patches', 'roundModes', 'speedHacks']
 key_order = ['name', 'name-sort', 'name-en', 'region', 'compat', 'clampModes', 'roundModes', 'gameFixes', 'speedHacks', 'gsHWFixes', 'patches', 'dynaPatches', 'memcardFilters']
+clamp_list = ['eeClampMode', 'vuClampMode', 'vu0ClampMode', 'vu1ClampMode']
+round_list = ['eeRoundMode', 'vuRoundMode', 'vu0RoundMode', 'vu1RoundMode']
+gmfix_list = ['BlitInternalFPSHack', 'DMABusyHack', 'EETimingHack', 'FpuMulHack', 'GIFFIFOHack', 'GoemonTlbHack', 'IbitHack', 'InstantDMAHack', 'OPHFlagHack', 'SkipMPEGHack', 'SoftwareRendererFMVHack', 'VIF1StallHack', 'VIFFIFOHack', 'VuAddSubHack', 'VUOverflowHack', 'FullVU0SyncHack', 'VUSyncHack', 'XGKickHack']
+hwfix_list = ['autoFlush', 'cpuFramebufferConversion', 'readTCOnClose', 'disableDepthSupport', 'preloadFrameData', 'disablePartialInvalidation', 'partialTargetInvalidation', 'textureInsideRT', 'alignSprite', 'mergeSprite', 'wildArmsHack', 'estimateTextureRegion', 'PCRTCOffsets', 'PCRTCOverscan', 'mipmap', 'trilinearFiltering', 'skipDrawStart', 'skipDrawEnd', 'halfBottomOverride', 'halfPixelOffset', 'roundSprite', 'texturePreloading', 'deinterlace', 'cpuSpriteRenderBW', 'cpuCLUTRender', 'gpuTargetCLUT', 'gpuPaletteConversion', 'minimumBlendingLevel', 'maximumBlendingLevel', 'recommendedBlendingLevel', 'getSkipCount', 'beforeDraw']
+speed_list = ['mvuFlagSpeedHack', 'InstantVU1SpeedHack', 'MTVUSpeedHack']
 ignore_list = ['bilinearUpscale', 'cpuSpriteRenderLevel', 'eeCycleRate', 'GSC_DTGames', 'GSC_GuitarHero', 'GSC_HitmanBloodMoney', 'GSC_MetalGearSolid3', 'GSC_NFSUndercover', 'GSC_PolyphonyDigitalGames', 'name-sort', 'nativePaletteDraw', 'nativeScaling', 'OI_HauntingGround']
-replace_dict = {'autoFlush: 2': 'autoFlush: 1', 'forceEvenSpritePosition:': 'wildArmsHack:', 'GSC_NamcoGames': 'GSC_Tekken5', 'halfPixelOffset: 4': 'halfPixelOffset: 2', 'halfPixelOffset: 5': 'halfPixelOffset: 2', 'instantVU1:': 'InstantVU1SpeedHack:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:', 'PlayStation2': 'PlayStation 2'}
+replace_dict = {'autoFlush: 2': 'autoFlush: 1', 'forceEvenSpritePosition:': 'wildArmsHack:', 'GSC_NamcoGames': 'GSC_Tekken5', 'halfPixelOffset: 4': 'halfPixelOffset: 1', 'halfPixelOffset: 5': 'halfPixelOffset: 1', 'instantVU1:': 'InstantVU1SpeedHack:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:', 'PlayStation2': 'PlayStation 2', '～': ''}
 
 def sort_keys(my_dict):
     sorted_data = {}
@@ -76,19 +81,67 @@ def process_dict(my_dict, new_dict):
     req_sort = False
     my_dict = {k: v for k, v in my_dict.items() if any(required_key in v for required_key in key_list)}
     for key, value in my_dict.items():
-        if 'name' in value and key in new_dict:
-            try:
-                if not my_dict[key]['name'] in new_dict[key]['name']:
-                    my_dict[key]['name'] = new_dict[key]['name'] 
-            except KeyError: continue
+        for nested_key in ['name', 'region']:
+            if nested_key in value and key in new_dict:
+                try:
+                    if not my_dict[key][nested_key] == new_dict[key][nested_key]:
+                        my_dict[key][nested_key] = new_dict[key][nested_key] 
+                except KeyError: continue
     for key, value in new_dict.items():
         for nested_key in key_list:
             if nested_key in value and key in my_dict:
                 try:
-                    if not my_dict[key][nested_key]: continue 
+                    if my_dict[key][nested_key]: continue 
                 except KeyError:
                     if not req_sort: req_sort = True
                     my_dict[key][nested_key] = new_dict[key][nested_key]
+        if 'clampModes' in value and key in my_dict:
+            for nested_key in ['vu0ClampMode', 'vu1ClampMode']:
+                if nested_key in value['clampModes']:
+                    try:
+                        if my_dict[key]['clampModes']['vuClampMode']:
+                            del my_dict[key]['clampModes']['vuClampMode']
+                            my_dict[key]['clampModes'][nested_key] = new_dict[key]['clampModes'][nested_key]
+                    except KeyError: continue
+            for nested_key in clamp_list:
+                if nested_key in value['clampModes']:
+                    try:
+                        if my_dict[key]['clampModes'][nested_key]: continue
+                    except KeyError:
+                        my_dict[key]['clampModes'][nested_key] = new_dict[key]['clampModes'][nested_key]
+        if 'roundModes' in value and key in my_dict:
+            for nested_key in ['vu0RoundMode', 'vu1RoundMode']:
+                if nested_key in value['roundModes']:
+                    try:
+                        if my_dict[key]['roundModes']['vuRoundMode']:
+                            del my_dict[key]['roundModes']['vuRoundMode']
+                            my_dict[key]['roundModes'][nested_key] = new_dict[key]['roundModes'][nested_key]
+                    except KeyError: continue
+            for nested_key in round_list:
+                if nested_key in value['roundModes']:
+                    try:
+                        if my_dict[key]['roundModes'][nested_key]: continue
+                    except KeyError:
+                        my_dict[key]['roundModes'][nested_key] = new_dict[key]['roundModes'][nested_key]
+        if 'gameFixes' in value and key in my_dict:
+            for nested_value in gmfix_list:
+                if nested_value in value['gameFixes']:
+                    if nested_value in my_dict[key]['gameFixes']: continue
+                    else: my_dict[key]['gameFixes'].append(nested_value)
+        if 'gsHWFixes' in value and key in my_dict:
+            for nested_key in hwfix_list:
+                if nested_key in value['gsHWFixes']:
+                    try:
+                        if my_dict[key]['gsHWFixes'][nested_key]: continue
+                    except KeyError:
+                        my_dict[key]['gsHWFixes'][nested_key] = new_dict[key]['gsHWFixes'][nested_key]
+        if 'speedHacks' in value and key in my_dict:
+            for nested_key in speed_list:
+                if nested_key in value['speedHacks']:
+                    try:
+                        if my_dict[key]['speedHacks'][nested_key]: continue
+                    except KeyError:
+                        my_dict[key]['speedHacks'][nested_key] = new_dict[key]['speedHacks'][nested_key]
     if req_sort: my_dict.update(sort_keys(my_dict))
     return my_dict
 
@@ -104,7 +157,7 @@ def fix_db(file_name):
             if ': null' not in line: newfile.write(line)
     os.remove('GameIndex[temp].yaml')
 
-if len(sys.argv) > 1: gamedb_file = sys.argv[1]
+if len(sys.argv) > 1 and os.path.isfile(sys.argv[1]): gamedb_file = sys.argv[1]
 else: 
     print('Usage: python gamedb-convert.py GameIndex.yaml')
     sys.exit()
@@ -112,6 +165,7 @@ else:
 restore_fix(gamedb_file)
 print('Creating GameIndex[fixed].yaml...')
 fix_db('GameIndex[fixed].yaml')
+if os.path.isfile('GameIndex[temp3].yaml'): os.remove('GameIndex[temp3].yaml')
 with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex[4248].yaml', encoding='utf8') as og, open('GameIndex[diff].yaml', encoding='utf8') as diff, open('GameIndex[merged].yaml', 'w', encoding='utf8') as merged:
     print('Loading GameDB entries to merge...')
     base_db = yaml.load(base)
@@ -126,7 +180,6 @@ with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex
     print('Creating GameIndex[merged].yaml file...')
     yaml.dump(base_db, merged)
 process_db('GameIndex[merged].yaml', 'GameIndex[temp2].yaml')
-if os.path.isfile('GameIndex[temp3].yaml'): os.remove('GameIndex[temp3].yaml')
 if os.path.isfile('GameIndex[merged].yaml'): os.remove('GameIndex[merged].yaml')
 os.rename('GameIndex[temp2].yaml', 'GameIndex[merged].yaml')
 fix_db('GameIndex[merged].yaml')
