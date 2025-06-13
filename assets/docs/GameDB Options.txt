@@ -35,7 +35,7 @@ gameFixes:
     VIFFIFOHack 
     VuAddSubHack 
     VUOverflowHack 
-    FullVU0SyncHack 
+    FullVU0SyncHack - missing in both, maybe replace with VUSyncHack below, added 23 April 2023
     VUSyncHack 
     XGKickHack
 
