@@ -19539,7 +19539,7 @@ SLES-52636:
   region: "PAL-M5"
   compat: 5
   gameFixes:
-    - FullVU0SyncHack # Fixes in-game timer.
+    - VUSyncHack # Fixes in-game timer.
   gsHWFixes:
     autoFlush: 1 # Fixes incorrect colors.
     alignSprite: 1 # Fixes vertical lines such as in FMVs.
@@ -45961,7 +45961,7 @@ SLPS-20195:
   name: "WORLD FANTASISTA"
   region: "NTSC-J"
   gameFixes:
-    - FullVU0SyncHack # Fixes SPS.
+    - VUSyncHack # Fixes SPS.
 SLPS-20196:
   name: "Akagawa Jirou - Tsuki no Hikari - Shizumeru Kane no Satsujin"
   region: "NTSC-J"
@@ -47452,7 +47452,7 @@ SLPS-25101:
   name: "Nichibeikan Pro Yakyuu - Final League"
   region: "NTSC-J"
   gameFixes:
-    - FullVU0SyncHack # Fixes SPS.
+    - VUSyncHack # Fixes SPS.
 SLPS-25102:
   name: "PROJECT ARMS"
   region: "NTSC-J"
