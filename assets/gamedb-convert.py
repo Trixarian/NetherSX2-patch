@@ -173,7 +173,6 @@ with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex
     diff_db = yaml.load(diff)
     print('Processing older GameDB prior to merging...')
     og_db = process_dict(og_db, base_db)
-    diff_db = process_dict(diff_db, base_db)
     print('Merging GameDB entries...')
     base_db.update(og_db)
     base_db.update(diff_db)
