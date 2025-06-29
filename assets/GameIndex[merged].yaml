@@ -20197,6 +20197,9 @@ SLES-52834:
 SLES-52835:
   name: "The Mummy"
   region: "PAL-M6"
+  gsHWFixes:
+    halfPixelOffset: 2 # Aligns post processing.
+    autoFlush: 1 # Fixes light penetrating objects and intensity.
 SLES-52836:
   name: "Knight Rider 2"
   region: "PAL-M6"
