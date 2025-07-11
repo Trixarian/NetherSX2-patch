@@ -3,6 +3,7 @@ SCAJ-20028:
   region: "NTSC-Unk"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCAJ-20112:
   name: "Tales of Rebirth"
@@ -11,6 +12,7 @@ SCAJ-20112:
     mvuFlagSpeedHack: 0 # Fixes graphical corruptions.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCAJ-20145:
   name: "Tales of Legendia"
@@ -19,6 +21,7 @@ SCAJ-20145:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SCAJ-20163:
@@ -40,6 +43,7 @@ SCAJ-20182:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCAJ-20193:
   name: "Tales of Destiny [Director's Cut] [Premium Box]"
@@ -48,6 +52,7 @@ SCAJ-20193:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCKA-20008:
   name: "Tales of Destiny 2"
@@ -55,6 +60,7 @@ SCKA-20008:
   compat: 5
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCKA-20050:
   name: "Tales of Legendia"
@@ -64,6 +70,7 @@ SCKA-20050:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20054:
@@ -71,6 +78,7 @@ SCKA-20054:
   region: "NTSC-K"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCKA-20100:
   name: "Tales of Destiny"
@@ -79,6 +87,7 @@ SCKA-20100:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCKA-20119:
   name: "Tales of Destiny - Director's Cut"
@@ -87,6 +96,7 @@ SCKA-20119:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCKA-20129:
   name: "Tales of Legendia"
@@ -96,6 +106,7 @@ SCKA-20129:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SCPS-55050:
@@ -103,12 +114,14 @@ SCPS-55050:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-25172:
   name: "Tales of Destiny 2"
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-25450:
   name: "Tales of Rebirth"
@@ -118,6 +131,7 @@ SLPS-25450:
     mvuFlagSpeedHack: 0 # Fixes graphical corruptions.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-25533:
   name: "Tales of Legendia"
@@ -127,6 +141,7 @@ SLPS-25533:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-25715:
@@ -136,6 +151,7 @@ SLPS-25715:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-25841:
   name: "Tales of Destiny [Director's Cut] [Premium Box]"
@@ -144,6 +160,7 @@ SLPS-25841:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
   memcardFilters: # Allows import of non-DC Tales of Destiny data.
     - "SLPS-25841"
@@ -157,6 +174,7 @@ SLPS-25842:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
   memcardFilters:
     - "SLPS-25841"
@@ -167,12 +185,14 @@ SLPS-72502:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-73219:
   name: "Tales of Destiny 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-73242:
   name: "Tales of Legendia [PlayStation 2 the Best]"
@@ -181,6 +201,7 @@ SLPS-73242:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SLUS-21201:
@@ -191,6 +212,7 @@ SLUS-21201:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SLUS-21386:
