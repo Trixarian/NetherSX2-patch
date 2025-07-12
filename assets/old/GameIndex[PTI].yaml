@@ -954,6 +954,7 @@ SCAJ-20028:
   region: "NTSC-Unk"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCAJ-20029:
   name: "R-Type Final"
@@ -1343,6 +1344,7 @@ SCAJ-20112:
     mvuFlagSpeedHack: 0 # Fixes graphical corruptions.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCAJ-20113:
   name: "Dragon Quest & Final Fantasy in Itadaki Street"
@@ -1550,6 +1552,7 @@ SCAJ-20145:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SCAJ-20146:
@@ -1786,6 +1789,7 @@ SCAJ-20182:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCAJ-20183:
   name: "Wild ARMs - The Vth Vanguard"
@@ -1826,6 +1830,7 @@ SCAJ-20193:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCAJ-20194:
   name: "Minna no Golf 4 [PlayStation 2 The Best]"
@@ -6080,6 +6085,7 @@ SCKA-20008:
   compat: 5
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCKA-20009:
   name: "R-Type Final"
@@ -6343,6 +6349,7 @@ SCKA-20050:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20051:
@@ -6373,6 +6380,7 @@ SCKA-20054:
   region: "NTSC-K"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCKA-20055:
   name: "Mystic Nights"
@@ -6648,6 +6656,7 @@ SCKA-20100:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCKA-20101:
   name: "Seiken Densetsu 4"
@@ -6707,6 +6716,7 @@ SCKA-20119:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCKA-20120:
   name: "Ratchet & Clank - Size Matters"
@@ -6736,6 +6746,7 @@ SCKA-20129:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20130:
@@ -8466,6 +8477,7 @@ SCPS-55050:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SCPS-55901:
   name: "Xenosaga Episode I - Der Wille zur Macht"
@@ -14184,7 +14196,7 @@ SLES-51113:
   region: "PAL-M5"
   compat: 5
   gameFixes:
-    - InstantDMAHack
+    - DMABusyHack # Fixes the corrupted fade effect in cutscenes.
   gsHWFixes:
     partialTargetInvalidation: 1 # Fixes cutscene blur effects.
 SLES-51114:
@@ -25766,7 +25778,7 @@ SLES-82009:
   region: "PAL-M5"
   compat: 5
   gameFixes:
-    - InstantDMAHack
+    - DMABusyHack # Fixes broken half-bottom artifacts.
   gsHWFixes:
     roundSprite: 2 # Fixes font artifacts.
     partialTargetInvalidation: 1
@@ -25930,7 +25942,6 @@ SLES-82042:
   region: "PAL-E-F"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -25940,7 +25951,6 @@ SLES-82043:
   region: "PAL-E-F"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -25952,7 +25962,6 @@ SLES-82044:
   region: "PAL-I"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -25962,7 +25971,6 @@ SLES-82045:
   region: "PAL-I"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -25974,7 +25982,6 @@ SLES-82046:
   region: "PAL-G"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -25984,7 +25991,6 @@ SLES-82047:
   region: "PAL-G"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -25996,7 +26002,6 @@ SLES-82048:
   region: "PAL-S"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -26006,7 +26011,6 @@ SLES-82049:
   region: "PAL-S"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -26018,7 +26022,6 @@ SLES-82050:
   region: "PAL-E-F"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -26030,7 +26033,6 @@ SLES-82051:
   region: "PAL-I"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -26042,7 +26044,6 @@ SLES-82052:
   region: "PAL-G"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -26054,7 +26055,6 @@ SLES-82053:
   region: "PAL-S"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -27511,7 +27511,6 @@ SLKA-25353:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -27522,7 +27521,6 @@ SLKA-25354:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -27535,7 +27533,6 @@ SLKA-25355:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -27906,7 +27903,7 @@ SLKA-35001:
   region: "NTSC-K"
   compat: 5
   gameFixes:
-    - InstantDMAHack
+    - DMABusyHack # Fixes broken half-bottom artifacts.
   gsHWFixes:
     roundSprite: 2 # Fixes font artifacts.
     partialTargetInvalidation: 1
@@ -36510,7 +36507,6 @@ SLPM-66117:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -36520,7 +36516,6 @@ SLPM-66118:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -36530,7 +36525,6 @@ SLPM-66119:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -36954,7 +36948,6 @@ SLPM-66220:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -36966,7 +36959,6 @@ SLPM-66221:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -36978,7 +36970,6 @@ SLPM-66222:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -36990,7 +36981,6 @@ SLPM-66223:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -37002,7 +36992,6 @@ SLPM-66224:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -40076,7 +40065,7 @@ SLPM-67002:
   name: "Metal Gear Solid 2 - Substance"
   region: "NTSC-J"
   gameFixes:
-    - InstantDMAHack
+    - DMABusyHack # Fixes broken half-bottom artifacts.
   gsHWFixes:
     roundSprite: 2 # Fixes font artifacts.
     partialTargetInvalidation: 1
@@ -43294,6 +43283,7 @@ SLPS-25172:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-25173:
   name: "Omoide ni Kawaru Kimi - Memories Off"
@@ -44380,6 +44370,7 @@ SLPS-25450:
     mvuFlagSpeedHack: 0 # Fixes graphical corruptions.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-25451:
   name: "Hana to Taiyou to Ame to [Super Best Collection]"
@@ -44676,6 +44667,7 @@ SLPS-25533:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-25534:
@@ -45418,6 +45410,7 @@ SLPS-25715:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-25716:
   name: "Digimon Savers - Another Mission"
@@ -45888,6 +45881,7 @@ SLPS-25841:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
   memcardFilters: # Allows import of non-DC Tales of Destiny data.
     - "SLPS-25841"
@@ -45901,6 +45895,7 @@ SLPS-25842:
     - FpuMulHack
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
   memcardFilters:
     - "SLPS-25841"
@@ -46427,6 +46422,7 @@ SLPS-72502:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-73001:
   name: "Pilot ni Narou! 2"
@@ -46608,6 +46604,7 @@ SLPS-73219:
   region: "NTSC-J"
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
 SLPS-73220:
   name: "Ultraman [PlayStation 2 The Best]"
@@ -46785,6 +46782,7 @@ SLPS-73242:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-73243:
@@ -49560,7 +49558,7 @@ SLUS-20554:
   region: "NTSC-U"
   compat: 5
   gameFixes:
-    - InstantDMAHack
+    - DMABusyHack # Fixes broken half-bottom artifacts.
   gsHWFixes:
     roundSprite: 2 # Fixes font artifacts.
     partialTargetInvalidation: 1
@@ -52989,6 +52987,7 @@ SLUS-21201:
     - SoftwareRendererFMVHack # Fixes garbage textures presumably from texture cache issue.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
+    estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
     getSkipCount: "GSC_TalesOfLegendia"
 SLUS-21202:
@@ -53274,7 +53273,6 @@ SLUS-21243:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -54002,7 +54000,6 @@ SLUS-21359:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -54012,7 +54009,6 @@ SLUS-21360:
   region: "NTSC-U"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:

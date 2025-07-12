@@ -21,7 +21,7 @@ key_list = ['clampModes', 'dynaPatches', 'gameFixes', 'gsHWFixes', 'memcardFilte
 key_order = ['name', 'name-sort', 'name-en', 'region', 'compat', 'clampModes', 'roundModes', 'gameFixes', 'speedHacks', 'gsHWFixes', 'patches', 'dynaPatches', 'memcardFilters']
 clamp_list = ['eeClampMode', 'vuClampMode', 'vu0ClampMode', 'vu1ClampMode']
 round_list = ['eeRoundMode', 'vuRoundMode', 'vu0RoundMode', 'vu1RoundMode']
-gmfix_list = ['BlitInternalFPSHack', 'DMABusyHack', 'EETimingHack', 'FpuMulHack', 'GIFFIFOHack', 'GoemonTlbHack', 'IbitHack', 'InstantDMAHack', 'OPHFlagHack', 'SkipMPEGHack', 'SoftwareRendererFMVHack', 'VIF1StallHack', 'VIFFIFOHack', 'VuAddSubHack', 'VUOverflowHack', 'FullVU0SyncHack', 'VUSyncHack', 'XGKickHack']
+gmfix_list = ['BlitInternalFPSHack', 'DMABusyHack', 'EETimingHack', 'FpuMulHack', 'GIFFIFOHack', 'GoemonTlbHack', 'IbitHack', 'OPHFlagHack', 'SkipMPEGHack', 'SoftwareRendererFMVHack', 'VIF1StallHack', 'VIFFIFOHack', 'VuAddSubHack', 'VUOverflowHack', 'FullVU0SyncHack', 'VUSyncHack', 'XGKickHack']
 speed_list = ['mvuFlagSpeedHack', 'InstantVU1SpeedHack', 'MTVUSpeedHack']
 hwfix_list = ['cpuFramebufferConversion', 'readTCOnClose', 'disableDepthSupport', 'preloadFrameData', 'disablePartialInvalidation', 'partialTargetInvalidation', 'textureInsideRT', 'alignSprite', 'mergeSprite', 'wildArmsHack', 'estimateTextureRegion', 'PCRTCOffsets', 'PCRTCOverscan', 'mipmap', 'trilinearFiltering', 'skipDrawStart', 'skipDrawEnd', 'halfBottomOverride', 'halfPixelOffset', 'roundSprite', 'texturePreloading', 'deinterlace', 'cpuCLUTRender', 'gpuTargetCLUT', 'gpuPaletteConversion', 'minimumBlendingLevel', 'maximumBlendingLevel', 'getSkipCount', 'beforeDraw']
 jakkey_list = ['PAPX-90222', 'PAPX-90223', 'SCED-50614', 'SCED-53660', 'SCES-50361', 'SCES-50614', 'SCES-55510', 'SCPS-15021', 'SCPS-19210', 'SCPS-55004', 'SCPS-56003', 'SCUS-97124', 'SCUS-97170', 'SCUS-97171', 'SCUS-97274', 'SCUS-97440', 'SCUS-97558']
@@ -128,9 +128,9 @@ def process_dict(my_dict, new_dict):
             for nested_value in gmfix_list:
                 if nested_value in value['gameFixes']:
                     if nested_value in my_dict[key]['gameFixes']: continue
-                    elif 'InstantDMAHack' in nested_value and 'DMABusyHack' in my_dict[key]['gameFixes']:
-                        my_dict[key]['gameFixes'].remove('DMABusyHack')
-                        my_dict[key]['gameFixes'].append('InstantDMAHack')
+                    elif 'DMABusyHack' in nested_value and 'InstantDMAHack' in my_dict[key]['gameFixes']:
+                        my_dict[key]['gameFixes'].remove('InstantDMAHack')
+                        my_dict[key]['gameFixes'].append('DMABusyHack')
                     else: my_dict[key]['gameFixes'].append(nested_value)
         if 'speedHacks' in value and key in my_dict:
             for nested_key in speed_list:

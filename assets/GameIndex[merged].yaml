@@ -5041,7 +5041,6 @@ SCES-51904:
   gameFixes:
     - EETimingHack # Get rids of DMA8/9 non-fatal errors.
     - VIF1StallHack # Fixes broken HUD.
-    - InstantDMAHack
 SCES-51910:
   name: "Arc - Twilight of the Spirits"
   region: "PAL-M5"
@@ -5147,7 +5146,6 @@ SCES-52306:
   gameFixes:
     - EETimingHack # Get rids of DMA8/9 non-fatal errors.
     - VIF1StallHack # Fixes broken HUD.
-    - InstantDMAHack
 SCES-52327:
   name: "Forbidden Siren"
   region: "PAL-F"
@@ -6711,7 +6709,6 @@ SCKA-20020:
   gameFixes:
     - EETimingHack # Get rids of DMA8/9 non-fatal errors.
     - VIF1StallHack # Fixes broken HUD.
-    - InstantDMAHack
 SCKA-20022:
   name: "Gran Turismo 4 Prologue"
   region: "NTSC-K"
@@ -6961,7 +6958,6 @@ SCKA-20053:
   gameFixes:
     - EETimingHack # Get rids of DMA8/9 non-fatal errors.
     - VIF1StallHack # Fixes broken HUD.
-    - InstantDMAHack
 SCKA-20054:
   name: "Tales of Destiny 2 [PlayStation 2 Big Hit Series]"
   region: "NTSC-K"
@@ -8182,7 +8178,6 @@ SCPS-15065:
   gameFixes:
     - EETimingHack # Get rids of DMA8/9 non-fatal errors.
     - VIF1StallHack # Fixes broken HUD.
-    - InstantDMAHack
 SCPS-15066:
   name: "Prince of Persia - The Sands of Time"
   region: "NTSC-J"
@@ -10349,7 +10344,6 @@ SCUS-97275:
   gameFixes:
     - EETimingHack # Get rids of DMA8/9 non-fatal errors.
     - VIF1StallHack # Fixes broken HUD.
-    - InstantDMAHack
 SCUS-97276:
   name: "NFL GameDay 2004"
   region: "NTSC-U"
@@ -10570,7 +10564,6 @@ SCUS-97366:
   gameFixes:
     - EETimingHack # Get rids of DMA8/9 non-fatal errors.
     - VIF1StallHack # Fixes broken HUD.
-    - InstantDMAHack
 SCUS-97367:
   name: "Neopets - The Darkest Faerie"
   region: "NTSC-U"
@@ -10586,7 +10579,6 @@ SCUS-97368:
   gameFixes:
     - EETimingHack # Get rids of DMA8/9 non-fatal errors.
     - VIF1StallHack # Fixes broken HUD.
-    - InstantDMAHack
 SCUS-97369:
   name: "ATV Offroad Fury 2"
   region: "NTSC-U"
@@ -11271,7 +11263,6 @@ SCUS-97511:
   gameFixes:
     - EETimingHack # Get rids of DMA8/9 non-fatal errors.
     - VIF1StallHack # Fixes broken HUD.
-    - InstantDMAHack
 SCUS-97512:
   name: "Gran Turismo 3 - A-Spec [Greatest Hits]"
   region: "NTSC-U"
@@ -15596,7 +15587,7 @@ SLES-51113:
   region: "PAL-M5"
   compat: 5
   gameFixes:
-    - InstantDMAHack
+    - DMABusyHack # Fixes the corrupted fade effect in cutscenes.
   gsHWFixes:
     partialTargetInvalidation: 1 # Fixes cutscene blur effects.
     halfPixelOffset: 2
@@ -28641,7 +28632,7 @@ SLES-82009:
   region: "PAL-M5"
   compat: 5
   gameFixes:
-    - InstantDMAHack
+    - DMABusyHack # Fixes broken half-bottom artifacts.
     - BlitInternalFPSHack
   gsHWFixes:
     roundSprite: 2 # Fixes font artifacts.
@@ -28669,7 +28660,6 @@ SLES-82013:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurry characters.
 SLES-82018:
@@ -28693,7 +28683,6 @@ SLES-82024:
   region: "PAL-I"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurry characters.
 SLES-82026:
@@ -28701,7 +28690,6 @@ SLES-82026:
   region: "PAL-S"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurry characters.
 SLES-82028:
@@ -28751,7 +28739,6 @@ SLES-82032:
   region: "PAL-G"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurry characters.
 SLES-82036:
@@ -28793,7 +28780,6 @@ SLES-82042:
   region: "PAL-E-F"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28803,7 +28789,6 @@ SLES-82043:
   region: "PAL-E-F"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28815,7 +28800,6 @@ SLES-82044:
   region: "PAL-I"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28825,7 +28809,6 @@ SLES-82045:
   region: "PAL-I"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28837,7 +28820,6 @@ SLES-82046:
   region: "PAL-G"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28847,7 +28829,6 @@ SLES-82047:
   region: "PAL-G"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28859,7 +28840,6 @@ SLES-82048:
   region: "PAL-S"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28869,7 +28849,6 @@ SLES-82049:
   region: "PAL-S"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28881,7 +28860,6 @@ SLES-82050:
   region: "PAL-E-F"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28893,7 +28871,6 @@ SLES-82051:
   region: "PAL-I"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28905,7 +28882,6 @@ SLES-82052:
   region: "PAL-G"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -28917,7 +28893,6 @@ SLES-82053:
   region: "PAL-S"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -30086,7 +30061,6 @@ SLKA-25251:
   region: "NTSC-K"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
 SLKA-25252:
@@ -30545,7 +30519,6 @@ SLKA-25353:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -30556,7 +30529,6 @@ SLKA-25354:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -30569,7 +30541,6 @@ SLKA-25355:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -31049,7 +31020,7 @@ SLKA-35001:
   region: "NTSC-K"
   compat: 5
   gameFixes:
-    - InstantDMAHack
+    - DMABusyHack # Fixes broken half-bottom artifacts.
     - BlitInternalFPSHack
   gsHWFixes:
     roundSprite: 2 # Fixes font artifacts.
@@ -39058,7 +39029,6 @@ SLPM-65789:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
 SLPM-65790:
@@ -39066,7 +39036,6 @@ SLPM-65790:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
 SLPM-65791:
@@ -40399,7 +40368,6 @@ SLPM-66117:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -40409,7 +40377,6 @@ SLPM-66118:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -40419,7 +40386,6 @@ SLPM-66119:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -40876,7 +40842,6 @@ SLPM-66220:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -40888,7 +40853,6 @@ SLPM-66221:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -40900,7 +40864,6 @@ SLPM-66222:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -40912,7 +40875,6 @@ SLPM-66223:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -40924,7 +40886,6 @@ SLPM-66224:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -42173,8 +42134,8 @@ SLPM-66503:
   name: "METAL GEAR SOLID 2 SONS OF LIBERTY [MEGA HITS!]"
   region: "NTSC-J"
   gameFixes:
+    - DMABusyHack # Fixes broken half-bottom artifacts.
     - BlitInternalFPSHack
-    - InstantDMAHack
   gsHWFixes:
     partialTargetInvalidation: 1
     halfPixelOffset: 2
@@ -43441,7 +43402,6 @@ SLPM-66794:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
 SLPM-66795:
@@ -44188,7 +44148,7 @@ SLPM-67002:
   name: "METAL GEAR SOLID 2 SUBSTANCE"
   region: "NTSC-J"
   gameFixes:
-    - InstantDMAHack
+    - DMABusyHack # Fixes broken half-bottom artifacts.
     - BlitInternalFPSHack
   gsHWFixes:
     roundSprite: 2 # Fixes font artifacts.
@@ -44586,7 +44546,6 @@ SLPM-68516:
   region: "NTSC-J"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
 SLPM-68519:
@@ -45251,7 +45210,6 @@ SLPS-20007:
   gameFixes:
     - EETimingHack # Garbage in FMVs.
     - VUSyncHack # Fixes missing geometry.
-    - InstantDMAHack
   gsHWFixes:
     textureInsideRT: 1
     roundSprite: 1 # Fixes font misalignment when upscaling.
@@ -54363,7 +54321,7 @@ SLUS-20554:
   region: "NTSC-U"
   compat: 5
   gameFixes:
-    - InstantDMAHack
+    - DMABusyHack # Fixes broken half-bottom artifacts.
     - BlitInternalFPSHack
   gsHWFixes:
     roundSprite: 2 # Fixes font artifacts.
@@ -56369,7 +56327,6 @@ SLUS-20915:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
 SLUS-20916:
@@ -58407,7 +58364,6 @@ SLUS-21243:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -59253,7 +59209,6 @@ SLUS-21359:
   compat: 5
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -59263,7 +59218,6 @@ SLUS-21360:
   region: "NTSC-U"
   gameFixes:
     - BlitInternalFPSHack # Fixes internal FPS detection.
-    - InstantDMAHack
   speedHacks:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
@@ -63518,7 +63472,6 @@ TCES-51904:
   gameFixes:
     - EETimingHack # Get rids of DMA8/9 non-fatal errors.
     - VIF1StallHack # Fixes broken HUD.
-    - InstantDMAHack
 TCES-52004:
   name: "Killzone Beta Trial Code"
   region: "PAL-E"
