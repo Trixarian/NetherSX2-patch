@@ -27203,6 +27203,7 @@ SLES-55138:
   gsHWFixes:
     mipmap: 1 # Fixes garbage textures in the distance.
     halfPixelOffset: 2 # Corrects most vertical lines.
+    getSkipCount: "GSC_BlueTongueGames"
 SLES-55143:
   name: "The Chronicles of Narnia - Prince Caspian"
   region: "PAL-G-I"
@@ -61280,6 +61281,7 @@ SLUS-21732:
   gsHWFixes:
     mipmap: 1 # Fixes garbage textures in the distance.
     halfPixelOffset: 2 # Corrects most vertical lines.
+    getSkipCount: "GSC_BlueTongueGames"
 SLUS-21733:
   name: "Sega Superstars Tennis"
   region: "NTSC-U"

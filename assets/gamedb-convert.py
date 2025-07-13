@@ -1,4 +1,4 @@
-# A conversion script that generates working GameDB for use with NetherSX2
+# A conversion script that generates working GameDB files for use with NetherSX2
 # Just drag and drop the GameIndex.yaml file from PCSX2 on to it to process it
 # Requires the ruamel.yaml library to be installed to work
 # Type pip install ruamel.yaml in the terminal to install it
