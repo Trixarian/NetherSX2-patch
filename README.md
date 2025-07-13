@@ -120,7 +120,7 @@ One you've used one of the above methods to create your NetherSX2 apk, it's time
 * [NetherSX2-v2.0-4248.apk](https://github.com/Trixarian/NetherSX2-patch/releases/download/2.0/NetherSX2-v2.0-4248.apk)
 
 ### Development Builds
-* [NetherSX2-v2.0.3-4248.apk](https://github.com/Trixarian/test-builds/releases/download/v2.0.3/NetherSX2-v2.0.3-4248.apk)
+* [NetherSX2.Patched.4248.v2.0.5.apk](https://github.com/Trixarian/test-builds/releases/download/v2.0.5/NetherSX2.Patched.4248.v2.0.5.apk)
 
 ## Credits
 * PCSX2: <https://github.com/PCSX2/pcsx2>
