@@ -1,3 +1,213 @@
+SLES-53764:
+  name: "Atelier Iris - Eternal Mana"
+  region: "PAL-E"
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    roundSprite: 2 # Fixes character portraits when upscaling and reduces lines in FMVs when using HW renderer.
+SLES-54822:
+  name: "Atelier Iris 3 - Grand Phantasm"
+  region: "PAL-E"
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    roundSprite: 1 # Fixes vertical lines in FMVs, character portraits and other sprites.
+SLUS-21327:
+  name: "Atelier Iris 2 - The Azoth of Destiny"
+  region: "NTSC-U"
+  compat: 5
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    roundSprite: 1 # Fixes font artifacts for health and other sprites.
+    texturePreloading: 0 # Improves performance and prevents it disabling itself regardless.
+SLUS-21564:
+  name: "Atelier Iris 3 - Grand Phantasm"
+  region: "NTSC-U"
+  compat: 5
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    roundSprite: 1 # Fixes vertical lines in FMVs, character portraits and other sprites.
+SLES-52541:
+  name: "Grand Theft Auto - San Andreas"
+  region: "PAL-M5"
+  compat: 5
+  clampModes:
+    eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
+  gsHWFixes:
+    autoFlush: 1
+    halfPixelOffset: 2
+    skipDrawStart: 7
+    skipDrawEnd: 3
+SLES-52927:
+  name: "Grand Theft Auto - San Andreas"
+  region: "PAL-G"
+  clampModes:
+    eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
+  gsHWFixes:
+    autoFlush: 1
+    halfPixelOffset: 2
+    skipDrawStart: 7
+    skipDrawEnd: 3
+SLPM-55092:
+  name: "Grand Theft Auto - San Andreas [Best Price]"
+  region: "NTSC-J"
+  clampModes:
+    eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
+  gsHWFixes:
+    autoFlush: 1
+    halfPixelOffset: 2
+    skipDrawStart: 7
+    skipDrawEnd: 3
+SLPM-55292:
+  name: "Grand Theft Auto - San Andreas [Rockstar Classics]"
+  region: "NTSC-J"
+  clampModes:
+    eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
+  gsHWFixes:
+    autoFlush: 1
+    halfPixelOffset: 2
+    skipDrawStart: 7
+    skipDrawEnd: 3
+SLPM-65984:
+  name: "Grand Theft Auto - San Andreas"
+  region: "NTSC-J"
+  clampModes:
+    eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
+  gsHWFixes:
+    autoFlush: 1
+    halfPixelOffset: 2
+    skipDrawStart: 7
+    skipDrawEnd: 3
+SLPM-66788:
+  name: "Grand Theft Auto - San Andreas [Best Price]"
+  region: "NTSC-J"
+  clampModes:
+    eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
+  gsHWFixes:
+    autoFlush: 1
+    halfPixelOffset: 2
+    skipDrawStart: 7
+    skipDrawEnd: 3
+SLUS-20946:
+  name: "Grand Theft Auto - San Andreas"
+  region: "NTSC-U"
+  compat: 5
+  clampModes:
+    eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
+  gsHWFixes:
+    autoFlush: 1
+    halfPixelOffset: 2
+    skipDrawStart: 7
+    skipDrawEnd: 3
+SLES-51541:
+  name: "Grand Theft Auto - San Andreas"
+  region: "PAL-Unk"
+  clampModes:
+    eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
+  gsHWFixes:
+    autoFlush: 1
+    halfPixelOffset: 2
+    skipDrawStart: 7
+    skipDrawEnd: 3
+SLES-53028:
+  name: "Hitman - Blood Money"
+  region: "PAL-E"
+  clampModes:
+    vuClampMode: 0 # Fixes bump mapping issues.
+  gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
+    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
+    autoFlush: 1 # Fixes sun intensity.
+    textureInsideRT: 1 # Fixes post-processing.
+  patches:
+    default:
+      content: |-
+        comment=Fixes Hitman Blood Money's Graphics
+        patch=1,EE,002ABE58,word,00000000
+        patch=1,EE,00497DD0,word,00000000
+SLES-53029:
+  name: "Hitman - Blood Money"
+  region: "PAL-F"
+  clampModes:
+    vuClampMode: 0 # Fixes bump mapping issues.
+  gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
+    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
+    autoFlush: 1 # Fixes sun intensity.
+    textureInsideRT: 1 # Fixes post-processing.
+  patches:
+    default:
+      content: |-
+        comment=Fixes Hitman Blood Money's Graphics
+        patch=1,EE,002ABE58,word,00000000
+        patch=1,EE,00497DD0,word,00000000
+SLES-53030:
+  name: "Hitman - Blood Money"
+  region: "PAL-G"
+  clampModes:
+    vuClampMode: 0 # Fixes bump mapping issues.
+  gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
+    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
+    autoFlush: 1 # Fixes sun intensity.
+    textureInsideRT: 1 # Fixes post-processing.
+  patches:
+    default:
+      content: |-
+        comment=Fixes Hitman Blood Money's Graphics
+        patch=1,EE,002ABE58,word,00000000
+        patch=1,EE,00497DD0,word,00000000
+SLES-53031:
+  name: "Hitman - Blood Money"
+  region: "PAL-I"
+  clampModes:
+    vuClampMode: 0 # Fixes bump mapping issues.
+  gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
+    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
+    autoFlush: 1 # Fixes sun intensity.
+    textureInsideRT: 1 # Fixes post-processing.
+  patches:
+    default:
+      content: |-
+        comment=Fixes Hitman Blood Money's Graphics
+        patch=1,EE,002ABE58,word,00000000
+        patch=1,EE,00497DD0,word,00000000
+SLES-53032:
+  name: "Hitman - Blood Money"
+  region: "PAL-S"
+  clampModes:
+    vuClampMode: 0 # Fixes bump mapping issues.
+  gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
+    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
+    autoFlush: 1 # Fixes sun intensity.
+    textureInsideRT: 1 # Fixes post-processing.
+  patches:
+    default:
+      content: |-
+        comment=Fixes Hitman Blood Money's Graphics
+        patch=1,EE,002ABE58,word,00000000
+        patch=1,EE,00497DD0,word,00000000
+SLUS-21108:
+  name: "Hitman - Blood Money"
+  region: "NTSC-U"
+  compat: 5
+  clampModes:
+    vuClampMode: 0 # Fixes bump mapping issues
+  gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
+    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
+    autoFlush: 1 # Fixes sun intensity.
+    textureInsideRT: 1 # Fixes post-processing.
+  patches:
+    default:
+      content: |-
+        comment=Fixes Hitman Blood Money's Graphics
+        patch=1,EE,002ABE58,word,00000000
+        patch=1,EE,00497DD0,word,00000000
 SCAJ-20028:
   name: "Tales of Destiny 2"
   region: "NTSC-Unk"
@@ -228,3 +438,69 @@ SLUS-21386:
         author=sergx12
         comment=Black Grid Fix
         patch=1,EE,205E570C,extended,00000000
+SLES-51252:
+  name: "The Lord of the Rings - The Two Towers"
+  region: "PAL-M3"
+  compat: 5
+  clampModes:
+    vuClampMode: 3 # Fix white shiny weapons.
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
+SLPM-65212:
+  name: "The Lord of the Rings - The Two Towers"
+  region: "NTSC-J"
+  clampModes:
+    vuClampMode: 3 # Fixes white shiny weapons.
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
+SLPM-67005:
+  name: "The Lord of the Rings - The Two Towers [EA Best Hits]"
+  region: "NTSC-J"
+  clampModes:
+    vuClampMode: 3 # Fix white shiny weapons.
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
+SLPM-67546:
+  name: "The Lord of the Rings - The Two Towers"
+  region: "NTSC-K"
+  clampModes:
+    vuClampMode: 3 # Fix white shiny weapons.
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
+SLPS-29003:
+  name: "The Lord of the Rings - The Two Towers [Collector's Box]"
+  region: "NTSC-J"
+  clampModes:
+    vuClampMode: 3 # Fix white shiny weapons.
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
+SLPS-29004:
+  name: "The Lord of the Rings - The Two Towers"
+  region: "NTSC-J"
+  compat: 5
+  clampModes:
+    vuClampMode: 3 # Fix white shiny weapons.
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
+SLUS-20578:
+  name: "The Lord of the Rings - The Two Towers"
+  region: "NTSC-U"
+  compat: 5
+  clampModes:
+    vuClampMode: 3 # Fix white shiny weapons.
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes misaligned lighting and other effects.

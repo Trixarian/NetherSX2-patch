@@ -40,7 +40,7 @@ def sort_keys(my_dict):
     return sorted_data
 
 def process_db(file_name, clean_name):
-    if not file_name == 'GameIndex[temp3].yaml': print('Processing ' + os.path.basename(file_name) + '...')
+    if not file_name == 'GameIndex[temp2].yaml': print('Processing ' + os.path.basename(file_name) + '...')
     if os.path.isfile(clean_name) and clean_name == 'GameIndex[fixed].yaml': os.remove('GameIndex[fixed].yaml')
     if os.path.isfile('GameIndex[temp].yaml'): os.remove('GameIndex[temp].yaml')
     with open(file_name, encoding='utf8') as newfile, open('GameIndex[temp].yaml', 'w', encoding='utf8') as tempfile:
@@ -59,8 +59,8 @@ def process_db(file_name, clean_name):
 def restore_fix(file_name):
     req_sort = False
     print('Processing ' + os.path.basename(file_name) + '...')
-    if os.path.isfile('GameIndex[temp3].yaml'): os.remove('GameIndex[temp3].yaml')
-    with open(file_name, encoding='utf8') as newfile, open('GameIndex[temp3].yaml', 'w', encoding='utf8') as tempfile:
+    if os.path.isfile('GameIndex[temp2].yaml'): os.remove('GameIndex[temp2].yaml')
+    with open(file_name, encoding='utf8') as newfile, open('GameIndex[temp2].yaml', 'w', encoding='utf8') as tempfile:
         my_dict = yaml.load(newfile)
         for key, value in my_dict.items():
             if 'roundModes' in value and 'eeDivRoundMode' in value['roundModes']:
@@ -76,7 +76,7 @@ def restore_fix(file_name):
                 except KeyError: continue
         if req_sort: my_dict.update(sort_keys(my_dict))
         yaml.dump(my_dict, tempfile)
-    process_db('GameIndex[temp3].yaml', 'GameIndex[fixed].yaml')
+    process_db('GameIndex[temp2].yaml', 'GameIndex[fixed].yaml')
 
 def process_dict(my_dict, new_dict):
     req_sort = False
@@ -145,8 +145,10 @@ def process_dict(my_dict, new_dict):
                         if my_dict[key]['gsHWFixes'][nested_key]: continue
                     except KeyError:
                         my_dict[key]['gsHWFixes'][nested_key] = new_dict[key]['gsHWFixes'][nested_key]
-        if key in jakkey_list and key in my_dict: my_dict[key]['gsHWFixes']['beforeDraw'] = "OI_JakGames"
-
+        if key in jakkey_list and key in my_dict: 
+            my_dict[key]['gsHWFixes']['skipDrawStart'] = 1
+            my_dict[key]['gsHWFixes']['skipDrawEnd'] = 1
+            my_dict[key]['gsHWFixes']['beforeDraw'] = "OI_JakGames"
     if req_sort: my_dict.update(sort_keys(my_dict))
     return my_dict
 
@@ -170,7 +172,7 @@ else:
 restore_fix(gamedb_file)
 print('Creating GameIndex[fixed].yaml...')
 fix_db('GameIndex[fixed].yaml')
-if os.path.isfile('GameIndex[temp3].yaml'): os.remove('GameIndex[temp3].yaml')
+if os.path.isfile('GameIndex[temp2].yaml'): os.remove('GameIndex[temp2].yaml')
 with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex[PTI].yaml', encoding='utf8') as og, open('GameIndex[diff].yaml', encoding='utf8') as diff, open('GameIndex[merged].yaml', 'w', encoding='utf8') as merged:
     print('Loading GameDB entries to merge...')
     base_db = yaml.load(base)
