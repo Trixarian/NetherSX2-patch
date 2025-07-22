@@ -135,6 +135,9 @@ PAPX-90202:
 PAPX-90203:
   name: "Gran Turismo 2000 [Trial]"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes edge bleed and lines.
+    autoFlush: 1 # Fixes missing lens flare and intensity.
 PAPX-90204:
   name: "TVDJ [Trial]"
   region: "NTSC-J"
@@ -15966,7 +15969,7 @@ SLES-51230:
   gsHWFixes:
     cpuCLUTRender: 1 # Fixes light bleed through objects.
     halfPixelOffset: 1
-    gpuTargetCLUT: 1
+    gpuTargetCLUT: 2
 SLES-51232:
   name: "Virtua Tennis 2"
   region: "PAL-M4"
@@ -16227,14 +16230,14 @@ SLES-51317:
   gsHWFixes:
     cpuCLUTRender: 1 # Fixes light bleed through objects.
     halfPixelOffset: 1
-    gpuTargetCLUT: 1
+    gpuTargetCLUT: 2
 SLES-51318:
   name: "Minority Report - Everybody Runs"
   region: "PAL-G"
   gsHWFixes:
     cpuCLUTRender: 1 # Fixes light bleed through objects.
     halfPixelOffset: 1
-    gpuTargetCLUT: 1
+    gpuTargetCLUT: 2
 SLES-51322:
   name: "Robotech - Battlecry"
   region: "PAL-M5"
@@ -21054,18 +21057,28 @@ SLES-53142:
 SLES-53143:
   name: "Fantastic 4"
   region: "PAL-E"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes large depth line.
 SLES-53144:
   name: "4 Fantastiques, Les"
   region: "PAL-F"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes large depth line.
 SLES-53145:
   name: "Fantastic 4"
   region: "PAL-G"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes large depth line.
 SLES-53146:
   name: "I Fantastici Quattro"
   region: "PAL-I"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes large depth line.
 SLES-53147:
   name: "4 Fantásticos, Los"
   region: "PAL-S"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes large depth line.
 SLES-53148:
   name: "Fruitfall"
   region: "PAL-E"
@@ -21303,6 +21316,8 @@ SLES-53280:
 SLES-53281:
   name: "Fantastic 4"
   region: "PAL-NL"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes large depth line.
 SLES-53282:
   name: "Harvest Fishing"
   region: "PAL-E"
@@ -28098,7 +28113,7 @@ SLES-55451:
   name: "Rock Band 2"
   region: "PAL-M5"
 SLES-55452:
-  name: "Rock Band 2"
+  name: "Shaun White Snowboarding"
   region: "PAL-M5"
 SLES-55453:
   name: "SingStar - Queen"
@@ -32661,6 +32676,8 @@ SLPM-60279:
   name: "Kamen Rider Kabuto [Trial]"
   region: "NTSC-J"
   gsHWFixes:
+    halfPixelOffset: 2 # Fixes post-processing alignment.
+    textureInsideRT: 1 # Fixes garbage and missing effects.
     autoFlush: 1 # Fixes garbage corruptions on the bottom of the screen.
 SLPM-60280:
   name: "Dengeki PS2 - PlayStation 2 Save Data Collection 2007"
@@ -46709,6 +46726,8 @@ SLPS-20483:
   name: "Kamen Rider Kabuto"
   region: "NTSC-J"
   gsHWFixes:
+    halfPixelOffset: 2 # Fixes post-processing alignment.
+    textureInsideRT: 1 # Fixes garbage and missing effects.
     autoFlush: 1 # Fixes garbage corruptions on the bottom of the screen.
 SLPS-20484:
   name: "Simple 2000 Series Ultimate Vol. 34 - Sakigake!! Otokojuku"
@@ -53146,7 +53165,7 @@ SLUS-20331:
   gsHWFixes:
     cpuCLUTRender: 1 # Fixes light bleed through objects.
     halfPixelOffset: 1
-    gpuTargetCLUT: 1
+    gpuTargetCLUT: 2
 SLUS-20332:
   name: "NCAA March Madness 2002"
   region: "NTSC-U"
@@ -54684,6 +54703,8 @@ SLUS-20615:
   name: "Fantastic 4"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes large depth line.
 SLUS-20616:
   name: "Virtua Fighter 4 - Evolution"
   region: "NTSC-U"
