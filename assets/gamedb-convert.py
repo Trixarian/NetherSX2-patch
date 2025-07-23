@@ -26,6 +26,7 @@ speed_list = ['mvuFlagSpeedHack', 'InstantVU1SpeedHack', 'MTVUSpeedHack']
 hwfix_list = ['cpuFramebufferConversion', 'readTCOnClose', 'disableDepthSupport', 'preloadFrameData', 'disablePartialInvalidation', 'partialTargetInvalidation', 'textureInsideRT', 'alignSprite', 'mergeSprite', 'wildArmsHack', 'estimateTextureRegion', 'PCRTCOffsets', 'PCRTCOverscan', 'mipmap', 'trilinearFiltering', 'skipDrawStart', 'skipDrawEnd', 'halfBottomOverride', 'halfPixelOffset', 'roundSprite', 'texturePreloading', 'deinterlace', 'cpuCLUTRender', 'gpuTargetCLUT', 'gpuPaletteConversion', 'minimumBlendingLevel', 'maximumBlendingLevel', 'getSkipCount', 'beforeDraw']
 ignore_keys = ['SLES-50876', 'SLES-52153' , 'SLKA-25196' , 'SLPM-61092' , 'SLPM-65741' , 'SLUS-20587']
 ignore_list = ['bilinearUpscale', 'cpuSpriteRenderLevel', 'eeCycleRate', 'GSC_DTGames', 'GSC_GuitarHero', 'GSC_HitmanBloodMoney', 'GSC_MetalGearSolid3', 'GSC_NFSUndercover', 'GSC_PolyphonyDigitalGames', 'GSC_SandGrainGames', 'GSC_Turok', 'name-sort', 'nativePaletteDraw', 'nativeScaling', 'OI_HauntingGround', 'recommendedBlendingLevel']
+softfmv_list = ['SLES-53764', 'SLES-54822', 'SLUS-21327', 'SLUS-21564', 'SLES-51252', 'SLPM-65212', 'SLPM-67005', 'SLPM-67546', 'SLPS-29003', 'SLPS-29004', 'SLUS-20578']
 sdkey_dict = {'PAPX-90222': [1, 1], 'PAPX-90223': [1, 1], 'PAPX-90516': [1, 1], 'SCED-50614': [1, 1], 'SCED-53660': [1, 1], 'SCES-50361': [1, 1], 'SCES-50614': [1, 1], 'SCES-55510': [1, 1], 'SCPS-15021': [1, 1], 'SCPS-19210': [1, 1], 'SCPS-55004': [1, 1], 'SCPS-56003': [1, 1], 'SCUS-97124': [1, 1], 'SCUS-97170': [1, 1], 'SCUS-97171': [1, 1], 'SCUS-97274': [1, 1], 'SCUS-97440': [1, 1], 'SCUS-97558': [1, 1], 'SLAJ-25080': [1, 1], 'SLES-53967': [1, 1], 'SLKA-25338': [1, 1], 'SLPM-66710': [1, 1], 'SLPM-66966': [1, 1], 'SLUS-21385': [1, 1], 'SLUS-21406': [1, 1], 'SCAJ-20073': [1, 1], 'SCED-51700': [1, 1], 'SCED-52952': [1, 1], 'SCES-51608': [1, 1], 'SCES-52460': [1, 1], 'SCES-53286': [1, 1], 'SCKA-20010': [1, 1], 'SCKA-20040': [1, 1], 'SCPS-15057': [1, 1], 'SCUS-97265': [1, 1], 'SCUS-97273': [1, 1], 'SCUS-97330': [1, 1], 'SCUS-97374': [1, 1], 'SCUS-97412': [1, 1], 'SCUS-97429': [1, 1], 'SCUS-97486': [1, 1], 'SCUS-97488': [1, 1], 'SCUS-97509': [1, 1], 'SCUS-97516': [1, 1], 'SCUS-97555': [1, 1], 'SCUS-97574': [1, 1], 'TCES-53286': [1, 1], 'SLES-52541': [7, 3], 'SLES-52927': [7, 3], 'SLPM-55092': [7, 3], 'SLPM-55292': [7, 3], 'SLPM-65984': [7, 3], 'SLPM-66788': [7, 3], 'SLUS-20946': [7, 3], 'SLES-51541': [7, 3]}
 replace_dict = {'autoFlush: 2': 'autoFlush: 1', 'beforeDraw: OI_JakGames': 'beforeDraw: "OI_JakGames"', 'forceEvenSpritePosition:': 'wildArmsHack:', 'GSC_NamcoGames': 'GSC_Tekken5', 'halfPixelOffset: 4': 'halfPixelOffset: 2', 'halfPixelOffset: 5': 'halfPixelOffset: 2', 'instantVU1:': 'InstantVU1SpeedHack:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:', 'PlayStation2': 'PlayStation 2', '～': ''}
 
@@ -151,11 +152,14 @@ def process_dict(my_dict, new_dict):
             my_dict[key]['gsHWFixes']['skipDrawStart'] = sdkey_dict[key][0]
             my_dict[key]['gsHWFixes']['skipDrawEnd'] = sdkey_dict[key][1]
             if 'Jak' in my_dict[key]['name']: my_dict[key]['gsHWFixes']['beforeDraw'] = "OI_JakGames"
+        if key in softfmv_list and key in my_dict:
+            if 'gameFixes' in value: my_dict[key]['gameFixes'].append('SoftwareRendererFMVHack')
+            else: my_dict[key]['gameFixes'] = ['SoftwareRendererFMVHack']
     if req_sort: my_dict.update(sort_keys(my_dict))
     return my_dict
 
 def fix_db(file_name):
-    print('Removing empty keys from ' + file_name + '...')
+    print('Removing invalid keys from ' + file_name + '...')
     with open(file_name, encoding='utf8') as newfile, open('GameIndex[temp].yaml', 'w', encoding='utf8') as tempfile:
         data = yaml.load(newfile)
         yaml.dump(data, tempfile)
