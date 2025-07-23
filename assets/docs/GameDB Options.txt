@@ -70,7 +70,7 @@ gsHWFixes:
     cpuSpriteRenderBW - in both with the maximum value of 10
     cpuSpriteRenderLevel - missing in both, added 28 March 2023
     cpuCLUTRender
-    gpuTargetCLUT - in 4248, not in 3668
+    gpuTargetCLUT - in 4248, not in 3668 - above option might be a good replacement for 3668
     gpuPaletteConversion
     minimumBlendingLevel - in 4248, not in 3668
     maximumBlendingLevel - in 4248, not in 3668

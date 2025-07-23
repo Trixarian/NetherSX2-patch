@@ -24,8 +24,9 @@ round_list = ['eeRoundMode', 'vuRoundMode', 'vu0RoundMode', 'vu1RoundMode']
 gmfix_list = ['BlitInternalFPSHack', 'DMABusyHack', 'EETimingHack', 'FpuMulHack', 'GIFFIFOHack', 'GoemonTlbHack', 'IbitHack', 'OPHFlagHack', 'SkipMPEGHack', 'SoftwareRendererFMVHack', 'VIF1StallHack', 'VIFFIFOHack', 'VuAddSubHack', 'VUOverflowHack', 'FullVU0SyncHack', 'VUSyncHack', 'XGKickHack']
 speed_list = ['mvuFlagSpeedHack', 'InstantVU1SpeedHack', 'MTVUSpeedHack']
 hwfix_list = ['cpuFramebufferConversion', 'readTCOnClose', 'disableDepthSupport', 'preloadFrameData', 'disablePartialInvalidation', 'partialTargetInvalidation', 'textureInsideRT', 'alignSprite', 'mergeSprite', 'wildArmsHack', 'estimateTextureRegion', 'PCRTCOffsets', 'PCRTCOverscan', 'mipmap', 'trilinearFiltering', 'skipDrawStart', 'skipDrawEnd', 'halfBottomOverride', 'halfPixelOffset', 'roundSprite', 'texturePreloading', 'deinterlace', 'cpuCLUTRender', 'gpuTargetCLUT', 'gpuPaletteConversion', 'minimumBlendingLevel', 'maximumBlendingLevel', 'getSkipCount', 'beforeDraw']
-jakkey_list = ['PAPX-90222', 'PAPX-90223', 'SCED-50614', 'SCED-53660', 'SCES-50361', 'SCES-50614', 'SCES-55510', 'SCPS-15021', 'SCPS-19210', 'SCPS-55004', 'SCPS-56003', 'SCUS-97124', 'SCUS-97170', 'SCUS-97171', 'SCUS-97274', 'SCUS-97440', 'SCUS-97558']
+ignore_keys = ['SLES-50876', 'SLES-52153' , 'SLKA-25196' , 'SLPM-61092' , 'SLPM-65741' , 'SLUS-20587']
 ignore_list = ['bilinearUpscale', 'cpuSpriteRenderLevel', 'eeCycleRate', 'GSC_DTGames', 'GSC_GuitarHero', 'GSC_HitmanBloodMoney', 'GSC_MetalGearSolid3', 'GSC_NFSUndercover', 'GSC_PolyphonyDigitalGames', 'GSC_SandGrainGames', 'GSC_Turok', 'name-sort', 'nativePaletteDraw', 'nativeScaling', 'OI_HauntingGround', 'recommendedBlendingLevel']
+sdkey_dict = {'PAPX-90222': [1, 1], 'PAPX-90223': [1, 1], 'PAPX-90516': [1, 1], 'SCED-50614': [1, 1], 'SCED-53660': [1, 1], 'SCES-50361': [1, 1], 'SCES-50614': [1, 1], 'SCES-55510': [1, 1], 'SCPS-15021': [1, 1], 'SCPS-19210': [1, 1], 'SCPS-55004': [1, 1], 'SCPS-56003': [1, 1], 'SCUS-97124': [1, 1], 'SCUS-97170': [1, 1], 'SCUS-97171': [1, 1], 'SCUS-97274': [1, 1], 'SCUS-97440': [1, 1], 'SCUS-97558': [1, 1], 'SLAJ-25080': [1, 1], 'SLES-53967': [1, 1], 'SLKA-25338': [1, 1], 'SLPM-66710': [1, 1], 'SLPM-66966': [1, 1], 'SLUS-21385': [1, 1], 'SLUS-21406': [1, 1], 'SCAJ-20073': [1, 1], 'SCED-51700': [1, 1], 'SCED-52952': [1, 1], 'SCES-51608': [1, 1], 'SCES-52460': [1, 1], 'SCES-53286': [1, 1], 'SCKA-20010': [1, 1], 'SCKA-20040': [1, 1], 'SCPS-15057': [1, 1], 'SCUS-97265': [1, 1], 'SCUS-97273': [1, 1], 'SCUS-97330': [1, 1], 'SCUS-97374': [1, 1], 'SCUS-97412': [1, 1], 'SCUS-97429': [1, 1], 'SCUS-97486': [1, 1], 'SCUS-97488': [1, 1], 'SCUS-97509': [1, 1], 'SCUS-97516': [1, 1], 'SCUS-97555': [1, 1], 'SCUS-97574': [1, 1], 'TCES-53286': [1, 1], 'SLES-52541': [7, 3], 'SLES-52927': [7, 3], 'SLPM-55092': [7, 3], 'SLPM-55292': [7, 3], 'SLPM-65984': [7, 3], 'SLPM-66788': [7, 3], 'SLUS-20946': [7, 3], 'SLES-51541': [7, 3]}
 replace_dict = {'autoFlush: 2': 'autoFlush: 1', 'beforeDraw: OI_JakGames': 'beforeDraw: "OI_JakGames"', 'forceEvenSpritePosition:': 'wildArmsHack:', 'GSC_NamcoGames': 'GSC_Tekken5', 'halfPixelOffset: 4': 'halfPixelOffset: 2', 'halfPixelOffset: 5': 'halfPixelOffset: 2', 'instantVU1:': 'InstantVU1SpeedHack:', 'mtvu:': 'MTVUSpeedHack:', 'mvuFlag:': 'mvuFlagSpeedHack:', 'name-en:': 'name:', 'PlayStation2': 'PlayStation 2', '～': ''}
 
 def sort_keys(my_dict):
@@ -41,7 +42,7 @@ def sort_keys(my_dict):
 
 def process_db(file_name, clean_name):
     if not file_name == 'GameIndex[temp2].yaml': print('Processing ' + os.path.basename(file_name) + '...')
-    if os.path.isfile(clean_name) and clean_name == 'GameIndex[fixed].yaml': os.remove('GameIndex[fixed].yaml')
+    if os.path.isfile(clean_name) and clean_name == 'GameIndex[converted].yaml': os.remove('GameIndex[converted].yaml')
     if os.path.isfile('GameIndex[temp].yaml'): os.remove('GameIndex[temp].yaml')
     with open(file_name, encoding='utf8') as newfile, open('GameIndex[temp].yaml', 'w', encoding='utf8') as tempfile:
         prev_line = ''
@@ -76,7 +77,7 @@ def restore_fix(file_name):
                 except KeyError: continue
         if req_sort: my_dict.update(sort_keys(my_dict))
         yaml.dump(my_dict, tempfile)
-    process_db('GameIndex[temp2].yaml', 'GameIndex[fixed].yaml')
+    process_db('GameIndex[temp2].yaml', 'GameIndex[converted].yaml')
 
 def process_dict(my_dict, new_dict):
     req_sort = False
@@ -89,6 +90,7 @@ def process_dict(my_dict, new_dict):
                         my_dict[key][nested_key] = new_dict[key][nested_key] 
                 except KeyError: continue
     for key, value in new_dict.items():
+        if key in ignore_keys: continue
         for nested_key in key_list:
             if nested_key in value and key in my_dict:
                 try:
@@ -145,10 +147,10 @@ def process_dict(my_dict, new_dict):
                         if my_dict[key]['gsHWFixes'][nested_key]: continue
                     except KeyError:
                         my_dict[key]['gsHWFixes'][nested_key] = new_dict[key]['gsHWFixes'][nested_key]
-        if key in jakkey_list and key in my_dict: 
-            my_dict[key]['gsHWFixes']['skipDrawStart'] = 1
-            my_dict[key]['gsHWFixes']['skipDrawEnd'] = 1
-            my_dict[key]['gsHWFixes']['beforeDraw'] = "OI_JakGames"
+        if key in sdkey_dict and key in my_dict: 
+            my_dict[key]['gsHWFixes']['skipDrawStart'] = sdkey_dict[key][0]
+            my_dict[key]['gsHWFixes']['skipDrawEnd'] = sdkey_dict[key][1]
+            if 'Jak' in my_dict[key]['name']: my_dict[key]['gsHWFixes']['beforeDraw'] = "OI_JakGames"
     if req_sort: my_dict.update(sort_keys(my_dict))
     return my_dict
 
@@ -170,10 +172,10 @@ else:
     sys.exit()
 
 restore_fix(gamedb_file)
-print('Creating GameIndex[fixed].yaml...')
-fix_db('GameIndex[fixed].yaml')
+print('Creating GameIndex[converted].yaml...')
+fix_db('GameIndex[converted].yaml')
 if os.path.isfile('GameIndex[temp2].yaml'): os.remove('GameIndex[temp2].yaml')
-with open('GameIndex[fixed].yaml', encoding='utf8') as base, open('old/GameIndex[PTI].yaml', encoding='utf8') as og, open('GameIndex[diff].yaml', encoding='utf8') as diff, open('GameIndex[merged].yaml', 'w', encoding='utf8') as merged:
+with open('GameIndex[converted].yaml', encoding='utf8') as base, open('old/GameIndex[PTI].yaml', encoding='utf8') as og, open('GameIndex[override].yaml', encoding='utf8') as diff, open('GameIndex[merged].yaml', 'w', encoding='utf8') as merged:
     print('Loading GameDB entries to merge...')
     base_db = yaml.load(base)
     og_db = yaml.load(og)
