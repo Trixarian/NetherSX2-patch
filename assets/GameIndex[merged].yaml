@@ -3381,8 +3381,11 @@ SCED-52461:
 SCED-52491:
   name: "Athens 2004"
   region: "PAL-M6"
+SCED-52496:
+  name: "This Is Football 2004 [Demo]"
+  region: "PAL-M4"
 SCED-52497:
-  name: "This is Football 2004"
+  name: "This Is Football 2004 [Demo]"
   region: "PAL-M4"
 SCED-52549:
   name: "Official PlayStation 2 Magazine Demo 47"
@@ -25052,7 +25055,7 @@ SLES-54434:
   name: "Babe"
   region: "PAL-A"
 SLES-54435:
-  name: "Babe"
+  name: "Casper and the Ghostly Trio"
   region: "PAL-A"
 SLES-54436:
   name: "Jumanji"
