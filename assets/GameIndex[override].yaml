@@ -105,12 +105,20 @@ SCAJ-20028:
 SCAJ-20112:
   name: "Tales of Rebirth"
   region: "NTSC-Unk"
+  compat: 5
   speedHacks:
     mvuFlagSpeedHack: 0 # Fixes graphical corruptions.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+  patches:
+    default:
+      content: |-
+        author=Ethanol
+        comment=Kills the sun (a bit)
+        patch=1,EE,D0237070,extended,01000006
+        patch=1,EE,202F01A8,extended,0000102D
 SCAJ-20145:
   name: "Tales of Legendia"
   region: "NTSC-J"
@@ -230,6 +238,13 @@ SLPS-25450:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+  patches:
+    default:
+      content: |-
+        author=Ethanol
+        comment=Kills the sun (a bit)
+        patch=1,EE,D0237070,extended,01000006
+        patch=1,EE,202F01A8,extended,0000102D
 SLPS-25533:
   name: "Tales of Legendia"
   region: "NTSC-J"
