@@ -102,6 +102,7 @@ SCAJ-20028:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCAJ-20112:
   name: "Tales of Rebirth"
   region: "NTSC-Unk"
@@ -112,6 +113,7 @@ SCAJ-20112:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
   patches:
     default:
       content: |-
@@ -128,6 +130,7 @@ SCAJ-20145:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SCAJ-20163:
   name: "Tales of the Abyss"
@@ -150,6 +153,7 @@ SCAJ-20182:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCAJ-20193:
   name: "Tales of Destiny [Director's Cut] [Premium Box]"
   region: "NTSC-C-J"
@@ -159,6 +163,7 @@ SCAJ-20193:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCKA-20008:
   name: "Tales of Destiny 2"
   region: "NTSC-K"
@@ -167,6 +172,7 @@ SCKA-20008:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCKA-20050:
   name: "Tales of Legendia"
   region: "NTSC-K"
@@ -177,6 +183,7 @@ SCKA-20050:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20054:
   name: "Tales of Destiny 2 [PlayStation 2 Big Hit Series]"
@@ -185,6 +192,7 @@ SCKA-20054:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCKA-20100:
   name: "Tales of Destiny"
   region: "NTSC-K"
@@ -194,6 +202,7 @@ SCKA-20100:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCKA-20119:
   name: "Tales of Destiny - Director's Cut"
   region: "NTSC-K"
@@ -203,6 +212,7 @@ SCKA-20119:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCKA-20129:
   name: "Tales of Legendia"
   region: "NTSC-K"
@@ -213,6 +223,7 @@ SCKA-20129:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SCPS-55050:
   name: "Tales of Destiny 2"
@@ -221,6 +232,7 @@ SCPS-55050:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SLPS-25172:
   name: "Tales of Destiny 2"
   region: "NTSC-J"
@@ -228,6 +240,7 @@ SLPS-25172:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SLPS-25450:
   name: "Tales of Rebirth"
   region: "NTSC-J"
@@ -238,6 +251,7 @@ SLPS-25450:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
   patches:
     default:
       content: |-
@@ -255,6 +269,7 @@ SLPS-25533:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-25715:
   name: "Tales of Destiny"
@@ -265,6 +280,7 @@ SLPS-25715:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SLPS-25841:
   name: "Tales of Destiny [Director's Cut] [Premium Box]"
   region: "NTSC-J"
@@ -274,6 +290,7 @@ SLPS-25841:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
   memcardFilters: # Allows import of non-DC Tales of Destiny data.
     - "SLPS-25841"
     - "SLPS-25842"
@@ -288,6 +305,7 @@ SLPS-25842:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
   memcardFilters:
     - "SLPS-25841"
     - "SLPS-25842"
@@ -299,6 +317,7 @@ SLPS-72502:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SLPS-73219:
   name: "Tales of Destiny 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
@@ -306,6 +325,7 @@ SLPS-73219:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SLPS-73242:
   name: "Tales of Legendia [PlayStation 2 the Best]"
   region: "NTSC-J"
@@ -315,6 +335,7 @@ SLPS-73242:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SLUS-21201:
   name: "Tales of Legendia"
@@ -326,6 +347,7 @@ SLUS-21201:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SLUS-21386:
   name: "Tales of the Abyss"
