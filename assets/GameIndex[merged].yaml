@@ -1318,6 +1318,8 @@ SCAJ-20074:
 SCAJ-20075:
   name: "Dragon Quest V - Bride of the Sky"
   region: "NTSC-Unk"
+  gameFixes:
+    - FpuNegDivHack
 SCAJ-20076:
   name: "Armored Core - Nexus [Disc 1]"
   region: "NTSC-Unk"
@@ -38288,6 +38290,8 @@ SLPM-65555:
   name: "Dragon Quest V - Tenkuu no Hanayome"
   region: "NTSC-J"
   compat: 5
+  gameFixes:
+    - FpuNegDivHack
 SLPM-65556:
   name: "Nobunaga no Yabou - Tenka Sousei"
   region: "NTSC-J"
@@ -42190,6 +42194,8 @@ SLPM-66480:
   name: "Dragon Quest V - Tenkuu no Hanayome [Ultimate Hits]"
   region: "NTSC-J"
   compat: 5
+  gameFixes:
+    - FpuNegDivHack
 SLPM-66481:
   name: "Dragon Quest VIII - Sora to Umi to Daichi to Norowareshi Himegimi [Ultimate Hits]"
   region: "NTSC-J"
