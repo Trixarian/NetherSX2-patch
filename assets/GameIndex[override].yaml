@@ -135,6 +135,7 @@ SCAJ-20145:
 SCAJ-20163:
   name: "Tales of the Abyss"
   region: "NTSC-Unk"
+  compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
     autoFlush: 1 # Fixes post lighting.
@@ -142,8 +143,9 @@ SCAJ-20163:
     default:
       content: |-
         author=sergx12
-        comment=Black Grid Fix
+        comment=Black Grid & No Bloom fixes
         patch=1,EE,205E570C,extended,00000000
+        patch=1,EE,0011A668,word,00000000
 SCAJ-20182:
   name: "Tales of Destiny"
   region: "NTSC-Unk"
@@ -360,5 +362,6 @@ SLUS-21386:
     default:
       content: |-
         author=sergx12
-        comment=Black Grid Fix
+        comment=Black Grid & No Bloom fixes
         patch=1,EE,205E570C,extended,00000000
+        patch=1,EE,0011A668,word,00000000

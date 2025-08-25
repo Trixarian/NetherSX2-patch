@@ -1902,6 +1902,7 @@ SCAJ-20162:
 SCAJ-20163:
   name: "Tales of the Abyss"
   region: "NTSC-Unk"
+  compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
     autoFlush: 1 # Fixes post lighting.
@@ -1909,8 +1910,9 @@ SCAJ-20163:
     default:
       content: |-
         author=sergx12
-        comment=Black Grid Fix
+        comment=Black Grid & No Bloom fixes
         patch=1,EE,205E570C,extended,00000000
+        patch=1,EE,0011A668,word,00000000
 SCAJ-20164:
   name: "Kingdom Hearts II"
   region: "NTSC-Unk"
@@ -2572,6 +2574,7 @@ SCED-50642:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SCED-50660:
   name: "Dropship - United Peace Force"
   region: "PAL-A"
@@ -4461,6 +4464,7 @@ SCES-50490:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SCES-50491:
   name: "Final Fantasy X"
   region: "PAL-F"
@@ -4476,6 +4480,7 @@ SCES-50491:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SCES-50492:
   name: "Final Fantasy X"
   region: "PAL-G"
@@ -4492,6 +4497,7 @@ SCES-50492:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters..
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SCES-50493:
   name: "Final Fantasy X"
   region: "PAL-I"
@@ -4507,6 +4513,7 @@ SCES-50493:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SCES-50494:
   name: "Final Fantasy X"
   region: "PAL-S"
@@ -4522,6 +4529,7 @@ SCES-50494:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SCES-50499:
   name: "Ecco the Dolphin - Defender of the Future"
   region: "PAL-M5"
@@ -12810,7 +12818,6 @@ SLED-53731:
     cpuCLUTRender: 1 # Fixes light shining through objects.
     getSkipCount: "GSC_Battlefield2" # Depth clear.
     beforeDraw: "OI_Battlefield2" # Framebuffer copy, fixes rendering for bottom part of screen.
-    minimumBlendingLevel: 4
 SLED-53732:
   name: "Spartan - Total Warrior [Demo]"
   region: "PAL"
@@ -23024,7 +23031,6 @@ SLES-53729:
     cpuCLUTRender: 1 # Fixes light shining through objects.
     getSkipCount: "GSC_Battlefield2" # Depth clear.
     beforeDraw: "OI_Battlefield2" # Framebuffer copy, fixes rendering for bottom part of screen.
-    minimumBlendingLevel: 4
 SLES-53730:
   name: "Battlefield 2 - Modern Combat"
   region: "PAL-M3"
@@ -23036,7 +23042,6 @@ SLES-53730:
     cpuCLUTRender: 1 # Fixes light shining through objects.
     getSkipCount: "GSC_Battlefield2" # Depth clear.
     beforeDraw: "OI_Battlefield2" # Framebuffer copy, fixes rendering for bottom part of screen.
-    minimumBlendingLevel: 4
 SLES-53734:
   name: "50 Cent - Bulletproof"
   region: "PAL-E"
@@ -25364,8 +25369,10 @@ SLES-54508:
   name: "National Geographic - Safari Adventures Africa"
   region: "PAL-M6"
 SLES-54510:
-  name: "Meet the Robinsons"
+  name: "Walt Disney Pictures Presents Meet the Robinsons"
   region: "PAL-M3"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes bloom alignment.
 SLES-54511:
   name: "UEFA Champions League 2006-2007"
   region: "PAL-E"
@@ -25864,8 +25871,10 @@ SLES-54677:
   region: "PAL-E"
   compat: 5
 SLES-54679:
-  name: "Metal Slug - Anthology"
+  name: "Walt Disney Pictures Presents Meet the Robinsons"
   region: "PAL-M3"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes bloom alignment.
 SLES-54681:
   name: "Burnout Dominator"
   region: "PAL-E"
@@ -30053,6 +30062,7 @@ SLKA-25214:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SLKA-25215:
   name: "Shining Wind"
   region: "NTSC-K"
@@ -31354,7 +31364,6 @@ SLPM-55034:
   name: "Battlefield 2 - Modern Combat [EA:SY! 1980]"
   region: "NTSC-J"
   gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes ground texture rendering.
     autoFlush: 1 # Post-processing.
     halfPixelOffset: 2 # Offset post-processing.
     texturePreloading: 1 # Improves performance.
@@ -36573,6 +36582,7 @@ SLPM-65115:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SLPM-65116:
   name: "Lilie no Atelier Plus - Salburg no Renkinjutsushi 3"
   region: "NTSC-J"
@@ -40586,6 +40596,7 @@ SLPM-66124:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SLPM-66125:
   name: "Final Fantasy X-2 [Ultimate Hits]"
   region: "NTSC-J"
@@ -40951,7 +40962,6 @@ SLPM-66206:
     cpuCLUTRender: 1 # Fixes light shining through objects.
     getSkipCount: "GSC_Battlefield2" # Depth clear.
     beforeDraw: "OI_Battlefield2" # Framebuffer copy, fixes rendering for bottom part of screen.
-    minimumBlendingLevel: 4
 SLPM-66207:
   name: "Dororo [Sega the Best 2800]"
   region: "NTSC-J"
@@ -42911,7 +42921,6 @@ SLPM-66651:
     cpuCLUTRender: 1 # Fixes light shining through objects.
     getSkipCount: "GSC_Battlefield2" # Depth clear.
     beforeDraw: "OI_Battlefield2" # Framebuffer copy, fixes rendering for bottom part of screen.
-    minimumBlendingLevel: 4
 SLPM-66652:
   name: "Burnout Revenge [EA Best Hits]"
   region: "NTSC-J"
@@ -43058,6 +43067,7 @@ SLPM-66677:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SLPM-66678:
   name: "Final Fantasy X-2 International + Last Mission [Ultimate Hits]"
   region: "NTSC-J"
@@ -43694,8 +43704,10 @@ SLPM-66829:
   name: "MAJOR LEAGUE BASEBALL 2K7"
   region: "NTSC-J"
 SLPM-66830:
-  name: "Lewis and the Future Thief"
+  name: "Walt Disney Pictures Presents Lewis to Mirai Dorobou - Wilbur no Kiken na Jikan Ryokou"
   region: "NTSC-J"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes bloom alignment.
 SLPM-66832:
   name: "Tennis no Oujisama - Doki Doki Survival - Umibe no Secret"
   region: "NTSC-J"
@@ -44476,6 +44488,7 @@ SLPM-67513:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SLPM-67514:
   name: "Kessen"
   region: "NTSC-K"
@@ -47252,6 +47265,7 @@ SLPS-25050:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SLPS-25051:
   name: "Missing Blue [Standard Edition]"
   region: "NTSC-J"
@@ -47303,9 +47317,13 @@ SLPS-25059:
 SLPS-25060:
   name: "Mobile Suit Gundam - Meguriai Sora [Limited Edition]"
   region: "NTSC-J"
+  memcardFilters:
+    - "SLPS-25062"
 SLPS-25061:
   name: "Mobile Suit Gundam Ver.1.5 [Limited Edition]"
   region: "NTSC-J"
+  memcardFilters:
+    - "SLPS-25063"
 SLPS-25062:
   name: "Kidou Senshi Gundam - Meguriai Sora"
   region: "NTSC-J"
@@ -47419,6 +47437,7 @@ SLPS-25088:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SLPS-25089:
   name: "SALT LAKE 2002"
   region: "NTSC-J"
@@ -51203,6 +51222,7 @@ SLPS-72501:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SLPS-72502:
   name: "Tales of Destiny 2 [Mega Hits]"
   region: "NTSC-J"
@@ -53240,6 +53260,7 @@ SLUS-20312:
     textureInsideRT: 1 # Fixes wrong visuals for the summon Anima and The (Triple) Magus Sisters.
     getSkipCount: "GSC_FFXGames"
     beforeDraw: "OI_FFX"
+    preloadFrameData: 1
 SLUS-20313:
   name: "Wave Rally"
   region: "NTSC-U"
@@ -57260,7 +57281,6 @@ SLUS-21026:
     cpuCLUTRender: 1 # Fixes light shining through objects.
     getSkipCount: "GSC_Battlefield2" # Depth clear.
     beforeDraw: "OI_Battlefield2" # Framebuffer copy, fixes rendering for bottom part of screen.
-    minimumBlendingLevel: 4
 SLUS-21027:
   name: "The Lord of the Rings - The Third Age"
   region: "NTSC-U"
@@ -59620,8 +59640,9 @@ SLUS-21386:
     default:
       content: |-
         author=sergx12
-        comment=Black Grid Fix
+        comment=Black Grid & No Bloom fixes
         patch=1,EE,205E570C,extended,00000000
+        patch=1,EE,0011A668,word,00000000
 SLUS-21387:
   name: "Warship Gunner 2"
   region: "NTSC-U"
@@ -60051,9 +60072,11 @@ SLUS-21452:
     textureInsideRT: 1 # Required for swirl battle transition.
     getSkipCount: "GSC_TriAceGames"
 SLUS-21453:
-  name: "Meet the Robinsons"
+  name: "Walt Disney Pictures Presents Meet the Robinsons"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes bloom alignment.
 SLUS-21454:
   name: "DreamWorks Shrek the Third"
   region: "NTSC-U"
@@ -63254,7 +63277,6 @@ SLUS-29117:
     cpuCLUTRender: 1 # Fixes light shining through objects.
     getSkipCount: "GSC_Battlefield2" # Depth clear.
     beforeDraw: "OI_Battlefield2" # Framebuffer copy, fixes rendering for bottom part of screen.
-    minimumBlendingLevel: 4
 SLUS-29118:
   name: "Need for Speed - Underground 2 [Demo]"
   region: "NTSC-U"
@@ -63405,7 +63427,6 @@ SLUS-29152:
     cpuCLUTRender: 1 # Fixes light shining through objects.
     getSkipCount: "GSC_Battlefield2" # Depth clear.
     beforeDraw: "OI_Battlefield2" # Framebuffer copy, fixes rendering for bottom part of screen.
-    minimumBlendingLevel: 4
 SLUS-29153:
   name: "Burnout Revenge [Demo]"
   region: "NTSC-U"
@@ -63514,7 +63535,6 @@ SLUS-29172:
     cpuCLUTRender: 1 # Fixes light shining through objects.
     getSkipCount: "GSC_Battlefield2" # Depth clear.
     beforeDraw: "OI_Battlefield2" # Framebuffer copy, fixes rendering for bottom part of screen.
-    minimumBlendingLevel: 4
 SLUS-29173:
   name: "The Sims 2 [Demo]"
   region: "NTSC-U"
