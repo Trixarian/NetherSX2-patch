@@ -16,7 +16,7 @@ yaml.allow_duplicate_keys = True
 yaml.width = 512
 yaml.representer.add_representer(type(None), my_represent_none)
 
-char_list = ['ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'ā', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ē', 'ì', 'í', 'î', 'ï', 'ī', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ō', 'ø', 'ù', 'ú', 'û', 'ü', 'ū', 'ý', 'þ', 'ÿ', '¸', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'Þ']
+char_list = ['ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'ā', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ē', 'ì', 'í', 'î', 'ï', 'ī', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ō', 'ø', 'ù', 'ú', 'û', 'ü', 'ū', 'ý', 'þ', 'ÿ', '¸', 'À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ō', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'Þ']
 key_list = ['clampModes', 'dynaPatches', 'gameFixes', 'gsHWFixes', 'memcardFilters', 'patches', 'roundModes', 'speedHacks']
 key_order = ['name', 'name-sort', 'name-en', 'region', 'compat', 'clampModes', 'roundModes', 'gameFixes', 'speedHacks', 'gsHWFixes', 'patches', 'dynaPatches', 'memcardFilters']
 clamp_list = ['eeClampMode', 'vuClampMode', 'vu0ClampMode', 'vu1ClampMode']
@@ -52,7 +52,7 @@ def process_db(file_name, clean_name):
             if re.search(r'moveHandler: \".+\"', line):
                 line = re.sub(r'moveHandler: \".+\"', 'textureInsideRT: 1', line)
             if line == prev_line: continue
-            if 'name:' in line and ('"' not in line or re.search(r'[A-Z]+: ', line)): continue
+            if 'name:' in line and '"' not in line: continue
             if not any(safe_char in line for safe_char in char_list) and not line.isascii(): continue
             if not any(ignore_word in line for ignore_word in ignore_list): tempfile.write(line)
             prev_line = line
