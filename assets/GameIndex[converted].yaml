@@ -19333,6 +19333,8 @@ SLES-52954:
 SLES-52955:
   name: "Deadly Strike"
   region: "PAL-E"
+  gameFixes:
+    - FpuNegDivHack
 SLES-52956:
   name: "Action Girlz Racing"
   region: "PAL-E"
@@ -33186,6 +33188,8 @@ SLPM-62459:
   name: "Simple 2000 Series Vol. 16 - Sengoku vs. Gendai"
   region: "NTSC-J"
   compat: 5
+  gameFixes:
+    - FpuNegDivHack
 SLPM-62460:
   name: "Hakoniwa Tetsudou - Blue Train Tokkyuuhen [SuperLite 2000 Series]"
   region: "NTSC-J"
