@@ -1443,6 +1443,8 @@ SCAJ-20095:
   region: "NTSC-Unk"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
 SCAJ-20096:
   name: "Guilty Gear Isuka"
   region: "NTSC-Unk"
@@ -1604,6 +1606,8 @@ SCAJ-20120:
   region: "NTSC-Unk"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters:
     - "SCAJ-20120"
     - "SLPM-65795"
@@ -3879,6 +3883,9 @@ SCED-53660:
   region: "PAL"
   gsHWFixes:
     halfPixelOffset: 2 # Aligns post bloom.
+    skipDrawStart: 1
+    skipDrawEnd: 1
+    beforeDraw: "OI_JakGames"
 SCED-53662:
   name: "Official PlayStation 2 Magazine Germany Special 2/2005"
   region: "PAL-G"
@@ -12317,6 +12324,8 @@ SLED-50884:
   region: "PAL-E"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes texture slight misalignment.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLED-50895:
   name: "Medal of Honor - Frontline [Demo]"
   region: "PAL-E"
@@ -12671,6 +12680,8 @@ SLED-53066:
   gsHWFixes:
     halfPixelOffset: 3 # Removes ghosting of distant objects.
     autoFlush: 1 # Fixes HUD blending.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLED-53083:
   name: "Monster Hunter [Demo]"
   region: "PAL-M5"
@@ -13297,6 +13308,9 @@ SLES-50078:
   name: "TimeSplitters"
   region: "PAL-M5"
   compat: 5
+  gsHWFixes:
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLES-50079:
   name: "Armored Core 2"
   region: "PAL-E"
@@ -15234,6 +15248,8 @@ SLES-50877:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes texture slight misalignment.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLES-50879:
   name: "Paris-Dakar 2"
   region: "PAL-M5"
@@ -16167,6 +16183,7 @@ SLES-51252:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -20673,6 +20690,8 @@ SLES-52993:
   region: "PAL-M5"
   gsHWFixes:
     halfPixelOffset: 2 # Removes ghosting of distant objects.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLES-52998:
   name: "Sonic Mega Collection Plus"
   region: "PAL-M5"
@@ -22000,6 +22019,8 @@ SLES-53458:
   name: "Shin Megami Tensei - Digital Devil Saga"
   region: "PAL-E"
   compat: 5
+  gsHWFixes:
+    disableDepthSupport: 1
 SLES-53459:
   name: "Marc Ecko's Getting Up - Contents Under Pressure"
   region: "PAL-M5"
@@ -23199,6 +23220,7 @@ SLES-53764:
   name: "Atelier Iris - Eternal Mana"
   region: "PAL-E"
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     roundSprite: 2 # Fixes character portraits when upscaling and reduces lines in FMVs when using HW renderer.
@@ -25552,6 +25574,8 @@ SLES-54554:
 SLES-54555:
   name: "Shin Megami Tensei - Digital Devil Saga 2"
   region: "PAL-E"
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters: # Reads data from DDS1.
     - "SLES-54555"
     - "SLES-53458"
@@ -26375,6 +26399,7 @@ SLES-54822:
   name: "Atelier Iris 3 - Grand Phantasm"
   region: "PAL-E"
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     roundSprite: 1 # Fixes vertical lines in FMVs, character portraits and other sprites.
@@ -29336,6 +29361,8 @@ SLKA-25020:
   region: "NTSC-K"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes slight texture misalignment.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLKA-25021:
   name: "Shinobi"
   region: "NTSC-K"
@@ -30487,12 +30514,16 @@ SLKA-25300:
   compat: 5
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
 SLKA-25301:
   name: "Digital Devil Saga - Avatar Tuner 2"
   region: "NTSC-K"
   compat: 5
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters:
     - "SLKA-25301"
     - "SLKA-25300"
@@ -31285,6 +31316,8 @@ SLKA-29012:
   region: "NTSC-K"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes slight texture misalignment.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLKA-29017:
   name: "SSX Tricky"
   region: "NTSC-K"
@@ -37097,6 +37130,7 @@ SLPM-65212:
   clampModes:
     vuClampMode: 3 # Fixes white shiny weapons.
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -38565,6 +38599,8 @@ SLPM-65597:
   region: "NTSC-J"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
 SLPM-65598:
   name: "Tenshou Gakuen Kensousoku"
   region: "NTSC-J"
@@ -39359,6 +39395,8 @@ SLPM-65795:
   region: "NTSC-J"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters:
     - "SCAJ-20120"
     - "SLPM-65795"
@@ -41829,11 +41867,15 @@ SLPM-66372:
   region: "NTSC-J"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
 SLPM-66373:
   name: "Digital Devil Saga - Avatar Tuner 2 [Atlus Best Collection]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters:
     - "SCAJ-20120"
     - "SLPM-65795"
@@ -44480,6 +44522,7 @@ SLPM-67005:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -44754,6 +44797,7 @@ SLPM-67546:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -51300,6 +51344,7 @@ SLPS-29003:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -51310,6 +51355,7 @@ SLPS-29004:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -52406,6 +52452,9 @@ SLUS-20090:
   name: "TimeSplitters"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLUS-20091:
   name: "4x4 Evo"
   region: "NTSC-U"
@@ -53400,6 +53449,8 @@ SLUS-20314:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes texture slight misalignment.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLUS-20315:
   name: "Spyro - Enter the Dragonfly"
   region: "NTSC-U"
@@ -54835,6 +54886,7 @@ SLUS-20578:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -57063,6 +57115,8 @@ SLUS-20974:
   name: "Shin Megami Tensei - Digital Devil Saga"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    disableDepthSupport: 1
 SLUS-20975:
   name: "One Piece - Grand Battle"
   region: "NTSC-U"
@@ -58098,6 +58152,8 @@ SLUS-21148:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Removes ghosting of distant objects.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLUS-21149:
   name: "Yourself! Fitness"
   region: "NTSC-U"
@@ -58123,6 +58179,8 @@ SLUS-21152:
   name: "Shin Megami Tensei - Digital Devil Saga 2"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters:
     - "SLUS-21152"
     - "SLUS-20974"
@@ -59341,6 +59399,7 @@ SLUS-21327:
   region: "NTSC-U"
   compat: 5
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     roundSprite: 1 # Fixes font artifacts for health and other sprites.
@@ -60677,6 +60736,7 @@ SLUS-21564:
   region: "NTSC-U"
   compat: 5
   gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     roundSprite: 1 # Fixes vertical lines in FMVs, character portraits and other sprites.
@@ -62934,6 +62994,8 @@ SLUS-28046:
 SLUS-28049:
   name: "Shin Megami Tensei - Digital Devil Saga [Trade Demo]"
   region: "NTSC-U"
+  gsHWFixes:
+    disableDepthSupport: 1
 SLUS-28050:
   name: "Stella Deus - The Gate of Eternity [Trade Demo]"
   region: "NTSC-U"
@@ -62943,6 +63005,8 @@ SLUS-28051:
 SLUS-28052:
   name: "Shin Megami Tensei - Digital Devil Saga 2 [Trade Demo]"
   region: "NTSC-U"
+  gsHWFixes:
+    disableDepthSupport: 1
 SLUS-28053:
   name: "Magna Carta [Trade Demo]"
   region: "NTSC-U"
