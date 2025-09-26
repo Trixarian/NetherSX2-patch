@@ -3882,10 +3882,10 @@ SCED-53660:
   name: "Jak X & Ratchet Gladiator [Demo]"
   region: "PAL"
   gsHWFixes:
-    halfPixelOffset: 2 # Aligns post bloom.
     skipDrawStart: 1
     skipDrawEnd: 1
     beforeDraw: "OI_JakGames"
+    halfPixelOffset: 2
 SCED-53662:
   name: "Official PlayStation 2 Magazine Germany Special 2/2005"
   region: "PAL-G"
@@ -16183,7 +16183,6 @@ SLES-51252:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -19270,8 +19269,6 @@ SLES-52541:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
     halfPixelOffset: 2
 SLES-52542:
   name: "All Music Dance!"
@@ -20475,8 +20472,6 @@ SLES-52927:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
     halfPixelOffset: 2
 SLES-52931:
   name: "Legend of Kay"
@@ -23220,10 +23215,7 @@ SLES-53764:
   name: "Atelier Iris - Eternal Mana"
   region: "PAL-E"
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
-  gsHWFixes:
-    roundSprite: 2 # Fixes character portraits when upscaling and reduces lines in FMVs when using HW renderer.
 SLES-53765:
   name: "Stella Deus - The Gate of Eternity"
   region: "PAL-E"
@@ -26399,7 +26391,6 @@ SLES-54822:
   name: "Atelier Iris 3 - Grand Phantasm"
   region: "PAL-E"
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     roundSprite: 1 # Fixes vertical lines in FMVs, character portraits and other sprites.
@@ -29024,8 +29015,8 @@ SLES-82042:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 1
-    skipDrawEnd: 1
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLES-82043:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-E-F"
@@ -29046,8 +29037,8 @@ SLES-82044:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 1
-    skipDrawEnd: 1
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLES-82045:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-I"
@@ -29068,8 +29059,8 @@ SLES-82046:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 1
-    skipDrawEnd: 1
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLES-82047:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-G"
@@ -29090,8 +29081,8 @@ SLES-82048:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 1
-    skipDrawEnd: 1
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLES-82049:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-S"
@@ -30798,8 +30789,8 @@ SLKA-25353:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 1
-    skipDrawEnd: 1
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLKA-25354:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "NTSC-K"
@@ -31747,8 +31738,6 @@ SLPM-55092:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
     halfPixelOffset: 2
 SLPM-55093:
   name: "Galaxy Angel II - Mugen Kairou no Kagi [Disc 1 of 2]"
@@ -32386,8 +32375,6 @@ SLPM-55292:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
     halfPixelOffset: 2
 SLPM-55293:
   name: "Grand Theft Auto III [Rockstar Classics]"
@@ -37140,7 +37127,6 @@ SLPM-65212:
   clampModes:
     vuClampMode: 3 # Fixes white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -40150,8 +40136,6 @@ SLPM-65984:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
     halfPixelOffset: 2
 SLPM-65985:
   name: "Iris no Atelier - Eternal Mana 2"
@@ -40723,8 +40707,8 @@ SLPM-66117:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 1
-    skipDrawEnd: 1
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLPM-66118:
   name: "Metal Gear Solid 3 - Subsistence [with Headset] [Disc 2 of 3]"
   region: "NTSC-J"
@@ -41199,8 +41183,8 @@ SLPM-66220:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 1
-    skipDrawEnd: 1
+    skipDrawStart: 2
+    skipDrawEnd: 2
   memcardFilters:
     - "SLPM-66117"
 SLPM-66221:
@@ -41234,8 +41218,8 @@ SLPM-66223:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 1
-    skipDrawEnd: 1
+    skipDrawStart: 2
+    skipDrawEnd: 2
   memcardFilters:
     - "SLPM-66117"
 SLPM-66224:
@@ -43732,8 +43716,6 @@ SLPM-66788:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
     halfPixelOffset: 2
 SLPM-66789:
   name: "Grand Theft Auto III [Best Price]"
@@ -43783,8 +43765,8 @@ SLPM-66798:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Aligns depth of field effect.
-    skipDrawStart: 1
-    skipDrawEnd: 1
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLPM-66799:
   name: "Metal Gear Solid 2 - Solid Snake [METAL GEAR 20th ANNIVERSARY/MGS Collection] [Disc 2]"
   region: "NTSC-J"
@@ -44540,7 +44522,6 @@ SLPM-67005:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -44815,7 +44796,6 @@ SLPM-67546:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -51362,7 +51342,6 @@ SLPS-29003:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -51373,7 +51352,6 @@ SLPS-29004:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -54904,7 +54882,6 @@ SLUS-20578:
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
@@ -56946,8 +56923,6 @@ SLUS-20946:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
     halfPixelOffset: 2
 SLUS-20947:
   name: "WinBack 2 - Project Poseidon"
@@ -59417,7 +59392,6 @@ SLUS-21327:
   region: "NTSC-U"
   compat: 5
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     roundSprite: 1 # Fixes font artifacts for health and other sprites.
@@ -59647,8 +59621,8 @@ SLUS-21359:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 1
-    skipDrawEnd: 1
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLUS-21360:
   name: "Metal Gear Solid 3 - Subsistence [Disc 3 of 3]"
   region: "NTSC-U"
@@ -60756,7 +60730,6 @@ SLUS-21564:
   region: "NTSC-U"
   compat: 5
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
     - SoftwareRendererFMVHack
   gsHWFixes:
     roundSprite: 1 # Fixes vertical lines in FMVs, character portraits and other sprites.
@@ -64255,8 +64228,6 @@ SLES-51541:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
 SLES-51752:
   name: "Tony Hawks Underground"
   region: "PAL-Unk"

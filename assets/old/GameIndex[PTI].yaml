@@ -962,6 +962,7 @@ SCAJ-20028:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCAJ-20029:
   name: "R-Type Final"
   region: "NTSC-Unk"
@@ -1263,6 +1264,8 @@ SCAJ-20095:
   region: "NTSC-Unk"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
 SCAJ-20096:
   name: "Guilty Gear Isuka"
   region: "NTSC-Unk"
@@ -1348,12 +1351,21 @@ SCAJ-20111:
 SCAJ-20112:
   name: "Tales of Rebirth"
   region: "NTSC-Unk"
+  compat: 5
   speedHacks:
     mvuFlagSpeedHack: 0 # Fixes graphical corruptions.
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
+  patches:
+    default:
+      content: |-
+        author=Ethanol
+        comment=Kills the sun (a bit)
+        patch=1,EE,D0237070,extended,01000006
+        patch=1,EE,202F01A8,extended,0000102D
 SCAJ-20113:
   name: "Dragon Quest & Final Fantasy in Itadaki Street"
   region: "NTSC-Unk"
@@ -1395,6 +1407,8 @@ SCAJ-20120:
   region: "NTSC-Unk"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters:
     - "SCAJ-20120"
     - "SLPM-65795"
@@ -1562,6 +1576,7 @@ SCAJ-20145:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SCAJ-20146:
   name: "Wang Da Yu Ju Xiang"
@@ -1669,6 +1684,7 @@ SCAJ-20162:
 SCAJ-20163:
   name: "Tales of the Abyss"
   region: "NTSC-Unk"
+  compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes ghosting.
     autoFlush: 1 # Fixes post lighting.
@@ -1676,8 +1692,9 @@ SCAJ-20163:
     default:
       content: |-
         author=sergx12
-        comment=Black Grid Fix
+        comment=Black Grid & No Bloom fixes
         patch=1,EE,205E570C,extended,00000000
+        patch=1,EE,0011A668,word,00000000
 SCAJ-20164:
   name: "Kingdom Hearts II"
   region: "NTSC-Unk"
@@ -1799,6 +1816,7 @@ SCAJ-20182:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCAJ-20183:
   name: "Wild ARMs - The Vth Vanguard"
   region: "NTSC-J"
@@ -1840,6 +1858,7 @@ SCAJ-20193:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCAJ-20194:
   name: "Minna no Golf 4 [PlayStation 2 The Best]"
   region: "NTSC-Unk"
@@ -3487,6 +3506,10 @@ SCED-53622:
 SCED-53660:
   name: "Jak X & Ratchet Gladiator [Demo]"
   region: "PAL"
+  gsHWFixes:
+    skipDrawStart: 1
+    skipDrawEnd: 1
+    beforeDraw: "OI_JakGames"
 SCED-53662:
   name: "Official PlayStation 2 Magazine Germany Special 2/2005"
   region: "PAL-G"
@@ -6113,6 +6136,7 @@ SCKA-20008:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCKA-20009:
   name: "R-Type Final"
   region: "NTSC-K"
@@ -6381,6 +6405,7 @@ SCKA-20050:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20051:
   name: "Minna Daisuki Katamari Damacy"
@@ -6412,6 +6437,7 @@ SCKA-20054:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCKA-20055:
   name: "Mystic Nights"
   region: "NTSC-K"
@@ -6688,6 +6714,7 @@ SCKA-20100:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCKA-20101:
   name: "Seiken Densetsu 4"
   region: "NTSC-K"
@@ -6748,6 +6775,7 @@ SCKA-20119:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCKA-20120:
   name: "Ratchet & Clank - Size Matters"
   region: "NTSC-K"
@@ -6778,6 +6806,7 @@ SCKA-20129:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SCKA-20130:
   name: "Minna no Tennis"
@@ -8517,6 +8546,7 @@ SCPS-55050:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SCPS-55901:
   name: "Xenosaga Episode I - Der Wille zur Macht"
   region: "NTSC-J"
@@ -11101,6 +11131,8 @@ SLED-50884:
   region: "PAL-E"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes texture slight misalignment.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLED-50895:
   name: "Medal of Honor - Frontline [Demo]"
   region: "PAL-E"
@@ -11945,6 +11977,9 @@ SLES-50078:
   name: "TimeSplitters"
   region: "PAL-M5"
   compat: 5
+  gsHWFixes:
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLES-50079:
   name: "Armored Core 2"
   region: "PAL-E"
@@ -13796,6 +13831,8 @@ SLES-50877:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes texture slight misalignment.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLES-50879:
   name: "Paris-Dakar 2"
   region: "PAL-M5"
@@ -14663,13 +14700,13 @@ SLES-51251:
     mipmap: 1
     trilinearFiltering: 1
 SLES-51252:
-  name: "The Lord of the Rings - The Two Towers"
+  name: "Lord of the Rings, The - The Two Towers"
   region: "PAL-M3"
   compat: 5
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
+    - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLES-51253:
@@ -15300,8 +15337,6 @@ SLES-51541:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
 SLES-51547:
   name: "Next Generation Tennis 2003"
   region: "PAL-M5"
@@ -17471,8 +17506,6 @@ SLES-52541:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
 SLES-52542:
   name: "All Music Dance!"
   region: "PAL-I"
@@ -18530,8 +18563,6 @@ SLES-52927:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
 SLES-52931:
   name: "Legend of Kay"
   region: "PAL-M5"
@@ -18727,6 +18758,8 @@ SLES-52993:
   region: "PAL-M5"
   gsHWFixes:
     halfPixelOffset: 2 # Removes ghosting of distant objects.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLES-52998:
   name: "Sonic Mega Collection Plus"
   region: "PAL-M5"
@@ -19945,6 +19978,8 @@ SLES-53458:
   name: "Shin Megami Tensei - Digital Devil Saga"
   region: "PAL-E"
   compat: 5
+  gsHWFixes:
+    disableDepthSupport: 1
 SLES-53459:
   name: "Marc Ecko's Getting Up - Contents Under Pressure"
   region: "PAL-M5"
@@ -21040,9 +21075,7 @@ SLES-53764:
   name: "Atelier Iris - Eternal Mana"
   region: "PAL-E"
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
-  gsHWFixes:
-    roundSprite: 2 # Fixes character portraits when upscaling and reduces lines in FMVs when using HW renderer.
+    - SoftwareRendererFMVHack
 SLES-53765:
   name: "Stella Deus - The Gate of Eternity"
   region: "PAL-E"
@@ -23080,6 +23113,8 @@ SLES-54554:
 SLES-54555:
   name: "Shin Megami Tensei - Digital Devil Saga 2"
   region: "PAL-E"
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters: # Reads data from DDS1.
     - "SLES-54555"
     - "SLES-53458"
@@ -23842,7 +23877,7 @@ SLES-54822:
   name: "Atelier Iris 3 - Grand Phantasm"
   region: "PAL-E"
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
+    - SoftwareRendererFMVHack
   gsHWFixes:
     roundSprite: 1 # Fixes vertical lines in FMVs, character portraits and other sprites.
 SLES-54825:
@@ -26087,6 +26122,8 @@ SLES-82042:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLES-82043:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-E-F"
@@ -26107,6 +26144,8 @@ SLES-82044:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLES-82045:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-I"
@@ -26127,6 +26166,8 @@ SLES-82046:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLES-82047:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-G"
@@ -26147,6 +26188,8 @@ SLES-82048:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLES-82049:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-S"
@@ -27419,12 +27462,16 @@ SLKA-25300:
   compat: 5
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
 SLKA-25301:
   name: "Digital Devil Saga - Avatar Tuner 2"
   region: "NTSC-K"
   compat: 5
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters:
     - "SLKA-25301"
     - "SLKA-25300"
@@ -27654,6 +27701,8 @@ SLKA-25353:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLKA-25354:
   name: "Metal Gear Solid 3 - Subsistence [Limited Edition] [Disc 2 of 3]"
   region: "NTSC-K"
@@ -28346,8 +28395,6 @@ SLPM-55092:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
 SLPM-55093:
   name: "Galaxy Angel II - Mugen Kairou no Kagi (Disc 1)"
   region: "NTSC-J"
@@ -28900,8 +28947,6 @@ SLPM-55292:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
 SLPM-55293:
   name: "Grand Theft Auto III"
   region: "NTSC-J"
@@ -33295,12 +33340,12 @@ SLPM-65211:
   name: "Houshin Engi 2 [Premium Pack]"
   region: "NTSC-J"
 SLPM-65212:
-  name: "The Lord of the Rings - The Two Towers"
+  name: "Lord of the Rings, The - The Two Towers"
   region: "NTSC-J"
   clampModes:
     vuClampMode: 3 # Fixes white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
+    - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLPM-65213:
@@ -34691,6 +34736,8 @@ SLPM-65597:
   region: "NTSC-J"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
 SLPM-65598:
   name: "Tenshou Gakuen Kensousoku"
   region: "NTSC-J"
@@ -35415,6 +35462,8 @@ SLPM-65795:
   region: "NTSC-J"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters:
     - "SCAJ-20120"
     - "SLPM-65795"
@@ -36119,8 +36168,6 @@ SLPM-65984:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
 SLPM-65985:
   name: "Iris no Atelier - Eternal Mana 2"
   region: "NTSC-J"
@@ -36654,6 +36701,8 @@ SLPM-66117:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLPM-66118:
   name: "Metal Gear Solid 3 - Subsistence [with Headset] [Disc 2 of 3]"
   region: "NTSC-J"
@@ -37095,6 +37144,8 @@ SLPM-66220:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
+    skipDrawStart: 2
+    skipDrawEnd: 2
   memcardFilters:
     - "SLPM-66117"
 SLPM-66221:
@@ -37128,6 +37179,8 @@ SLPM-66223:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
+    skipDrawStart: 2
+    skipDrawEnd: 2
   memcardFilters:
     - "SLPM-66117"
 SLPM-66224:
@@ -37746,11 +37799,15 @@ SLPM-66372:
   region: "NTSC-J"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
 SLPM-66373:
   name: "Digital Devil Saga - Avatar Tuner 2 [Atlus Best Collection]"
   region: "NTSC-J"
   gameFixes:
     - EETimingHack
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters:
     - "SCAJ-20120"
     - "SLPM-65795"
@@ -39479,8 +39536,6 @@ SLPM-66788:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
 SLPM-66789:
   name: "Grand Theft Auto III [Best Price]"
   region: "NTSC-J"
@@ -40224,12 +40279,12 @@ SLPM-67004:
   name: "Medal of Honor - Rising Sun"
   region: "NTSC-J"
 SLPM-67005:
-  name: "The Lord of the Rings - The Two Towers [EA Best Hits]"
+  name: "Lord of the Rings, The - The Two Towers [EA Best Hits]"
   region: "NTSC-J"
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
+    - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLPM-67006:
@@ -40461,12 +40516,12 @@ SLPM-67545:
   name: "Project Minerva"
   region: "NTSC-K"
 SLPM-67546:
-  name: "The Lord of the Rings - The Two Towers"
+  name: "Lord of the Rings - The Two Towers"
   region: "NTSC-K"
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
+    - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLPM-67550:
@@ -43434,6 +43489,7 @@ SLPS-25172:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SLPS-25173:
   name: "Omoide ni Kawaru Kimi - Memories Off"
   region: "NTSC-J"
@@ -44521,6 +44577,14 @@ SLPS-25450:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
+  patches:
+    default:
+      content: |-
+        author=Ethanol
+        comment=Kills the sun (a bit)
+        patch=1,EE,D0237070,extended,01000006
+        patch=1,EE,202F01A8,extended,0000102D
 SLPS-25451:
   name: "Hana to Taiyou to Ame to [Super Best Collection]"
   region: "NTSC-J"
@@ -44818,6 +44882,7 @@ SLPS-25533:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-25534:
   name: "Twinkle Star Sprites - La Petite Princesse"
@@ -45561,6 +45626,7 @@ SLPS-25715:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SLPS-25716:
   name: "Digimon Savers - Another Mission"
   region: "NTSC-J"
@@ -46032,6 +46098,7 @@ SLPS-25841:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
   memcardFilters: # Allows import of non-DC Tales of Destiny data.
     - "SLPS-25841"
     - "SLPS-25842"
@@ -46046,6 +46113,7 @@ SLPS-25842:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
   memcardFilters:
     - "SLPS-25841"
     - "SLPS-25842"
@@ -46528,22 +46596,22 @@ SLPS-29002:
         patch=1,EE,00285f60,word,2673ffff
         patch=1,EE,00285f64,word,00000000
 SLPS-29003:
-  name: "The Lord of the Rings - The Two Towers [Collector's Box]"
+  name: "Lord of the Rings - The Two Towers [Collector's Box]"
   region: "NTSC-J"
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
+    - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLPS-29004:
-  name: "The Lord of the Rings - The Two Towers"
+  name: "Lord of the Rings, The - The Two Towers"
   region: "NTSC-J"
   compat: 5
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
+    - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLPS-29005:
@@ -46577,6 +46645,7 @@ SLPS-72502:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SLPS-73001:
   name: "Pilot ni Narou! 2"
   region: "NTSC-J"
@@ -46759,6 +46828,7 @@ SLPS-73219:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
 SLPS-73220:
   name: "Ultraman [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -46937,6 +47007,7 @@ SLPS-73242:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SLPS-73243:
   name: "Namco X Capcom [PlayStation 2 The Best]"
@@ -47577,6 +47648,9 @@ SLUS-20090:
   name: "TimeSplitters"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLUS-20091:
   name: "4x4 Evo"
   region: "NTSC-U"
@@ -48519,6 +48593,8 @@ SLUS-20314:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes texture slight misalignment.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLUS-20315:
   name: "Spyro - Enter the Dragonfly"
   region: "NTSC-U"
@@ -49861,13 +49937,13 @@ SLUS-20577:
     autoFlush: 1 # Fixes shadow rendering.
     roundSprite: 1 # Fixes depth line.
 SLUS-20578:
-  name: "The Lord of the Rings - The Two Towers"
+  name: "Lord of the Rings, The - The Two Towers"
   region: "NTSC-U"
   compat: 5
   clampModes:
     vuClampMode: 3 # Fix white shiny weapons.
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
+    - SoftwareRendererFMVHack
   gsHWFixes:
     halfPixelOffset: 2 # Fixes misaligned lighting and other effects.
 SLUS-20579:
@@ -51759,8 +51835,6 @@ SLUS-20946:
     eeClampMode: 2 # Fixes Game freezes during "Reuniting The Families" mission.
   gsHWFixes:
     autoFlush: 1
-    skipDrawStart: 7
-    skipDrawEnd: 3
 SLUS-20947:
   name: "WinBack 2 - Project Poseidon"
   region: "NTSC-U"
@@ -51924,6 +51998,8 @@ SLUS-20974:
   name: "Shin Megami Tensei - Digital Devil Saga"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    disableDepthSupport: 1
 SLUS-20975:
   name: "One Piece - Grand Battle"
   region: "NTSC-U"
@@ -52875,6 +52951,8 @@ SLUS-21148:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Removes ghosting of distant objects.
+    disableDepthSupport: 1
+    preloadFrameData: 1
 SLUS-21149:
   name: "Yourself! Fitness"
   region: "NTSC-U"
@@ -52897,6 +52975,8 @@ SLUS-21152:
   name: "Shin Megami Tensei - Digital Devil Saga 2"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    disableDepthSupport: 1
   memcardFilters:
     - "SLUS-21152"
     - "SLUS-20974"
@@ -53155,6 +53235,7 @@ SLUS-21201:
     disablePartialInvalidation: 1 # Fixes some performance loss caused by excessive junk texture generation
     estimateTextureRegion: 1 # Improves performance and reduces hash cache size
     preloadFrameData: 1 # Reduces performance drops caused by effects
+    texturePreloading: 1 # Performs much better with partial preload
     getSkipCount: "GSC_TalesOfLegendia"
 SLUS-21202:
   name: "Romance of the Three Kingdoms X"
@@ -53969,7 +54050,7 @@ SLUS-21327:
   region: "NTSC-U"
   compat: 5
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
+    - SoftwareRendererFMVHack
   gsHWFixes:
     roundSprite: 1 # Fixes font artifacts for health and other sprites.
     texturePreloading: 0 # Improves performance and prevents it disabling itself regardless.
@@ -54172,6 +54253,8 @@ SLUS-21359:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
+    skipDrawStart: 2
+    skipDrawEnd: 2
 SLUS-21360:
   name: "Metal Gear Solid 3 - Subsistence [Disc 3 of 3]"
   region: "NTSC-U"
@@ -54359,8 +54442,9 @@ SLUS-21386:
     default:
       content: |-
         author=sergx12
-        comment=Black Grid Fix
+        comment=Black Grid & No Bloom fixes
         patch=1,EE,205E570C,extended,00000000
+        patch=1,EE,0011A668,word,00000000
 SLUS-21387:
   name: "Warship Gunner 2"
   region: "NTSC-U"
@@ -55186,7 +55270,7 @@ SLUS-21564:
   region: "NTSC-U"
   compat: 5
   gameFixes:
-    - SoftwareRendererFMVHack # Fixes FMVs
+    - SoftwareRendererFMVHack
   gsHWFixes:
     roundSprite: 1 # Fixes vertical lines in FMVs, character portraits and other sprites.
 SLUS-21565:
@@ -57215,6 +57299,8 @@ SLUS-28046:
 SLUS-28049:
   name: "Shin Megami Tensei - Digital Devil Saga [Trade Demo]"
   region: "NTSC-U"
+  gsHWFixes:
+    disableDepthSupport: 1
 SLUS-28050:
   name: "Stella Deus - The Gate of Eternity [Trade Demo]"
   region: "NTSC-U"
@@ -57224,6 +57310,8 @@ SLUS-28051:
 SLUS-28052:
   name: "Shin Megami Tensei - Digital Devil Saga 2 [Trade Demo]"
   region: "NTSC-U"
+  gsHWFixes:
+    disableDepthSupport: 1
 SLUS-28053:
   name: "Magna Carta [Trade Demo]"
   region: "NTSC-U"
@@ -58273,6 +58361,8 @@ TLES-82043:
     - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
+    skipDrawStart: 1
+    skipDrawEnd: 1
 VW067-J1:
   name: "Crash Bandicoot 4 - Sakuretsu! Majin Power!"
   region: "NTSC-J"
