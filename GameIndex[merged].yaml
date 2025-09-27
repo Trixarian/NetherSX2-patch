@@ -29015,8 +29015,6 @@ SLES-82042:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 2
-    skipDrawEnd: 2
 SLES-82043:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-E-F"
@@ -29037,8 +29035,6 @@ SLES-82044:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 2
-    skipDrawEnd: 2
 SLES-82045:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-I"
@@ -29059,8 +29055,6 @@ SLES-82046:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 2
-    skipDrawEnd: 2
 SLES-82047:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-G"
@@ -29081,8 +29075,6 @@ SLES-82048:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 2
-    skipDrawEnd: 2
 SLES-82049:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "PAL-S"
@@ -30789,8 +30781,6 @@ SLKA-25353:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 2
-    skipDrawEnd: 2
 SLKA-25354:
   name: "Metal Gear Solid 3 - Subsistence [Disc 2 of 3]"
   region: "NTSC-K"
@@ -40707,8 +40697,6 @@ SLPM-66117:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 2
-    skipDrawEnd: 2
 SLPM-66118:
   name: "Metal Gear Solid 3 - Subsistence [with Headset] [Disc 2 of 3]"
   region: "NTSC-J"
@@ -41183,8 +41171,6 @@ SLPM-66220:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 2
-    skipDrawEnd: 2
   memcardFilters:
     - "SLPM-66117"
 SLPM-66221:
@@ -41218,8 +41204,6 @@ SLPM-66223:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 2
-    skipDrawEnd: 2
   memcardFilters:
     - "SLPM-66117"
 SLPM-66224:
@@ -43765,8 +43749,6 @@ SLPM-66798:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Aligns depth of field effect.
-    skipDrawStart: 2
-    skipDrawEnd: 2
 SLPM-66799:
   name: "Metal Gear Solid 2 - Solid Snake [METAL GEAR 20th ANNIVERSARY/MGS Collection] [Disc 2]"
   region: "NTSC-J"
@@ -59623,8 +59605,6 @@ SLUS-21359:
     InstantVU1SpeedHack: 0 # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 2
-    skipDrawEnd: 2
 SLUS-21360:
   name: "Metal Gear Solid 3 - Subsistence [Disc 3 of 3]"
   region: "NTSC-U"
