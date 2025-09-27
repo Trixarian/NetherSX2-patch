@@ -3,7 +3,7 @@
 </p>
 
 # NetherSX2-patch
-These are companion scripts for NetherSX2 to expand on the amazing work already done by Anon and EZOnTheEyes
+This a continuation of NetherSX2 to build on the amazing work already done by Anon and EZOnTheEyes
 
 They aim to do the following:
 * Remove the unnecessary ad services bloat left in the apk
