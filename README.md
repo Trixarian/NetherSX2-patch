@@ -27,6 +27,21 @@ If you were using AetherSX2 or a copy of NetherSX2 older than 1.9a:
 4. Once installed, run the app and configure it normally. Once at the Game List screen, you can access the Transfer Data/Backup Data feature and Import the files you exported earlier by navigating to the folder you put all your backed up files. This should import your bios files, memcards, save states, game settings, covers and texture packs
 5. Now spend some time redoing the Global App Settings and you should be ready to go
 
+## Frequently Asked Questions
+### Why use NetherSX2 over AetherSX2?
+Use NetherSX2 if you want:
+* RetroArchievements
+* Up to date configuration files
+* NetherSX2 spesific bug fixes for games
+* Better controller support for automatic setup
+* Have more control over your emulator via settings
+
+### Which variant should I be using between Classic (3668) and Patched (4248)?
+This largely depends on the games you will be playing. Generally Classic will be more performant - and some games will only function well on it like the Nascar ones - but it will be lacking some graphical and bug fixes only present in 4248. It's recommended to use 3668 with Mali or less powerful devices to get the best performance. For more powerful or Adreno devices, 4248 is recommended variant to use
+
+### What are the best settings for performance?
+The default Optimal/Safe settings are the most compatible and performant for most games. You can further optimize them by using the Vulkan GPU renderer and setting Hardware Download Mode to Disable Readbacks. With 3668, also make sure to enable Threaded Presentation when using the Vulkan GPU renderer
+
 ## Downloads
 ### Stable
 * [NetherSX2-v2.1-4248.apk](https://github.com/Trixarian/NetherSX2-patch/releases/download/2.1/NetherSX2-v2.1-4248.apk)
