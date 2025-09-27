@@ -17,8 +17,8 @@ They aim to do the following:
 Once you've grabbed a copy of the [NetherSX2 APK](https://github.com/Trixarian/NetherSX2-patch/releases/download/2.1/NetherSX2-v2.1-4248.apk), it's time to install it on to your device
 
 If you were using a copy of NetherSX2 1.9a or above: 
-0. (Optional) Backup your files in case something goes wrong. The easiest method is to use the AetherSX2's built in Transfer Data function by using it's Export feature to move your files to an external folder. This will backup your bios files, memcards, save states, game settings, covers and texture packs
-1. Install the apk normally to update to the latest version and keep your current settings
+1. (Optional) Backup your files in case something goes wrong. The easiest method is to use the AetherSX2's built in Transfer Data function by using it's Export feature to move your files to an external folder. This will backup your bios files, memcards, save states, game settings, covers and texture packs
+2. Install the apk normally to update to the latest version and keep your current settings
 
 If you were using AetherSX2 or a copy of NetherSX2 older than 1.9a:
 1. Backup your files. The easiest method is to use the AetherSX2's built in Transfer Data function by using it's Export feature to move your files to an external folder. This will backup your bios files, memcards, save states, game settings, covers and texture packs
