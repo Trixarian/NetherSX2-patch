@@ -112,6 +112,8 @@ def process_dict(my_dict, new_dict):
                     try:
                         if my_dict[key]['clampModes'][nested_key]: continue
                     except KeyError:
+                        if 'vuClampMode' in my_dict[key]['clampModes'] and nested_key != 'vuClampMode':
+                            del my_dict[key]['clampModes']['vuClampMode']
                         my_dict[key]['clampModes'][nested_key] = new_dict[key]['clampModes'][nested_key]
         if 'roundModes' in value and key in my_dict:
             for nested_key in ['vu0RoundMode', 'vu1RoundMode']:
@@ -126,6 +128,8 @@ def process_dict(my_dict, new_dict):
                     try:
                         if my_dict[key]['roundModes'][nested_key]: continue
                     except KeyError:
+                        if 'vuRoundMode' in my_dict[key]['roundModes'] and nested_key != 'vuRoundMode':
+                            del my_dict[key]['roundModes']['vuRoundMode']
                         my_dict[key]['roundModes'][nested_key] = new_dict[key]['roundModes'][nested_key]
         if 'gameFixes' in value and key in my_dict:
             for nested_value in gmfix_list:
