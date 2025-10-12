@@ -11889,6 +11889,8 @@ SLAJ-25008:
 SLAJ-25011:
   name: "Shin Sangoku Musou 3"
   region: "NTSC-Unk"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLAJ-25012:
   name: "Final Fantasy X-2"
   region: "NTSC-Unk"
@@ -17061,18 +17063,28 @@ SLES-51660:
 SLES-51661:
   name: "Dynasty Warriors 4"
   region: "PAL-E"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLES-51662:
   name: "Dynasty Warriors 4"
   region: "PAL-F"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLES-51663:
   name: "Dynasty Warriors 4"
   region: "PAL-G"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLES-51664:
   name: "Dynasty Warriors 4"
   region: "PAL-I"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLES-51665:
   name: "Dynasty Warriors 4"
   region: "PAL-S"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLES-51666:
   name: "Piglet - El Gran Juego de Disney"
   region: "PAL-S"
@@ -20405,21 +20417,29 @@ SLES-52909:
   region: "PAL-E-G"
   gameFixes:
     - EETimingHack # Fixes graphical corruption.
+  gsHWFixes:
+    mipmap: 0 # Currently totally breaks player uniform rendering if mipmapping is enabled.
 SLES-52910:
   name: "UEFA Champions League 2005"
   region: "PAL-F-G"
   gameFixes:
     - EETimingHack # Fixes graphical corruption.
+  gsHWFixes:
+    mipmap: 0 # Currently totally breaks player uniform rendering if mipmapping is enabled.
 SLES-52911:
   name: "UEFA Champions League 2005"
   region: "PAL-I-S"
   gameFixes:
     - EETimingHack # Fixes graphical corruption.
+  gsHWFixes:
+    mipmap: 0 # Currently totally breaks player uniform rendering if mipmapping is enabled.
 SLES-52912:
   name: "UEFA Champions League 2005"
   region: "PAL-E-DU"
   gameFixes:
     - EETimingHack # Fixes graphical corruption.
+  gsHWFixes:
+    mipmap: 0 # Currently totally breaks player uniform rendering if mipmapping is enabled.
 SLES-52913:
   name: "Suikoden IV"
   region: "PAL-M5"
@@ -26000,6 +26020,8 @@ SLES-54714:
   region: "PAL-E"
   roundModes:
     vu1RoundMode: 0 # Crashes without.
+  speedHacks:
+    MTVUSpeedHack: 0 # Fixes tutorial crashing.
   gsHWFixes:
     wildArmsHack: 1 # Reduces post-processing misalignment.
     mergeSprite: 1 # Reduces post-processing misalignment.
@@ -26010,6 +26032,8 @@ SLES-54715:
   region: "PAL-M4"
   roundModes:
     vu1RoundMode: 0 # Crashes without.
+  speedHacks:
+    MTVUSpeedHack: 0 # Fixes tutorial crashing.
   gsHWFixes:
     wildArmsHack: 1 # Reduces post-processing misalignment.
     mergeSprite: 1 # Reduces post-processing misalignment.
@@ -26826,6 +26850,8 @@ SLES-54964:
 SLES-54971:
   name: "Hot Wheels - Beat That!"
   region: "PAL-M4"
+  clampModes:
+    eeClampMode: 3 # Fixes various car physics issues.
   gsHWFixes:
     roundSprite: 1 # Fixes font artifacts.
 SLES-54972:
@@ -28263,7 +28289,7 @@ SLES-55421:
   region: "PAL-SWI"
 SLES-55428:
   name: "Disney Bolt"
-  region: "PAL-M4"
+  region: "PAL-SC"
 SLES-55429:
   name: "Disney Bolt"
   region: "PAL-M3"
@@ -29473,6 +29499,8 @@ SLKA-25049:
 SLKA-25050:
   name: "Jin Samguk Mussang 3"
   region: "NTSC-K"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLKA-25051:
   name: "Clock Tower 3"
   region: "NTSC-K"
@@ -37291,6 +37319,8 @@ SLPM-65247:
 SLPM-65248:
   name: "Shin Sangoku Musou 3"
   region: "NTSC-J"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLPM-65249:
   name: "CHAOS LEGION"
   region: "NTSC-J"
@@ -42544,6 +42574,8 @@ SLPM-66521:
 SLPM-66522:
   name: "Shin Sangoku Musou 3 [KOEI Selection]"
   region: "NTSC-J"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLPM-66523:
   name: "Sangokushi IX [with Power-Up Kit]"
   region: "NTSC-J"
@@ -45039,12 +45071,18 @@ SLPM-74214:
 SLPM-74215:
   name: "Shin Sangoku Musou 3 [PlayStation 2 the Best]"
   region: "NTSC-J"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLPM-74216:
   name: "Shin Sangoku Musou 3 - Moushouden [PlayStation 2 the Best]"
   region: "NTSC-J"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLPM-74217:
   name: "Shin Sangoku Musou 3 [PlayStation 2 the Best] [Mega Pack]"
   region: "NTSC-J"
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLPM-74218:
   name: "Shining Tears [PlayStation 2 the Best]"
   region: "NTSC-J"
@@ -55277,6 +55315,8 @@ SLUS-20653:
   name: "Dynasty Warriors 4"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    textureInsideRT: 1 # Fixes missing graphics.
 SLUS-20655:
   name: "The Hobbit - The Prelude to the Lord of the Rings"
   region: "NTSC-U"
@@ -60260,6 +60300,8 @@ SLUS-21456:
   compat: 5
   roundModes:
     vu1RoundMode: 0 # Crashes without.
+  speedHacks:
+    MTVUSpeedHack: 0 # Fixes tutorial crashing.
   gsHWFixes:
     wildArmsHack: 1 # Reduces post-processing misalignment.
     mergeSprite: 1 # Reduces post-processing misalignment.
@@ -61112,6 +61154,8 @@ SLUS-21628:
   name: "Hot Wheels - Beat That!"
   region: "NTSC-U"
   compat: 5
+  clampModes:
+    eeClampMode: 3 # Fixes various car physics issues.
   gsHWFixes:
     roundSprite: 1 # Fixes font artifacts.
 SLUS-21629:
