@@ -19767,7 +19767,6 @@ SLES-53390:
   region: "PAL-E"
   compat: 5
   clampModes:
-    vuClampMode: 0 # Fixes Spider-Man's eye texture colour.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -19779,7 +19778,6 @@ SLES-53391:
   name: "Ultimate Spider-Man"
   region: "PAL-M5"
   clampModes:
-    vuClampMode: 0 # Fixes Spider-Man's eye texture colour.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -20743,7 +20741,6 @@ SLES-53672:
   name: "Ultimate Spider-Man [Limited]"
   region: "PAL-E"
   clampModes:
-    vuClampMode: 0 # Fixes Fixes Spider-Man's eye texture colour.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -23995,7 +23992,6 @@ SLES-54878:
   name: "Naruto - Ultimate Ninja 2"
   region: "PAL-M5"
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
     vu0ClampMode: 0
     vu1ClampMode: 3
 SLES-54879:
@@ -29100,13 +29096,15 @@ SLPM-60149:
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
+  speedHacks:
+    mvuFlagSpeedHack: 0
   gsHWFixes:
     mipmap: 1
     roundSprite: 2 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    gpuTargetCLUT: 1
+    cpuCLUTRender: 1
 SLPM-60150:
   name: "Tamamayu Monogatari 2 - Horobi no Mushi"
   region: "NTSC-J"
@@ -37917,7 +37915,6 @@ SLPM-66404:
   name: "Ultimate Spider-Man"
   region: "NTSC-J"
   clampModes:
-    vuClampMode: 0 # Fixes Spider-Man's eye texture colour.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -42981,13 +42978,15 @@ SLPS-25052:
   compat: 5
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
+  speedHacks:
+    mvuFlagSpeedHack: 0
   gsHWFixes:
     mipmap: 1
     roundSprite: 2 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    gpuTargetCLUT: 1
+    cpuCLUTRender: 1
 SLPS-25053:
   name: "Eikan wa Kimi ni - Koushien no Hasha"
   region: "NTSC-J"
@@ -44344,7 +44343,6 @@ SLPS-25398:
   name: "Naruto - Narutimett Hero 2"
   region: "NTSC-J"
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
     vu0ClampMode: 0
     vu1ClampMode: 3
 SLPS-25399:
@@ -46727,13 +46725,15 @@ SLPS-73205:
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
+  speedHacks:
+    mvuFlagSpeedHack: 0
   gsHWFixes:
     mipmap: 1
     roundSprite: 2 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    gpuTargetCLUT: 1
+    cpuCLUTRender: 1
 SLPS-73206:
   name: "Super Robot Taisen Alpha 2nd [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -46820,7 +46820,6 @@ SLPS-73221:
   name: "Naruto Narutimett Hero 2 [PlayStation 2 The Best]"
   region: "NTSC-J"
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
     vu0ClampMode: 0
     vu1ClampMode: 3
 SLPS-73222:
@@ -47170,13 +47169,15 @@ SLPS-73410:
   region: "NTSC-J"
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
+  speedHacks:
+    mvuFlagSpeedHack: 0
   gsHWFixes:
     mipmap: 1
     roundSprite: 2 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    gpuTargetCLUT: 1
+    cpuCLUTRender: 1
 SLPS-73411:
   name: "Armored Core 2 - Another Age [PlayStation 2 The Best]"
   region: "NTSC-J"
@@ -47856,13 +47857,15 @@ SLUS-20152:
   compat: 5
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
+  speedHacks:
+    mvuFlagSpeedHack: 0
   gsHWFixes:
     mipmap: 1
     roundSprite: 2 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    gpuTargetCLUT: 1
+    cpuCLUTRender: 1
   patches:
     A32F7CD0:
       content: |-
@@ -51373,7 +51376,6 @@ SLUS-20870:
   region: "NTSC-U"
   compat: 5
   clampModes:
-    vuClampMode: 0 # Fixes wrong texture colour.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -53773,7 +53775,6 @@ SLUS-21285:
   name: "Ultimate Spider-Man [Limited Edition]"
   region: "NTSC-U"
   clampModes:
-    vuClampMode: 0 # Fixes Spider-Man's eyes texture.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -55306,7 +55307,6 @@ SLUS-21575:
   region: "NTSC-U"
   compat: 5
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
     vu0ClampMode: 0
     vu1ClampMode: 3
 SLUS-21576:

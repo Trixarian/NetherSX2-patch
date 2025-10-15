@@ -272,6 +272,7 @@ PAPX-90504:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 PAPX-90505:
   name: "2002 Natsu no Osusume Soft Otameshi Disc"
   region: "NTSC-J"
@@ -293,6 +294,7 @@ PAPX-90508:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 PAPX-90511:
   name: "Siren [Trial]"
   region: "NTSC-J"
@@ -306,6 +308,7 @@ PAPX-90512:
     vuClampMode: 2 # Text in GT mode works.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 PAPX-90514:
   name: "Recommended Winter Software Trial Disc"
   region: "NTSC-J"
@@ -339,6 +342,7 @@ PAPX-90523:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 PAPX-90524:
   name: "Wild Arms - The Vth Vanguard [Trial]"
   region: "NTSC-J"
@@ -734,6 +738,7 @@ PCPX-96634:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 PCPX-96635:
   name: "Play-Pre 2 Volume 8 - 2003 August"
   region: "NTSC-J"
@@ -760,6 +765,7 @@ PCPX-96649:
     vuClampMode: 2 # Text in GT mode works.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 PCPX-96653:
   name: "Ratchet & Clank 3 - Up Your Arsenal [ShopTrial]"
   region: "NTSC-J"
@@ -2631,6 +2637,7 @@ SCED-51352:
   region: "PAL-E"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCED-51359:
   name: "Official PlayStation 2 Magazine Demo 27"
   region: "PAL-M5"
@@ -3208,6 +3215,7 @@ SCED-52578:
   region: "PAL-M5"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCED-52580:
   name: "Magazine Ufficiale PlayStation 2 Italia 06/04"
   region: "PAL-I"
@@ -3222,6 +3230,7 @@ SCED-52681:
   region: "PAL-M11"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCED-52687:
   name: "Formula One 04 [Demo]"
   region: "PAL-M11"
@@ -3392,7 +3401,7 @@ SCED-52952:
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
-    halfPixelOffset: 2 # Aligns post-processing.
+    halfPixelOffset: 2 # Aligns post-processing and fixes desert tiles.
 SCED-52969:
   name: "EyeToy - Play 2"
   region: "PAL-M12"
@@ -5038,7 +5047,7 @@ SCES-52460:
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
-    halfPixelOffset: 2 # Aligns post-processing.
+    halfPixelOffset: 2 # Aligns post-processing and fixes desert tiles.
 SCES-52529:
   name: "Sly 2 - Band of Thieves"
   region: "PAL-M11"
@@ -6534,7 +6543,7 @@ SCKA-20040:
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
-    halfPixelOffset: 2 # Aligns post-processing.
+    halfPixelOffset: 2 # Aligns post-processing and fixes desert tiles.
 SCKA-20041:
   name: "EyeToy - Play 2"
   region: "NTSC-K"
@@ -7252,6 +7261,7 @@ SCPM-85301:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCPM-85302:
   name: "Minna no Golf Online"
   region: "NTSC-J"
@@ -7263,6 +7273,7 @@ SCPM-85304:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCPN-60101:
   name: "PlayStation BB Navigator - Version 0.10 [Prerelease] [Disc 1]"
   region: "NTSC-J"
@@ -9964,7 +9975,7 @@ SCUS-97330:
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
-    halfPixelOffset: 2 # Aligns post-processing.
+    halfPixelOffset: 2 # Aligns post-processing and fixes desert tiles.
 SCUS-97331:
   name: "Official U.S. PlayStation Magazine Demo Disc 078"
   region: "NTSC-U"
@@ -10129,6 +10140,7 @@ SCUS-97384:
   region: "NTSC-U"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCUS-97392:
   name: "NBA '06 featuring The Life Vol.1 [Demo]"
   region: "NTSC-U"
@@ -10226,7 +10238,7 @@ SCUS-97412:
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
-    halfPixelOffset: 2 # Aligns post-processing.
+    halfPixelOffset: 2 # Aligns post-processing and fixes desert tiles.
 SCUS-97413:
   name: "Ratchet & Clank - Up Your Arsenal [Public Beta v1.0]"
   region: "NTSC-U"
@@ -10324,6 +10336,7 @@ SCUS-97436:
     vuClampMode: 2 # Text in GT mode works.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
   memcardFilters:
     - "SCUS-97328"
     - "SCUS-97436"
@@ -10534,6 +10547,7 @@ SCUS-97483:
     vuClampMode: 2 # Text in GT mode works.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCUS-97484:
   name: "Sly 3 - Honor Among Thieves [E3 Demo]"
   region: "NTSC-U"
@@ -10720,7 +10734,7 @@ SCUS-97516:
   gsHWFixes:
     cpuSpriteRenderBW: 4 # Fixes character and water textures.
     autoFlush: 1 # Fixes lighting.
-    halfPixelOffset: 2 # Aligns post-processing.
+    halfPixelOffset: 2 # Aligns post-processing and fixes desert tiles.
 SCUS-97517:
   name: "Killzone [Greatest Hits]"
   region: "NTSC-U"
@@ -52446,7 +52460,7 @@ SLUS-20591:
   gsHWFixes:
     halfPixelOffset: 2 # Aligns post effects.
 SLUS-20592:
-  name: "HyperSonic Xtreme - HSX"
+  name: "HSX - HyperSonic - Xtreme"
   region: "NTSC-U"
   compat: 5
 SLUS-20593:
@@ -53494,6 +53508,8 @@ SLUS-20789:
   name: "Jeopardy!"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes menus.
 SLUS-20790:
   name: "Wheel of Fortune"
   region: "NTSC-U"

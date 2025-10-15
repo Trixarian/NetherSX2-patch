@@ -283,6 +283,7 @@ PAPX-90504:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 PAPX-90505:
   name: "2002 Natsu no Osusume Soft Otameshi Disc"
   region: "NTSC-J"
@@ -305,6 +306,7 @@ PAPX-90508:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 PAPX-90511:
   name: "Siren [Trial]"
   region: "NTSC-J"
@@ -360,6 +362,7 @@ PAPX-90523:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 PAPX-90524:
   name: "Wild Arms - The Vth Vanguard [Trial]"
   region: "NTSC-J"
@@ -768,6 +771,7 @@ PCPX-96634:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 PCPX-96635:
   name: "Play-Pre 2 Volume 8 - 2003 August"
   region: "NTSC-J"
@@ -2828,6 +2832,7 @@ SCED-51352:
   region: "PAL-E"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCED-51359:
   name: "Official PlayStation 2 Magazine Demo 27"
   region: "PAL-M5"
@@ -7693,6 +7698,7 @@ SCPM-85301:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCPM-85302:
   name: "Minna no Golf Online"
   region: "NTSC-J"
@@ -7704,6 +7710,7 @@ SCPM-85304:
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCPN-60101:
   name: "PlayStation BB Navigator - Version 0.10 [Prerelease] [Disc 1]"
   region: "NTSC-J"
@@ -10776,6 +10783,7 @@ SCUS-97384:
   region: "NTSC-U"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes weird edge shadows and depth bleed which happens on the edge as well.
+    autoFlush: 1 # Helps lens flare and sun occlusion somewhat but doesn't full fix it.
 SCUS-97392:
   name: "NBA '06 featuring The Life Vol.1 [Demo]"
   region: "NTSC-U"
@@ -21808,7 +21816,6 @@ SLES-53390:
   region: "PAL-E"
   compat: 5
   clampModes:
-    vuClampMode: 0 # Fixes Spider-Man's eye texture colour.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -21820,7 +21827,6 @@ SLES-53391:
   name: "Ultimate Spider-Man"
   region: "PAL-M5"
   clampModes:
-    vuClampMode: 0 # Fixes Spider-Man's eye texture colour.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -22872,7 +22878,6 @@ SLES-53672:
   name: "Ultimate Spider-Man [Limited]"
   region: "PAL-E"
   clampModes:
-    vuClampMode: 0 # Fixes Fixes Spider-Man's eye texture colour.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -26543,7 +26548,6 @@ SLES-54878:
   name: "Naruto - Ultimate Ninja 2"
   region: "PAL-M5"
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
     vu0ClampMode: 0
     vu1ClampMode: 3
   gsHWFixes:
@@ -32574,13 +32578,15 @@ SLPM-60149:
     eeRoundMode: 0 # Fixes autopilot being silly and crashing the plane.
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
+  speedHacks:
+    mvuFlagSpeedHack: 0
   gsHWFixes:
     mipmap: 1
     roundSprite: 2 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    gpuTargetCLUT: 1
+    cpuCLUTRender: 1
     halfPixelOffset: 2
 SLPM-60150:
   name: "Tamamayu Story 2 - Horobi no Mushi [Trial]"
@@ -42018,7 +42024,6 @@ SLPM-66404:
   name: "Ultimate Spider-Man"
   region: "NTSC-J"
   clampModes:
-    vuClampMode: 0 # Fixes Spider-Man's eye texture colour.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -47465,13 +47470,15 @@ SLPS-25052:
     eeRoundMode: 0 # Fixes autopilot being silly and crashing the plane.
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
+  speedHacks:
+    mvuFlagSpeedHack: 0
   gsHWFixes:
     mipmap: 1
     roundSprite: 2 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    gpuTargetCLUT: 1
+    cpuCLUTRender: 1
     halfPixelOffset: 2
 SLPS-25053:
   name: "Eikan ha Kimi ni - Koushien no Hasha"
@@ -48899,7 +48906,6 @@ SLPS-25398:
   name: "Naruto - Narutimett Hero 2"
   region: "NTSC-J"
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
     vu0ClampMode: 0
     vu1ClampMode: 3
   gsHWFixes:
@@ -51522,13 +51528,15 @@ SLPS-73205:
     eeRoundMode: 0 # Fixes autopilot being silly and crashing the plane.
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
+  speedHacks:
+    mvuFlagSpeedHack: 0
   gsHWFixes:
     mipmap: 1
     roundSprite: 2 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    gpuTargetCLUT: 1
+    cpuCLUTRender: 1
     halfPixelOffset: 2
 SLPS-73206:
   name: "Super Robot Taisen Alpha 2nd [PlayStation 2 the Best]"
@@ -51622,7 +51630,6 @@ SLPS-73221:
   name: "Naruto Narutimett Hero 2 [PlayStation 2 the Best]"
   region: "NTSC-J"
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
     vu0ClampMode: 0
     vu1ClampMode: 3
   gsHWFixes:
@@ -51998,13 +52005,15 @@ SLPS-73410:
     eeRoundMode: 0 # Fixes autopilot being silly and crashing the plane.
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
+  speedHacks:
+    mvuFlagSpeedHack: 0
   gsHWFixes:
     mipmap: 1
     roundSprite: 2 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    gpuTargetCLUT: 1
+    cpuCLUTRender: 1
     halfPixelOffset: 2
 SLPS-73411:
   name: "Armored Core 2 - Another Age [PlayStation 2 the Best]"
@@ -52702,13 +52711,15 @@ SLUS-20152:
     eeRoundMode: 0 # Fixes autopilot being silly and crashing the plane.
   gameFixes:
     - SoftwareRendererFMVHack # Fixes FMVs disabling hash cache.
+  speedHacks:
+    mvuFlagSpeedHack: 0
   gsHWFixes:
     mipmap: 1
     roundSprite: 2 # Fixes font and HUD artifacts.
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    gpuTargetCLUT: 1
+    cpuCLUTRender: 1
     halfPixelOffset: 2
   patches:
     A32F7CD0:
@@ -54983,7 +54994,7 @@ SLUS-20591:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes lines when powering up.
 SLUS-20592:
-  name: "HyperSonic Xtreme - HSX"
+  name: "HSX - HyperSonic - Xtreme"
   region: "NTSC-U"
   compat: 5
 SLUS-20593:
@@ -56075,6 +56086,8 @@ SLUS-20789:
   name: "Jeopardy!"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes menus.
 SLUS-20790:
   name: "Wheel of Fortune"
   region: "NTSC-U"
@@ -56471,7 +56484,6 @@ SLUS-20870:
   region: "NTSC-U"
   compat: 5
   clampModes:
-    vuClampMode: 0 # Fixes wrong texture colour.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -59134,7 +59146,6 @@ SLUS-21285:
   name: "Ultimate Spider-Man [Limited Edition]"
   region: "NTSC-U"
   clampModes:
-    vuClampMode: 0 # Fixes Spider-Man's eyes texture.
     vu1ClampMode: 0
   gsHWFixes:
     cpuSpriteRenderBW: 2 # Fixes textures.
@@ -60814,7 +60825,6 @@ SLUS-21575:
   region: "NTSC-U"
   compat: 5
   clampModes:
-    vuClampMode: 0 # Fixes glow effects.
     vu0ClampMode: 0
     vu1ClampMode: 3
   gsHWFixes:
