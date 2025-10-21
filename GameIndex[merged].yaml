@@ -366,6 +366,8 @@ PAPX-90523:
 PAPX-90524:
   name: "Wild Arms - The Vth Vanguard [Trial]"
   region: "NTSC-J"
+  clampModes:
+    vu1ClampMode: 3 # Fixes SPS on shell worm enemies.
   gsHWFixes:
     roundSprite: 1 # Fixes font sizes and lines in UI.
     textureInsideRT: 1 # Fixes sepia-tone flashback sequences.
@@ -1449,6 +1451,7 @@ SCAJ-20095:
     - EETimingHack
   gsHWFixes:
     disableDepthSupport: 1
+    halfPixelOffset: 2
 SCAJ-20096:
   name: "Guilty Gear Isuka"
   region: "NTSC-Unk"
@@ -2055,6 +2058,8 @@ SCAJ-20182:
 SCAJ-20183:
   name: "Wild Arms - The Vth Vanguard"
   region: "NTSC-J"
+  clampModes:
+    vu1ClampMode: 3 # Fixes SPS on shell worm enemies.
   gsHWFixes:
     roundSprite: 1 # Fixes font sizes.
     cpuFramebufferConversion: 1 # Fixes sepia-tone flashback sequences.
@@ -3411,9 +3416,13 @@ SCED-52491:
 SCED-52496:
   name: "This Is Football 2004 [Demo]"
   region: "PAL-M4"
+  gsHWFixes:
+    PCRTCOffsets: 1 # Fixes boot videos screen size.
 SCED-52497:
   name: "This Is Football 2004 [Demo]"
   region: "PAL-M4"
+  gsHWFixes:
+    PCRTCOffsets: 1 # Fixes boot videos screen size.
 SCED-52549:
   name: "Official PlayStation 2 Magazine Demo 47"
   region: "PAL-M5"
@@ -5004,18 +5013,28 @@ SCES-51608:
 SCES-51610:
   name: "This is Football 2004 [Red Devils 2004]"
   region: "PAL-BE"
+  gsHWFixes:
+    PCRTCOffsets: 1 # Fixes boot videos screen size.
 SCES-51611:
   name: "This is Football 2004"
   region: "PAL-M4"
+  gsHWFixes:
+    PCRTCOffsets: 1 # Fixes boot videos screen size.
 SCES-51612:
-  name: "This is Football 5"
+  name: "This Is Football 2004"
   region: "PAL-E-N"
+  gsHWFixes:
+    PCRTCOffsets: 1 # Fixes boot videos screen size.
 SCES-51613:
   name: "This is Football 2004"
   region: "PAL-M4"
+  gsHWFixes:
+    PCRTCOffsets: 1 # Fixes boot videos screen size.
 SCES-51614:
   name: "Monde des Bleus 2004, Le - Nouvelle Generation"
   region: "PAL-F"
+  gsHWFixes:
+    PCRTCOffsets: 1 # Fixes boot videos screen size.
 SCES-51618:
   name: "SOCOM - U.S. Navy SEALs"
   region: "PAL-M5"
@@ -8636,6 +8655,8 @@ SCPS-15117:
 SCPS-15118:
   name: "Wild ARMs - The Vth Vanguard"
   region: "NTSC-J"
+  clampModes:
+    vu1ClampMode: 3 # Fixes SPS on shell worm enemies.
   gsHWFixes:
     roundSprite: 1 # Fixes font sizes.
     cpuFramebufferConversion: 1 # Fixes sepia-tone flashback sequences.
@@ -9199,6 +9220,8 @@ SCPS-19332:
 SCPS-19333:
   name: "Wild ARMs - The Vth Vanguard [PlayStation 2 the Best]"
   region: "NTSC-J"
+  clampModes:
+    vu1ClampMode: 3 # Fixes SPS on shell worm enemies.
   gsHWFixes:
     roundSprite: 1 # Fixes font sizes and lines in UI.
     textureInsideRT: 1 # Fixes sepia-tone flashback sequences.
@@ -10695,6 +10718,8 @@ SCUS-97362:
 SCUS-97365:
   name: "World Tour Soccer 2005"
   region: "NTSC-U"
+  gsHWFixes:
+    PCRTCOffsets: 1 # Fixes boot videos screen size.
 SCUS-97366:
   name: "SOCOM II - U.S. Navy SEALs [Public Beta v1.0]"
   region: "NTSC-U"
@@ -10796,6 +10821,8 @@ SCUS-97395:
 SCUS-97396:
   name: "World Tour Soccer 2005 [Demo]"
   region: "NTSC-U"
+  gsHWFixes:
+    PCRTCOffsets: 1 # Fixes boot videos screen size.
 SCUS-97397:
   name: "Syphon Filter - The Omega Strain"
   region: "NTSC-U"
@@ -18774,6 +18801,10 @@ SLES-52342:
   name: "Worms Forts - Under Siege"
   region: "PAL-E-F"
   compat: 5
+  gameFixes:
+    - BlitInternalFPSHack # Fixes internal FPS detection.
+  gsHWFixes:
+    PCRTCOverscan: 1 # Centers game output.
 SLES-52343:
   name: "Midway Arcade Treasures"
   region: "PAL-E"
@@ -19946,6 +19977,10 @@ SLES-52733:
 SLES-52734:
   name: "Worms Forts - Under Siege"
   region: "PAL-M5"
+  gameFixes:
+    - BlitInternalFPSHack # Fixes internal FPS detection.
+  gsHWFixes:
+    PCRTCOverscan: 1 # Centers game output.
 SLES-52737:
   name: "Obscure"
   region: "PAL-E"
@@ -22042,6 +22077,7 @@ SLES-53458:
   compat: 5
   gsHWFixes:
     disableDepthSupport: 1
+    halfPixelOffset: 2
 SLES-53459:
   name: "Marc Ecko's Getting Up - Contents Under Pressure"
   region: "PAL-M5"
@@ -26861,6 +26897,8 @@ SLES-54971:
 SLES-54972:
   name: "Wild Arms 5"
   region: "PAL-M3"
+  clampModes:
+    vu1ClampMode: 3 # Fixes SPS on shell worm enemies.
   gsHWFixes:
     cpuFramebufferConversion: 1 # Fixes sepia-tone flashback sequences.
     wildArmsHack: 1 # Fixes font artifacts and out-of-bound 2D textures.
@@ -30539,6 +30577,7 @@ SLKA-25300:
     - EETimingHack
   gsHWFixes:
     disableDepthSupport: 1
+    halfPixelOffset: 2
 SLKA-25301:
   name: "Digital Devil Saga - Avatar Tuner 2"
   region: "NTSC-K"
@@ -38623,6 +38662,7 @@ SLPM-65597:
     - EETimingHack
   gsHWFixes:
     disableDepthSupport: 1
+    halfPixelOffset: 2
 SLPM-65598:
   name: "Tenshou Gakuen Kensousoku"
   region: "NTSC-J"
@@ -41889,6 +41929,7 @@ SLPM-66372:
     - EETimingHack
   gsHWFixes:
     disableDepthSupport: 1
+    halfPixelOffset: 2
 SLPM-66373:
   name: "Digital Devil Saga - Avatar Tuner 2 [Atlus Best Collection]"
   region: "NTSC-J"
@@ -57146,6 +57187,7 @@ SLUS-20974:
   compat: 5
   gsHWFixes:
     disableDepthSupport: 1
+    halfPixelOffset: 2
 SLUS-20975:
   name: "One Piece - Grand Battle"
   region: "NTSC-U"
@@ -57855,6 +57897,8 @@ SLUS-21093:
   name: "Worms Forts - Under Siege"
   region: "NTSC-U"
   compat: 5
+  gameFixes:
+    - BlitInternalFPSHack # Fixes internal FPS detection.
 SLUS-21094:
   name: "Midway Arcade Treasures 3"
   region: "NTSC-U"
@@ -61073,6 +61117,8 @@ SLUS-21615:
   name: "Wild ARMs 5"
   region: "NTSC-U"
   compat: 5
+  clampModes:
+    vu1ClampMode: 3 # Fixes SPS on shell worm enemies.
   gsHWFixes:
     roundSprite: 1 # Fixes font sizes.
     cpuFramebufferConversion: 1 # Fixes sepia-tone flashback sequences.
@@ -62257,7 +62303,7 @@ SLUS-21831:
   region: "NTSC-U"
   compat: 5
 SLUS-21834:
-  name: "Goosebumps Horrorland - Happy Halloween"
+  name: "Goosebumps Horrorland"
   region: "NTSC-U"
   compat: 5
   clampModes:
@@ -63025,6 +63071,7 @@ SLUS-28049:
   region: "NTSC-U"
   gsHWFixes:
     disableDepthSupport: 1
+    halfPixelOffset: 2
 SLUS-28050:
   name: "Stella Deus - The Gate of Eternity [Trade Demo]"
   region: "NTSC-U"
@@ -63917,7 +63964,9 @@ TCES-10001:
   region: "PAL-E"
 TCES-51613:
   name: "This Is Football 2004 Beta Trial Code"
-  region: "PAL-E-S"
+  region: "PAL-E"
+  gsHWFixes:
+    PCRTCOffsets: 1 # Fixes boot videos screen size.
 TCES-51904:
   name: "SOCOM II - U.S. Navy SEALs Beta Trial Code"
   region: "PAL-M5"
