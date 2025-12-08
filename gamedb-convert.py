@@ -100,6 +100,8 @@ def process_dict(my_dict, new_dict):
                 except KeyError:
                     if not req_sort: req_sort = True
                     my_dict[key][nested_key] = new_dict[key][nested_key]
+        for nested_key in ['compat']:
+            if nested_key in value and key in my_dict: my_dict[key][nested_key] = new_dict[key][nested_key]
         if 'clampModes' in value and key in my_dict:
             for nested_key in ['vu0ClampMode', 'vu1ClampMode']:
                 if nested_key in value['clampModes']:
@@ -142,10 +144,7 @@ def process_dict(my_dict, new_dict):
         if 'speedHacks' in value and key in my_dict:
             for nested_key in speed_list:
                 if nested_key in value['speedHacks']:
-                    try:
-                        if my_dict[key]['speedHacks'][nested_key]: continue
-                    except KeyError:
-                        my_dict[key]['speedHacks'][nested_key] = new_dict[key]['speedHacks'][nested_key]
+                    my_dict[key]['speedHacks'][nested_key] = new_dict[key]['speedHacks'][nested_key]
         if 'gsHWFixes' in value and key in my_dict:
             for nested_key in hwfix_list:
                 if nested_key in value['gsHWFixes']:
