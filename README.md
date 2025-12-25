@@ -47,7 +47,7 @@ The default Optimal/Safe settings are the most compatible and performant for mos
 * [NetherSX2-v2.1-4248.apk](https://github.com/Trixarian/NetherSX2-patch/releases/download/2.1/NetherSX2-v2.1-4248.apk)
 
 ### Development Build
-* [NetherSX2-v2.2b-4248.apk](https://github.com/Trixarian/NetherSX2-patch/releases/download/2.2b/NetherSX2-v2.2b-4248.apk)
+* [NetherSX2-v2.2b-4248.apk](https://github.com/Trixarian/NetherSX2-patch/releases/download/2.2n/NetherSX2-v2.2n-4248.apk)
 
 ## Credits
 * PCSX2: <https://github.com/PCSX2/pcsx2> 
