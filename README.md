@@ -31,13 +31,15 @@ If you were using AetherSX2 or a copy of NetherSX2 older than 1.9a:
 ### Why use NetherSX2 over AetherSX2?
 Use NetherSX2 if you want:
 * RetroArchievements
+* Online Gaming Support
 * Up to date configuration files
+* No Ads (for AetherSX2 3036/4248 users)
 * NetherSX2 spesific bug fixes for games
 * Better controller support for automatic setup
 * Have more control over your emulator via settings
 
 ### Which variant should I be using between Classic (3668) and Patched (4248)?
-This largely depends on the games you will be playing. Generally Classic will be more performant - and some games will only function well on it like the Nascar ones - but it will be lacking some graphical and bug fixes only present in 4248. It's recommended to use 3668 with Mali or less powerful devices to get the best performance. For more powerful or Adreno devices, 4248 is recommended variant to use
+This largely depends on the games you will be playing. Generally Classic will be more performant - and some games will only function well on it like the Nascar ones - but it will be lacking some graphical and bug fixes only present in 4248. It's recommended to use 3668 with Mali or less powerful devices to get the best performance. For more powerful or Adreno devices, 4248 is the recommended variant to use
 
 ### What are the best settings for performance?
 The default Optimal/Safe settings are the most compatible and performant for most games. You can further optimize them by using the Vulkan GPU renderer and setting Hardware Download Mode to Disable Readbacks. With 3668, also make sure to enable Threaded Presentation when using the Vulkan GPU renderer
