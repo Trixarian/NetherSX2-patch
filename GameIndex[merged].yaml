@@ -203,9 +203,6 @@ PAPX-90222:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 PAPX-90223:
   name: "Jak x Daxter - Kyuu Sekai no Isan [Demo]"
   region: "NTSC-J"
@@ -214,9 +211,6 @@ PAPX-90223:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 PAPX-90224:
   name: "Sidewinder F [Trial]"
   region: "NTSC-J"
@@ -346,8 +340,6 @@ PAPX-90516:
     autoFlush: 1 # Fixes lighting.
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 PAPX-90517:
   name: "Prince of Persia - The Sands of Time [Trial]"
@@ -1326,8 +1318,6 @@ SCAJ-20073:
     autoFlush: 1 # Fixes lighting.
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCAJ-20074:
   name: "The King of Fighters 2002"
@@ -2583,9 +2573,6 @@ SCED-50614:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCED-50615:
   name: "Official Demo Disc 1 - Retail Edition November 01"
   region: "PAL-E"
@@ -3133,8 +3120,6 @@ SCED-51700:
     textureInsideRT: 1 # Fixes broken character models.
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCED-51728:
   name: "EverQuest Online Adventures [Demo]"
@@ -3657,8 +3642,6 @@ SCED-52952:
     textureInsideRT: 1
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCED-52969:
   name: "EyeToy - Play 2"
@@ -3921,10 +3904,7 @@ SCED-53660:
   name: "Jak X & Ratchet Gladiator [Demo]"
   region: "PAL"
   gsHWFixes:
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
-    halfPixelOffset: 2
+    halfPixelOffset: 2 # Aligns post bloom.
 SCED-53662:
   name: "Official PS2 Magazine Germany Special 2/2005"
   region: "PAL-G"
@@ -4452,9 +4432,6 @@ SCES-50361:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCES-50408:
   name: "PaRappa the Rapper 2"
   region: "PAL-M5"
@@ -4657,9 +4634,6 @@ SCES-50614:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCES-50759:
   name: "Virtua Fighter 4"
   region: "PAL-M5"
@@ -5035,8 +5009,6 @@ SCES-51608:
     textureInsideRT: 1 # Fixes broken character models.
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCES-51610:
   name: "This is Football 2004 [Red Devils 2004]"
@@ -5414,8 +5386,6 @@ SCES-52460:
     textureInsideRT: 1
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCES-52529:
   name: "Sly 2 - Band of Thieves"
@@ -5647,8 +5617,6 @@ SCES-53286:
     mipmap: 2 # Fixes bad textures.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
   memcardFilters: # Reads Ratchet Gladiator data.
     - "SCES-53286"
@@ -6540,9 +6508,6 @@ SCES-55510:
   region: "PAL-M12"
   gsHWFixes:
     roundSprite: 1 # Fix lines in the sky.
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
     halfPixelOffset: 2
 SCES-55513:
   name: "SingStar - Polskie Hity"
@@ -6759,8 +6724,6 @@ SCKA-20010:
     textureInsideRT: 1 # Fixes broken character models.
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCKA-20011:
   name: "Ratchet & Clank - Tool Warrior Jackpot"
@@ -6969,8 +6932,6 @@ SCKA-20040:
     textureInsideRT: 1
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCKA-20041:
   name: "EyeToy - Play 2"
@@ -8054,9 +8015,6 @@ SCPS-15021:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCPS-15022:
   name: "Dual Hearts"
   region: "NTSC-J"
@@ -8277,8 +8235,6 @@ SCPS-15057:
     autoFlush: 1
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCPS-15058:
   name: "Arc the Lad - Generation"
@@ -8906,9 +8862,6 @@ SCPS-19210:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCPS-19211:
   name: "Ratchet & Clank [PS2 the Best]"
   region: "NTSC-J"
@@ -9366,9 +9319,6 @@ SCPS-55004:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCPS-55005:
   name: "GRAN TURISMO Concept 2001 Tokyo"
   region: "NTSC-J"
@@ -9661,9 +9611,6 @@ SCPS-56003:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCPS-56004:
   name: "Otostaz"
   region: "NTSC-K"
@@ -9886,9 +9833,6 @@ SCUS-97124:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCUS-97125:
   name: "Frequency"
   region: "NTSC-U"
@@ -10086,9 +10030,6 @@ SCUS-97170:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCUS-97171:
   name: "Jak and Daxter - The Precursor Legacy [PS Underground Demo]"
   region: "NTSC-U"
@@ -10097,9 +10038,6 @@ SCUS-97171:
     mipmap: 1
     textureInsideRT: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCUS-97172:
   name: "World Tour Soccer 2002"
   region: "NTSC-U"
@@ -10492,8 +10430,6 @@ SCUS-97265:
     textureInsideRT: 1 # Fixes broken character models.
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCUS-97266:
   name: "Final Fantasy XI [Disc 1 of 2]"
@@ -10535,17 +10471,12 @@ SCUS-97273:
     textureInsideRT: 1 # Fixes broken character models.
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCUS-97274:
   name: "Jak II [Video Demo]"
   region: "NTSC-U"
   gsHWFixes:
     roundSprite: 1 # Fix lines in the sky.
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
     halfPixelOffset: 2
 SCUS-97275:
   name: "SOCOM II - U.S. Navy SEALs"
@@ -10680,8 +10611,6 @@ SCUS-97330:
     textureInsideRT: 1
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCUS-97331:
   name: "Official U.S. PlayStation Magazine Demo Disc 078"
@@ -10817,8 +10746,6 @@ SCUS-97374:
     textureInsideRT: 1 # Fixes broken character models.
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCUS-97377:
   name: "Syphon Filter - The Omega Strain [Regular Demo]"
@@ -10977,8 +10904,6 @@ SCUS-97412:
     textureInsideRT: 1
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCUS-97413:
   name: "Ratchet & Clank - Up Your Arsenal [Public Beta v1.0]"
@@ -11054,8 +10979,6 @@ SCUS-97429:
     mipmap: 2 # Fixes bad textures.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
-    skipDrawStart: 1
-    skipDrawEnd: 1
   memcardFilters:
     - "SCUS-97429"
     - "SCUS-97465"
@@ -11118,9 +11041,6 @@ SCUS-97440:
     textureInsideRT: 1
     autoFlush: 1
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
 SCUS-97441:
   name: "The Getaway - Black Monday [Demo]"
   region: "NTSC-U"
@@ -11357,8 +11277,6 @@ SCUS-97486:
     mipmap: 2 # Fixes bad textures.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
-    skipDrawStart: 1
-    skipDrawEnd: 1
 SCUS-97487:
   name: "Ratchet - Deadlocked [Public Beta v.1]"
   region: "NTSC-U"
@@ -11384,8 +11302,6 @@ SCUS-97488:
     mipmap: 2 # Fixes bad textures.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
-    skipDrawStart: 1
-    skipDrawEnd: 1
 SCUS-97489:
   name: "SOCOM 3 - U.S. Navy SEALs [Public Beta v.1]"
   region: "NTSC-U"
@@ -11493,8 +11409,6 @@ SCUS-97509:
     textureInsideRT: 1 # Fixes broken character models.
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCUS-97510:
   name: "ATV Offroad Fury 2 [Greatest Hits]"
@@ -11547,8 +11461,6 @@ SCUS-97516:
     textureInsideRT: 1
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
     halfPixelOffset: 2
 SCUS-97517:
   name: "Killzone [Greatest Hits]"
@@ -11689,8 +11601,6 @@ SCUS-97555:
     textureInsideRT: 1
     beforeDraw: "OI_JakGames"
     trilinearFiltering: 1
-    skipDrawStart: 1
-    skipDrawEnd: 1
 SCUS-97556:
   name: "MLB '07 - The Show"
   region: "NTSC-U"
@@ -11705,9 +11615,6 @@ SCUS-97558:
   compat: 5
   gsHWFixes:
     roundSprite: 1 # Fix lines in the sky.
-    skipDrawStart: 1
-    skipDrawEnd: 1
-    beforeDraw: "OI_JakGames"
     halfPixelOffset: 2
 SCUS-97560:
   name: "SOCOM - U.S. Navy SEALs - Combined Assault [Demo]"
@@ -11764,8 +11671,6 @@ SCUS-97574:
     mipmap: 2 # Fixes bad textures.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
-    skipDrawStart: 1
-    skipDrawEnd: 1
 SCUS-97579:
   name: "ATV Offroad Fury 4 [Demo]"
   region: "NTSC-U"
@@ -12427,8 +12332,6 @@ SLED-50884:
   region: "PAL-E"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes texture slight misalignment.
-    disableDepthSupport: 1
-    preloadFrameData: 1
 SLED-50895:
   name: "Medal of Honor - Frontline [Demo]"
   region: "PAL-E"
@@ -12785,8 +12688,6 @@ SLED-53066:
   gsHWFixes:
     halfPixelOffset: 2 # Aligns bloom of distant objects.
     autoFlush: 1 # Fixes HUD blending.
-    disableDepthSupport: 1
-    preloadFrameData: 1
 SLED-53083:
   name: "Monster Hunter [Demo]"
   region: "PAL-M5"
@@ -13413,9 +13314,6 @@ SLES-50078:
   name: "TimeSplitters"
   region: "PAL-M5"
   compat: 5
-  gsHWFixes:
-    disableDepthSupport: 1
-    preloadFrameData: 1
 SLES-50079:
   name: "Armored Core 2"
   region: "PAL-E"
@@ -15358,8 +15256,6 @@ SLES-50877:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes texture slight misalignment.
-    disableDepthSupport: 1
-    preloadFrameData: 1
 SLES-50879:
   name: "Paris-Dakar 2"
   region: "PAL-M5"
@@ -20837,8 +20733,6 @@ SLES-52993:
   region: "PAL-M5"
   gsHWFixes:
     halfPixelOffset: 2 # Removes ghosting of distant objects.
-    disableDepthSupport: 1
-    preloadFrameData: 1
 SLES-52998:
   name: "Sonic Mega Collection Plus"
   region: "PAL-M5"
@@ -29576,8 +29470,6 @@ SLKA-25020:
   region: "NTSC-K"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes slight texture misalignment.
-    disableDepthSupport: 1
-    preloadFrameData: 1
 SLKA-25021:
   name: "Shinobi"
   region: "NTSC-K"
@@ -31543,8 +31435,6 @@ SLKA-29012:
   region: "NTSC-K"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes slight texture misalignment.
-    disableDepthSupport: 1
-    preloadFrameData: 1
 SLKA-29017:
   name: "SSX Tricky"
   region: "NTSC-K"
@@ -32790,7 +32680,7 @@ SLPM-60149:
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    cpuCLUTRender: 1
+    gpuTargetCLUT: 1
     halfPixelOffset: 2
 SLPM-60150:
   name: "Tamamayu Story 2 - Horobi no Mushi [Trial]"
@@ -47808,7 +47698,7 @@ SLPS-25052:
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    cpuCLUTRender: 1
+    gpuTargetCLUT: 1
     halfPixelOffset: 2
 SLPS-25053:
   name: "Eikan ha Kimi ni - Koushien no Hasha"
@@ -51902,7 +51792,7 @@ SLPS-73205:
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    cpuCLUTRender: 1
+    gpuTargetCLUT: 1
     halfPixelOffset: 2
 SLPS-73206:
   name: "Super Robot Taisen Alpha 2nd [PS2 the Best]"
@@ -52387,7 +52277,7 @@ SLPS-73410:
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    cpuCLUTRender: 1
+    gpuTargetCLUT: 1
     halfPixelOffset: 2
 SLPS-73411:
   name: "Armored Core 2 - Another Age [PS2 the Best]"
@@ -52854,9 +52744,6 @@ SLUS-20090:
   name: "TimeSplitters"
   region: "NTSC-U"
   compat: 5
-  gsHWFixes:
-    disableDepthSupport: 1
-    preloadFrameData: 1
 SLUS-20091:
   name: "4x4 Evo"
   region: "NTSC-U"
@@ -53096,7 +52983,7 @@ SLUS-20152:
     alignSprite: 1 # Fixes vertical lines.
     mergeSprite: 1 # Fixes vertical lines.
     getSkipCount: "GSC_AceCombat4"
-    cpuCLUTRender: 1
+    gpuTargetCLUT: 1
     halfPixelOffset: 2
   patches:
     A32F7CD0:
@@ -53849,8 +53736,6 @@ SLUS-20314:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Fixes texture slight misalignment.
-    disableDepthSupport: 1
-    preloadFrameData: 1
 SLUS-20315:
   name: "Spyro - Enter the Dragonfly"
   region: "NTSC-U"
@@ -58559,8 +58444,6 @@ SLUS-21148:
   compat: 5
   gsHWFixes:
     halfPixelOffset: 2 # Removes ghosting of distant objects.
-    disableDepthSupport: 1
-    preloadFrameData: 1
 SLUS-21149:
   name: "Yourself! Fitness"
   region: "NTSC-U"
@@ -64418,8 +64301,6 @@ TCES-53286:
     mipmap: 2 # Fixes bad textures.
     trilinearFiltering: 1 # Fixes smooths texture transitions.
     beforeDraw: "OI_JakGames"
-    skipDrawStart: 1
-    skipDrawEnd: 1
 TCPS-10058:
   name: "Densha de Go! Shinkansen Sanyou Shinkansen-hen [with Controller]"
   region: "NTSC-J"
@@ -64665,8 +64546,6 @@ TLES-82043:
     - InstantDMAHack # Fixes missing letters in text such as E.
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
-    skipDrawStart: 1
-    skipDrawEnd: 1
 SCUS-21494:
   name: "Need for Speed - Carbon Collector's Edition"
   region: "NTSC-U"
