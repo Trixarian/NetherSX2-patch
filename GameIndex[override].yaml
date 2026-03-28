@@ -1,13 +1,6 @@
 SLES-53028:
   name: "Hitman - Blood Money"
   region: "PAL-E"
-  clampModes:
-    vuClampMode: 0 # Fixes bump mapping issues.
-  gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
-    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
-    autoFlush: 1 # Fixes sun intensity.
-    textureInsideRT: 1 # Fixes post-processing.
   patches:
     default:
       content: |-
@@ -17,13 +10,6 @@ SLES-53028:
 SLES-53029:
   name: "Hitman - Blood Money"
   region: "PAL-F"
-  clampModes:
-    vuClampMode: 0 # Fixes bump mapping issues.
-  gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
-    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
-    autoFlush: 1 # Fixes sun intensity.
-    textureInsideRT: 1 # Fixes post-processing.
   patches:
     default:
       content: |-
@@ -33,13 +19,6 @@ SLES-53029:
 SLES-53030:
   name: "Hitman - Blood Money"
   region: "PAL-G"
-  clampModes:
-    vuClampMode: 0 # Fixes bump mapping issues.
-  gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
-    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
-    autoFlush: 1 # Fixes sun intensity.
-    textureInsideRT: 1 # Fixes post-processing.
   patches:
     default:
       content: |-
@@ -49,13 +28,6 @@ SLES-53030:
 SLES-53031:
   name: "Hitman - Blood Money"
   region: "PAL-I"
-  clampModes:
-    vuClampMode: 0 # Fixes bump mapping issues.
-  gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
-    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
-    autoFlush: 1 # Fixes sun intensity.
-    textureInsideRT: 1 # Fixes post-processing.
   patches:
     default:
       content: |-
@@ -65,13 +37,6 @@ SLES-53031:
 SLES-53032:
   name: "Hitman - Blood Money"
   region: "PAL-S"
-  clampModes:
-    vuClampMode: 0 # Fixes bump mapping issues.
-  gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
-    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
-    autoFlush: 1 # Fixes sun intensity.
-    textureInsideRT: 1 # Fixes post-processing.
   patches:
     default:
       content: |-
@@ -81,14 +46,6 @@ SLES-53032:
 SLUS-21108:
   name: "Hitman - Blood Money"
   region: "NTSC-U"
-  compat: 5
-  clampModes:
-    vuClampMode: 0 # Fixes bump mapping issues
-  gsHWFixes:
-    minimumBlendingLevel: 4 # Fixes various rendering errors that appear as large black patches throughout levels.
-    halfPixelOffset: 2 # Fixes alignment of shuffles and post-processing.
-    autoFlush: 1 # Fixes sun intensity.
-    textureInsideRT: 1 # Fixes post-processing.
   patches:
     default:
       content: |-
