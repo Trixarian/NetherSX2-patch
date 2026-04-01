@@ -28678,6 +28678,8 @@ SLES-55569:
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes missing graphics.
     halfPixelOffset: 2 # Fixes ghosting.
+    textureInsideRT: 1
+    minimumBlendingLevel: 2
 SLES-55572:
   name: "Marvel Super Hero Squad"
   region: "PAL-M6"
@@ -31381,6 +31383,11 @@ SLKA-25464:
 SLKA-25465:
   name: "Silent Hill - Shattered Memories"
   region: "NTSC-K"
+  gsHWFixes:
+    minimumBlendingLevel: 2 # Fixes pause menu transition.
+    disablePartialInvalidation: 1 # Fixes missing graphics.
+    textureInsideRT: 1 # Fixes pause menu transition.
+    halfPixelOffset: 2 # Fixes post-processing and bloom misaligment.
 SLKA-25466:
   name: "Beatmania IIDX 16 - Empress + Premium Best [Disc 1 of 2 - Empress Disc]"
   region: "NTSC-K"
@@ -32316,6 +32323,11 @@ SLPM-55230:
 SLPM-55231:
   name: "Silent Hill - Shattered Memories"
   region: "NTSC-J"
+  gsHWFixes:
+    minimumBlendingLevel: 2 # Fixes pause menu transition.
+    disablePartialInvalidation: 1 # Fixes missing graphics.
+    textureInsideRT: 1 # Fixes pause menu transition.
+    halfPixelOffset: 2 # Fixes post-processing and bloom misaligment.
 SLPM-55233:
   name: "Kin'iro no Corda [KOEI The Best]"
   region: "NTSC-J"
@@ -62886,6 +62898,8 @@ SLUS-21899:
   gsHWFixes:
     disablePartialInvalidation: 1 # Fixes missing graphics.
     halfPixelOffset: 2 # Fixes ghosting.
+    textureInsideRT: 1
+    minimumBlendingLevel: 2
 SLUS-21900:
   name: "Scooby-Doo! First Frights"
   region: "NTSC-U"
