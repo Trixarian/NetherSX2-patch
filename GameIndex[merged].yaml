@@ -1334,6 +1334,7 @@ SCAJ-20076:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SCAJ-20076"
     - "SCAJ-20077"
@@ -1347,6 +1348,7 @@ SCAJ-20077:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SCAJ-20076"
     - "SCAJ-20077"
@@ -1505,7 +1507,8 @@ SCAJ-20105:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
-  dynaPatches:
+    minimumBlendingLevel: 3
+  dynaPatches: # Fix stuck enemies. (author=Berylskid)
     - pattern:
         - { offset: 0x0, value: 0x3C023E4C }
         - { offset: 0x4, value: 0x3442CCCD }
@@ -1513,6 +1516,10 @@ SCAJ-20105:
         - { offset: 0xC, value: 0xE7A200D4 }
       replacement:
         - { offset: 0x4, value: 0x3442CCE0 }
+  memcardFilters:
+    - "SCAJ-20076" # Nexus (Disc 1)
+    - "SCAJ-20077" # Nexus (Disc 2)
+    - "SCAJ-20105" # Nine Breaker
 SCAJ-20107:
   name: "Bakufuu Slash! Kizna Arashi"
   region: "NTSC-Unk"
@@ -1633,6 +1640,7 @@ SCAJ-20121:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
     cpuSpriteRenderBW: 1 # Fixes broken shadow caused by HPO 1.
+    minimumBlendingLevel: 3
 SCAJ-20122:
   name: "Swords of Destiny"
   region: "NTSC-Unk"
@@ -1784,7 +1792,12 @@ SCAJ-20143:
   gsHWFixes:
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
     partialTargetInvalidation: 1
-    preloadFrameData: 1
+    minimumBlendingLevel: 3
+  memcardFilters:
+    - "SCAJ-20076" # Nexus (Disc 1)
+    - "SCAJ-20077" # Nexus (Disc 2)
+    - "SCAJ-20105" # Nine Breaker
+    - "SCAJ-20143" # Last Raven
 SCAJ-20144:
   name: "Zhuo Hou La 3"
   region: "NTSC-C"
@@ -2224,6 +2237,7 @@ SCAJ-25047:
   region: "NTSC-Unk"
   gsHWFixes:
     minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    textureInsideRT: 1
 SCAJ-30001:
   name: "Xenosaga Episode I - Der Wille zur Macht [PS2 the Best]"
   region: "NTSC-Unk"
@@ -2386,6 +2400,8 @@ SCCS-40011:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
   gsHWFixes:
     partialTargetInvalidation: 1 # Fixes broken textures.
+    halfPixelOffset: 2
+    minimumBlendingLevel: 4
 SCCS-40012:
   name: "Virtua Fighter 4 - Evolution"
   region: "NTSC-C"
@@ -6977,7 +6993,8 @@ SCKA-20047:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
-  dynaPatches:
+    minimumBlendingLevel: 3
+  dynaPatches: # Fix stuck enemies. (author=Berylskid)
     - pattern:
         - { offset: 0x0, value: 0x3C023E4C }
         - { offset: 0x4, value: 0x3442CCCD }
@@ -9367,7 +9384,17 @@ SCPS-55014:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
-    mergeSprite: 1
+  memcardFilters:
+    - "SLPS-25007" # Armored Core 2
+    - "SLPS-25731" # Armored Core 2
+    - "SLPS-73403" # Armored Core 2
+    - "SLPS-25040" # Another Age
+    - "SLPS-73411" # Another Age
+    - "SCPS-55024" # Another Age
+    - "SLPS-25112" # Armored Core 3
+    - "SLPS-25732" # Armored Core 3
+    - "SLPS-73417" # Armored Core 3
+    - "SCPS-55014" # Armored Core 3
 SCPS-55015:
   name: "Zettai Zetsumei Toshi"
   region: "NTSC-J"
@@ -9417,6 +9444,7 @@ SCPS-55024:
   gsHWFixes:
     halfPixelOffset: 1 # Corrects positioning of reflections on player's AC.
     partialTargetInvalidation: 1
+    minimumBlendingLevel: 4
   memcardFilters:
     - "SCPS-55024"
     - "SLPS-25007"
@@ -12010,6 +12038,7 @@ SLAJ-25047:
   region: "NTSC-C-J"
   gsHWFixes:
     minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    textureInsideRT: 1
 SLAJ-25048:
   name: "Sengoku Musou Moushouden"
   region: "NTSC-Unk"
@@ -13328,6 +13357,8 @@ SLES-50079:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
   gsHWFixes:
     textureInsideRT: 1 # Fixes texture corruption.
+    halfPixelOffset: 2
+    minimumBlendingLevel: 4
 SLES-50080:
   name: "NBA Hoopz"
   region: "PAL-M3"
@@ -15326,6 +15357,7 @@ SLES-50905:
     halfPixelOffset: 1 # Corrects positioning of reflections on player's AC.
   #  Save import option was removed from PAL release.
     partialTargetInvalidation: 1
+    minimumBlendingLevel: 4
 SLES-50906:
   name: "Master Rallye"
   region: "PAL-M6"
@@ -16628,7 +16660,10 @@ SLES-51399:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
-    mergeSprite: 1
+  memcardFilters:
+    - "SLES-50079" # Armored Core 2
+    - "SLES-50905" # Another Age
+    - "SLES-51399" # Armored Core 3
 SLES-51400:
   name: "Tenchu - Wrath of Heaven"
   region: "PAL-S"
@@ -20038,6 +20073,7 @@ SLES-52755:
   region: "PAL-M5"
   gsHWFixes:
     minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    textureInsideRT: 1
 SLES-52760:
   name: "Pro Evolution Soccer 4"
   region: "PAL-M4"
@@ -23419,7 +23455,8 @@ SLES-53819:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
-  dynaPatches:
+    minimumBlendingLevel: 3
+  dynaPatches: # Fix stuck enemies. (author=Berylskid)
     - pattern:
         - { offset: 0x0, value: 0x3C023E4C }
         - { offset: 0x4, value: 0x3442CCCD }
@@ -23437,15 +23474,15 @@ SLES-53820:
   gsHWFixes:
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
     partialTargetInvalidation: 1
-    preloadFrameData: 1
+    minimumBlendingLevel: 3
+  memcardFilters:
+    - "SLES-82036" # Nexus (Disc 1)
+    - "SLES-82037" # Nexus (Disc 2)
+    - "SLES-53819" # Nine Breaker
+    - "SLES-53820" # Last Raven
 SLES-53821:
   name: "Radio Helicopter II"
   region: "PAL-E"
-  patches:
-    9A695202:
-      content: |-
-        comment=Patch that nops a branch instruction causing a freeze.
-        patch=1,EE,001799AC,word,00000000
 SLES-53824:
   name: "Trapt"
   region: "PAL-E"
@@ -29122,6 +29159,7 @@ SLES-82036:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SLES-82036"
     - "SLES-82037"
@@ -29131,6 +29169,7 @@ SLES-82037:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SLES-82036"
     - "SLES-82037"
@@ -30208,6 +30247,7 @@ SLKA-25201:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SLKA-25201"
     - "SLKA-25202"
@@ -30217,6 +30257,7 @@ SLKA-25202:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SLKA-25201"
     - "SLKA-25202"
@@ -30356,6 +30397,7 @@ SLKA-25225:
   compat: 5
   gsHWFixes:
     minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    textureInsideRT: 1
 SLKA-25226:
   name: "Disney/Pixar The Incredibles"
   region: "NTSC-K"
@@ -30543,6 +30585,7 @@ SLKA-25270:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
     cpuSpriteRenderBW: 1 # Fixes broken shadow caused by HPO 1.
+    minimumBlendingLevel: 3
 SLKA-25271:
   name: "Harry Potter and the Order of the Phoenix"
   region: "NTSC-K"
@@ -31462,7 +31505,11 @@ SLKA-29011:
   name: "Armored Core 3 - Silent Line [BANG]"
   region: "NTSC-K"
   gsHWFixes:
-    halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
+    halfPixelOffset: 2 # Fixes misaligned blur.
+  memcardFilters:
+    - "SLPM-67524" # Armored Core 3
+    - "SLKA-25041" # Silent Line
+    - "SLKA-29011" # Silent Line
 SLKA-29012:
   name: "TimeSplitters 2 [BANG]"
   region: "NTSC-K"
@@ -32998,6 +33045,7 @@ SLPM-60248:
   name: "Dororo [Trial]"
   region: "NTSC-J"
   gsHWFixes:
+    textureInsideRT: 1 # Fixes broken shuffles.
     minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
 SLPM-60250:
   name: "Need for Speed - Underground 2 [Trial]"
@@ -33543,7 +33591,17 @@ SLPM-61118:
     cpuSpriteRenderBW: 2 # Fixes glow effects, but breaks shadows of certain objects.
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
     partialTargetInvalidation: 1 # Fixes broken textures.
-    preloadFrameData: 1
+    minimumBlendingLevel: 3
+  memcardFilters:
+    - "SLPS-25338" # Nexus (Disc 1)
+    - "SLPS-73202" # Nexus (Disc 1)
+    - "SLPS-25339" # Nexus (Disc 2)
+    - "SLPS-73203" # Nexus (Disc 2)
+    - "SLPS-25408" # Nine Breaker
+    - "SLPS-25462" # Last Raven
+    - "SLPS-25730" # Last Raven
+    - "SLPS-68520" # Last Raven
+    - "SLPS-73247" # Last Raven
 SLPM-61119:
   name: "Armored Core - Last Raven [Trial]"
   region: "NTSC-J"
@@ -33551,7 +33609,17 @@ SLPM-61119:
     cpuSpriteRenderBW: 2 # Fixes glow effects, but breaks shadows of certain objects.
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
     partialTargetInvalidation: 1 # Fixes broken textures.
-    preloadFrameData: 1
+    minimumBlendingLevel: 3
+  memcardFilters:
+    - "SLPS-25338" # Nexus (Disc 1)
+    - "SLPS-73202" # Nexus (Disc 1)
+    - "SLPS-25339" # Nexus (Disc 2)
+    - "SLPS-73203" # Nexus (Disc 2)
+    - "SLPS-25408" # Nine Breaker
+    - "SLPS-25462" # Last Raven
+    - "SLPS-25730" # Last Raven
+    - "SLPS-68520" # Last Raven
+    - "SLPS-73247" # Last Raven
 SLPM-61120:
   name: "Drag-on Dragoon 2 - Fuuin no Aka, Haitoku no Kuro [Trial]"
   region: "NTSC-J"
@@ -35808,11 +35876,6 @@ SLPM-62623:
 SLPM-62624:
   name: "Petit Copter 2"
   region: "NTSC-J"
-  patches:
-    9A695202:
-      content: |-
-        comment=Patch that nops a branch instruction causing a freeze.
-        patch=1,EE,001799B8,word,00000000
 SLPM-62625:
   name: "Onihama Bakusou Gurentai Gekitou Hen"
   region: "NTSC-J"
@@ -38568,6 +38631,7 @@ SLPM-65526:
   region: "NTSC-J"
   gsHWFixes:
     minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    textureInsideRT: 1
 SLPM-65527:
   name: "FIFA Total Football"
   region: "NTSC-J"
@@ -41360,6 +41424,7 @@ SLPM-66207:
   region: "NTSC-J"
   gsHWFixes:
     minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    textureInsideRT: 1
 SLPM-66208:
   name: "Sakura Taisen V - Episode 0 - Samurai Girl of Wild [Sega the Best 2800]"
   region: "NTSC-J"
@@ -44941,7 +45006,10 @@ SLPM-67524:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
-    mergeSprite: 1
+  memcardFilters:
+    - "SLES-50079" # Armored Core 2
+    - "SLES-50905" # Another Age
+    - "SLES-51399" # Armored Core 3
 SLPM-67525:
   name: "Medal of Honor - Frontline"
   region: "NTSC-K"
@@ -45155,15 +45223,17 @@ SLPM-68520:
     cpuSpriteRenderBW: 2 # Fixes glow effects, but breaks shadows of certain objects.
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
     partialTargetInvalidation: 1 # Fixes broken textures.
-    preloadFrameData: 1
+    minimumBlendingLevel: 3
   memcardFilters:
-    - "SLPS-25338"
-    - "SLPS-25339"
-    - "SLPS-73202"
-    - "SLPS-73203"
-    - "SLPS-25408"
-    - "SLPS-25462"
-    - "SLPS-73247"
+    - "SLPS-25338" # Nexus (Disc 1)
+    - "SLPS-73202" # Nexus (Disc 1)
+    - "SLPS-25339" # Nexus (Disc 2)
+    - "SLPS-73203" # Nexus (Disc 2)
+    - "SLPS-25408" # Nine Breaker
+    - "SLPS-25462" # Last Raven
+    - "SLPS-25730" # Last Raven
+    - "SLPS-68520" # Last Raven
+    - "SLPS-73247" # Last Raven
 SLPM-68521:
   name: ".hack//frägment [先行リリース版]"
   region: "NTSC-J"
@@ -47501,6 +47571,8 @@ SLPS-25007:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
   gsHWFixes:
     textureInsideRT: 1 # Fixes texture corruption.
+    halfPixelOffset: 2
+    minimumBlendingLevel: 4
 SLPS-25008:
   name: "Sorcerous Stabber Orphen"
   region: "NTSC-J"
@@ -47656,6 +47728,7 @@ SLPS-25040:
   gsHWFixes:
     halfPixelOffset: 1 # Corrects positioning of reflections on player's AC.
     partialTargetInvalidation: 1
+    minimumBlendingLevel: 4
   memcardFilters:
     - "SCPS-55024"
     - "SLPS-25007"
@@ -47985,7 +48058,17 @@ SLPS-25112:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
-    mergeSprite: 1
+  memcardFilters:
+    - "SLPS-25007" # Armored Core 2
+    - "SLPS-25731" # Armored Core 2
+    - "SLPS-73403" # Armored Core 2
+    - "SLPS-25040" # Another Age
+    - "SLPS-73411" # Another Age
+    - "SCPS-55024" # Another Age
+    - "SLPS-25112" # Armored Core 3
+    - "SLPS-25732" # Armored Core 3
+    - "SLPS-73417" # Armored Core 3
+    - "SCPS-55014" # Armored Core 3
 SLPS-25113:
   name: "Zettai Zetsumei Toshi"
   region: "NTSC-J"
@@ -48917,6 +49000,7 @@ SLPS-25338:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SCAJ-20076"
     - "SCAJ-20077"
@@ -48930,6 +49014,7 @@ SLPS-25339:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SCAJ-20076"
     - "SCAJ-20077"
@@ -49238,7 +49323,8 @@ SLPS-25408:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
-  dynaPatches:
+    minimumBlendingLevel: 3
+  dynaPatches: # Fix stuck enemies. (author=Berylskid)
     - pattern:
         - { offset: 0x0, value: 0x3C023E4C }
         - { offset: 0x4, value: 0x3442CCCD }
@@ -49487,13 +49573,14 @@ SLPS-25461:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
     cpuSpriteRenderBW: 1 # Fixes broken shadow caused by HPO 1.
+    minimumBlendingLevel: 3
 SLPS-25462:
   name: "Armored Core - Last Raven"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
     partialTargetInvalidation: 1
-    preloadFrameData: 1
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SLPS-25338"
     - "SLPS-25339"
@@ -50620,7 +50707,17 @@ SLPS-25730:
     cpuSpriteRenderBW: 2 # Fixes glow effects, but breaks shadows of certain objects.
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
     partialTargetInvalidation: 1 # Fixes broken textures.
-    preloadFrameData: 1
+    minimumBlendingLevel: 3
+  memcardFilters:
+    - "SLPS-25338" # Nexus (Disc 1)
+    - "SLPS-73202" # Nexus (Disc 1)
+    - "SLPS-25339" # Nexus (Disc 2)
+    - "SLPS-73203" # Nexus (Disc 2)
+    - "SLPS-25408" # Nine Breaker
+    - "SLPS-25462" # Last Raven
+    - "SLPS-25730" # Last Raven
+    - "SLPS-68520" # Last Raven
+    - "SLPS-73247" # Last Raven
 SLPS-25731:
   name: "Armored Core 2 [MACHINE SIDE BOX]"
   region: "NTSC-J"
@@ -50628,15 +50725,25 @@ SLPS-25731:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
   gsHWFixes:
     partialTargetInvalidation: 1 # Fixes broken textures.
-    textureInsideRT: 1
+    halfPixelOffset: 2
+    minimumBlendingLevel: 4
 SLPS-25732:
   name: "Armored Core 3 [MACHINE SIDE BOX]"
   region: "NTSC-J"
   gsHWFixes:
     partialTargetInvalidation: 1 # Fixes broken textures.
-    mergeSprite: 1
     halfPixelOffset: 2
-    roundSprite: 2
+  memcardFilters:
+    - "SLPS-25007" # Armored Core 2
+    - "SLPS-25731" # Armored Core 2
+    - "SLPS-73403" # Armored Core 2
+    - "SLPS-25040" # Another Age
+    - "SLPS-73411" # Another Age
+    - "SCPS-55024" # Another Age
+    - "SLPS-25112" # Armored Core 3
+    - "SLPS-25732" # Armored Core 3
+    - "SLPS-73417" # Armored Core 3
+    - "SCPS-55014" # Armored Core 3
 SLPS-25733:
   name: "Super Robot Taisen OG - Original Generations"
   region: "NTSC-J"
@@ -51797,6 +51904,7 @@ SLPS-73202:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SCAJ-20076"
     - "SCAJ-20077"
@@ -51810,6 +51918,7 @@ SLPS-73203:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SCAJ-20076"
     - "SCAJ-20077"
@@ -52149,7 +52258,7 @@ SLPS-73247:
   gsHWFixes:
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
     partialTargetInvalidation: 1
-    preloadFrameData: 1
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SLPS-25338"
     - "SLPS-25339"
@@ -52279,6 +52388,8 @@ SLPS-73403:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
   gsHWFixes:
     textureInsideRT: 1 # Fixes texture corruption.
+    halfPixelOffset: 2
+    minimumBlendingLevel: 4
 SLPS-73404:
   name: "Klonoa 2 [PS2 the Best]"
   region: "NTSC-J"
@@ -52333,6 +52444,7 @@ SLPS-73411:
   gsHWFixes:
     halfPixelOffset: 1 # Corrects positioning of reflections on player's AC.
     partialTargetInvalidation: 1
+    minimumBlendingLevel: 4
   memcardFilters:
     - "SCPS-55024"
     - "SLPS-25007"
@@ -52362,6 +52474,17 @@ SLPS-73417:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
+  memcardFilters:
+    - "SLPS-25007" # Armored Core 2
+    - "SLPS-25731" # Armored Core 2
+    - "SLPS-73403" # Armored Core 2
+    - "SLPS-25040" # Another Age
+    - "SLPS-73411" # Another Age
+    - "SCPS-55024" # Another Age
+    - "SLPS-25112" # Armored Core 3
+    - "SLPS-25732" # Armored Core 3
+    - "SLPS-73417" # Armored Core 3
+    - "SCPS-55014" # Armored Core 3
 SLPS-73418:
   name: "Shadow Hearts [PS2 the Best]"
   region: "NTSC-J"
@@ -52498,6 +52621,8 @@ SLUS-20014:
     eeClampMode: 2 # Fixes Abnormal AI behavior.
   gsHWFixes:
     textureInsideRT: 1 # Fixes texture corruption.
+    halfPixelOffset: 2
+    minimumBlendingLevel: 4
 SLUS-20015:
   name: "Eternal Ring"
   region: "NTSC-U"
@@ -53475,6 +53600,7 @@ SLUS-20249:
   gsHWFixes:
     halfPixelOffset: 1 # Corrects positioning of reflections on player's AC.
     partialTargetInvalidation: 1
+    minimumBlendingLevel: 4
   memcardFilters: # Can import data from regular Armored Core 2.
     - "SLUS-20249"
     - "SLUS-20014"
@@ -54442,7 +54568,10 @@ SLUS-20435:
     halfPixelOffset: 2 # Corrects positioning of reflections on suit's surfaces.
     roundSprite: 2 # Reduces garbage on the UI whilst upscaling.
     partialTargetInvalidation: 1 # Fixes corrupted textures.
-    mergeSprite: 1
+  memcardFilters:
+    - "SLUS-20014" # Armored Core 2
+    - "SLUS-20249" # Another Age
+    - "SLUS-20435" # Armored Core 3
 SLUS-20436:
   name: "Guilty Gear X2"
   region: "NTSC-U"
@@ -56365,6 +56494,7 @@ SLUS-20782:
   compat: 5
   gsHWFixes:
     minimumBlendingLevel: 2 # Fixes dark font to more bright like software mode.
+    textureInsideRT: 1
 SLUS-20784:
   name: "The Italian Job"
   region: "NTSC-U"
@@ -57529,6 +57659,7 @@ SLUS-20986:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SLUS-20986"
     - "SLUS-21079"
@@ -58110,6 +58241,7 @@ SLUS-21079:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
+    minimumBlendingLevel: 3
   memcardFilters:
     - "SLUS-20986"
     - "SLUS-21079"
@@ -58792,7 +58924,8 @@ SLUS-21200:
   gsHWFixes:
     halfPixelOffset: 1 # Fixes misaligned blur.
     partialTargetInvalidation: 1 # Fixes broken textures.
-  dynaPatches:
+    minimumBlendingLevel: 3
+  dynaPatches: # Fix stuck enemies. (author=Berylskid)
     - pattern:
         - { offset: 0x0, value: 0x3C023E4C }
         - { offset: 0x4, value: 0x3442CCCD }
@@ -59814,12 +59947,12 @@ SLUS-21338:
   gsHWFixes:
     halfPixelOffset: 2 # Corrects shadow alignment and reduces blurriness.
     partialTargetInvalidation: 1
-    preloadFrameData: 1
-  memcardFilters: # Convert savegames from AC: Nexus and AC: Nine Breaker.
-    - "SLUS-21338"
-    - "SLUS-21200"
-    - "SLUS-20986"
-    - "SLUS-21079"
+    minimumBlendingLevel: 3
+  memcardFilters:
+    - "SLUS-20986" # Nexus (Disc 1)
+    - "SLUS-21079" # Nexus (Disc 2)
+    - "SLUS-21200" # Nine Breaker
+    - "SLUS-21338" # Last Raven
 SLUS-21339:
   name: "Puzzle Challenge - Crosswords and More!"
   region: "NTSC-U"
