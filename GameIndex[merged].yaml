@@ -1210,6 +1210,7 @@ SCAJ-20055:
     vuClampMode: 3 # Stops car from falling through track.
   gsHWFixes:
     textureInsideRT: 1 # Fixes broken splitscreen mode.
+    halfPixelOffset: 2 # Fixes misaligned blur in replays.
 SCAJ-20056:
   name: "Bujingai"
   region: "NTSC-Unk"
@@ -4439,6 +4440,7 @@ SCES-50360:
   name: "Twisted Metal - Black"
   region: "PAL-M5"
   gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes menu text brightness.
     halfPixelOffset: 2 # Fixes misaligned blur during Darkside special.
 SCES-50361:
   name: "Jak and Daxter - The Precursor Legacy"
@@ -4961,6 +4963,7 @@ SCES-51480:
   name: "Twisted Metal - Black Online"
   region: "PAL-M5"
   gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes menu text brightness.
     halfPixelOffset: 2 # Fixes misaligned blur during Darkside special.
 SCES-51513:
   name: "EyeToy - Play"
@@ -9767,6 +9770,7 @@ SCUS-97101:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes menu text brightness.
     halfPixelOffset: 2 # Fixes misaligned blur during Darkside special.
 SCUS-97102:
   name: "Gran Turismo 3 - A-Spec"
@@ -10028,6 +10032,7 @@ SCUS-97164:
   name: "Twisted Metal - Black [Demo]"
   region: "NTSC-U"
   gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes menu text brightness.
     halfPixelOffset: 2 # Fixes misaligned blur during Darkside special.
 SCUS-97165:
   name: "Official U.S. PlayStation Magazine Demo Disc 051"
@@ -10100,6 +10105,7 @@ SCUS-97179:
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes menu text brightness.
     halfPixelOffset: 2 # Fixes misaligned blur during Darkside special.
 SCUS-97181:
   name: "Official U.S. PlayStation Magazine Demo Disc 055"
@@ -10146,12 +10152,14 @@ SCUS-97195:
   name: "Twisted Metal - Black Online"
   region: "NTSC-U"
   gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes menu text brightness.
     halfPixelOffset: 2 # Fixes misaligned blur during Darkside special.
 SCUS-97196:
   name: "Twisted Metal - Black Online"
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes menu text brightness.
     halfPixelOffset: 2 # Fixes misaligned blur during Darkside special.
 SCUS-97197:
   name: "War of the Monsters"
@@ -11799,6 +11807,9 @@ SCUS-97621:
     vu1ClampMode: 3 # Fixes missing textures.
   gameFixes:
     - VUSyncHack # Fixes black doors on vehicles.
+  gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes menu text brightness and smoke effects.
+    halfPixelOffset: 2 # Fixes misaligned blur during Darkside special.
   patches:
     3DC2FE45:
       content: |-
@@ -12980,6 +12991,7 @@ SLED-53977:
     autoFlush: 1 # Fixes missing bloom from surfaces like windows.
     halfPixelOffset: 2 # Sharpens world in far distances, aligns some bloom better.
     roundSprite: 1 # Fixes font artifacts.
+    cpuSpriteRenderBW: 1 # Fixes water and other sprite errors.
 SLED-53980:
   name: "Urban Chaos - Riot Response [Demo]"
   region: "PAL-E"
@@ -13391,6 +13403,8 @@ SLES-50113:
   name: "Ring of Red"
   region: "PAL-M3"
   compat: 5
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMV lines.
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
 SLES-50114:
@@ -18610,6 +18624,8 @@ SLES-52275:
   name: "Way of the Samurai 2"
   region: "PAL-M3"
   compat: 5
+  gsHWFixes:
+    roundSprite: 2 # Fixes UI lines.
 SLES-52276:
   name: "187 - Ride or Die"
   region: "PAL-M5"
@@ -20595,7 +20611,7 @@ SLES-52939:
   name: "Airborne Troops - Countdown to D-Day"
   region: "PAL-M4"
 SLES-52940:
-  name: "S.L.A.I. Steel Lancer Arena International"
+  name: "S.L.A.I. - Steel Lancer Arena International"
   region: "PAL-M3"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes double image and aligns glow effects.
@@ -32657,6 +32673,8 @@ SLPM-60121:
 SLPM-60122:
   name: "Ring of Red [Trial]"
   region: "NTSC-J"
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMV lines.
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
 SLPM-60123:
@@ -33867,6 +33885,8 @@ SLPM-62012:
 SLPM-62013:
   name: "RING OF RED"
   region: "NTSC-J"
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMV lines.
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
 SLPM-62015:
@@ -34093,6 +34113,8 @@ SLPM-62088:
 SLPM-62091:
   name: "RING OF RED [KONAMI The BEST]"
   region: "NTSC-J"
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMV lines.
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
 SLPM-62092:
@@ -37220,7 +37242,7 @@ SLPM-65181:
   clampModes:
     vuClampMode: 2 # White textures.
   gsHWFixes:
-    halfPixelOffset: 1 # Fixes blurriness.
+    halfPixelOffset: 2 # Fixes depth line and blur.
 SLPM-65183:
   name: "Auto Modellista"
   region: "NTSC-J"
@@ -38055,6 +38077,8 @@ SLPM-65379:
 SLPM-65380:
   name: "Samurai Dou 2"
   region: "NTSC-J"
+  gsHWFixes:
+    roundSprite: 2 # Fixes UI lines.
 SLPM-65381:
   name: "Kimagure Strawberry Cafe"
   region: "NTSC-J"
@@ -38258,6 +38282,7 @@ SLPM-65434:
     vuClampMode: 3 # Stops car from falling through track.
   gsHWFixes:
     textureInsideRT: 1 # Fixes broken splitscreen mode.
+    halfPixelOffset: 2 # Fixes misaligned blur in replays.
 SLPM-65435:
   name: "Kita he - Diamond Dust"
   region: "NTSC-J"
@@ -39656,7 +39681,7 @@ SLPM-65790:
   gsHWFixes:
     halfPixelOffset: 2 # Fixes blurriness.
 SLPM-65791:
-  name: "S.L.A.I -STEEL LANCER ARENA INTERNATIONAL-"
+  name: "S.L.A.I. -STEEL LANCER ARENA INTERNATIONAL-"
   region: "NTSC-J"
   gsHWFixes:
     halfPixelOffset: 2 # Fixes double image and aligns glow effects.
@@ -40023,6 +40048,8 @@ SLPM-65883:
 SLPM-65884:
   name: "Remote Control Dandy SF"
   region: "NTSC-J"
+  gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes health bar flickering in tutorial level.
 SLPM-65885:
   name: "RUMBLE ROSES"
   region: "NTSC-J"
@@ -41677,6 +41704,8 @@ SLPM-66259:
 SLPM-66260:
   name: "Remote Control Dandy SF [KONAMI The BEST]"
   region: "NTSC-J"
+  gsHWFixes:
+    minimumBlendingLevel: 4 # Fixes health bar flickering in tutorial level.
 SLPM-66261:
   name: "Oz [KONAMI The BEST]"
   region: "NTSC-J"
@@ -49258,6 +49287,7 @@ SLPS-25394:
   region: "NTSC-J"
   gsHWFixes:
     partialTargetInvalidation: 1 # Fixes broken textures.
+    textureInsideRT: 1
 SLPS-25395:
   name: "Sentimental Prelude"
   region: "NTSC-J"
@@ -52099,6 +52129,7 @@ SLPS-73227:
   region: "NTSC-J"
   gsHWFixes:
     partialTargetInvalidation: 1 # Fixes broken textures.
+    textureInsideRT: 1
 SLPS-73228:
   name: "Fu-un Bakumatsu-den [PS2 the Best]"
   region: "NTSC-J"
@@ -53095,6 +53126,8 @@ SLUS-20145:
   name: "Ring of Red"
   region: "NTSC-U"
   compat: 5
+  gameFixes:
+    - SoftwareRendererFMVHack # Fixes FMV lines.
   gsHWFixes:
     alignSprite: 1 # Fixes vertical lines.
 SLUS-20146:
@@ -57070,6 +57103,8 @@ SLUS-20893:
   name: "Way of the Samurai 2"
   region: "NTSC-U"
   compat: 5
+  gsHWFixes:
+    roundSprite: 2 # Fixes UI lines.
 SLUS-20894:
   name: "Worms 3D"
   region: "NTSC-U"
@@ -57546,7 +57581,7 @@ SLUS-20968:
   name: "Karaoke Revolution Volume 2"
   region: "NTSC-U"
 SLUS-20969:
-  name: "S.L.A.I. - Steel Lancer Arena International - Phantom Crash"
+  name: "S.L.A.I. - Steel Lancer Arena International"
   region: "NTSC-U"
   compat: 5
   gsHWFixes:
@@ -64721,6 +64756,8 @@ TLES-52781:
 TLES-52940:
   name: "S.L.A.I. - Steel Lancer Arena International Beta Trial Code"
   region: "PAL-E"
+  gsHWFixes:
+    halfPixelOffset: 2 # Fixes double image and aligns glow effects.
 TLES-53544:
   name: "Pro Evolution Soccer 5 Beta Trial Code"
   region: "PAL-E"
