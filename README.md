@@ -34,7 +34,7 @@ Use NetherSX2 if you want:
 * Online Gaming Support
 * Up to date configuration files
 * No Ads (for AetherSX2 3036/4248 users)
-* NetherSX2 spesific bug fixes for games
+* NetherSX2 specific bug fixes for games
 * Better controller support for automatic setup
 * Have more control over your emulator via settings
 
