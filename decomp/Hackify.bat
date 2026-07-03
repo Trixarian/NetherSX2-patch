@@ -26,6 +26,8 @@ lib\xml ed -L -u "androidx.drawerlayout.widget.DrawerLayout/androidx.coordinator
 lib\hexalter 4248\lib\arm64-v8a\libemucore.so 0x838560=0x66,0x00,0x00,0x14 0x83B324=0x62,0x00,0x00,0x14
 :: Patch BIOS type check
 lib\hexalter 4248\lib\arm64-v8a\libemucore.so 0x829248=0x35,0x00,0x80,0x52
+:: Scarface (SLUS_211.11) never got its hash sent to RA due to a bad zero-length check
+lib\hexalter 4248\lib\arm64-v8a\libemucore.so 0x81b264=0x04,0x00,0x00,0x14
 
 :: --Patch DEX--
 :: Disable ads
