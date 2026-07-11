@@ -11,7 +11,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Build APK
-        working-directory: builder
+        working-directory: ./builder/build-nethersx2.sh
         run: |
           chmod +x build-nethersx2.sh
           ./build-nethersx2.sh
