@@ -1,3 +1,45 @@
+SLUS-21050:
+  name: "Burnout 3 - Takedown"
+  region: "NTSC-U"
+  gsHWFixes:
+    disablePartialInvalidation: 1
+    estimateTextureRegion: 1
+    preloadFrameData: 1
+  patches:
+    default:
+      content: |-
+        comment=Disable Bloom, Motion Blur, and Fog to fix severe real-frame rendering lag
+        patch=1,EE,20665F28,byte,00000000
+        patch=1,EE,20665F29,byte,00000000
+        patch=1,EE,20665F2A,byte,00000000
+SLES-52584:
+  name: "Burnout 3 - Takedown"
+  region: "PAL"
+  gsHWFixes:
+    disablePartialInvalidation: 1
+    estimateTextureRegion: 1
+    preloadFrameData: 1
+  patches:
+    default:
+      content: |-
+        comment=Disable Bloom, Motion Blur, and Fog to fix severe real-frame rendering lag
+        patch=1,EE,20665F28,byte,00000000
+        patch=1,EE,20665F29,byte,00000000
+        patch=1,EE,20665F2A,byte,00000000
+SLPM-65719:
+  name: "Burnout 3 - Takedown"
+  region: "NTSC-J"
+  gsHWFixes:
+    disablePartialInvalidation: 1
+    estimateTextureRegion: 1
+    preloadFrameData: 1
+  patches:
+    default:
+      content: |-
+        comment=Disable Bloom, Motion Blur, and Fog to fix severe real-frame rendering lag
+        patch=1,EE,20665F28,byte,00000000
+        patch=1,EE,20665F29,byte,00000000
+        patch=1,EE,20665F2A,byte,00000000
 SLES-53028:
   name: "Hitman - Blood Money"
   region: "PAL-E"
